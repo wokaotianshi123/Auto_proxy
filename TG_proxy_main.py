@@ -95,7 +95,7 @@ def get_content(url):
         new_list_down = new_list[sub_n::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
-    #print("共获得", len(new_list_down), "条链接")
+    print("共获得", len(new_list_down), "条链接")
     #print('【判断链接是否为订阅链接】')
     for o in new_list_down:
         try:
