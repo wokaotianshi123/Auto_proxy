@@ -33,8 +33,6 @@ e_sub = ['https://sub.pmsub.me/base64','https://www.prop.cf/?name=paimon&client=
 #e_sub = ['https://pastebin.com/raw/dmnL3uAR','https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2','https://raw.githubusercontent.com/kxswa/k/k/base64']
 #频道
 urls =["https://t.me/s/freeVPNjd","https://t.me/s/wxdy666","https://t.me/s/nice16688","https://t.me/s/go4sharing","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/ZDYZ2"]
-#线程池
-threads = []
 #机场链接
 plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
@@ -43,6 +41,12 @@ try_sub = []
 sub_n = -5
 #试用节点明文
 end_try = []
+#线程池
+threads = []
+# 设置最大线程数
+MAX_WORKERS = 10
+# 设置超时时间(秒)
+TIMEOUT = 60
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
@@ -442,6 +446,9 @@ if __name__ == '__main__':
     get_v2rayshare()
     get_nodefree()
     print("========== 开始获取频道订阅链接 ==========")
+    # 使用线程池
+    pool = threading.Pool(MAX_WORKERS)
+    """
     for url in urls:
         print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
@@ -452,6 +459,27 @@ if __name__ == '__main__':
     #等待线程结束
     for t in tqdm(threads):
         t.join()
+    """
+    for url in urls:
+        print(url, "开始获取......")
+        thread = pool.apply_async(get_content, args=(url,))
+        threads.append(thread)
+
+    # 关闭线程池,防止往里再添加新任务
+    pool.close()
+
+    # 等待线程结束或超时
+    start_time = time.time()
+    for t in tqdm(threads):
+        try:
+            t.get(timeout=TIMEOUT)
+        except TimeoutError:
+            print(f"线程执行超时({TIMEOUT}秒),已强制终止")
+            t._terminate()  # 终止线程
+
+    # 终止线程池
+    pool.join()
+    
     print("========== 准备写入订阅 ==========")
     res = write_document()
     clash_sub = get_yaml()
