@@ -205,34 +205,34 @@ def write_document():
         TimeDate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         for index in range(len(lines)):
             try:
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`\n':
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {length}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`\n':
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {length-step*7}`\n')
-                if lines[index] == '`https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                     lines.pop(index+4)
                     lines.pop(index+4)
                     lines.insert(index+4, f'Updata：`{TimeDate}`\n')
