@@ -443,7 +443,7 @@ if __name__ == '__main__':
     get_nodefree()
     print("========== 开始获取频道订阅链接 ==========")
     for url in urls:
-        #print(url, "开始获取......")
+        print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
         thread.start()
         threads.append(thread)
