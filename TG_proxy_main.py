@@ -46,7 +46,7 @@ threads = []
 # 设置最大线程数
 MAX_WORKERS = 10
 # 设置超时时间(秒)
-TIMEOUT = 60
+TIMEOUT = 500
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
