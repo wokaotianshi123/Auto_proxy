@@ -32,7 +32,7 @@ new_list = []
 e_sub = ['https://sub.789.st/sub?target=v2ray&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&sort=true&_=1710174203726','https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary','https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray','https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub',"https://igdu.cloudns.org/~WangCai"]
 #e_sub = ['https://pastebin.com/raw/dmnL3uAR','https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2','https://raw.githubusercontent.com/kxswa/k/k/base64']
 #频道
-urls =["https://t.me/s/freeVPNjd","https://t.me/s/wxdy666","https://t.me/s/fq521","https://t.me/s/go4sharing","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/ZDYZ2","https://t.me/s/wangcai_8","https://t.me/s/zyfxlnn"]
+urls =["https://t.me/s/freeVPNjd","https://t.me/s/FProxies","https://t.me/s/wxdy666","https://t.me/s/fq521","https://t.me/s/go4sharing","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/ZDYZ2","https://t.me/s/wangcai_8","https://t.me/s/zyfxlnn"]
 #机场链接
 plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
