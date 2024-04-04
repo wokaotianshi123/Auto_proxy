@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `6`
-Updata：`2024-04-04 10:28:25`
+Updata：`2024-04-04 11:43:20`
 
 
 <details>
@@ -771,56 +771,68 @@ Updata：`2024-04-04 10:28:25`
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=3b84c028c713ec9b86251bbf56c27c15`
 
 
 
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=b4128db4c495655c8dbc3b53999e9c6e`
-
-
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=3b84c028c713ec9b86251bbf56c27c15`
-
-
-
->Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240403.txt`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=b4128db4c495655c8dbc3b53999e9c6e`
 
 
 
 
->Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240403.txt`
 
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-04/pzFatNc.txt`
-
-
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-04/pzFatNc.txt`
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=65ab02458c6730f0b5c13c8f11ccc8ed`
-
-
->Trial subscription：
-`https://www.ckcloud.xyz/api/v1/client/subscribe?token=65ab02458c6730f0b5c13c8f11ccc8ed`
 
 
 
 >Trial subscription：
 `https://nodefree.org/dy/2024/04/20240403.txt`
 
+
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=659f4130aa23e68543952d8df9a0fb06`
+
+
 >Trial subscription：
 `https://nodefree.org/dy/2024/04/20240403.txt`
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-04/pzFatNc.txt`
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=659f4130aa23e68543952d8df9a0fb06`
+
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-04/pzFatNc.txt`
+
+>Trial subscription：
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240404.txt`
+
+
+
+>Trial subscription：
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240404.txt`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=f1c8539cafea709f51969bed4695800e`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=f1c8539cafea709f51969bed4695800e`
+
+
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8eab87ea065db2247ca499dc9c30e2d1`
+
+>Trial subscription：
+`https://www.ckcloud.xyz/api/v1/client/subscribe?token=8eab87ea065db2247ca499dc9c30e2d1`
 
 
 
