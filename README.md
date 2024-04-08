@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2024-04-08 10:20:42`
+Updata：`2024-04-08 11:41:09`
 
 
 <details>
@@ -1130,39 +1130,19 @@ Updata：`2024-04-08 10:20:42`
 
 
 
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-08/2sDtdpn.txt`
 
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=fed12554a5e8e9aec08bf7ad056f0b52`
 
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-08/2sDtdpn.txt`
+
 
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=fed12554a5e8e9aec08bf7ad056f0b52`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=d935ca809d5e72e960ecd92450c3d3a3`
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=3428615dd54df0800ebfc4c837b1e8ac`
-
-
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=3428615dd54df0800ebfc4c837b1e8ac`
-
-
->Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240407.txt`
-
-
->Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240407.txt`
 
 
 
@@ -1170,7 +1150,37 @@ Updata：`2024-04-08 10:20:42`
 `https://nodefree.org/dy/2024/04/20240407.txt`
 
 >Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=d935ca809d5e72e960ecd92450c3d3a3`
+
+
+
+
+>Trial subscription：
 `https://nodefree.org/dy/2024/04/20240407.txt`
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-08/2sDtdpn.txt`
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-08/2sDtdpn.txt`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=94d2df133e3dcba2f5a2d0bf6cb95525`
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=94d2df133e3dcba2f5a2d0bf6cb95525`
+
+
+
+>Trial subscription：
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240408.txt`
+
+>Trial subscription：
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240408.txt`
 
 
 
