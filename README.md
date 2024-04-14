@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2024-04-14 23:14:21`
+Updata：`2024-04-15 07:27:18`
 
 
 <details>
@@ -1650,35 +1650,14 @@ Updata：`2024-04-14 23:14:21`
 
 
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=625916111bad8b1b1a204fcf6c1656f0`
 
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=0b23f3ec467a9fdd87811cb3401d16ea`
-
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=625916111bad8b1b1a204fcf6c1656f0`
 
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=0b23f3ec467a9fdd87811cb3401d16ea`
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-14/fbRZB69.txt`
-
-
-
->Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-14/fbRZB69.txt`
-
-
->Trial subscription：
-`https://nodefree.org/dy/2024/04/20240414.txt`
 
 
 >Trial subscription：
@@ -1686,11 +1665,42 @@ Updata：`2024-04-14 23:14:21`
 
 
 
+
 >Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240414.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=c252133919e762c5de90d0f6ae01dd36`
+
+>Trial subscription：
+`https://nodefree.org/dy/2024/04/20240414.txt`
+
+
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=c252133919e762c5de90d0f6ae01dd36`
 
 >Trial subscription：
 `https://v2rayshare.com/wp-content/uploads/2024/04/20240414.txt`
+
+
+
+>Trial subscription：
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240414.txt`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=ad67023c24075cd6431387fe0d8923dc`
+
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=ad67023c24075cd6431387fe0d8923dc`
+
+
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-14/fbRZB69.txt`
+
+>Trial subscription：
+`https://oss.v2rayse.com/proxies/data/2024-04-14/fbRZB69.txt`
 
 
 
