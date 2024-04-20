@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1650`
+`Total number of merge nodes: 1649`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 201`
+`Total number of merge nodes: 200`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `4`
-Updata：`2024-04-21 02:28:22`
+Updata：`2024-04-21 05:24:34`
 
 
 <details>
@@ -2115,22 +2115,30 @@ Updata：`2024-04-21 02:28:22`
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=7197313e0b690fd6c077baf9e2888755`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=7197313e0b690fd6c077baf9e2888755`
+`https://oss.v2rayse.com/proxies/data/2024-04-20/EZUTueG.txt`
+
+
+
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-20/CZlXGNz.txt`
+`https://oss.v2rayse.com/proxies/data/2024-04-20/EZUTueG.txt`
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=4cfcf859f491518400cef812ebc54dc3`
 
 
 
 >Trial subscription：
-`https://oss.v2rayse.com/proxies/data/2024-04-20/CZlXGNz.txt`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=4cfcf859f491518400cef812ebc54dc3`
 
 
 >Trial subscription：
