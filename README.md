@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1657`
+`Total number of merge nodes: 1659`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 201`
+`Total number of merge nodes: 203`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `4`
-Updata：`2024-04-25 08:48:29`
+Updata：`2024-04-25 11:17:54`
 
 
 <details>
@@ -2387,22 +2387,30 @@ Updata：`2024-04-25 08:48:29`
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=68fd6a6cdc730883f1e9e53dd34553c2`
 
 
 
 
->Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=68fd6a6cdc730883f1e9e53dd34553c2`
+
+
+
 
 >Trial subscription：
 `https://nodefree.org/dy/2024/04/20240424.txt`
 
 
 
+
 >Trial subscription：
 `https://nodefree.org/dy/2024/04/20240424.txt`
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=ea4af8dafe1747a0c83ea00e84ff0900`
+
+
+
+>Trial subscription：
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=ea4af8dafe1747a0c83ea00e84ff0900`
 
 
 >Trial subscription：
@@ -2415,10 +2423,10 @@ Updata：`2024-04-25 08:48:29`
 
 
 >Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240424.txt`
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240425.txt`
 
 >Trial subscription：
-`https://v2rayshare.com/wp-content/uploads/2024/04/20240424.txt`
+`https://v2rayshare.com/wp-content/uploads/2024/04/20240425.txt`
 
 
 
