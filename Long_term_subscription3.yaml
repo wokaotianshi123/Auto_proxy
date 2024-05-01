@@ -5,359 +5,296 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 江苏省 移动, server: 36.151.192.100, port: 61190, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61, server: spxct-g01.jp03-7d22-vm0.entry.fr0307a.art, port: 21581, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇨🇳 台湾 04 内网专线, server: cq-tw.07wi0kka34.download, port: 14110, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
-  - {name: 🇯🇵 日本 Tokyo 9, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33", server: 104.19.45.163, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56, server: nu9xp-g01.jp06-7c5a-vm0.entry.fr0307a.art, port: 28783, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇺🇸 United States_4, server: us04.mmyjiedian.com, port: 50004, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: 🇺🇸 _US_美国, server: channel.hopev2ray.link, port: 443, type: vmess, uuid: 9aaceca0-bc5b-49e6-a83f-088e14d94434, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess, headers: {Host: no1-vmess.sshmax.xyz}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55", server: 104.16.43.235, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇦🇺 澳洲 Melbourne 9, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68, server: sovma-g01.jp06-7c5a-vm0.entry.fr0307a.art, port: 28783, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 172.67.198.153, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h2.dspp.store, path: "", tls: true, mux: true}}
-  - {name: 🇯🇵 Japan_20, server: jp20.mmyjiedian.com, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: 🇺🇸 美国 Ashburn 2, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37", server: 104.16.39.33, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 United States_2, server: us02.mmyjiedian.com, port: 50502, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58, server: nm9ro-g01.jp06-7c5a-vm0.entry.fr0307a.art, port: 28783, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: "🇩🇪 德国02{移动|V2ray}", server: cm.awslcn.info, port: 25241, type: vmess, uuid: 1640b579-cff8-46bc-a657-3860b5455712, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}}
-  - {name: 🇦🇺 澳洲 Melbourne 7, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
-  - {name: 秒秒云.com, server: hk16.mmyjiedian.com, port: 10016, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31", server: 104.19.48.170, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇭🇰 香港 06 内网专线, server: cq-hk.07wi0kka34.download, port: 14106, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
-  - {name: 🇭🇰 Hong Kong_15, server: hk15.mmyjiedian.com, port: 10015, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: "🇺🇸 美国01{优化1|V2ray}", server: us1.awslcn.info, port: 25238, type: vmess, uuid: 1640b579-cff8-46bc-a657-3860b5455712, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.info}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57", server: 104.16.43.29, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇬🇧 英国 社会保险安全部, server: account.emofid.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: nDBZ6xm7IKdyXKnA}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48", server: 104.19.45.125, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
+  - {name: 🇦🇺 澳洲 Melbourne 3, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
   - {name: 🇭🇰 香港 03 内网专线, server: cq-hk.07wi0kka34.download, port: 14103, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 28, server: cdnikuancdnikuan.internetcdn.ggff.net, port: 8880, type: vmess, uuid: 78d1c947-7e97-4192-aba2-b0c4b1fdfdd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/microsoft?ed=2048", headers: {Host: cdnikuancdnikuan.internetcdn.ggff.net}}}
+  - {name: 🇺🇸 美国 Ashburn 10, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
+  - {name: 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19, server: ede474be-sb9ts0-sdlngq-1n7jq.sj.p5pv.com, port: 80, type: vmess, uuid: 85bce006-4885-11ee-8792-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ede474be-sb9ts0-sdlngq-1n7jq.sj.p5pv.com}}}
+  - {name: 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2, server: 104.21.25.32, port: 443, type: vmess, uuid: bcebbc9a-2383-4916-8d75-f37338f98530, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess}}
+  - {name: 🇰🇷 韩国 Seoul 2, server: kr-seoul.bptz.xyz, port: 45802, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
+  - {name: 🇺🇸 美国 Ashburn 4, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
+  - {name: 🇨🇳 台湾3|@ripaojiedian, server: 211.72.35.154, port: 2377, type: ss, cipher: chacha20-ietf-poly1305, password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv, plugin: obfs, plugin-opts: {mode: tls, host: ff5c0fb:30513}}
+  - {name: 🇸🇬 新加坡 01 内网专线, server: cq-sg.07wi0kka34.download, port: 14125, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇰🇷 韩国 02 内网专线, server: cq-other.07wi0kka34.download, port: 14122, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇯🇵 日本 02 内网专线, server: cq-jp.07wi0kka34.download, port: 14114, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71", server: 104.19.48.249, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
+  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4, server: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art, port: 28786, type: vmess, uuid: e147ce52-2598-31b0-950d-6b12c306b360, alterId: 1, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.40.84, port: 8880, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /d/65dd503.TG.WangCai2.WangCai_8:107690, headers: {Host: uk.moss.network}}}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/6VBhAkCtV4/, headers: {Host: us1cPZiz8nb.fzbqfrse.xyz}}}
+  - {name: 🇭🇰 香港 07 内网专线, server: cq-hk.07wi0kka34.download, port: 14101, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: "🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5", server: 7gqt4-g01.jp04-3771-vm0.entry.fr0307a.art, port: 444, type: vmess, uuid: 7a6cb59b-fbcd-3f50-b5f2-a2534326c4c8, alterId: 1, cipher: auto, tls: false}
+  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33", server: 104.19.45.163, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
   - {name: 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1, server: 104.21.30.254, port: 443, type: vmess, uuid: 6d9911b0-4e14-44fb-8883-52d14f550cca, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess}}
-  - {name: 🇸🇬 新加坡5-wap, server: sg1.awslcn.info, port: 25282, type: vmess, uuid: 1640b579-cff8-46bc-a657-3860b5455712, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.awslcn.info}}}
-  - {name: 🇨🇳 Taiwan_1, server: tw01.mmyjiedian.com, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/VDXcaM7r, headers: {Host: GWYp69Yujp2.yofnhkfc.xyz}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35", server: 104.16.42.189, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: "🇬🇧 英国02{移动|V2ray}", server: cm1.awslcn.info, port: 25240, type: vmess, uuid: 1640b579-cff8-46bc-a657-3860b5455712, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}}
-  - {name: 🇩🇪 德国|@ripaojiedian, server: 36.138.99.56, port: 40316, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 Tokyo 6, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52", server: 104.16.42.62, port: 2082, type: vmess, uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇺🇸 _US_美国 2, server: 23.157.40.66, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇰🇷 韩国 Seoul 6, server: kr-seoul.bptz.xyz, port: 45802, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
   - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77", server: 104.19.45.3, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇯🇵 Japan_17, server: jp17.mmyjiedian.com, port: 30017, type: ss, cipher: chacha20-ietf-poly1305, password: 294760b9-842c-4b68-a16c-e07879ecf09d}
-  - {name: 🇭🇰 香港 11 内网专线, server: cq-hk.07wi0kka34.download, port: 14105, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
-  - {name: "🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7", server: 104.16.58.159, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇩🇪 德国|@ripaojiedian, server: 36.138.99.56, port: 40316, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
+  - {name: 🇭🇰 香港 05 内网专线, server: cq-hk.07wi0kka34.download, port: 14105, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.45.107, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: ying.iepl1.me}}}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 34.220.201.161, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇰🇷 韩国 Seoul 7, server: kr-seoul.bptz.xyz, port: 45802, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
+  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48", server: 104.19.45.125, port: 2082, type: vmess, uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4, server: 156.249.18.74, port: 41000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca4690dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1711456913658, headers: {Host: www.11977475.xyz}}}
+  - {name: 🇰🇷 韩国 01 内网专线, server: cq-other.07wi0kka34.download, port: 14121, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37, server: 23.227.39.11, port: 8080, type: vmess, uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1IKYjV0r/}}
+  - {name: 🇭🇰 香港 06 内网专线, server: cq-hk.07wi0kka34.download, port: 14106, type: ss, cipher: aes-128-gcm, password: 7a9bd6f1-e70d-42d3-99a0-a3369208e80d}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 120.238.122.243, port: 40259, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本 Tokyo 5, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
+  - {name: 🇺🇸 美国 Ashburn 8, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
+  - {name: 🇺🇸 _US_美国, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 8c7b39d2-eb80-48d4-9471-76bddc5273c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾 04 内网专线
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 香港 06 内网专线
       - 🇭🇰 香港 03 内网专线
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -373,50 +310,41 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 61
-      - 🇨🇳 台湾 04 内网专线
-      - 🇯🇵 日本 Tokyo 9
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 56
-      - 🇺🇸 United States_4
-      - 🇺🇸 _US_美国
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 55
-      - 🇦🇺 澳洲 Melbourne 9
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 68
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 Japan_20
-      - 🇺🇸 美国 Ashburn 2
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 37
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇺🇸 United States_2
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 58
-      - 🇩🇪 德国02{移动|V2ray}
-      - 🇦🇺 澳洲 Melbourne 7
-      - 秒秒云.com
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 31
-      - 🇭🇰 香港 06 内网专线
-      - 🇭🇰 Hong Kong_15
-      - 🇺🇸 美国01{优化1|V2ray}
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 57
-      - 🇬🇧 英国 社会保险安全部
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇦🇺 澳洲 Melbourne 3
       - 🇭🇰 香港 03 内网专线
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇺🇸 美国 Ashburn 10
+      - 🇺🇸 美国 - 西雅圖 - PEG TECH INC - 19
+      - 🇫🇷 法国 - 巴黎 - Stark Industries Solutions LTD - 2
+      - 🇰🇷 韩国 Seoul 2
+      - 🇺🇸 美国 Ashburn 4
+      - 🇨🇳 台湾3|@ripaojiedian
+      - 🇸🇬 新加坡 01 内网专线
+      - 🇰🇷 韩国 02 内网专线
+      - 🇯🇵 日本 02 内网专线
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 71
+      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇭🇰 香港 07 内网专线
+      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 5
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 33
       - 🇧🇪 比利时 - 布鲁塞尔 - Stark Industries Solutions LTD - 1
-      - 🇸🇬 新加坡5-wap
-      - 🇨🇳 Taiwan_1
-      - 🇯🇵 日本 - 东京 - Eons Data Communications Limited - 1
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 35
-      - 🇬🇧 英国02{移动|V2ray}
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇯🇵 日本 Tokyo 6
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 52
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 韩国 Seoul 6
       - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 77
-      - 🇯🇵 Japan_17
-      - 🇭🇰 香港 11 内网专线
-      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 7
+      - 🇩🇪 德国|@ripaojiedian
+      - 🇭🇰 香港 05 内网专线
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇰🇷 韩国 Seoul 7
+      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 48
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 4
+      - 🇰🇷 韩国 01 内网专线
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 37
+      - 🇭🇰 香港 06 内网专线
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇯🇵 日本 Tokyo 5
+      - 🇺🇸 美国 Ashburn 8
+      - 🇺🇸 _US_美国
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
