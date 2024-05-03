@@ -5,481 +5,430 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇦 加拿大01|电信|1x, server: dxcdn03.hjlvps.top, port: 35218, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇭🇰 香港8|@ripaojiedian, server: 183.232.199.59, port: 15607, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾01|随机|1.2x, server: sjcdn04.hjlvps.top, port: 25268, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇲🇴 澳门02|冷门家宽|1.2x, server: lmcdn02.hjlvps.top, port: 37911, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇺🇸 美国-03, server: us03.jjjjjj.icu, port: 49584, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇦🇺 澳洲 Melbourne 8, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
   - {name: 🇸🇬 新加坡SG3, server: cyhxjc123456.51889188.xyz, port: 443, type: trojan, password: a36dfa0e-5a34-4e77-8513-87350f38e0a6, sni: sggg.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: sggg.cfyun01.sbs}}}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
-  - {name: 🇭🇰 香港-14_解锁, server: hk14.jjjjjj.icu, port: 53250, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: "🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76", server: 104.19.48.255, port: 2082, type: vmess, uuid: 753443e5-052c-4476-9cfa-3f434ff2f986, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54, server: kz0gh-g01.jp06-7c5a-vm0.entry.fr0307a.art, port: 28783, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇯🇵 日本02|联通|1x, server: ltcdn02.hjlvps.top, port: 21507, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇲🇴 澳门01|冷门|1x, server: lmcdn02.hjlvps.top, port: 20635, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 43.206.232.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 测试勿选Y, server: nn.auozzjs.lol, port: 23390, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇨🇳 四川省 联通数据上网公共出口, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
-  - {name: _QA_卡塔尔, server: 54.38.212.91, port: 80, type: vmess, uuid: 9e660680-e7bb-4725-f1c9-84d1fdbbf5c6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: www.gov.uk}}}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4, server: 7oi23-g04.jp06-7c5a-vm0.entry.fr0307a.art, port: 28786, type: vmess, uuid: e147ce52-2598-31b0-950d-6b12c306b360, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇸🇬 新加坡02|随机|1x, server: sjcdn04.hjlvps.top, port: 33169, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇸🇬 新加坡-7_解锁, server: nn.auozzjs.lol, port: 45071, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇺🇸 美国 Ashburn 5, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: mmsg16.micloud.buzz, port: 46016, type: vmess, uuid: e4e6bc46-a03f-47e3-94ba-fb535f3ab83d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmsg16.micloud.buzz}}}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: 7c42a3f8-cb73-4338-91e6-eef9e7346b12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/qYZue4zaWS, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}}
-  - {name: 🇰🇷 韩国 Seoul 10, server: kr-seoul.bptz.xyz, port: 45802, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64, server: r1bj2-g01.jp05-6786-vm0.entry.fr0307a.art, port: 46482, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: false}
-  - {name: 奈飞专用节点1, server: zf.miaosu666.xyz, port: 44583, type: ss, cipher: aes-128-gcm, password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69}
-  - {name: "🇺🇸 [三网优化测试]美国US1", server: rb.cfyun.top, port: 443, type: trojan, password: a36dfa0e-5a34-4e77-8513-87350f38e0a6, sni: us.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: us.cfyun01.sbs}}}
-  - {name: 距离下次重置剩余：6 天, server: zf.miaosu666.xyz, port: 44583, type: ss, cipher: aes-128-gcm, password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.172.219, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}}
-  - {name: 🇸🇬 新加坡流媒体解锁节点2, server: cyhxjc123456.51889188.xyz, port: 443, type: trojan, password: a36dfa0e-5a34-4e77-8513-87350f38e0a6, sni: sglmt.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: sglmt.cfyun01.sbs}}}
-  - {name: 🇳🇱 荷兰_住宅, server: nn.auozzjs.lol, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心, server: 129.146.102.22, port: 34017, type: ss, cipher: aes-256-gcm, password: N0k6tSWblI}
-  - {name: 🇦🇺 澳洲 Melbourne 1, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
-  - {name: 🇺🇸 _US_美国, server: 104.18.25.92, port: 2052, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws, headers: {Host: mysan2.jaquay22.workers.dev}}}
-  - {name: 🇨🇳 甘肃省兰州市 移动, server: zf.lalayun.cyou, port: 10163, type: vmess, uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: hk.lalayunssl.xyz}}}
-  - {name: 🇸🇬 新加坡流媒体解锁节点2 2, server: cyhxjc123456.51889188.xyz, port: 443, type: trojan, password: ce33c507-a74b-499b-a72f-1d879793a430, sni: sglmt.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: sglmt.cfyun01.sbs}}}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: sk01.trojanyyds.xyz, port: 443, type: trojan, password: 1640b579-cff8-46bc-a657-3860b5455712, sni: sk01.trojanyyds.xyz}
-  - {name: 🇩🇪 _DE_德意志联邦共和国, server: 23.158.56.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: 🇭🇰 香港-10_解锁, server: hk10.jjjjjj.icu, port: 14713, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29, server: fbi.gov, port: 80, type: vmess, uuid: 53e7d5a8-4958-4785-8d0f-02e911053be1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fbi.gov}}}
-  - {name: 🇨🇳 安徽省 移动数据上网公共出口, server: 112.29.94.23, port: 51003, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
-  - {name: 🇲🇾 马来西亚, server: nn.auozzjs.lol, port: 40720, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1, server: 104.21.25.98, port: 80, type: vmess, uuid: e2e25aa2-aab9-486c-9ab4-495bcbcea4d8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: 🇺🇸 美国02|电信|1x, server: dxcdn03.hjlvps.top, port: 48990, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: "🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74", server: q2ii0-g01.jp01-0986-vm0.entry.fr0307a.art, port: 21581, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇯🇵 日本 Tokyo 2, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: "🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73", server: 0yvlm-g01.jp01-0986-vm0.entry.fr0307a.art, port: 21581, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 172.99.190.198, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 🇨🇳 台湾家宽|电信|1.1x, server: dxcdn03.hjlvps.top, port: 42469, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇭🇰 香港4 - 高速中转, server: zf.miaosu666.xyz, port: 34647, type: ss, cipher: aes-128-gcm, password: 4d64c2f3-e70b-4516-90c6-83cf2ffe2b69}
-  - {name: 🇭🇰 香港-03_解锁, server: hk03.jjjjjj.icu, port: 44552, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.36.97.103, port: 12088, type: trojan, password: npxSWy1mw1ev, sni: appsvs.shop}
-  - {name: 🇧🇷 巴西|cf, server: hk.wish.ml, port: 2052, type: vmess, uuid: 543f15f1-96a8-4205-b4a2-1a1ae6766c12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: br_00.wish.ml}}}
-  - {name: 🇰🇷 韩国 Seoul 2, server: kr-seoul.bptz.xyz, port: 45802, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
-  - {name: 🇸🇬 新加坡SG6, server: cyhxjc123456.51889188.xyz, port: 443, type: trojan, password: a36dfa0e-5a34-4e77-8513-87350f38e0a6, sni: sgg.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: sgg.cfyun01.sbs}}}
-  - {name: 🇷🇺 俄罗斯, server: ru01.jjjjjj.icu, port: 40721, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
-  - {name: 🇩🇪 德国|@ripaojiedian, server: 36.138.99.56, port: 40316, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
-  - {name: 🇦🇺 澳洲 Melbourne 5, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
-  - {name: 🇯🇵 日本01|移动|1.2x, server: ydcdn01.hjlvps.top, port: 25120, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65, server: jkb5i-g01.jp05-6786-vm0.entry.fr0307a.art, port: 46482, type: vmess, uuid: 02bf7660-c38f-30b4-b740-2f9b4d717704, alterId: 1, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国01|联通|1x, server: ltcdn02.hjlvps.top, port: 39219, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: 🇮🇳 印度3|cf, server: hk.wish.ml, port: 2052, type: vmess, uuid: 543f15f1-96a8-4205-b4a2-1a1ae6766c12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
+  - {name: "🇮🇳 [trojan] 印度 01", server: ip0axv1bbsu02k7-in.1ytnode.com, port: 56382, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 172.67.198.153, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h2.dspp.store, path: "", tls: true, mux: true}}
+  - {name: 🇭🇰 香港_A3, server: hka3.jjjjjj.icu, port: 54003, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇰🇷 韩国-03, server: nn.auozzjs.lol, port: 49505, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇦🇷 阿根廷01|冷门|1x, server: lmcdn02.hjlvps.top, port: 16039, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: "🇭🇰 [trojan] 香港 12", server: ip0axv1bbsu02k7-hk.1ytnode.com, port: 56312, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇺🇸 美国6|cf|0x, server: hk.wish.ml, port: 2052, type: vmess, uuid: 543f15f1-96a8-4205-b4a2-1a1ae6766c12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
+  - {name: "🇺🇸 [三网优化测试]美国US2", server: rb.cfyun.top, port: 443, type: trojan, password: a36dfa0e-5a34-4e77-8513-87350f38e0a6, sni: us.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: us.cfyun01.sbs}}}
+  - {name: "🇬🇧 [trojan] 英国 05", server: ip0axv1bbsu02k7-uk.1ytnode.com, port: 56375, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: mmsg16.micloud.buzz, port: 46016, type: vmess, uuid: e4e6bc46-a03f-47e3-94ba-fb535f3ab83d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmsg16.micloud.buzz}}}
+  - {name: 🇯🇵 日本-09_解锁, server: jp09.jjjjjj.icu, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇺🇸 美国01|移动|1x, server: ydcdn01.hjlvps.top, port: 25118, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1, server: 87.120.204.6, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: "🇹🇷 [trojan] 土耳其 01", server: ip0axv1bbsu02k7-tr.1ytnode.com, port: 56384, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇯🇵 日本 Tokyo 2, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: iqiyi.com}}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
+  - {name: "🇭🇰 [trojan] 香港 05", server: ip0axv1bbsu02k7-hk.1ytnode.com, port: 56305, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: "🇭🇰 [trojan] 香港 17", server: ip0axv1bbsu02k7-hk.1ytnode.com, port: 56317, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: "🇨🇳 [trojan] 台湾 04", server: ip0axv1bbsu02k7-tw.1ytnode.com, port: 56324, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: "🇺🇸 [trojan] 美国 02", server: ip0axv1bbsu02k7-us.1ytnode.com, port: 56352, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 112.29.94.23, port: 11210, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
+  - {name: "🇨🇳 [trojan] 台湾 07", server: ip0axv1bbsu02k7-tw.1ytnode.com, port: 56327, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国-02, server: nn.auozzjs.lol, port: 40702, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇵🇭 菲律宾01|冷门|1x, server: lmcdn02.hjlvps.top, port: 10232, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: "🇻🇳 [trojan] 越南 02", server: ip0axv1bbsu02k7-vn.1ytnode.com, port: 56379, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
   - {name: 🇭🇰 香港_A2, server: hka2.jjjjjj.icu, port: 54002, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇭🇰 香港02|随机|1.2x, server: sjcdn04.hjlvps.top, port: 27586, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: 🇨🇭 瑞士1|cf, server: hk.wish.ml, port: 2052, type: vmess, uuid: 543f15f1-96a8-4205-b4a2-1a1ae6766c12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ch1.wish.ml}}}
+  - {name: 🇫🇷 法国_住宅, server: fr01.jjjjjj.icu, port: 40713, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇭🇰 香港_A4, server: hka4.jjjjjj.icu, port: 54004, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇦🇺 澳洲 Melbourne 9, server: au-melbourne.bptz.xyz, port: 62602, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
+  - {name: 🇭🇰 香港-04_解锁, server: hk04.jjjjjj.icu, port: 45465, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: "🇵🇭 [trojan] 菲律宾 01", server: ip0axv1bbsu02k7-ph.1ytnode.com, port: 56380, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇨🇦 加拿大01|移动|1x, server: ydcdn01.hjlvps.top, port: 25318, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
+  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 43.206.232.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: 7c42a3f8-cb73-4338-91e6-eef9e7346b12, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/qYZue4zaWS, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}}
+  - {name: 🇺🇸 美国 Ashburn 6, server: us-ashburn.bptz.xyz, port: 23252, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
+  - {name: 本机场电报群组：@bp_tz, server: jp-tokyo.bptz.xyz, port: 22552, type: vmess, uuid: 015b6684-496a-4f08-ba92-446f91fd402e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: iqiyi.com}}}
+  - {name: "🇹🇭 [trojan] 泰国 02", server: ip0axv1bbsu02k7-th.1ytnode.com, port: 56377, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: "🇰🇷 [trojan] 韩国02", server: ip0axv1bbsu02k7-kr.1ytnode.com, port: 56362, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇭🇰 香港-14_解锁, server: hk14.jjjjjj.icu, port: 53250, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 54.199.91.61, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇦 加拿大, server: ca01.jjjjjj.icu, port: 40717, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: 🇸🇬 新加坡SG5, server: cyhxjc123456.51889188.xyz, port: 443, type: trojan, password: ce33c507-a74b-499b-a72f-1d879793a430, sni: sgg.cfyun01.sbs, skip-cert-verify: false, network: ws, ws-opts: {path: /CFYUN, headers: {Host: sgg.cfyun01.sbs}}}
+  - {name: 🇺🇸 美国-01, server: us01.jjjjjj.icu, port: 40702, type: ss, cipher: chacha20-ietf-poly1305, password: 9c2bf54f-5f13-4d71-b866-3a3f23c4d86b}
+  - {name: "🇺🇸 [trojan] 美国 01", server: ip0axv1bbsu02k7-us.1ytnode.com, port: 56351, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇩🇪 _DE_德意志联邦共和国, server: 23.158.56.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
+  - {name: "🇺🇸 [trojan] 美国 08", server: ip0axv1bbsu02k7-us.1ytnode.com, port: 56358, type: trojan, password: cd7239af-77ad-4628-a871-00acfa219f02, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4, server: 141.164.62.146, port: 80, type: vmess, uuid: 4400260c-f088-4748-af5c-cacce1156de0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港-10_解锁
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇭🇰 [trojan] 香港 12
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇭🇰 香港_A4
+      - 🇭🇰 香港-04_解锁
+      - 🇭🇰 香港-14_解锁
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -495,67 +444,59 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇨🇳 台湾01|随机|1.2x
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇺🇸 美国-03
-      - 🇦🇺 澳洲 Melbourne 8
       - 🇸🇬 新加坡SG3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港-14_解锁
-      - 🇸🇬 新加坡 - 新加坡 - DigitalOcean, LLC - 76
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 54
-      - 🇯🇵 日本02|联通|1x
-      - 🇲🇴 澳门01|冷门|1x
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 测试勿选Y
-      - 🇨🇳 四川省 联通数据上网公共出口
-      - _QA_卡塔尔
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 4
-      - 🇸🇬 新加坡02|随机|1x
-      - 🇸🇬 新加坡-7_解锁
-      - 🇺🇸 美国 Ashburn 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇰🇷 韩国 Seoul 10
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 64
-      - 奈飞专用节点1
-      - 🇺🇸 [三网优化测试]美国US1
-      - 距离下次重置剩余：6 天
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇸🇬 新加坡流媒体解锁节点2
-      - 🇳🇱 荷兰_住宅
-      - 🇺🇸 美国 亚利桑那州凤凰城Oracle云计算数据中心
-      - 🇦🇺 澳洲 Melbourne 1
-      - 🇺🇸 _US_美国
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 新加坡流媒体解锁节点2 2
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇩🇪 _DE_德意志联邦共和国
-      - 🇭🇰 香港-10_解锁
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 29
-      - 🇨🇳 安徽省 移动数据上网公共出口
-      - 🇲🇾 马来西亚
-      - 🇸🇪 瑞典 - 斯德哥尔摩 - Stark Industries Solutions LTD - 1
-      - 🇺🇸 美国02|电信|1x
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 74
-      - 🇯🇵 日本 Tokyo 2
-      - 🇯🇵 日本 - 东京 - Amazon.com, Inc. - 73
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇭🇰 香港4 - 高速中转
-      - 🇭🇰 香港-03_解锁
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇧🇷 巴西|cf
-      - 🇰🇷 韩国 Seoul 2
-      - 🇸🇬 新加坡SG6
-      - 🇷🇺 俄罗斯
-      - 🇩🇪 德国|@ripaojiedian
-      - 🇦🇺 澳洲 Melbourne 5
-      - 🇯🇵 日本01|移动|1.2x
-      - 🇯🇵 日本 - 东京 - Amazon Technologies Inc. - 65
-      - 🇰🇷 韩国01|联通|1x
+      - 🇮🇳 印度3|cf
+      - 🇮🇳 [trojan] 印度 01
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港_A3
+      - 🇰🇷 韩国-03
+      - 🇦🇷 阿根廷01|冷门|1x
+      - 🇭🇰 [trojan] 香港 12
+      - 🇺🇸 美国6|cf|0x
+      - 🇺🇸 [三网优化测试]美国US2
+      - 🇬🇧 [trojan] 英国 05
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本-09_解锁
+      - 🇺🇸 美国01|移动|1x
+      - 🇯🇵 日本 - 东京 - G-Core Labs S.A. - 1
+      - 🇹🇷 [trojan] 土耳其 01
+      - 🇯🇵 日本 Tokyo 2
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 [trojan] 香港 05
+      - 🇭🇰 [trojan] 香港 17
+      - 🇨🇳 [trojan] 台湾 04
+      - 🇺🇸 [trojan] 美国 02
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 [trojan] 台湾 07
+      - 🇰🇷 韩国-02
+      - 🇵🇭 菲律宾01|冷门|1x
+      - 🇻🇳 [trojan] 越南 02
       - 🇭🇰 香港_A2
+      - 🇭🇰 香港02|随机|1.2x
+      - 🇨🇭 瑞士1|cf
+      - 🇫🇷 法国_住宅
+      - 🇭🇰 香港_A4
+      - 🇦🇺 澳洲 Melbourne 9
+      - 🇭🇰 香港-04_解锁
+      - 🇵🇭 [trojan] 菲律宾 01
+      - 🇨🇦 加拿大01|移动|1x
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国 Ashburn 6
+      - 本机场电报群组：@bp_tz
+      - 🇹🇭 [trojan] 泰国 02
+      - 🇰🇷 [trojan] 韩国02
+      - 🇭🇰 香港-14_解锁
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇨🇦 加拿大
+      - 🇸🇬 新加坡SG5
+      - 🇺🇸 美国-01
+      - 🇺🇸 [trojan] 美国 01
+      - 🇩🇪 _DE_德意志联邦共和国
+      - 🇺🇸 [trojan] 美国 08
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 4
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
