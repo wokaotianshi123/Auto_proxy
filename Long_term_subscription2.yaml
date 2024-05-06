@@ -5,1342 +5,1270 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|, server: 35.88.24.114, port: 14599, type: trojan, password: pgE8FOeX47re, skip-cert-verify: true}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|, server: 146.56.37.200, port: 8080, type: vmess, uuid: fa29b2b4-1bb2-41fe-a686-21fa75cc39dc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|, server: jp01.fredericamelody.online, port: 80, type: vmess, uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp01.fredericamelody.online}}}
-  - {name: "🇭🇰 [ss]香港-06", server: nbcm01.qingqiu.buzz, port: 10945, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|, server: martina.quest, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: martina.quest}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|, server: 142.4.98.4, port: 38002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/182812170423}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|, server: wuxiantest.buzz, port: 8443, type: vmess, uuid: 794c13ec-a9b2-45c7-d6d1-e5a7a9c262f8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /794c13ec-a9b2-45c7-d6d1-e5a7a9c262f8, headers: {Host: wuxiantest.buzz}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2, server: 104.18.107.58, port: 80, type: vmess, uuid: 9fd78856-60a0-3dda-a997-835121c237cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in5810718}}
-  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|", server: 104.19.45.117, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|, server: 183.240.220.84, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:ZxbF8f, obfs-param: e0e3524.microsoft.com}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2, server: 38.11.60.86, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/153503351118}}
-  - {name: 🇺🇸 United States_4, server: us04.mmyjiedian.com, port: 50004, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇹🇷 土耳其01|冷门|1x, server: lmcdn01.hjlvps.top, port: 34831, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|", server: 104.16.61.8, port: 443, type: vmess, uuid: 251780c1-1501-43b3-be2a-d144a20d479a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /Nbs2DSTSkFW6MrrFQHeSDQ7, headers: {Host: hdfy5d.foriran.nl}}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|, server: 54.169.106.243, port: 16588, type: trojan, password: ON9LjdTrTM6N, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2, server: us-phoenix-oracle-3e4543.ip1.shop, port: 46666, type: vmess, uuid: f0f067fe-8e6d-4d95-816b-601038fd5876, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us-phoenix-oracle-3e4543.ip1.shop}}}
-  - {name: 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|, server: 103.248.61.184, port: 10000, type: vmess, uuid: 797f16d0-f021-11ee-891d-bf3e623a76cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 102, server: 104.19.229.207, port: 2052, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in20722919, headers: {Host: 100.100.17.229.db-link02.top}}}
-  - {name: 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|, server: 194.147.35.12, port: 10000, type: vmess, uuid: 359a94fc-ea55-11ee-9823-3721d3e4696d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: ">🇻🇳 VN|Ms|0404|TG@FProxies|", server: 103.81.84.164, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|, server: 172.67.186.25, port: 443, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /blog}}
-  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|, server: 170.64.129.128, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|, server: 35.165.46.42, port: 14608, type: trojan, password: AlFerpowtOJ6, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 107, server: 104.17.62.48, port: 2082, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in486217, headers: {Host: 100.100.17.62.cn-db.top}}}
-  - {name: 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|, server: uk1.iepl.cooc.icu, port: 35605, type: ss, cipher: aes-128-gcm, password: 7fff2d12-863c-4387-8e8c-ab60b864abf6}
-  - {name: 🇮🇳 印度 原生 04, server: in-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: in-d.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2, server: kr03.nathaniatheodora.cloud, port: 80, type: vmess, uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.nathaniatheodora.cloud}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3, server: myrna.fun, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: myrna.fun}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|, server: gy.58n.net, port: 11215, type: trojan, password: c84a776b-f2cf-3dfd-9e8d-2ae6838a16a9, skip-cert-verify: true}
-  - {name: 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|, server: 192.99.247.52, port: 10000, type: vmess, uuid: 4a429cb2-ea53-11ee-ac11-4fc3babcf446, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2, server: gcdddd0003.likeone.lol, port: 26681, type: trojan, password: 06c3feb2-d98d-4f1b-8a53-20f0a7f1d23e, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93, server: fbi.gov, port: 80, type: vmess, uuid: dc2a31fe-3897-4d45-ac4e-ab42897df12f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fbi.gov}}}
-  - {name: 🇯🇵 Japan_7, server: jp07.mmyjiedian.com, port: 30007, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3, server: 38.75.136.106, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 127, server: cdn3.internetcdn.ggff.net, port: 8880, type: vmess, uuid: 99a516c3-0d48-4c37-b0db-fd3e25e628b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/microsoft?ed=2048", headers: {Host: cdn3.internetcdn.ggff.net}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4, server: 38.75.137.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|, server: gy.58n.net, port: 20306, type: trojan, password: a458031d-c3a3-3255-a5f9-606adbc5adb2, skip-cert-verify: true}
-  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2", server: tw02.mmyjiedian.com, port: 40007, type: ss, cipher: chacha20-ietf-poly1305, password: 8ee5ce59-a7e2-4850-b929-c903c653bf72}
-  - {name: 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2, server: 162.159.142.201, port: 80, type: vmess, uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1, server: 172.67.204.84, port: 80, type: vmess, uuid: 844b31ab-8270-40aa-9c9a-d07ef2af591e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|, server: 3.99.183.217, port: 14577, type: trojan, password: lToiWZGj2zOJ, skip-cert-verify: true}
-  - {name: ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|", server: us4e-20240111.v2freevpn.com, port: 80, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v149-dskds65, headers: {Host: us4e-20240111.v2freevpn.com}}}
-  - {name: ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|", server: dgyd1.pmxu.link, port: 36735, type: vmess, uuid: 770bfe86-1215-4bf0-9061-15f66b012f69, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|, server: 156.225.67.249, port: 41000, type: vmess, uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/112911340830}}
-  - {name: "🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54", server: 11.v2-ray.cyou, port: 23611, type: vmess, uuid: 95e84d76-287a-3b71-b8ab-cf1b6adf76a2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 11.v2-ray.cyou}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3, server: gcdddd0003.likeone.lol, port: 48560, type: trojan, password: 1699ed4e-c100-4b80-ac24-c5a989956d5c, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|, server: gcdddd0005.likeone.lol, port: 26023, type: trojan, password: 23bbe239-8726-4d0d-8a5b-2f7941fb38c4, sni: hk02.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3, server: 34.227.18.95, port: 12600, type: trojan, password: aVHXg1CYk94E, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾 02-中转, server: tw.lianjianode.cc, port: 21004, type: vmess, uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hinet, headers: {Host: hinet.luodi.xyz}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|, server: kr03.36routes.online, port: 80, type: vmess, uuid: 42e97605-d7cb-4b90-a5e5-aeddefda4b2d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.36routes.online}}}
-  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|, server: gy.58n.net, port: 20302, type: trojan, password: f28b3366-4a8d-3c1c-9707-40bacda81f36, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾家宽|电信|1.1x, server: dxcdn03.hjlvps.top, port: 42469, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|, server: 51.77.200.55, port: 10000, type: vmess, uuid: 605ce7c8-ea53-11ee-853b-ab6a7c4c6b87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2, server: 3.99.185.26, port: 16568, type: trojan, password: I)7Df8Zh4ZoU, skip-cert-verify: true}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|, server: 167.71.32.129, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113, server: us-phoenix-oracle-3e4543.ip1.shop, port: 46666, type: vmess, uuid: 5dd37d4f-7726-40e8-9405-f80c702073be, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us-phoenix-oracle-3e4543.ip1.shop}}}
-  - {name: ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|", server: eagle03.t3o5wy.xyz, port: 30032, type: ss, cipher: chacha20-ietf-poly1305, password: 5JEJOe0PEGogvvg4}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4, server: 99.84.50.235, port: 443, type: vmess, uuid: eadbc43e-e26e-415b-bab6-fb1fba70bf63, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /stream}}
-  - {name: 🇸🇬 新加坡 原生 01, server: sg-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: sg-a.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4, server: 142.4.101.166, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/220911222100}}
-  - {name: 🇯🇵 日本 原生 03, server: jp-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: jp-e.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 Japan_8, server: jp08.mmyjiedian.com, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|, server: kr2.iepl.cooc.icu, port: 35102, type: ss, cipher: aes-128-gcm, password: d94eb893-ad6d-42a7-a02c-3b164c16fd64}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5, server: 142.171.207.122, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/121008090914}}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: tw.lianjianode.cc, port: 21003, type: vmess, uuid: 4087c4c8-5c08-4dfe-8dd1-2dc20b6d9193, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hinet, headers: {Host: hinet.luodi.xyz}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2, server: tanz-kr.01byx31qzn.download, port: 35008, type: vmess, uuid: e9630109-04ef-394b-8f7f-1baee9f07532, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1", server: 218.204.178.2, port: 13486, type: vmess, uuid: 61b81abc-320b-49c1-893c-f3ddd45880de, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: waphk.xlb8.eu.org}}}
-  - {name: ">🇻🇳 VN|Ms|0329|TG@FProxies|", server: max.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /AnhBin, headers: {Host: max.flash5g.com}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3, server: kr02.hajimihajimihajimi.online, port: 80, type: vmess, uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr02.hajimihajimihajimi.online}}}
-  - {name: 🇨🇦 直连 加拿大, server: can-a.speedyweb.xyz, port: 443, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: can-a.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: eb950f7b-a679-4186-803b-eed47a4afc29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: cfcdn1.sanfencdn9.com}}}
-  - {name: 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|, server: 13.212.114.96, port: 12588, type: trojan, password: Waq2yHwg6nXq, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国01|联通|1x, server: ltcdn02.hjlvps.top, port: 39219, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|, server: jp03.oliviapretty.online, port: 80, type: vmess, uuid: b5f40979-0200-428c-8ae1-f8c981560dd3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.oliviapretty.online}}}
-  - {name: 🇯🇵 Japan_18, server: jp18.mmyjiedian.com, port: 30018, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2", server: cf443.duduskying.cloudns.biz, port: 443, type: vmess, uuid: 142afa70-4f58-4bb9-bd81-7894ec9ae5d6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /322, headers: {Host: cf443.duduskying.cloudns.biz}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|, server: 52.69.81.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇳 台湾家宽|联通|1.1x, server: ltcdn02.hjlvps.top, port: 23584, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|, server: sg02.handsomequinlan.online, port: 80, type: vmess, uuid: b363045d-0589-4cf3-8d02-209e406853c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02.handsomequinlan.online}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5, server: 107.149.119.43, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/040318142507}}
-  - {name: 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|, server: tw2.iepl.cooc.icu, port: 35110, type: ss, cipher: aes-256-gcm, password: 18b07143-6e6c-4a68-82f5-938950d24931}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2, server: 19.v2-ray.cyou, port: 23619, type: vmess, uuid: e6a214de-d889-36c8-bd23-45fa67c3df9c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 19.v2-ray.cyou}}}
-  - {name: "🇬🇧 [ss]英国-03", server: szcm01.qingqiu.buzz, port: 55660, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇨🇦 加拿大01|电信|1x, server: dxcdn03.hjlvps.top, port: 35218, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2, server: 170.64.224.49, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6, server: us03.freeflyingcloud.xyz, port: 30018, type: trojan, password: fc7bd4c1-c49e-4f1f-ba5d-afa619df7865, sni: us03.freeflyingcloud.xyz, skip-cert-verify: true}
-  - {name: "🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133", server: 15.v2-ray.cyou, port: 23615, type: vmess, uuid: 95e84d76-287a-3b71-b8ab-cf1b6adf76a2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 15.v2-ray.cyou}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|, server: zula.ir, port: 80, type: vmess, uuid: 802c1068-ee2b-4c87-b49d-e7f3043e75d2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: zula.ir}}}
-  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3", server: us02.mmyjiedian.com, port: 50502, type: ss, cipher: chacha20-ietf-poly1305, password: 8ee5ce59-a7e2-4850-b929-c903c653bf72}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4, server: kr03.philbertbeguiling.online, port: 80, type: vmess, uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.philbertbeguiling.online}}}
-  - {name: 🇯🇵 直连 日本, server: jp-a.speedyweb.xyz, port: 443, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: jp-a.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 秒秒云.me, server: hk14.mmyjiedian.com, port: 10014, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2, server: 142.0.128.133, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/060727261335}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2, server: 54.248.173.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5, server: 137.175.8.8, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/300822220334}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2, server: 80.240.112.43, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6, server: nicola.pics, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: nicola.pics}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7, server: 38.173.196.24, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/000518060511}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2, server: 192.74.240.105, port: 31000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/042517333312}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|, server: 54.166.27.208, port: 14609, type: trojan, password: N614Wj60M(Ia, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125, server: fbi.gov, port: 80, type: vmess, uuid: 50d09417-7ebf-41bc-93da-f86ced0e7426, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fbi.gov}}}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|, server: 156.225.67.152, port: 41002, type: vmess, uuid: a7fa8f14-4fb6-4280-9005-d6bbe99c5da9, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/282018252526}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|, server: 52.29.134.251, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|, server: n00005.bzdqsmzngpyyng.sbs, port: 40276, type: ss, cipher: chacha20-ietf-poly1305, password: b32d65da-8a7f-4665-a8b7-8b2889152084}
   - {name: 🇺🇸 United States_2, server: us02.mmyjiedian.com, port: 50502, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|, server: 103.172.116.79, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
-  - {name: "🇨🇳 [ss]台湾-07", server: nbct02.qingqiu.buzz, port: 39756, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3, server: 3.67.71.62, port: 16593, type: trojan, password: ffCAovtTek9O, skip-cert-verify: true}
-  - {name: 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3, server: 162.159.200.6, port: 80, type: vmess, uuid: 002cdc9f-63ae-4b3f-8720-3b3f760b487d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3, server: 64.23.202.93, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2", server: 789rmi3z.chytenciz-jgufv-sg02.my777999.top, port: 37998, type: ss, cipher: chacha20-ietf-poly1305, password: 861de7db-5ada-4b36-903c-0ad6ba25d75a}
-  - {name: 🇸🇬 新加坡01|IPv6|1.1x, server: ipv6cdn01.hjlvps.top, port: 43341, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2, server: 18.142.56.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|, server: 172.105.162.76, port: 443, type: vmess, uuid: bc835ac7-f117-43ca-9379-1e88a4da14e4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray-vmess/tls}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2, server: df.xiguajiasu.xyz, port: 45002, type: trojan, password: 4ea1d07c-41c2-42b5-954d-414fee051856, skip-cert-verify: true}
-  - {name: 🇭🇰 香港02|实验限时|0.6x, server: cfcdn.ssgg202.top, port: 8080, type: vmess, uuid: c026971a-d299-4f5c-97ed-9acfe4b8849b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/djdiksndhxuxjx?ed=2048", headers: {Host: zlhk02.ttcc99.top}}}
-  - {name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121, server: www.glassdoor.com, port: 80, type: vmess, uuid: 50d09417-7ebf-41bc-93da-f86ced0e7426, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.glassdoor.com}}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3, server: 13.250.57.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|, server: 156.225.67.116, port: 41000, type: vmess, uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/352628282308}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 7818b3a0-7c8f-373e-a6e7-05f3d6c10ac0, alterId: 2, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9, server: 172.67.235.237, port: 443, type: vmess, uuid: f24bba0f-8656-44f8-b21e-a0e3a190c4c5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /df97b21e-3943-4865-af18-b5ea9676b037}}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2, server: 51.83.98.78, port: 10000, type: vmess, uuid: c72d0fb2-ea55-11ee-bebd-af21e4a38d2c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|, server: 104.19.237.47, port: 2083, type: vmess, uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /db00}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3, server: 7z7j3p03.m3c5wy.xyz, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: e30175b8-66ea-4dd1-a6cf-efc28bc7cc80}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3, server: 198.2.195.5, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/093401320514}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|, server: 104.18.205.46, port: 2083, type: vmess, uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /db00}}
-  - {name: 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|, server: www.teletrans.ro, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /obdii.cfd/linkws, headers: {Host: www.teletrans.ro}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|, server: 45.76.99.204, port: 443, type: vmess, uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2, server: 172.64.129.210, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4, server: 38.33.46.68, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/253012161818}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2, server: kr2.iepl.cooc.icu, port: 35102, type: ss, cipher: aes-128-gcm, password: 7fff2d12-863c-4387-8e8c-ab60b864abf6}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4, server: gcdddd0005.likeone.lol, port: 48560, type: trojan, password: 3eb4e1a8-260b-48a8-8092-e666dfa1db1a, skip-cert-verify: true}
-  - {name: ">🇻🇳 VN|Ms|0404|TG@FProxies| 2", server: 103.149.87.45, port: 443, type: trojan, password: 2f9c3997-a11b-4a0c-84dd-845a596ac76f, skip-cert-verify: true}
-  - {name: 🇨🇦 加拿大01-中转, server: ca.lianjianode.cc, port: 21034, type: vmess, uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hongkong, headers: {Host: hk1.luodi.xyz}}}
-  - {name: 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|, server: gcdddd0003.likeone.lol, port: 58464, type: trojan, password: a50d2fca-5e2e-4906-a5b3-8254431ae41d, skip-cert-verify: true}
-  - {name: ">🇻🇳 VN|Ls|0329|TG@FProxies|", server: nc.cm.xiaomi-api.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: 739f0fb8-ef76-43a6-8175-0a977188e85c}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4, server: 161.35.49.73, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|, server: gy.58n.net, port: 20305, type: trojan, password: ef5a2a39-90c2-328f-b14e-c6eeb11ec010, skip-cert-verify: true}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 183.249.207.244, port: 22386, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
-  - {name: 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|, server: 172.67.204.84, port: 80, type: vmess, uuid: e81b4dfa-6364-4578-8dd7-174c441168d5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: 距离下次重置剩余：25 天, server: bgroup.node1.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: 2155145a-b1b5-443a-8977-670f6bd10f02, skip-cert-verify: false}
-  - {name: 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2, server: gcdddd0001.likeone.lol, port: 47557, type: trojan, password: 5a138d41-61c6-4f2c-b755-b7cd3610e90a, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7, server: 185.214.103.249, port: 8002, type: vmess, uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /db00}}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3, server: fr01.freeflyingcloud.xyz, port: 30502, type: trojan, password: 80945c41-4b33-4b33-9d34-ba22fac6be0d, sni: fr01.freeflyingcloud.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5, server: 23.227.38.120, port: 8080, type: vmess, uuid: 969f1909-c0d3-4c30-813d-3aec5c838b7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1IKYjV0r/}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.192.1, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: sherasheba.com, network: ws, ws-opts: {path: /6b777a91, headers: {Host: sherasheba.com}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3, server: gy.58n.net, port: 45168, type: trojan, password: ef5a2a39-90c2-328f-b14e-c6eeb11ec010, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|, server: jp.lianjianode.cc, port: 21011, type: vmess, uuid: 0d67f300-bfd2-4e63-bb61-20ed80f88ebb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /japan, headers: {Host: jp.lianjianode.cc}}}
-  - {name: 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|, server: gcdddd0005.likeone.lol, port: 64850, type: trojan, password: 3eb4e1a8-260b-48a8-8092-e666dfa1db1a, skip-cert-verify: true}
-  - {name: 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|, server: gy.58n.net, port: 21247, type: trojan, password: a458031d-c3a3-3255-a5f9-606adbc5adb2, skip-cert-verify: true}
-  - {name: "🇦🇪 [ss]阿联酋-03", server: nbcm01.qingqiu.buzz, port: 44988, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3, server: dgyd1.pmxu.link, port: 52235, type: vmess, uuid: 20dec38e-0f37-359d-86e5-32c0ead42698, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 91, server: 104.17.191.35, port: 2095, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in3519117, headers: {Host: 100.100.17.191.db-link02.top}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4, server: 172.67.204.78, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|, server: 162.159.244.216, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6, server: 142.4.96.67, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/180519160505}}
-  - {name: "🇺🇸 [ss]美国-02", server: 04-beiju.gangbi.vip, port: 38406, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8, server: 104.18.107.64, port: 80, type: vmess, uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: px-002.xiaoxiaobujidao.xyz}}}
-  - {name: "🇺🇸 [ss]美国-01", server: 03-neibuyong.gangbi.vip, port: 58777, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106, server: 46.3.82.198, port: 443, type: vmess, uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2, server: gcdddd0005.likeone.lol, port: 51031, type: trojan, password: 21ea6fa6-ecb9-4d1f-8915-53b926270ed9, skip-cert-verify: true}
+  - {name: 🇯🇵 Japan_6, server: jp06.mmyjiedian.com, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|, server: 192.74.236.157, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/261713341930}}
+  - {name: 🇯🇵 日本 原生 01, server: jp-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: jp-a.speedyweb.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2, server: gy.58n.net, port: 30712, type: trojan, password: 7a4c0f3b-be5a-3be2-b158-b318ee26ad33, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 74, server: 104.20.225.30, port: 8080, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in3022520, headers: {Host: 100.100.17.225.db-link02.top}}}
+  - {name: ">🇻🇳 VN|Hs|0404|TG@FProxies|", server: gcdddd0003.likeone.lol, port: 16343, type: trojan, password: 3eb4e1a8-260b-48a8-8092-e666dfa1db1a, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|, server: 1c7s2g01.m3c5wy.xyz, port: 31020, type: ss, cipher: chacha20-ietf-poly1305, password: e30175b8-66ea-4dd1-a6cf-efc28bc7cc80}
+  - {name: 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2, server: free.6vczxw.xyz, port: 30874, type: vmess, uuid: 6f5e7047-13a6-3ef0-b749-6abb41280331, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|, server: 165.22.143.42, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|, server: kr04.victorialouisa.online, port: 80, type: vmess, uuid: ecbc3680-a5f0-4ac2-b790-2ed6e72564f3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr04.victorialouisa.online}}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|", server: reFVbb.gov.goldliond.top, port: 50181, type: vmess, uuid: 3aa5da73-fa0b-41a7-85e3-df10579130ad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|, server: martina.quest, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: martina.quest}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|, server: 13.229.115.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|, server: 38.11.218.180, port: 37001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/101328293103}}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 61, server: 104.16.2.248, port: 2086, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in248216, headers: {Host: 100.100.17.2.db-link01.top}}}
+  - {name: 🇬🇧 _GB_英国, server: 18.134.191.135, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|, server: 170.64.129.128, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2, server: 170.64.224.72, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|, server: 104.19.14.35, port: 2083, type: vmess, uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /db00}}
+  - {name: "🇵🇱 [波兰]", server: mb2.aand.site, port: 34097, type: ss, cipher: chacha20-ietf-poly1305, password: c440808b-a8ad-484a-90c2-4399d5a26dbe}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|, server: 3.127.98.132, port: 16599, type: trojan, password: hoXBT7y8V0Kr, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2, server: 142.0.134.241, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3, server: n00005.bzdqsmzngpyyng.sbs, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 67b35074-01b7-4767-87b2-c8b3b586707b}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 87, server: 104.17.153.131, port: 8880, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in13115317, headers: {Host: 100.100.17.153.cn-db.top}}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|, server: 80.240.124.9, port: 443, type: vmess, uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /bb}}
+  - {name: 🇭🇰 Hong Kong_12, server: hk12.mmyjiedian.com, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|, server: 87.106.198.110, port: 10000, type: vmess, uuid: 1a3272aa-059b-11ef-ab4d-23ac5a2d27c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|, server: 170.64.143.145, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2, server: gcdddd0005.likeone.lol, port: 26023, type: trojan, password: 71ad05d9-e155-42e6-828c-5ba962814412, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|", server: cf443.duduskying.cloudns.biz, port: 443, type: vmess, uuid: 142afa70-4f58-4bb9-bd81-7894ec9ae5d6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /322, headers: {Host: cf443.duduskying.cloudns.biz}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4, server: gcdddd0003.likeone.lol, port: 48560, type: trojan, password: 1699ed4e-c100-4b80-ac24-c5a989956d5c, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|, server: sg.lydurlclub.top, port: 443, type: trojan, password: 40aabdf7-2eac-4b2e-b7b7-25ffa865be36, skip-cert-verify: true}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3, server: 170.64.205.191, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5, server: cm3-cdn.kfcvme50.life, port: 80, type: vmess, uuid: f5222b09-a6fd-49da-bae2-471eaac20c51, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cm3-cdn.kfcvme50.life}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|, server: 14.v2-ray.cyou, port: 23614, type: vmess, uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 14.v2-ray.cyou}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|, server: 87.120.204.126, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|, server: p233.panda004.net, port: 50942, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2, server: 38.14.100.183, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120301270307}}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2, server: 104.17.46.104, port: 443, type: vmess, uuid: b8b384d0-007a-4355-affe-75aaf63db6b6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/ixnbvws?ed=2048"}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|, server: 18.194.23.228, port: 16573, type: trojan, password: LPi(igq2rPfb, skip-cert-verify: true}
+  - {name: California Tj - B Group, server: bgroup.node5.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: 2155145a-b1b5-443a-8977-670f6bd10f02, skip-cert-verify: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6, server: n00003.bzdqsmzngpyyng.sbs, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: 56ee3c06-52a3-49a8-93d2-1d581c7f36f4}
+  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|", server: 104.20.56.6, port: 443, type: vmess, uuid: 11a997ab-bc49-49a3-ce07-e5e1f298adad, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|, server: 142.0.128.164, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/302109022509}}
+  - {name: ">🇻🇳 VN|Ms|0404|TG@FProxies|", server: max1.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /AnhBin, headers: {Host: max1.flash5g.com}}}
+  - {name: 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|, server: 162.159.142.203, port: 80, type: vmess, uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7, server: china3.one.edu.kg, port: 12055, type: trojan, password: 694d996c-ce03-4e23-8722-54c9ed7972c4, sni: cdn.alibaba.com, skip-cert-verify: true}
+  - {name: 🇺🇸 United States_6, server: us06.mmyjiedian.com, port: 50006, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: ">🇻🇳 VN|Ls|0329|TG@FProxies|", server: nc.cm.xiaomi-api.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: ad9580dd-01e4-490d-b175-49b9616b4915}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|, server: 18.194.248.221, port: 14594, type: trojan, password: eqfRhWoOzsgD, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3, server: 104.248.64.42, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|, server: ipv4.ip.sb, port: 80, type: vmess, uuid: 7c525a1d-d8fd-331b-b53f-69f06252ed10, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-000.xiaoxiaobujidao.xyz}}}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|, server: 183.240.188.35, port: 35072, type: vmess, uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|, server: gcdddd0001.likeone.lol, port: 64850, type: trojan, password: c31ce885-1444-45a6-8a78-89553d8734a8, skip-cert-verify: true}
+  - {name: 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1, server: channel.hopev2ray.link, port: 443, type: vmess, uuid: b4b4b2bd-68e4-4ab7-bbf7-4d0e2d61951a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess, headers: {Host: channel.hopev2ray.link}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2, server: 137.175.8.7, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/251134173528}}
+  - {name: 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|, server: 156.225.67.240, port: 41000, type: vmess, uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/180820033318}}
+  - {name: 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|, server: cf.s7.now.cc, port: 80, type: vmess, uuid: f1b91a7d-a5e2-4684-a183-d2d656400ca1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: cf.s7.now.cc}}}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: 183.232.199.61, port: 61001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 110, server: 104.19.66.117, port: 2086, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in1176619, headers: {Host: 100.100.17.66.db-link02.top}}}
+  - {name: "🇭🇰 [香港] Hong Kong  4", server: mb2.aand.site, port: 27099, type: ss, cipher: chacha20-ietf-poly1305, password: c440808b-a8ad-484a-90c2-4399d5a26dbe}
+  - {name: 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2, server: gy.58n.net, port: 20301, type: trojan, password: c84a776b-f2cf-3dfd-9e8d-2ae6838a16a9, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|, server: 185.244.208.196, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 58, server: 104.17.174.188, port: 2082, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in18817417, headers: {Host: 100.100.17.174.db-link01.top}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3, server: sg03.oliviapretty.online, port: 80, type: vmess, uuid: b5f40979-0200-428c-8ae1-f8c981560dd3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg03.oliviapretty.online}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|, server: max11.flash5g.com, port: 80, type: vmess, uuid: 4e25f91f-603c-4e83-b002-c26030757816, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /AnhBin, headers: {Host: max11.flash5g.com}}}
+  - {name: "🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133", server: 15.v2-ray.cyou, port: 23615, type: vmess, uuid: 95e84d76-287a-3b71-b8ab-cf1b6adf76a2, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 15.v2-ray.cyou}}}
+  - {name: 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2, server: gcdddd0003.likeone.lol, port: 26094, type: trojan, password: 15440fe0-2ac8-4476-ad99-f93122b76631, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3, server: 103.21.244.128, port: 443, type: vmess, uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lfljvws}}
+  - {name: Incheon V2 - B Group, server: bgroup.node2.v.nodelist-gfwairport2.top, port: 41001, type: vmess, uuid: 2155145a-b1b5-443a-8977-670f6bd10f02, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2, server: hk1.biubiufast.quest, port: 5204, type: ss, cipher: chacha20-ietf-poly1305, password: c37b76fb-d464-4c89-97de-bcd87c3e115d}
   - {name: 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|, server: 15074.kuaiyin02.top, port: 15074, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 Korea_2, server: kr02.mmyjiedian.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: "🇰🇷 [ss]韩国-05", server: nbct02.qingqiu.buzz, port: 54574, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9, server: gcdddd0005.likeone.lol, port: 10658, type: trojan, password: 15440fe0-2ac8-4476-ad99-f93122b76631, sni: us2.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 02-中转, server: us.lianjianode.cc, port: 34175, type: vmess, uuid: a62ddfde-cb54-43f6-a3ce-63efc4b0ab93, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /usa, headers: {Host: us1.luodi.xyz}}}
-  - {name: 🇯🇵 日本 原生 04, server: jp-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: jp-f.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇨🇦 _CA_加拿大, server: 23.162.200.181, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 美国 原生 05, server: usa-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: usa-b.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5, server: nc.t2.goa02.top, port: 19561, type: ss, cipher: chacha20-ietf-poly1305, password: f0c5ddd8-106b-43cc-bae7-f0174b5a6f29}
-  - {name: "🇩🇪 [ss]德国-04", server: nbct02.qingqiu.buzz, port: 53714, type: ss, cipher: aes-128-gcm, password: 650e3630-6483-4752-86a0-48c300c7506c}
-  - {name: 距离下次重置剩余：30 天, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
-  - {name: 🇮🇳 印度 原生 02, server: in-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: in-b.speedyweb.xyz, skip-cert-verify: false}
-  - {name: 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|, server: 47.74.90.55, port: 10000, type: vmess, uuid: fe202fa2-ea52-11ee-9167-00163e0024b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5, server: 137.175.57.178, port: 31000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/320410353223}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|, server: 3.35.166.55, port: 16590, type: trojan, password: yFvN3)ofIKu3, skip-cert-verify: true}
-  - {name: 🇲🇴 澳门02|冷门家宽|1.2x, server: lmcdn02.hjlvps.top, port: 37911, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5, server: kr03.malcolmgraham.online, port: 80, type: vmess, uuid: 4400260c-f088-4748-af5c-cacce1156de0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.malcolmgraham.online}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5, server: 140.82.13.247, port: 35910, type: vmess, uuid: 6c3e587c-47f9-4130-a19f-5e8b8bf69bae, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|, server: 38.48.166.229, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/112911340830}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2, server: n00005.bzdqsmzngpyyng.sbs, port: 21526, type: ss, cipher: chacha20-ietf-poly1305, password: bb171d8f-a812-4231-beb5-af7310d3721f}
-  - {name: 🇨🇳 广东省广州市 移动, server: 120.232.242.117, port: 41492, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国01|随机|1x, server: sjcdn04.hjlvps.top, port: 29915, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇯🇵 日本01|随机|1.2x, server: sjcdn04.hjlvps.top, port: 31506, type: ss, cipher: chacha20-ietf-poly1305, password: c026971a-d299-4f5c-97ed-9acfe4b8849b}
-  - {name: 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76, server: 104.19.45.189, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3, server: kr02.thomasinaglorious.online, port: 80, type: vmess, uuid: 42e97605-d7cb-4b90-a5e5-aeddefda4b2d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr02.thomasinaglorious.online}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4, server: tanz-board.01byx31qzn.download, port: 35007, type: vmess, uuid: e9630109-04ef-394b-8f7f-1baee9f07532, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7, server: 142.4.104.106, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/260804220026}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|, server: 45.76.150.232, port: 10000, type: vmess, uuid: 20a7a7f8-059c-11ef-be02-1b517a86ad17, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|, server: 18.176.55.68, port: 16586, type: trojan, password: fDhxN4km48p), skip-cert-verify: true}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: eedp257bubu2wefy.lovebaipiao.net, port: 54321, type: vmess, uuid: bdeaba4b-bdac-426f-94f2-16a63d91352f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: eedp257bubu2wefy.lovebaipiao.net}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2, server: 172.67.71.14, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95, server: www.pcmag.com, port: 80, type: vmess, uuid: dc2a31fe-3897-4d45-ac4e-ab42897df12f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.pcmag.com}}}
+  - {name: 🇯🇵 Japan_11, server: jp11.mmyjiedian.com, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|, server: 87.120.204.248, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8, server: n00005.bzdqsmzngpyyng.sbs, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: b32d65da-8a7f-4665-a8b7-8b2889152084}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|, server: 38.33.61.12, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/061930001334}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2, server: n00005.bzdqsmzngpyyng.sbs, port: 39788, type: ss, cipher: chacha20-ietf-poly1305, password: aa99effa-260c-4624-be92-690ee7884a63}
+  - {name: 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6, server: acjp2.cloudflarest.link, port: 80, type: vmess, uuid: dac04b72-0a52-4270-b37d-1a677e8638e3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: acjp2.cloudflarest.link}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2, server: 47.74.6.16, port: 2052, type: vmess, uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /039fc4e4}}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|, server: 162.159.142.236, port: 80, type: vmess, uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 13.214.214.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4, server: 104.18.107.58, port: 80, type: vmess, uuid: 9fd78856-60a0-3dda-a997-835121c237cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in5810718}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2, server: nc.t2.go002.xyz, port: 19531, type: ss, cipher: chacha20-ietf-poly1305, password: f0c5ddd8-106b-43cc-bae7-f0174b5a6f29}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3, server: 142.4.102.78, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/113104241823}}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|, server: t8-s1-jp--stream114514.bilivideo.click, port: 13061, type: trojan, password: b7f39c10-ce5f-370b-a7fd-000f62248f67, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3, server: dgyd1.pmxu.link, port: 44194, type: vmess, uuid: defa9670-1143-4712-919b-0b106e242f52, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|, server: gy.58n.net, port: 20306, type: trojan, password: a458031d-c3a3-3255-a5f9-606adbc5adb2, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3, server: n00005.bzdqsmzngpyyng.sbs, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: fdedb9ef-93d2-41e4-8ec1-d195b8ccda30}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2, server: kr03.handsomequinlan.online, port: 80, type: vmess, uuid: 8643b6c5-d037-41f4-9081-43756b1e9e8d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.handsomequinlan.online}}}
+  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2", server: uk1.lvuy.xyz, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: fgCC8okNXBa1FXfn}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2, server: tw2.lvuy.xyz, port: 10064, type: ss, cipher: chacha20-ietf-poly1305, password: fgCC8okNXBa1FXfn}
+  - {name: 🇺🇸 美国 原生 03, server: usa-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: usa-f.speedyweb.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109, server: 89.213.164.154, port: 80, type: vmess, uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|, server: gy.58n.net, port: 20302, type: trojan, password: f28b3366-4a8d-3c1c-9707-40bacda81f36, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.138.73, port: 2082, type: vmess, uuid: 7f40abd1-6397-4706-8510-bc5d08df8ad5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/CuTy87zAzV/, headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3, server: kr1.iepl.cooc.icu, port: 35101, type: ss, cipher: aes-128-gcm, password: 1bbca7b1-ed3e-4208-8dbd-0f767c744541}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|, server: n00007.bzdqsmzngpyyng.sbs, port: 28625, type: ss, cipher: chacha20-ietf-poly1305, password: defee87b-b46a-468a-9dc1-cd1cdafd7936}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3, server: 223.113.130.58, port: 58080, type: vmess, uuid: a6769e77-632a-3cb3-a266-97bff13791bd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /db00, headers: {Host: cache-hk-1.cn-db.top}}}
+  - {name: 🇯🇵 日本 - 东京 - Akari Networks - 60, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-jp-v1.usabooks.com.cn}}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2", server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: d00d2e13-d027-383b-b648-b7abad7115f5, alterId: 2, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾 原生 01, server: tw-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: tw-a.speedyweb.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105, server: 46.3.82.198, port: 80, type: vmess, uuid: e57d6217-18be-49f4-b40c-3ace76fd1a5a, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|, server: 8.222.159.252, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5, server: 142.0.131.218, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/082324152915}}
+  - {name: 🇺🇸 美国 原生 04, server: usa-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: usa-a.speedyweb.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2, server: 162.159.142.239, port: 80, type: vmess, uuid: 57d50f21-ca3d-424a-98dc-0b540b5d5c45, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 6, server: 104.20.232.145, port: 80, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in14523220, headers: {Host: 100.100.17.232.db-link02.top}}}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: 112.29.94.23, port: 46011, type: trojan, password: MyYoZhfX, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|, server: dm2087.duduskying.cloudns.biz, port: 2087, type: vmess, uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dm2087.duduskying.cloudns.biz}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2, server: gy.58n.net, port: 20305, type: trojan, password: ef5a2a39-90c2-328f-b14e-c6eeb11ec010, skip-cert-verify: true}
+  - {name: 🇯🇵 Japan_4, server: jp04.mmyjiedian.com, port: 30004, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4, server: hk1.biubiufast.quest, port: 5204, type: ss, cipher: chacha20-ietf-poly1305, password: 38bc3f01-ddb3-481d-ad4c-719a385319e0}
+  - {name: 🇩🇪 德国 - Frankfurt - GTHost - 1, server: 23.158.56.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2, server: zula.ir, port: 80, type: vmess, uuid: 802c1068-ee2b-4c87-b49d-e7f3043e75d2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: zula.ir}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2, server: 12.v2-ray.cyou, port: 23612, type: vmess, uuid: 50a8616d-5a9d-3fae-9b52-22f2460e7f4c, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 12.v2-ray.cyou}}}
+  - {name: 🇭🇰 香港6|@ripaojiedian, server: 183.240.179.195, port: 15601, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.18.36.119, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: helanv6cf.inekokkk.top}}}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2, server: 156.249.18.107, port: 41000, type: vmess, uuid: f9fa3a9c-f7d5-414f-88e6-6970585d9949, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/342121230818}}
+  - {name: 🇦🇺 澳大利亚 原生 01, server: au-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: au-a.speedyweb.xyz, skip-cert-verify: false}
+  - {name: "🇲🇾 [马来西亚] Malaysia 1", server: zy.aand.site, port: 34245, type: ss, cipher: chacha20-ietf-poly1305, password: c440808b-a8ad-484a-90c2-4399d5a26dbe}
+  - {name: 🇭🇰 香港 原生 02, server: hk-lobalance.speedyweb.xyz, port: 21232, type: trojan, password: eb7e85c8-d699-4d84-9a69-d44a1b5e2de9, sni: hk-e.speedyweb.xyz, skip-cert-verify: false}
+  - {name: 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10, server: cloudflare.182682.xyz, port: 80, type: vmess, uuid: 5dd37d4f-7726-40e8-9405-f80c702073be, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: de.grpc.gay}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6, server: df.xiguajiasu.xyz, port: 46002, type: trojan, password: cbbccb66-abd3-4562-880c-cf63a805dcfb, skip-cert-verify: true}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2, server: gcdddd0005.likeone.lol, port: 10327, type: trojan, password: c26e99a2-e30d-4fc3-859d-692d34028e1e, skip-cert-verify: true}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|, server: kr03.trixieseymour.site, port: 80, type: vmess, uuid: 4400260c-f088-4748-af5c-cacce1156de0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.trixieseymour.site}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3, server: 104.21.20.19, port: 80, type: vmess, uuid: 4be6650b-41be-4878-a28e-553fc4fb73e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2, server: n00005.bzdqsmzngpyyng.sbs, port: 22704, type: ss, cipher: chacha20-ietf-poly1305, password: b32d65da-8a7f-4665-a8b7-8b2889152084}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4, server: 142.4.113.122, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/090310202312}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9, server: n00005.bzdqsmzngpyyng.sbs, port: 10519, type: ss, cipher: chacha20-ietf-poly1305, password: dab61b50-f83f-4c99-926b-859d82477f80}
+  - {name: 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5, server: us03.freeflyingcloud.xyz, port: 30018, type: trojan, password: fc7bd4c1-c49e-4f1f-ba5d-afa619df7865, sni: us03.freeflyingcloud.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 84, server: 104.16.124.194, port: 2052, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in19412416, headers: {Host: 100.100.17.124.db-link01.top}}}
+  - {name: 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3, server: 149.129.172.152, port: 10000, type: vmess, uuid: c7d4f95e-ea53-11ee-bfe6-00163e01874f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3, server: california.servicex.online, port: 443, type: vmess, uuid: 27ece66a-6ef6-4189-b7ff-ef0de2710d71, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /world, headers: {Host: california.servicex.online}}}
+  - {name: 🇸🇬 Singapore_14, server: sg14.mmyjiedian.com, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: c5efa49d-1c28-4cab-916f-07ef43e70b27}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4, server: gy.58n.net, port: 16895, type: trojan, password: a458031d-c3a3-3255-a5f9-606adbc5adb2, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|, server: 47.236.246.45, port: 10000, type: vmess, uuid: d0236eb0-f020-11ee-966e-00163e0de184, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5, server: 38.33.25.169, port: 36001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/170128201623}}
+  - {name: 🇰🇷 韩国|@ripaojiedian, server: 52.78.95.60, port: 80, type: vmess, uuid: e71bf91c-083b-4dc2-abd6-b0630d0a4515, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4, server: kr03.36routes.online, port: 80, type: vmess, uuid: 42e97605-d7cb-4b90-a5e5-aeddefda4b2d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.36routes.online}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10, server: 38.75.136.106, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3, server: 156.225.67.201, port: 41001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/102624061900}}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 51, server: 104.16.66.92, port: 2086, type: vmess, uuid: 7ae32b19-ebf9-34b0-9145-c388797acacf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in926616, headers: {Host: 100.100.17.66.db-link02.top}}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2, server: 183.240.188.36, port: 35008, type: vmess, uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57, server: 183.236.51.59, port: 51707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3, server: sg02.beitai.online, port: 80, type: vmess, uuid: b363045d-0589-4cf3-8d02-209e406853c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02.beitai.online}}}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2, server: gcdddd0005.likeone.lol, port: 47557, type: trojan, password: d429677f-2f32-4b43-8228-a4e4b5d44a78, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 162.159.33.117, port: 2082, type: vmess, uuid: 7f40abd1-6397-4706-8510-bc5d08df8ad5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/CuTy87zAzV/, headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2, server: 149.28.136.237, port: 443, type: vmess, uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f, alterId: 0, cipher: auto, tls: true}
+  - {name: ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3", server: 162.159.138.76, port: 8080, type: vmess, uuid: 477af724-de79-40dc-80ef-bf3bca0be3ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7, server: 142.4.98.4, port: 38002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/182812170423}}
+  - {name: 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3, server: 15002.kuaiyin02.top, port: 15002, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2, server: jp01.handsomequinlan.online, port: 80, type: vmess, uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp01.handsomequinlan.online}}}
+  - {name: 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|, server: 183.240.220.84, port: 11803, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FWC, obfs-param: 6f41b24.microsoft.com}
+  - {name: ">🇻🇳 VN|Ls|0329|TG@FProxies| 2", server: nc.cm.xiaomi-api.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: 739f0fb8-ef76-43a6-8175-0a977188e85c}
+  - {name: ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4", server: eagle02.t3o5wy.xyz, port: 30506, type: vmess, uuid: fcc429f2-c778-35f9-b981-101362ba18b6, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4, server: 13.212.182.235, port: 14612, type: trojan, password: xAwF)3Zc6Xdv, skip-cert-verify: true}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4, server: 170.64.228.106, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6, server: 64.23.183.174, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2, server: 38.75.136.117, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6, server: 185.214.103.249, port: 8002, type: vmess, uuid: 986d5d56-9910-3b70-9f5f-4a163c868fe9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /db00}}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2, server: www.visa.com.sg, port: 443, type: vmess, uuid: 1151acd7-e21b-411e-9e6e-2ca724484c09, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: www.visa.com.sg}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3, server: 38.173.198.229, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/273212310621}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [ss]香港-06
-      - 🇨🇳 台湾 02-中转
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - 🇨🇳 台湾家宽|联通|1.1x
-      - 🇨🇳 [ss]台湾-07
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 香港 原生 02
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1356,190 +1284,180 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇭🇰 [ss]香港-06
-      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
-      - 🇺🇸 United States_4
-      - 🇹🇷 土耳其01|冷门|1x
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
-      - 🇮🇳 >🇮🇳 IN|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 102
-      - 🇬🇧 >🇬🇧 GB|Ms|0329|TG@FProxies|
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
-      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 107
-      - 🇬🇧 >🇬🇧 GB|Hs|0329|TG@FProxies|
-      - 🇮🇳 印度 原生 04
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 93
-      - 🇯🇵 Japan_7
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 127
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 2
-      - 🇱🇻 拉脱维亚 - 里加 - Stark Industries Solutions LTD - 1
-      - 🇨🇦 >🇨🇦 CA|Ms|0404|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0329|TG@FProxies|"
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ls|0404|TG@FProxies|
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 125
       - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies|
-      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 54
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇨🇳 台湾 02-中转
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾家宽|电信|1.1x
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ls|0329|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 113
-      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇸🇬 新加坡 原生 01
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
-      - 🇯🇵 日本 原生 03
-      - 🇯🇵 Japan_8
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 5
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
-      - 🇭🇰 中国 - 香港 - Cloudflare, Inc. - 1
-      - ">🇻🇳 VN|Ms|0329|TG@FProxies|"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇨🇦 直连 加拿大
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
-      - 🇰🇷 韩国01|联通|1x
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
-      - 🇯🇵 Japan_18
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
-      - 🇨🇳 台湾家宽|联通|1.1x
+      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
-      - 🇬🇧 [ss]英国-03
-      - 🇨🇦 加拿大01|电信|1x
-      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
-      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 3"
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 直连 日本
-      - 秒秒云.me
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 6
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 7
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
       - 🇺🇸 United States_2
-      - 🇸🇬 >🇸🇬 SG|Ls|0404|TG@FProxies|
-      - 🇨🇳 [ss]台湾-07
-      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
-      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
-      - ">Beta|🇺🇳 FP|Ls|0329|TG@FProxies| 2"
-      - 🇸🇬 新加坡01|IPv6|1.1x
+      - 🇯🇵 Japan_6
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本 原生 01
       - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
-      - 🇭🇰 香港02|实验限时|0.6x
-      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 121
-      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
-      - 🇳🇱 >🇳🇱 NL|Hs|0329|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 74
+      - ">🇻🇳 VN|Hs|0404|TG@FProxies|"
       - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies|
-      - 🇩🇪 德国 - 柏林 - 1&1 IONOS SE - 9
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 越南 - 胡志明市 - Kaopu Cloud HK Limited - 2
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies|"
+      - 🇬🇧 >🇬🇧 GB|Hs|0404|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 61
+      - 🇬🇧 _GB_英国
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 2
       - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ms|0329|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
-      - ">🇻🇳 VN|Ms|0404|TG@FProxies| 2"
-      - 🇨🇦 加拿大01-中转
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
-      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
-      - 🇯🇵 日本|@ripaojiedian
+      - 🇵🇱 [波兰]
       - 🇩🇪 >🇩🇪 DE|Ls|0329|TG@FProxies|
-      - 距离下次重置剩余：25 天
-      - 🇨🇳 >🇹🇼 TW|Ms|0404|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 7
-      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 87
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies|
+      - 🇭🇰 Hong Kong_12
+      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies|
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ls|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 2
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies|
+      - California Tj - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 6
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ms|0404|TG@FProxies|"
+      - 🇷🇺 >🇷🇺 RU|Ms|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 7
+      - 🇺🇸 United States_6
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 1
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0404|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies|
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 110
+      - 🇭🇰 [香港] Hong Kong  4
+      - 🇭🇰 >🇭🇰 HK|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies|
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 58
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies|
+      - 🇺🇸 美国 - 波特蘭 - Amazon.com, Inc. - 133
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - Incheon V2 - B Group
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0329|TG@FProxies|
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 2
+      - 🇺🇸 美国 - 拉斯维加斯 - FranTech Solutions - 95
+      - 🇯🇵 Japan_11
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 8
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 2
+      - 🇬🇧 英国 - 劍橋 - Mythic Beasts Address - 6
+      - 🇯🇵 >🇯🇵 JP|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
+      - 🇯🇵 日本特殊|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ns|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
+      - 🇩🇪 >🇩🇪 DE|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Hs|0404|TG@FProxies| 3
+      - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies| 2"
+      - 🇨🇳 >🇹🇼 TW|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 美国 原生 03
+      - 🇺🇸 美国 - 洛杉矶 - ReliableSite.Net LLC - 109
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
       - 🇺🇸 美国 CloudFlare节点
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies|
-      - 🇨🇳 >🇹🇼 TW|Hs|0329|TG@FProxies|
-      - 🇦🇪 [ss]阿联酋-03
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 91
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Ns|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
-      - 🇺🇸 [ss]美国-02
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 8
-      - 🇺🇸 [ss]美国-01
-      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 106
-      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0329|TG@FProxies|
-      - 🇰🇷 Korea_2
-      - 🇰🇷 [ss]韩国-05
-      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 9
-      - 🇺🇸 美国 02-中转
-      - 🇯🇵 日本 原生 04
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 美国 原生 05
-      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 5
-      - 🇩🇪 [ss]德国-04
-      - 距离下次重置剩余：30 天
-      - 🇮🇳 印度 原生 02
-      - 🇦🇺 >🇦🇺 AU|Ls|0329|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 5
-      - 🇰🇷 >🇰🇷 KR|Ls|0329|TG@FProxies|
-      - 🇲🇴 澳门02|冷门家宽|1.2x
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0329|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ls|0329|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
-      - 🇨🇳 广东省广州市 移动
-      - 🇰🇷 韩国01|随机|1x
-      - 🇯🇵 日本01|随机|1.2x
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 76
-      - 🇰🇷 >🇰🇷 KR|Ms|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 3
+      - 🇯🇵 日本 - 东京 - Akari Networks - 60
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 2"
+      - 🇨🇳 台湾 原生 01
+      - 🇺🇸 美国 - 阿什本 - TGs4 Networks Inc. - 105
+      - 🇫🇷 >🇫🇷 FR|Ns|0329|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
+      - 🇺🇸 美国 原生 04
+      - 🇯🇵 >🇯🇵 JP|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 6
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0404|TG@FProxies| 2
+      - 🇯🇵 Japan_4
+      - 🇭🇰 >🇭🇰 HK|Ms|0329|TG@FProxies| 4
+      - 🇩🇪 德国 - Frankfurt - GTHost - 1
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 2
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 2
+      - 🇦🇺 澳大利亚 原生 01
+      - 🇲🇾 [马来西亚] Malaysia 1
+      - 🇭🇰 香港 原生 02
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 10
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
+      - 🇯🇵 >🇯🇵 JP|Hs|0329|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Ms|0329|TG@FProxies| 3
+      - 🇭🇰 >🇭🇰 HK|Ms|0404|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 9
+      - 🇭🇰 中国 - 香港 - Proxy Registration Eons Data - 80
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 5
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 84
+      - 🇮🇳 >🇮🇳 IN|Ns|0329|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 Singapore_14
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Hs|0404|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 5
+      - 🇰🇷 韩国|@ripaojiedian
       - 🇰🇷 >🇰🇷 KR|Ms|0404|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 7
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0404|TG@FProxies| 10
+      - 🇳🇱 >🇳🇱 NL|Hs|0404|TG@FProxies| 3
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 51
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
+      - 🇯🇵 日本 - Chiyoda - Rackip Consultancy Pte. LTD - 57
+      - 🇸🇬 >🇸🇬 SG|Ns|0329|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Hs|0404|TG@FProxies| 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 >🇸🇬 SG|Ms|0329|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 3"
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇷🇺 俄罗斯 - 喀山 - LLC BAXET - 3
+      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - ">🇻🇳 VN|Ls|0329|TG@FProxies| 2"
+      - ">Beta|🇺🇳 FP|Ns|0329|TG@FProxies| 4"
+      - 🇸🇬 >🇸🇬 SG|Ms|0404|TG@FProxies| 4
+      - 🇦🇺 >🇦🇺 AU|Ms|0329|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ms|0329|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0404|TG@FProxies| 6
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0329|TG@FProxies| 3
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
