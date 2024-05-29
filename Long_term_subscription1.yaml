@@ -5,367 +5,299 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 2, server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
-  - {name: 🇦🇱 _AL_阿尔巴尼亚, server: 109.104.152.126, port: 51122, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇺🇸 _US_美国, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 2, server: 205.134.180.139, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: lWaGPVFjmnag}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 3, server: russia.com, port: 8880, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 3, server: 104.17.156.224, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
-  - {name: 🇬🇧 _GB_英国, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇬🇧 _GB_英国 2, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇵🇱 _PL_波兰, server: 51.77.53.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇵🇱 _PL_波兰 2, server: 51.77.53.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇺🇸 _US_美国 4, server: 89.117.109.97, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: rhnAUMfOWIgjT917yYCG7u}
-  - {name: 🇵🇱 _PL_波兰 3, server: 51.77.53.200, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇵🇱 _PL_波兰 4, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇵🇱 _PL_波兰 5, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇵🇱 _PL_波兰 6, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇵🇱 _PL_波兰 7, server: 51.77.53.200, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇵🇱 _PL_波兰 8, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇵🇱 _PL_波兰 9, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇵🇱 _PL_波兰 10, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇬🇧 _GB_英国 3, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇬🇧 _GB_英国 4, server: 212.102.53.195, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇵🇱 _PL_波兰 11, server: 51.77.53.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇵🇱 _PL_波兰 12, server: 51.77.53.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇵🇱 _PL_波兰 13, server: 51.77.53.200, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇵🇱 _PL_波兰 14, server: 51.77.53.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇵🇱 _PL_波兰 15, server: 51.77.53.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇵🇱 _PL_波兰 16, server: 51.77.53.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇵🇱 _PL_波兰 17, server: 51.77.53.200, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇵🇱 _PL_波兰 18, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 94.228.165.178, port: 58176, type: ss, cipher: chacha20-ietf-poly1305, password: afKAHp1VfRWZu91LIi9o0D}
-  - {name: 🇺🇸 _US_美国 5, server: 52.88.161.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇵🇱 _PL_波兰 19, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇵🇱 _PL_波兰 20, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国, server: 52.88.161.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇵🇱 _PL_波兰, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇵🇱 _PL_波兰 2, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
   - {name: 🇩🇪 _DE_德国, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45102, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de1, headers: {Host: oracle-de-01.t3csyun.buzz}}}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 4, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
-  - {name: 🇺🇸 _US_美国 6, server: us-sanfrancisco-01.t3csyun.buzz, port: 34052, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us1, headers: {Host: us-sanfrancisco-01.t3csyun.buzz}}}
-  - {name: 🇵🇱 _PL_波兰 21, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇵🇱 _PL_波兰 22, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: 94.228.162.91, port: 2060, type: ss, cipher: aes-128-gcm, password: W1C2PkLXX9Cy9FVC-LvJVA}
-  - {name: 🇺🇸 _US_美国 7, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
+  - {name: 🇺🇸 _US_美国 2, server: us-sanfrancisco-01.t3csyun.buzz, port: 34052, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us1, headers: {Host: us-sanfrancisco-01.t3csyun.buzz}}}
+  - {name: 🇵🇱 _PL_波兰 3, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇵🇱 _PL_波兰 4, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 94.228.162.91, port: 2060, type: ss, cipher: aes-128-gcm, password: W1C2PkLXX9Cy9FVC-LvJVA}
+  - {name: 🇺🇸 _US_美国 3, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true}
   - {name: 🇩🇪 _DE_德国 2, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45103, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de2, headers: {Host: oracle-de-02.t3csyun.buzz}}}
-  - {name: 🇵🇱 _PL_波兰 23, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇵🇱 _PL_波兰 24, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇵🇱 _PL_波兰 25, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 3, server: eedp257bubu2wefy1.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 8, server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us2, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
-  - {name: 🇺🇸 _US_美国 9, server: 104.18.203.232, port: 2052, type: vmess, uuid: 419465fc-3914-4b76-c8a2-c7697041dcf7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80", headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛男.filter-nakon-madarj.cyou.}}}
-  - {name: 🇺🇸 _US_美国 10, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇵🇱 _PL_波兰 5, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇵🇱 _PL_波兰 6, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇵🇱 _PL_波兰 7, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: eedp257bubu2wefy1.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 4, server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us2, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
+  - {name: 🇺🇸 _US_美国 5, server: 104.18.203.232, port: 2052, type: vmess, uuid: 419465fc-3914-4b76-c8a2-c7697041dcf7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80", headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛男.filter-nakon-madarj.cyou.}}}
+  - {name: 🇺🇸 _US_美国 6, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
   - {name: 🇩🇪 _DE_德国 3, server: 18.192.44.234, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 5, server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 4, server: eedp257bubu2wefy.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _US_美国 11, server: 34.222.36.230, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 4, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
-  - {name: 🇵🇱 _PL_波兰 26, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 5, server: eedp257bubu2wefy3.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _US_美国 12, server: 52.88.161.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇵🇱 _PL_波兰 27, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇵🇱 _PL_波兰 28, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 2, server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 3, server: eedp257bubu2wefy.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _US_美国 7, server: 34.222.36.230, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
+  - {name: 🇵🇱 _PL_波兰 8, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 4, server: eedp257bubu2wefy3.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _US_美国 8, server: 52.88.161.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇵🇱 _PL_波兰 9, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇵🇱 _PL_波兰 10, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
   - {name: 🇩🇪 _DE_德国 4, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45102, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de1, headers: {Host: oracle-de-01.t3csyun.buzz}}}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 6, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
-  - {name: 🇺🇸 _US_美国 13, server: us-sanfrancisco-01.t3csyun.buzz, port: 34052, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us1, headers: {Host: us-sanfrancisco-01.t3csyun.buzz}}}
-  - {name: 🇵🇱 _PL_波兰 29, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇵🇱 _PL_波兰 30, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 6, server: 94.228.162.91, port: 2060, type: ss, cipher: aes-128-gcm, password: W1C2PkLXX9Cy9FVC-LvJVA}
-  - {name: 🇺🇸 _US_美国 14, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 3, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
+  - {name: 🇺🇸 _US_美国 9, server: us-sanfrancisco-01.t3csyun.buzz, port: 34052, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us1, headers: {Host: us-sanfrancisco-01.t3csyun.buzz}}}
+  - {name: 🇵🇱 _PL_波兰 11, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇵🇱 _PL_波兰 12, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 5, server: 94.228.162.91, port: 2060, type: ss, cipher: aes-128-gcm, password: W1C2PkLXX9Cy9FVC-LvJVA}
+  - {name: 🇺🇸 _US_美国 10, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, skip-cert-verify: true}
   - {name: 🇩🇪 _DE_德国 5, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45103, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de2, headers: {Host: oracle-de-02.t3csyun.buzz}}}
-  - {name: 🇵🇱 _PL_波兰 31, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 5, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇵🇱 _PL_波兰 32, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇵🇱 _PL_波兰 33, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 7, server: eedp257bubu2wefy1.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 6, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 15, server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us2, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
-  - {name: 🇺🇸 _US_美国 16, server: 104.18.203.232, port: 2052, type: vmess, uuid: 419465fc-3914-4b76-c8a2-c7697041dcf7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80", headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛男.filter-nakon-madarj.cyou.}}}
-  - {name: 🇺🇸 _US_美国 17, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇵🇱 _PL_波兰 13, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 4, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇵🇱 _PL_波兰 14, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇵🇱 _PL_波兰 15, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 6, server: eedp257bubu2wefy1.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 5, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 11, server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 501dbdc1-15df-479f-a2b8-7a58e42724f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us2, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
+  - {name: 🇺🇸 _US_美国 12, server: 104.18.203.232, port: 2052, type: vmess, uuid: 419465fc-3914-4b76-c8a2-c7697041dcf7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/@irvpnn,@irvpnn,@irvpnn,@irvpnn?ed=80", headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛男.filter-nakon-madarj.cyou.}}}
+  - {name: 🇺🇸 _US_美国 13, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
   - {name: 🇩🇪 _DE_德国 6, server: 18.192.44.234, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 7, server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 8, server: eedp257bubu2wefy.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
-  - {name: 🇺🇸 _US_美国 18, server: 34.222.36.230, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 7, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
-  - {name: 🇵🇱 _PL_波兰 34, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 9, server: eedp257bubu2wefy3.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度 4, server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 7, server: eedp257bubu2wefy.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _US_美国 14, server: 34.222.36.230, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 6, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
+  - {name: 🇵🇱 _PL_波兰 16, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 8, server: eedp257bubu2wefy3.lovebaipiao.net, port: 54321, type: vmess, uuid: d52dd638-0e14-469b-a34c-bb5184d4dce6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: www.apple.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 7, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 15, server: cfcdn1.sanfencdn9.com, port: 2095, type: vmess, uuid: e83f27c4-b1cb-4311-907c-ea16d32348e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/qYZue4zaWS, headers: {Host: us82pRzxDMb.fzbqfrse.xyz}}}
+  - {name: 🇺🇸 _US_美国 16, server: 95.164.33.62, port: 443, type: trojan, password: 0b1371aa-649d-41dc-9126-338c87936500, sni: sourceforge.net, skip-cert-verify: true, network: ws, ws-opts: {path: /websocket, headers: {Host: sourceforge.net}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 8, server: 103.184.45.191, port: 2095, type: vmess, uuid: b3c76f0e-f2c6-4518-9ddc-b21b3339d550, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /b3c76f0e-f2c6-4518-9ddc-b21b3339d550-vm, headers: {Host: rn.yicanny.com}}}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 9, server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 _US_美国 17, server: russia.com, port: 8880, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}}
+  - {name: 🇺🇸 _US_美国 18, server: 205.134.180.139, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: lWaGPVFjmnag}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 9, server: 183.240.179.207, port: 30013, type: vmess, uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 _GB_英国, server: 212.102.53.195, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇬🇧 _GB_英国 2, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 10, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: 🇳🇱 _NL_荷兰, server: 103.229.81.118, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1YPQ1ZimzQp2fi4IpnAH5i}
+  - {name: 🇺🇸 _US_美国 19, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 _US_美国 20, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: e83f27c4-b1cb-4311-907c-ea16d32348e1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}}
+  - {name: 🇺🇸 _US_美国 21, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -376,275 +308,224 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -660,92 +541,75 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
-      - 🇦🇱 _AL_阿尔巴尼亚
       - 🇺🇸 _US_美国
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
-      - 🇬🇧 _GB_英国
-      - 🇬🇧 _GB_英国 2
       - 🇵🇱 _PL_波兰
       - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 4
+      - 🇩🇪 _DE_德国
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度
+      - 🇺🇸 _US_美国 2
       - 🇵🇱 _PL_波兰 3
       - 🇵🇱 _PL_波兰 4
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 3
+      - 🇩🇪 _DE_德国 2
       - 🇵🇱 _PL_波兰 5
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
       - 🇵🇱 _PL_波兰 6
       - 🇵🇱 _PL_波兰 7
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国 4
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 _US_美国 6
+      - 🇩🇪 _DE_德国 3
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 2
+      - 🇷🇺 _RU_俄罗斯联邦 3
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇵🇱 _PL_波兰 8
+      - 🇷🇺 _RU_俄罗斯联邦 4
+      - 🇺🇸 _US_美国 8
       - 🇵🇱 _PL_波兰 9
       - 🇵🇱 _PL_波兰 10
-      - 🇬🇧 _GB_英国 3
-      - 🇬🇧 _GB_英国 4
+      - 🇩🇪 _DE_德国 4
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 3
+      - 🇺🇸 _US_美国 9
       - 🇵🇱 _PL_波兰 11
       - 🇵🇱 _PL_波兰 12
+      - 🇷🇺 _RU_俄罗斯联邦 5
+      - 🇺🇸 _US_美国 10
+      - 🇩🇪 _DE_德国 5
       - 🇵🇱 _PL_波兰 13
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
       - 🇵🇱 _PL_波兰 14
       - 🇵🇱 _PL_波兰 15
-      - 🇵🇱 _PL_波兰 16
-      - 🇵🇱 _PL_波兰 17
-      - 🇵🇱 _PL_波兰 18
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇺🇸 _US_美国 5
-      - 🇵🇱 _PL_波兰 19
-      - 🇵🇱 _PL_波兰 20
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 21
-      - 🇵🇱 _PL_波兰 22
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇺🇸 _US_美国 7
-      - 🇩🇪 _DE_德国 2
-      - 🇵🇱 _PL_波兰 23
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇵🇱 _PL_波兰 24
-      - 🇵🇱 _PL_波兰 25
-      - 🇷🇺 _RU_俄罗斯联邦 3
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _US_美国 10
-      - 🇩🇪 _DE_德国 3
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 5
-      - 🇷🇺 _RU_俄罗斯联邦 4
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇵🇱 _PL_波兰 26
-      - 🇷🇺 _RU_俄罗斯联邦 5
-      - 🇺🇸 _US_美国 12
-      - 🇵🇱 _PL_波兰 27
-      - 🇵🇱 _PL_波兰 28
-      - 🇩🇪 _DE_德国 4
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 6
-      - 🇺🇸 _US_美国 13
-      - 🇵🇱 _PL_波兰 29
-      - 🇵🇱 _PL_波兰 30
       - 🇷🇺 _RU_俄罗斯联邦 6
-      - 🇺🇸 _US_美国 14
-      - 🇩🇪 _DE_德国 5
-      - 🇵🇱 _PL_波兰 31
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 5
-      - 🇵🇱 _PL_波兰 32
-      - 🇵🇱 _PL_波兰 33
+      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 12
+      - 🇺🇸 _US_美国 13
+      - 🇩🇪 _DE_德国 6
+      - 🇺🇸 _US_美国->🇮🇳_IN_印度 4
       - 🇷🇺 _RU_俄罗斯联邦 7
+      - 🇺🇸 _US_美国 14
       - 🇺🇸 _CN_中国->🇺🇸_US_美国 6
+      - 🇵🇱 _PL_波兰 16
+      - 🇷🇺 _RU_俄罗斯联邦 8
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
       - 🇺🇸 _US_美国 15
       - 🇺🇸 _US_美国 16
-      - 🇺🇸 _US_美国 17
-      - 🇩🇪 _DE_德国 6
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度 7
-      - 🇷🇺 _RU_俄罗斯联邦 8
-      - 🇺🇸 _US_美国 18
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 7
-      - 🇵🇱 _PL_波兰 34
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 8
       - 🇷🇺 _RU_俄罗斯联邦 9
+      - 🇺🇸 _US_美国 17
+      - 🇺🇸 _US_美国 18
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 9
+      - 🇬🇧 _GB_英国
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 10
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _US_美国 19
+      - 🇺🇸 _US_美国 20
+      - 🇺🇸 _US_美国 21
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
