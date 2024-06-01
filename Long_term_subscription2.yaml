@@ -5,290 +5,258 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 广东省佛山市 移动, server: 183.232.199.28, port: 42001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇩🇪 [vmess]德国(法兰克福)-01", server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45102, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de1, headers: {Host: oracle-de-01.t3csyun.buzz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
-  - {name: 🇯🇵 Japan_10, server: jp10.mmyjiedian.com, port: 30010, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5, server: 46.182.107.77, port: 41001, type: vmess, uuid: 6193116d-96f9-4d7a-9be5-5bb06a69af0b, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/151202240016}}
-  - {name: 距离下次重置剩余：10 天, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇦🇱 _AL_阿尔巴尼亚, server: 109.104.152.126, port: 51122, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1, server: 45.147.200.170, port: 35972, type: vmess, uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 Japan_6, server: jp06.mmyjiedian.com, port: 30006, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125, server: 23.225.41.74, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/341901080027}}
-  - {name: 🇬🇧 do英国1-解锁, server: yx1.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg.xsjhl.xyz}}}
-  - {name: 🇸🇬 Singapore_04, server: sg04.mmyjiedian.com, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 Hong Kong_13, server: hk13.mmyjiedian.com, port: 10013, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇸🇬 新加坡2, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sg1.xsjhl.xyz}}}
-  - {name: 🇺🇸 United States_6, server: us06.mmyjiedian.com, port: 50006, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5, server: 104.18.202.232, port: 2052, type: vmess, uuid: 5f12b2e0-11b0-4b1e-863c-164e4606028c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za}}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/3YKfzGw4, headers: {Host: rpmlybgzsg2.yofnhkfc.xyz}}}
-  - {name: 🇩🇪 do德国3-解锁, server: yx3.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg.xsjhl.xyz}}}
-  - {name: 🇺🇸 United States_5, server: us05.mmyjiedian.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3, server: 104.26.15.85, port: 2052, type: vmess, uuid: 5f12b2e0-11b0-4b1e-863c-164e4606028c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za}}
+  - {name: 🇯🇵 Japan_11, server: jp11.mmyjiedian.com, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
   - {name: 🇯🇵 日本|@ripaojiedian, server: 36.151.195.48, port: 29841, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8, server: kr01.aikunapp.com, port: 20006, type: vmess, uuid: 62771ce7-db7e-4e82-b143-48499a991d89, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 Singapore_10, server: sg10.mmyjiedian.com, port: 20010, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇯🇵 日本04|油管速度优化|全天极速优先使用, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1, headers: {Host: jp011.susulian.sbs}}}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 43.202.41.139, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: tj285.37927.online, port: 443, type: trojan, password: 9cQbCg}
-  - {name: 🇭🇰 Hong Kong_5, server: hk05.mmyjiedian.com, port: 10005, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇸🇬 Singapore_02, server: sg02.mmyjiedian.com, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4, server: 109.104.153.141, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
-  - {name: 🇯🇵 Japan_17, server: jp17.mmyjiedian.com, port: 30017, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇺🇸 United States_7, server: us07.mmyjiedian.com, port: 50007, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 172.67.124.123, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: any.ktsfd.shop, path: "", tls: true, mux: true}}
-  - {name: 🇯🇵 pq日本2-解锁, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb.xsjhl.xyz}}}
-  - {name: 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1, server: 183.232.199.28, port: 62001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 Japan_8, server: jp08.mmyjiedian.com, port: 30008, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇸🇬 新加坡10极速节点|油管速度优化, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /adfd, headers: {Host: sg010.susulian.top}}}
+  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
+  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.38.188.67, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1", server: 183.232.199.28, port: 43002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国1-解锁, server: yx1.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: akus1.xsjhl.xyz}}}
+  - {name: 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aga12fadf, headers: {Host: jp05.sulian.life}}}
+  - {name: 🇭🇰 香港7|@ripaojiedian, server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top, port: 35996, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 op美国1-解锁, server: yx1.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: opus.xsjhl.xyz}}}
+  - {name: 🇭🇰 香港07极速节点|油管速度优化, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sfdf, headers: {Host: hk0007.sulian.life}}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 183.232.199.28, port: 15605, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: tj71.37927.online, port: 443, type: trojan, password: oj9Ibl, skip-cert-verify: true}
+  - {name: 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45103, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de2, headers: {Host: de-frankfurt-oracle-b26cf5.ip1.shop}}}
+  - {name: 🇭🇰 Hong Kong_12, server: hk12.mmyjiedian.com, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇺🇸 _US_美国, server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
+  - {name: 🇯🇵 Japan_19, server: jp19.mmyjiedian.com, port: 30019, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇺🇸 美国5|@ripaojiedian, server: 36.151.195.48, port: 4787, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7, server: 156.249.18.102, port: 41000, type: vmess, uuid: b8df3ef1-887f-4ee4-855f-4f80416c2464, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/000518060511}}
+  - {name: 🇺🇸 美国 - Ashburn - GTHost - 2, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
+  - {name: 🇭🇰 Hong Kong_16, server: hk16.mmyjiedian.com, port: 10016, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: "🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6", server: cf4.ftclashcloud.site, port: 80, type: vmess, uuid: 14391250-ec2a-4f8c-992a-9a0d6a30bb6f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2560", headers: {Host: cf4.ftclashcloud.site}}}
+  - {name: 🇯🇵 Japan_20, server: jp20.mmyjiedian.com, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /d32312fga, headers: {Host: jp006.sulian.life}}}
+  - {name: 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26, server: 183.232.199.28, port: 15605, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 Singapore_07, server: sg07.mmyjiedian.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: "🇩🇪 [vmess]德国(法兰克福)-02", server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45103, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de2, headers: {Host: oracle-de-02.t3csyun.buzz}}}
+  - {name: 🇰🇷 韩国 蘑菇主机BGP数据中心, server: 103.214.68.57, port: 10001, type: vmess, uuid: ebca5f68-bf59-4081-e658-f158839c2f5c, alterId: 0, cipher: auto, tls: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -304,41 +272,36 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 广东省佛山市 移动
-      - 🇩🇪 [vmess]德国(法兰克福)-01
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 Japan_10
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 5
-      - 距离下次重置剩余：10 天
-      - 🇦🇱 _AL_阿尔巴尼亚
-      - 🇷🇺 俄罗斯 - 莫斯科 - LLC Baxet - 1
-      - 🇯🇵 Japan_6
-      - 🇺🇸 美国 - 洛杉矶 - Cnservers LLC - 125
-      - 🇬🇧 do英国1-解锁
-      - 🇸🇬 Singapore_04
-      - 🇭🇰 Hong Kong_13
-      - 🇸🇬 新加坡2
-      - 🇺🇸 United States_6
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇩🇪 do德国3-解锁
-      - 🇺🇸 United States_5
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
+      - 🇯🇵 Japan_11
       - 🇯🇵 日本|@ripaojiedian
-      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 8
-      - 🇸🇬 Singapore_10
-      - 🇯🇵 日本04|油管速度优化|全天极速优先使用
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇭🇰 Hong Kong_5
-      - 🇸🇬 Singapore_02
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇯🇵 Japan_17
-      - 🇺🇸 United States_7
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇯🇵 pq日本2-解锁
-      - 🇭🇰 马来西亚 - 吉隆坡 - Kaopu Cloud HK Limited - 1
-      - 🇯🇵 Japan_8
+      - 🇸🇬 新加坡10极速节点|油管速度优化
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇧🇷 巴西 - Osasco - The Constant Company, LLC - 1
+      - 🇺🇸 美国1-解锁
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇺🇸 op美国1-解锁
+      - 🇭🇰 香港07极速节点|油管速度优化
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇩🇪 德国 - 法兰克福 - Oracle Corporation - 2
+      - 🇭🇰 Hong Kong_12
+      - 🇺🇸 _US_美国
+      - 🇯🇵 Japan_19
+      - 🇺🇸 美国5|@ripaojiedian
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Yisp B.V. - 7
+      - 🇺🇸 美国 - Ashburn - GTHost - 2
+      - 🇭🇰 Hong Kong_16
+      - 🇺🇸 美国 - 德雷珀 - FiberState, LLC - 6
+      - 🇯🇵 Japan_20
+      - 🇸🇬 日本06|油管速度优化|每次使用前请更新订阅
+      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 26
+      - 🇸🇬 Singapore_07
+      - 🇩🇪 [vmess]德国(法兰克福)-02
+      - 🇰🇷 韩国 蘑菇主机BGP数据中心
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
