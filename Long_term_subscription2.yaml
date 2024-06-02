@@ -5,292 +5,299 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 Japan_11, server: jp11.mmyjiedian.com, port: 30011, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 香港 环球全域电讯, server: 210.3.159.224, port: 12909, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 Hong Kong_12, server: hk12.mmyjiedian.com, port: 10012, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: 183.232.139.22, port: 41446, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
-  - {name: 🇿🇦 南非01|油管速度优化, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.sulian.life}}}
-  - {name: 🇰🇭 柬埔寨家宽 2x, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jb001.sulian.life}}}
-  - {name: 🇭🇰 Hong Kong_9, server: hk09.mmyjiedian.com, port: 10009, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇺🇸 _US_美国, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4, server: 109.104.153.141, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.147.200.170, port: 35972, type: vmess, uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 Hong Kong_3, server: hk03.mmyjiedian.com, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇯🇵 Japan_19, server: jp19.mmyjiedian.com, port: 30019, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）, server: cdncdncdncdn.784654.xyz, port: 2052, type: vmess, uuid: fb69c067-518a-405f-941d-20c7b0441bd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/index?ed=2048", headers: {Host: ca-cfcdn.aikunapp.com}}}
-  - {name: 🇺🇸 美国 专线（十倍率）测试, server: shdxus.aikunapp.com, port: 20003, type: vmess, uuid: fb69c067-518a-405f-941d-20c7b0441bd4, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5", server: 104.16.60.8, port: 2052, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws}}
-  - {name: 🇯🇵 pq日本2-解锁, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb.xsjhl.xyz}}}
-  - {name: 🇯🇵 Japan_15, server: jp15.mmyjiedian.com, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 香港03, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.susulian.sbs}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.17.215.8, port: 443, type: trojan, password: 2cba4104747d49d18319e5ade1b93ab5, sni: jobscareertoday.com, network: ws, ws-opts: {path: 6b777a91, headers: {Host: jobscareertoday.com}}}
+  - {name: 🇮🇳 do印度2-解锁, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyd.xsjhl.xyz}}}
+  - {name: 🇭🇰 香港05家宽|5x, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk005.sulian.life}}}
+  - {name: 🇺🇸 _US_美国, server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
+  - {name: 🇻🇳 Vietnam_2, server: vn02.mmyjiedian.com, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: cold-dawn-9246.fly.dev, port: 443, type: vmess, uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm, headers: {Host: cold-dawn-9246.fly.dev}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 36.151.195.48, port: 4603, type: trojan, password: TNDSJfNv, skip-cert-verify: true}
+  - {name: 🇺🇸 美国2-解锁, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: akus1.xsjhl.xyz}}}
+  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 172.67.124.123, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: any.ktsfd.shop, path: "", tls: true, mux: true}}
+  - {name: 🇭🇰 Hong Kong_10, server: hk10.mmyjiedian.com, port: 10010, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
   - {name: 🇺🇸 do美国3, server: yx3.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: us1.xsjhl.xyz}}}
-  - {name: 🇩🇪 do德国2-解锁, server: yx2.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg.xsjhl.xyz}}}
-  - {name: "🇺🇸 [vmess]美国(旧金山)-02", server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /us2, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
-  - {name: 🇸🇦 沙特阿拉伯 01, server: cdncdncdncdn.784654.xyz, port: 2052, type: vmess, uuid: fb69c067-518a-405f-941d-20c7b0441bd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/index?ed=2048", headers: {Host: cfmgny.981545.xyz}}}
-  - {name: 🇬🇧 do英国3-解锁, server: yx3.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg.xsjhl.xyz}}}
-  - {name: 🇺🇸 do美国1, server: yx1.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: us1.xsjhl.xyz}}}
-  - {name: 🇺🇸 _US_美国 2, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇸🇬 Singapore_04, server: sg04.mmyjiedian.com, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇨🇳 Taiwan_1, server: tw01.mmyjiedian.com, port: 40006, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇩🇪 do德国3-解锁, server: yx3.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg.xsjhl.xyz}}}
+  - {name: 🇫🇷 法国 V2CROSS.COM, server: 146.19.247.183, port: 443, type: trojan, password: 62b9172d-cc3a-4001-8172-7804fbf1a09b, sni: aka.ms, network: ws, ws-opts: {path: /, headers: {Host: aka.ms}}}
+  - {name: 🇯🇵 Japan_2, server: jp02.mmyjiedian.com, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 Hong Kong_2, server: hk02.mmyjiedian.com, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 距离下次重置剩余：28 天, server: cdncdncdncdn.784654.xyz, port: 2052, type: vmess, uuid: fb69c067-518a-405f-941d-20c7b0441bd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/index?ed=2048", headers: {Host: ca-cfcdn.aikunapp.com}}}
+  - {name: 🇦🇱 _AL_阿尔巴尼亚, server: 109.104.152.126, port: 51122, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
+  - {name: 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aga12fadf, headers: {Host: jp05.sulian.life}}}
+  - {name: 🇺🇸 _US_美国 2, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 美国4, server: yx.sulink.one, port: 80, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us4.sulink.one}}}
+  - {name: 🇯🇵 日本12|油管速度优化|奈非|测试节点, server: yx.sulink.one, port: 2052, type: vmess, uuid: 46dc853e-04da-4a8f-8b2a-02d2ef3d8c36, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fd12ga1, headers: {Host: jp012.susulian.sbs}}}
+  - {name: 🇭🇰 Hong Kong_1, server: hk01.mmyjiedian.com, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇸🇬 Singapore_10, server: sg10.mmyjiedian.com, port: 20010, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
   - {name: 🇩🇪 do德国1-解锁, server: yx1.xsjhl.xyz, port: 2082, type: vmess, uuid: 4b5ce38b-1de2-4666-8f4f-7070e5c9643c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg.xsjhl.xyz}}}
-  - {name: 🇺🇸 _US_美国 3, server: 148.135.40.190, port: 8080, type: vmess, uuid: f6c4905b-0308-4164-b1ad-4157531a8378, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/index?ed=2560"}}
-  - {name: 🇯🇵 Japan_16, server: jp16.mmyjiedian.com, port: 30016, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇭🇰 Hong Kong_18, server: hk18.mmyjiedian.com, port: 10018, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
-  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
-  - {name: 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3, server: 104.26.15.85, port: 2052, type: vmess, uuid: 5f12b2e0-11b0-4b1e-863c-164e4606028c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za}}
-  - {name: "🇩🇪 [vmess]德国(法兰克福)-01", server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45102, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /de1, headers: {Host: oracle-de-01.t3csyun.buzz}}}
+  - {name: 🇭🇰 Hong Kong_11, server: hk11.mmyjiedian.com, port: 10011, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇨🇳 广东省佛山市 移动, server: 183.232.170.47, port: 15606, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 Japan_20, server: jp20.mmyjiedian.com, port: 30020, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 183.232.170.47, port: 15606, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 Japan_1, server: jp01.mmyjiedian.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇸🇬 _US_美国->🇸🇬_SG_新加坡, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/3YKfzGw4, headers: {Host: rpmlybgzsg2.yofnhkfc.xyz}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇸🇬 Singapore_04, server: sg04.mmyjiedian.com, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5, server: 104.18.202.232, port: 2052, type: vmess, uuid: 5f12b2e0-11b0-4b1e-863c-164e4606028c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za/@HosseinStore_Za}}
+  - {name: 🇫🇷 法国 OVH, server: 51.77.53.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 秒秒云.com, server: hk16.mmyjiedian.com, port: 10016, type: ss, cipher: chacha20-ietf-poly1305, password: 853a4d4c-153f-4897-9a9b-8528b2bfafb2}
+  - {name: 🇺🇸 美国 Amazon数据中心, server: 18.199.242.4, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇭🇰 香港03
+      - 🇭🇰 香港05家宽|5x
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -306,41 +313,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 Japan_11
-      - 🇭🇰 香港 环球全域电讯
-      - 🇭🇰 Hong Kong_12
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇿🇦 南非01|油管速度优化
-      - 🇰🇭 柬埔寨家宽 2x
-      - 🇭🇰 Hong Kong_9
+      - 🇮🇳 do印度2-解锁
+      - 🇭🇰 香港05家宽|5x
       - 🇺🇸 _US_美国
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - ONEPROVIDER - 4
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇭🇰 Hong Kong_3
-      - 🇯🇵 Japan_19
-      - 🏳️‍🌈 加拿大 01 高速（0.1x流量消耗）
-      - 🇺🇸 美国 专线（十倍率）测试
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 5
-      - 🇯🇵 pq日本2-解锁
-      - 🇯🇵 Japan_15
-      - 🇭🇰 香港03
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇻🇳 Vietnam_2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国2-解锁
+      - 🇭🇰 香港KT|@ripaojiedian
+      - 🇭🇰 Hong Kong_10
       - 🇺🇸 do美国3
-      - 🇩🇪 do德国2-解锁
-      - 🇺🇸 [vmess]美国(旧金山)-02
-      - 🇸🇦 沙特阿拉伯 01
-      - 🇬🇧 do英国3-解锁
-      - 🇺🇸 do美国1
+      - 🇩🇪 do德国3-解锁
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇯🇵 Japan_2
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇭🇰 Hong Kong_2
+      - 距离下次重置剩余：28 天
+      - 🇦🇱 _AL_阿尔巴尼亚
+      - 🇸🇬 日本05|油管速度优化|节点无法使用请更新订阅
       - 🇺🇸 _US_美国 2
-      - 🇸🇬 Singapore_04
-      - 🇨🇳 Taiwan_1
+      - 🇺🇸 美国4
+      - 🇯🇵 日本12|油管速度优化|奈非|测试节点
+      - 🇭🇰 Hong Kong_1
+      - 🇸🇬 Singapore_10
       - 🇩🇪 do德国1-解锁
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 Japan_16
-      - 🇭🇰 Hong Kong_18
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 3
-      - 🇩🇪 [vmess]德国(法兰克福)-01
+      - 🇭🇰 Hong Kong_11
+      - 🇨🇳 广东省佛山市 移动
+      - 🇯🇵 Japan_20
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 Japan_1
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 Singapore_04
+      - 🇩🇪 德国 - Frankfurt Am Main - Hetzner Online AG - 5
+      - 🇫🇷 法国 OVH
+      - 秒秒云.com
+      - 🇺🇸 美国 Amazon数据中心
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
