@@ -5,1302 +5,1321 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|, server: ca-new01.daluquan.top, port: 8080, type: vmess, uuid: e984ee91-2cbb-4ccc-a8c1-c0c47a3b8fdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca-new01.daluquan.top}}}
-  - {name: 🇨🇳 台湾 IPLC A05 Netflix 动画疯, server: twct05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 _US_美国, server: 38.114.114.207, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇧🇷 巴西2-維涅杜, server: ooo.jjjbnode.top, port: 14772, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: rk2.izoizoizo.top, port: 46091, type: ss, cipher: chacha20-ietf-poly1305, password: 4aa5bc5a-5574-4ec6-9c34-d2a5e9ee1d53}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|, server: 46.182.107.117, port: 41001, type: vmess, uuid: 990006bd-cb20-482f-9c97-f5fc65359605, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/341732320113}}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2, server: 46.182.107.179, port: 41001, type: vmess, uuid: 21155efd-8e29-43d2-95bc-fe3190ecb1c6, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/002612283319}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|, server: fly0001.flyflylflyflysbs.sbs, port: 39788, type: trojan, password: 04e09b7b-6f9b-457b-b800-8eba4dc9b7d5, skip-cert-verify: true}
-  - {name: 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|, server: sz.zj.my.1.76po.com, port: 31015, type: trojan, password: 76c191cd-fba1-4d6f-b766-6f68a7392f71, skip-cert-verify: true}
-  - {name: 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|, server: sg-02.01-vip.top, port: 31012, type: trojan, password: ece5d10b-53f7-4d3b-b985-300687479706, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|, server: df.xiguajiasu.xyz, port: 46002, type: trojan, password: cbbccb66-abd3-4562-880c-cf63a805dcfb, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾 IEPL Game F, server: twgame06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|, server: 38.14.121.119, port: 38005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/192410132826}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2, server: 38.33.55.69, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/291623301911}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|, server: 0000000000000000000000000022.agroup-node-for-bigairport.sbs, port: 38752, type: vmess, uuid: 323c4178-e9ad-4eb9-9731-fabe6d652537, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000022.agroup-node-for-bigairport.sbs}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|, server: 199.180.101.8, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/041101351417}}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|, server: fr1.test3.net, port: 443, type: trojan, password: cd068860-130f-11ef-90ca-1239d0255272, skip-cert-verify: true}
-  - {name: 🇮🇳 印度 马哈拉 IPLC A01, server: in01.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|, server: alibaba1.xn--z7x16bf6t.com, port: 27799, type: ss, cipher: aes-128-gcm, password: 56bfe291-bd02-450d-b865-805e41ebbb39}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|, server: gy.58n.net, port: 20303, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z303.hongkongnode.top, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯, server: tw14.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|", server: free.2apzhfa.xyz, port: 31021, type: ss, cipher: chacha20-ietf-poly1305, password: c156047a-ae4f-4876-8f8b-8b84c3858c1c}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3, server: 38.11.71.93, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/080916023013}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4, server: 108.186.57.233, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/053232222312}}
-  - {name: 🇨🇳 台湾 IPLC A11 Netflix 动画疯, server: twct11.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|, server: 80.240.124.9, port: 443, type: vmess, uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /bb}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|, server: gy.58n.net, port: 20308, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z308.hongkongnode.top, skip-cert-verify: true}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|, server: kr03.philbertbeguiling.online, port: 80, type: vmess, uuid: f8842bea-ec04-4039-b03a-aac6c42fe2c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.philbertbeguiling.online}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2, server: 86.38.214.83, port: 2052, type: vmess, uuid: 4037f0f3-318f-4b33-8db3-a7b91490f335, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
-  - {name: 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB, server: sg20.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯, server: tw08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3, server: n00007.bzdqsmzngpyyng.sbs, port: 37180, type: trojan, password: c41b0b0b-d089-431e-8173-d7ea549f5209, skip-cert-verify: true}
-  - {name: 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 36821, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z262.hongkongnode.top, skip-cert-verify: true}
-  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|", server: data-sg-v1.shwjfkw.cn, port: 20701, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-sg-v1.shwjfkw.cn}}}
-  - {name: 🇺🇸 美国_高速_稳定在线, server: topgs.jjjnode.top, port: 14954, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|, server: hk03.beautifuloctavia.fun, port: 80, type: vmess, uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.beautifuloctavia.fun}}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2, server: 183.236.51.59, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 20303, type: trojan, password: f9a443f2-9008-3e54-953f-32b998509be0, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16, server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 日本 沪日IEPL A06 Netflix, server: jp06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|, server: fcdn.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fcdn.flha.ru}}}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03, server: sghk03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 38.114.114.207, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇩🇪 德国2, server: ooo.jjjbnode.top, port: 14754, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|, server: gy.58n.net, port: 20294, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z294.hongkongnode.top, skip-cert-verify: true}
-  - {name: 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|, server: tanz-board.01byx31qzn.download, port: 35091, type: vmess, uuid: 6844b3e1-7cf9-3b41-b80e-ee4632e63820, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01, server: sghk01.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09, server: sg29.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5, server: 103.21.244.128, port: 443, type: vmess, uuid: 09d5805c-7a22-47c1-b1c3-f090df0a98ed, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lfljvws}}
-  - {name: 🇮🇪 爱尔兰 IPLC A04, server: ir04.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇭🇰 香港4, server: ooo.jjjbnode.top, port: 14154, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|, server: de-full.privateip.net, port: 443, type: vmess, uuid: 6c317171-a223-4466-ad3b-ec73f4267668, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: de-full.privateip.net}}}
-  - {name: 🇺🇸 美国实验性 IEPL 中继 A03, server: us08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|, server: 192.74.250.208, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/353112182726}}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2, server: free.2weradf.xyz, port: 36031, type: ss, cipher: chacha20-ietf-poly1305, password: dd06aee0-e8d7-41fd-8f6d-543da48c5b4f}
-  - {name: 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|, server: 172.105.162.76, port: 443, type: vmess, uuid: bc835ac7-f117-43ca-9379-1e88a4da14e4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray-vmess/tls}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4, server: us-01.03-vip.top, port: 33006, type: vmess, uuid: ece5d10b-53f7-4d3b-b985-300687479706, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2, server: jp04.victoriousmelvina.online, port: 80, type: vmess, uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp04.victoriousmelvina.online}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 56783, type: trojan, password: c9462972-675e-3282-b125-083a99d5ecc7, skip-cert-verify: true}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2, server: fr.lvuy.xyz, port: 10076, type: ss, cipher: chacha20-ietf-poly1305, password: DqGAiuwrpamLJ18Z}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|, server: 45.76.150.232, port: 10000, type: vmess, uuid: 20a7a7f8-059c-11ef-be02-1b517a86ad17, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|", server: cncutw2.labexit.xyz, port: 571, type: ss, cipher: aes-128-gcm, password: f6fc43ba-faa2-4c71-88ba-4f49282f8326}
-  - {name: 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2, server: gy.58n.net, port: 59021, type: trojan, password: d5b2f8ab-3f78-34e3-a56f-0ebe6769e408, skip-cert-verify: true}
-  - {name: 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|, server: sz.zj.my.1.76po.com, port: 33019, type: vmess, uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2, server: 172.67.74.196, port: 2087, type: vmess, uuid: 9fd78856-60a0-3dda-a997-835121c237cf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dabai.in172.67.74.196}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5, server: 38.33.23.251, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/023512320311}}
-  - {name: 🇮🇪 爱尔兰 IPLC A03, server: ir03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2, server: 108.186.177.220, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/351432291419}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2, server: fly0001.flyflylflyflysbs.sbs, port: 39788, type: trojan, password: 248c75d5-8a66-4a47-bf61-436b05488f25, skip-cert-verify: true}
-  - {name: 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|, server: 51.89.122.175, port: 30000, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/323127100515}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3, server: 107.149.119.44, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/233218060303}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|, server: w1.forlive.live, port: 40215, type: trojan, password: 8fe1bd4e-39e4-3778-b72f-b6ca6da1eea1, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2, server: sz.zj.my.1.76po.com, port: 33001, type: vmess, uuid: 585670be-5f39-494d-9a8c-3287e28f4749, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2, server: 38.33.25.43, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/301925042401}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6, server: gy.58n.net, port: 30767, type: trojan, password: c9462972-675e-3282-b125-083a99d5ecc7, skip-cert-verify: true}
-  - {name: 🇬🇧 超级|英国1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: yg.chaozhijc.xyz}}}
-  - {name: 注册网址：chaozhijc.xyz, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: 0ff2af1f-4993-41a8-849f-0161cf33bce2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dadly.chaozhijc.xyz}}}
-  - {name: 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|, server: sz.zj.my.1.76po.com, port: 31016, type: trojan, password: 76c191cd-fba1-4d6f-b766-6f68a7392f71, skip-cert-verify: true}
-  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2", server: ss.karyl.cc, port: 54302, type: ss, cipher: chacha20-ietf-poly1305, password: a3972028-f4f7-47c1-b02e-943e8c644440}
-  - {name: 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|, server: 183.232.199.61, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
-  - {name: California Tj - B Group, server: bgroup.node5.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: 2155145a-b1b5-443a-8977-670f6bd10f02, skip-cert-verify: false}
-  - {name: 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|, server: eedp257bubu2wefy2.lovebaipiao.net, port: 54321, type: vmess, uuid: 35efde8b-d5cd-4f64-9173-cbfa36d2ecd8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: eedp257bubu2wefy2.lovebaipiao.net}}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3, server: gghk.duduskying.cf, port: 2087, type: vmess, uuid: 2e94b93f-b7f4-40a7-a6c9-4561b9ea6cdb, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: gghk.duduskying.cf}}}
-  - {name: 🇺🇸 美国2_网页, server: ooo.jjjbnode.top, port: 14552, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 公益|美国1, server: sx1.suixincloud.top, port: 2086, type: vmess, uuid: 67913a74-8ffd-4968-ac1f-ba7900ebb326, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sxus1.suixincloud.top}}}
-  - {name: 🇭🇰 香港 19, server: 211.99.97.21, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6, server: 104.18.107.58, port: 80, type: vmess, uuid: 9fd78856-60a0-3dda-a997-835121c237cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in5810718}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2, server: n00007.bzdqsmzngpyyng.sbs, port: 43654, type: trojan, password: c41b0b0b-d089-431e-8173-d7ea549f5209, skip-cert-verify: true}
-  - {name: 🇩🇪 公益|德国3, server: sx3.suixincloud.top, port: 2086, type: vmess, uuid: 67913a74-8ffd-4968-ac1f-ba7900ebb326, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sxddg.suixincloud.top}}}
-  - {name: 🇫🇷 法国 IPLC A02, server: fr02.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇦🇪 迪拜1, server: ooo.jjjbnode.top, port: 14755, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|, server: 16.v2-ray.cyou, port: 23616, type: vmess, uuid: f2be54fe-2e26-31b6-8a16-ee6e42a03c7d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 16.v2-ray.cyou}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3, server: df.xiguajiasu.xyz, port: 46002, type: trojan, password: cbbccb66-abd3-4562-880c-cf63a805dcfb, skip-cert-verify: true}
-  - {name: 🇺🇸 美国5|@ripaojiedian, server: 183.232.139.22, port: 50611, type: trojan, password: gkviEOYc, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾 IPLC A08 Netflix 动画疯, server: twct08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4, server: 84.32.44.80, port: 443, type: vmess, uuid: 939720ea-8220-4310-e48c-d87110930205, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "//?ed=2048"}}
-  - {name: 🇺🇸 超级|美国1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mg.chaozhijc.xyz}}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4, server: 104.19.45.165, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 日本 MPLS A7 1000Mbps, server: hr07.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇭🇰 中国 - 香港 - Aeza International LTD - 8, server: 104.19.54.70, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
-  - {name: 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|, server: 183.232.199.28, port: 21006, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国 IPLC A02 Netflix, server: kr02.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3, server: fly0001.flyflylflyflysbs.sbs, port: 39788, type: trojan, password: 5f7bdc26-0511-4898-9dbc-b7189989b208, skip-cert-verify: true}
-  - {name: "🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1", server: 185.196.61.62, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇬🇧 _GB_英国, server: 89.185.84.185, port: 52338, type: ss, cipher: chacha20-ietf-poly1305, password: aXuV8k5a4NFmkphgr5NTlL}
-  - {name: 🇭🇰 香港KT|@ripaojiedian, server: 118.170.99.195, port: 443, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: h2.wagaga.online, path: "", tls: true, mux: true}}
-  - {name: 🇦🇺 澳大利亚 IPLC 悉尼 A03, server: au03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3, server: 52.35.245.90, port: 14556, type: trojan, password: NKD(hUc2EesI, skip-cert-verify: true}
-  - {name: 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|, server: aujs.lydurlclub.top, port: 443, type: trojan, password: e406f37e-e164-443e-a4c0-d1ebb700f3db, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2, server: 107.148.197.165, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/353027272920}}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|, server: fly0001.flyflylflyflysbs.sbs, port: 37581, type: trojan, password: d9806bf0-f94d-4d52-8248-ed4392dd0992, skip-cert-verify: true}
-  - {name: 距离下次重置剩余：22 天, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dadly.chaozhijc.xyz}}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2, server: kr03.trixieseymour.site, port: 80, type: vmess, uuid: 4400260c-f088-4748-af5c-cacce1156de0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.trixieseymour.site}}}
-  - {name: 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01, server: kr08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3", server: tw02.mmyjiedian.com, port: 40007, type: ss, cipher: chacha20-ietf-poly1305, password: 8ee5ce59-a7e2-4850-b929-c903c653bf72}
-  - {name: 🇩🇪 _DE_德国, server: 18.195.6.49, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|, server: tanz-board.01byx31qzn.download, port: 35021, type: vmess, uuid: f5b1b2a4-501f-37ef-915d-0a5badbc42a0, alterId: 0, cipher: auto, tls: false}
-  - {name: ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|", server: n00005.bzdqsmzngpyyng.sbs, port: 58563, type: trojan, password: c41b0b0b-d089-431e-8173-d7ea549f5209, skip-cert-verify: true}
-  - {name: 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2, server: 104.18.189.123, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|, server: 206.237.31.203, port: 16899, type: ss, cipher: aes-128-gcm, password: Yc2CtrIz8L}
-  - {name: 🇺🇸 _US_美国 2, server: 38.114.114.207, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|, server: 15.223.113.130, port: 14569, type: trojan, password: clmVD(eN8toJ, sni: appsvs.shop, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 20139, type: trojan, password: c9462972-675e-3282-b125-083a99d5ecc7, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2, server: 59.56.77.178, port: 15001, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|, server: 18.171.54.28, port: 14586, type: trojan, password: sFQxIYrtZnvg, sni: appsvs.shop, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7, server: gy.58n.net, port: 11215, type: trojan, password: d5b2f8ab-3f78-34e3-a56f-0ebe6769e408, skip-cert-verify: true}
-  - {name: "🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1", server: 104.16.67.38, port: 2082, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /afrhms07.xfixedfloat.cfd/linkws}}
-  - {name: 🇭🇰 Hongkong SS - B Group, server: bgroup.node4.s.nodelist-gfwairport2.top, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 2155145a-b1b5-443a-8977-670f6bd10f02}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3, server: kr03.nathaniatheodora.cloud, port: 80, type: vmess, uuid: 4ebcbea9-9da6-40ad-afd1-30cb953c9688, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr03.nathaniatheodora.cloud}}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2, server: hk7.lvuy.xyz, port: 10072, type: ss, cipher: chacha20-ietf-poly1305, password: mezI5NHvx6VXqMub}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|, server: 104.20.194.15, port: 2083, type: vmess, uuid: 9fd78856-60a0-3dda-a997-835121c237cf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dabai.in104.20.194.15}}
-  - {name: 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB, server: sg14.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2, server: gy.58n.net, port: 20071, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: x71.flybar.work, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02, server: kr09.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇭🇰 中国 - 香港 - Aeza International LTD - 13, server: 104.19.54.102, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai2"}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3, server: 69.80.226.109, port: 31002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/172127092130}}
-  - {name: 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|, server: xg-ct2.dx001.top, port: 19842, type: vmess, uuid: 6524f9fe-7258-37c6-9621-e1eba2f023d9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 英国 IPLC BBC A03, server: uk03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇸🇬 优化|o新加坡1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: 0ff2af1f-4993-41a8-849f-0161cf33bce2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dxjp.chaozhijc.xyz}}}
-  - {name: 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2, server: eedp257bubu2wefy2.lovebaipiao.net, port: 54321, type: vmess, uuid: ae840eaa-21a3-462c-8dc8-f5eded625799, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: eedp257bubu2wefy2.lovebaipiao.net}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|, server: cf-004-ipv4.xiaoxiaobujidao.xyz, port: 80, type: vmess, uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-007.xiaoxiaobujidao.xyz}}}
-  - {name: 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|, server: 23.162.200.130, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7, server: df.xiguajiasu.xyz, port: 46003, type: trojan, password: cbbccb66-abd3-4562-880c-cf63a805dcfb, skip-cert-verify: true}
-  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2, server: 18.195.203.57, port: 14564, type: trojan, password: Qa6oIB0O0ysE, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2, server: gy.58n.net, port: 43337, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z102.hongkongnode.top, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4, server: 38.174.165.72, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/071831061733}}
-  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|", server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: vip3.niuniupremium.xyz}}}
-  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02, server: jpid02.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5, server: 167.71.165.243, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2", server: 116.162.172.160, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
-  - {name: 🇯🇵 日本日本大阪 オプテージ A 07, server: jpaz07.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇸🇬 新加坡1_网页, server: ooo.jjjbnode.top, port: 14451, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本 MPLS A5 1000Mbps, server: hr05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|, server: 77.238.224.215, port: 10000, type: vmess, uuid: 7f832f4a-1375-11ef-a8ed-d7d79d2049bd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇩🇪 优化|o德国2, server: chaoji2.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ddg.chaozhijc.xyz}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3, server: jp3.lvuy.xyz, port: 10039, type: ss, cipher: chacha20-ietf-poly1305, password: mezI5NHvx6VXqMub}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 104.26.9.22, port: 8080, type: vmess, uuid: ef8c954e-014f-4b36-8273-9b5086afab34, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: ef8c954e-014f-4b36-8273-9b5086afab34-vm, headers: {Host: dual-nothing-prep-exit.trycloudflare.com}}}
-  - {name: 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix, server: sgp14.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇺🇸 _US_美国 3, server: 74.211.99.116, port: 80, type: vmess, uuid: 7233ea84-9f86-4e09-dece-db3a472ad1a8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07, server: jpid07.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|, server: hkjpkrsg.diao.icu, port: 2052, type: vmess, uuid: a3181954-3c97-45a3-be23-b37f08460cb6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkjpkrsg.diao.icu}}}
-  - {name: 🇭🇰 中国 - 香港 - Aeza International LTD - 9, server: 104.19.54.188, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048"}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4, server: 183.240.188.36, port: 35008, type: vmess, uuid: e3288b08-b2c9-3683-ae96-1dbc4f8dc738, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 游戏 韩国 IEPL 1 3Gbps, server: kraz01.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3, server: ed.lvuy.xyz, port: 10069, type: ss, cipher: chacha20-ietf-poly1305, password: DqGAiuwrpamLJ18Z}
-  - {name: 🇭🇰 香港_高速_稳定在线, server: hk1.jjjnode.top, port: 14951, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: ATM MODE A05, server: pvcc05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
-  - {name: 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|, server: gb-01.01-vip.top, port: 31016, type: trojan, password: ece5d10b-53f7-4d3b-b985-300687479706, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|, server: 104.19.57.177, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai_8"}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6, server: 38.33.20.155, port: 36001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/010121162003}}
-  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5, server: kr02.beautifulprimavera.online, port: 80, type: vmess, uuid: 4400260c-f088-4748-af5c-cacce1156de0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr02.beautifulprimavera.online}}}
+  - {name: 🇭🇰 香港 02, server: 211.99.97.4, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|, server: 192.74.242.195, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/290829250230}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|, server: 54.250.164.26, port: 12583, type: trojan, password: TnydoXbIjYBo, skip-cert-verify: true}
+  - {name: 若无网络 切换别的节点, server: ooo.jjjbnode.top, port: 14955, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国高级 IEPL 中继 A04, server: us04.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|, server: 108.186.164.92, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/101803232531}}
+  - {name: 🇸🇪 瑞典1-斯德哥尔摩, server: ooo.jjjbnode.top, port: 14777, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|, server: free.6vczxw.xyz, port: 30054, type: ss, cipher: chacha20-ietf-poly1305, password: 4138e0df-10e3-416f-aa37-353d398c8689}
+  - {name: 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|, server: kr01.appleid.bf, port: 2086, type: vmess, uuid: b3e12d5c-7504-4113-a26d-001e1b45ff73, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: kr01.appleid.bf}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|, server: 38.38.185.89, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/301725050126}}
+  - {name: 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|, server: 51.75.170.141, port: 10000, type: vmess, uuid: b9d2059e-1376-11ef-ac8c-f3fce469e8b6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|, server: tanz-board.01byx31qzn.download, port: 35091, type: vmess, uuid: f5b1b2a4-501f-37ef-915d-0a5badbc42a0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|, server: gy.58n.net, port: 20279, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z279.hongkongnode.top, skip-cert-verify: true}
+  - {name: ATM MODE A06, server: pvcc06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇨🇦 加拿大 IPLC A01, server: ca01.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|, server: 209.38.24.38, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|, server: 38.173.210.87, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/280706313123}}
+  - {name: 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix, server: sgp07.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇰🇷 韩国 전라북도 전주시 商宽 A 05, server: krgame05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB, server: sg16.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
   - {name: 🇨🇱 智利1-圣地亚哥, server: ooo.jjjbnode.top, port: 14780, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚2, server: sx1.suixincloud.top, port: 2086, type: vmess, uuid: 67913a74-8ffd-4968-ac1f-ba7900ebb326, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sxadly.suixincloud.top}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4, server: gy.58n.net, port: 56783, type: trojan, password: 5041b386-428d-3b73-9de3-a2995d881069, skip-cert-verify: true}
-  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|, server: gy.58n.net, port: 20304, type: trojan, password: 16491906-f8cc-3019-a75a-986e38130634, skip-cert-verify: true}
-  - {name: 🇺🇸 美国高级 IEPL 中继 A03, server: us03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇰🇷 超级|韩国2, server: chaojj2.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hg.chaozhijc.xyz}}}
+  - {name: 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|, server: 13.124.178.1, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇳 台湾3_台北, server: ooo.jjjbnode.top, port: 14153, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|, server: free.2weradf.xyz, port: 36031, type: ss, cipher: chacha20-ietf-poly1305, password: dd06aee0-e8d7-41fd-8f6d-543da48c5b4f}
+  - {name: 🇨🇳 台湾 IPLC A05 Netflix 动画疯, server: twct05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix, server: sgp06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|, server: gy.58n.net, port: 20302, type: trojan, password: f28b3366-4a8d-3c1c-9707-40bacda81f36, skip-cert-verify: true}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|, server: 104.19.44.184, port: 8080, type: vmess, uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8"}}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|, server: free.2apzhfa.xyz, port: 31028, type: ss, cipher: chacha20-ietf-poly1305, password: 442b6541-a033-441f-a51d-6cf73ffbd5bc}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11, server: sghk11.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇨🇳 台湾 IPLC A13 Netflix 动画疯, server: twct13.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|, server: uk1.lvuy.xyz, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: tx5nuBpe0EpZ0iYq}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2, server: jp.littleqqq.co, port: 62193, type: vmess, uuid: 2649d4e6-48ee-428c-bbe1-18162675cfbf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /live/UKPZrSI3K7dtNJmn, headers: {Host: jp.littleqqq.co}}}
+  - {name: 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix, server: sgp11.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|, server: 38.11.4.57, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/331309301430}}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|, server: jp01.travisdependable.online, port: 80, type: vmess, uuid: 2162287d-1517-4724-b225-9e02ad7336f3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp01.travisdependable.online}}}
   - {name: 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03, server: kr10.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|, server: fly0001.flyflylflyflysbs.sbs, port: 25074, type: trojan, password: 248c75d5-8a66-4a47-bf61-436b05488f25, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31, server: 183.232.199.28, port: 42001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|, server: 142.4.124.55, port: 8208, type: trojan, password: 33226730-0f94-4ada-8bb4-3d2f6debe7c5, sni: us1.qnap.com, skip-cert-verify: true}
+  - {name: ATM MODE A04, server: pvcc04.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|, server: 104.19.35.132, port: 2082, type: vmess, uuid: 0ff2af1f-4993-41a8-849f-0161cf33bce2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|, server: jp4.lvuy.xyz, port: 10058, type: ss, cipher: chacha20-ietf-poly1305, password: mezI5NHvx6VXqMub}
+  - {name: 🇭🇰 中国 - 香港 - Aeza International LTD - 18, server: 104.19.54.19, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai2"}}
+  - {name: 🇰🇷 游戏 韩国 IEPL 6 3Gbps, server: kraz06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2, server: gy.58n.net, port: 20308, type: trojan, password: 5041b386-428d-3b73-9de3-a2995d881069, skip-cert-verify: true}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|, server: zfyd.dawosima.xyz, port: 11546, type: vmess, uuid: 09d33da1-085c-30da-80d5-f4ed28c4f609, alterId: 0, cipher: auto, tls: false}
+  - {name: California Tj - B Group, server: bgroup.node5.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: 2155145a-b1b5-443a-8977-670f6bd10f02, skip-cert-verify: false}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: true}
+  - {name: 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|, server: gb-01.03-vip.top, port: 33016, type: vmess, uuid: e3932e95-3a2b-4920-b2d8-6870b73da7ed, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3, server: gy.58n.net, port: 56783, type: trojan, password: 5041b386-428d-3b73-9de3-a2995d881069, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|", server: n00005.bzdqsmzngpyyng.sbs, port: 49148, type: trojan, password: c41b0b0b-d089-431e-8173-d7ea549f5209, skip-cert-verify: true}
+  - {name: 🇨🇳 超级|台湾1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: tw.chaozhijc.xyz}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 20305, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z305.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2, server: a.v2ray.wtf, port: 30015, type: ss, cipher: chacha20-ietf-poly1305, password: 68ffeac9-1381-4d64-a708-f7240c0e4aac}
+  - {name: 🇫🇷 法国3-马赛, server: ooo.jjjbnode.top, port: 14759, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2, server: na.ma, port: 8443, type: vmess, uuid: dbeb3764-a826-4722-bed8-2c1d6bde5f85, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/vmess?=2048", headers: {Host: na.ma}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2, server: gy.58n.net, port: 56783, type: trojan, password: d5b2f8ab-3f78-34e3-a56f-0ebe6769e408, skip-cert-verify: true}
+  - {name: 🇯🇵 日本 MPLS A7 1000Mbps, server: hr07.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|", server: free.2apzhfa.xyz, port: 31021, type: ss, cipher: chacha20-ietf-poly1305, password: c156047a-ae4f-4876-8f8b-8b84c3858c1c}
+  - {name: 距离下次重置剩余：21 天, server: sx1.suixincloud.top, port: 2086, type: vmess, uuid: 67913a74-8ffd-4968-ac1f-ba7900ebb326, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sxus1.suixincloud.top}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|, server: gy.58n.net, port: 20302, type: trojan, password: 0a670e19-ddc0-3520-ae47-0892cf9d14c6, skip-cert-verify: true}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3, server: entrance1-81.jjsagcajvv.xyz, port: 30043, type: vmess, uuid: 726722b1-26d5-3fe3-a685-9adc0ff170c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: entrance1-81.jjsagcajvv.xyz}}}
+  - {name: 🇺🇸 推特 ins 使用美国线路, server: ooo.jjjbnode.top, port: 14855, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2, server: 38.14.121.119, port: 38005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/192410132826}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2, server: 64.23.178.12, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|, server: 23.162.200.130, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|, server: gy.58n.net, port: 20141, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z141.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2, server: xg-cm2.dx001.top, port: 29811, type: vmess, uuid: a163d4c6-3b3c-319b-95a1-274e736d4dff, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|, server: 108.186.31.109, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/172509243015}}
+  - {name: 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|, server: 11.v2-ray.cyou, port: 23611, type: vmess, uuid: 68436fc9-80d9-37be-8490-90398227fd09, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 11.v2-ray.cyou}}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 43337, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z102.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|, server: sg-02.01-vip.top, port: 31012, type: trojan, password: ece5d10b-53f7-4d3b-b985-300687479706, skip-cert-verify: true}
+  - {name: Incheon SS - B Group, server: bgroup.node2.s.nodelist-gfwairport2.top, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 2155145a-b1b5-443a-8977-670f6bd10f02}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4, server: 143.110.158.140, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本 MPLS A9 1000Mbps, server: hr09.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|, server: 109.104.153.141, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 新加坡3_YouTube, server: ooo.jjjbnode.top, port: 14453, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3, server: 38.110.1.43, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 3.112.233.37, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|, server: ca-new01.daluquan.top, port: 8080, type: vmess, uuid: e984ee91-2cbb-4ccc-a8c1-c0c47a3b8fdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca-new01.daluquan.top}}}
+  - {name: 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|, server: ca-full.privateip.net, port: 443, type: vmess, uuid: 8da41d0a-0454-4ced-a7e2-4de2a3dcc525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: ca-full.privateip.net}}}
+  - {name: 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB, server: sg05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2", server: free.2apzhfa.xyz, port: 31012, type: ss, cipher: chacha20-ietf-poly1305, password: c156047a-ae4f-4876-8f8b-8b84c3858c1c}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2, server: gy.58n.net, port: 28678, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z143.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国, server: 74.211.99.116, port: 80, type: vmess, uuid: 7233ea84-9f86-4e09-dece-db3a472ad1a8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|, server: hk03.thomasinaglorious.online, port: 80, type: vmess, uuid: e5e2206d-8650-4dfb-9731-fe2ee99b944e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.thomasinaglorious.online}}}
+  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08, server: jpid08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 47.76.197.86, port: 81, type: ss, cipher: aes-128-gcm, password: a-wym4ovY4Yw}
+  - {name: 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2, server: uk1.lvuy.xyz, port: 10053, type: ss, cipher: chacha20-ietf-poly1305, password: tx5nuBpe0EpZ0iYq}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2, server: hk03.beautifuloctavia.fun, port: 80, type: vmess, uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.beautifuloctavia.fun}}}
+  - {name: 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|, server: 15.223.113.130, port: 14568, type: trojan, password: clmVD(eN8toJ, skip-cert-verify: true}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|, server: 35.75.19.90, port: 443, type: trojan, password: 769f1962-80f4-3f3c-b2a8-cdd124692989, sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3, server: gy.58n.net, port: 24603, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z259.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇬🇧 _GB_英国, server: 18.171.116.181, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: 9ed7614b-d69e-4f38-ba35-bf7152048be5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/VuDFdktz, headers: {Host: cfcdn2.sanfencdn9.com}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|, server: sg1.node.hktooo.top, port: 12085, type: trojan, password: "!gZqhh^p;z97", sni: sg1.node.hktooo.top, skip-cert-verify: false}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2, server: 18.199.104.6, port: 14570, type: trojan, password: XYi2qPVjmjrU, sni: appsvs.shop, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|, server: 103.172.116.94, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3, server: 80.92.204.106, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
+  - {name: 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|, server: 165.232.45.9, port: 4668, type: vmess, uuid: 659d2d61-0a01-49ad-885f-d9c656a06c25, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 659d2d61-0a01-49ad-885f-d9c656a06c25-vm}}
+  - {name: 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix, server: jp15.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|, server: www.svep.com, port: 443, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws/ivideos.sbs, headers: {Host: www.svep.com}}}
+  - {name: 🇬🇧 英国 IPLC BBC A01, server: uk01.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4, server: de-01.01-vip.top, port: 31017, type: trojan, password: e3932e95-3a2b-4920-b2d8-6870b73da7ed, sni: de-01.v4vip.top, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国 전라북도 전주시 商宽 A 03, server: krgame03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|", server: 4.forlive.live, port: 61001, type: ss, cipher: chacha20-ietf-poly1305, password: 127e812d-4f78-4eb4-8c3c-4ae7ffe0368c}
+  - {name: 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20, server: 118.107.245.18, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/341901080027}}
+  - {name: 🇺🇸 _US_美国 2, server: 38.114.114.207, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5, server: gy.58n.net, port: 20303, type: trojan, password: f9a443f2-9008-3e54-953f-32b998509be0, skip-cert-verify: true}
+  - {name: 🇭🇰 中国 - 香港 - Aeza International LTD - 17, server: 104.19.54.20, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai2"}}
+  - {name: 🇨🇳 台湾 IPLC A09 Netflix 动画疯, server: twct09.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB, server: sg17.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇯🇵 日本__动态_推/Ins, server: ooo.jjjbnode.top, port: 14851, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2, server: uk1.lvuy.xyz, port: 10052, type: ss, cipher: chacha20-ietf-poly1305, password: DqGAiuwrpamLJ18Z}
+  - {name: 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|, server: free.2weradf.xyz, port: 36040, type: ss, cipher: chacha20-ietf-poly1305, password: dd06aee0-e8d7-41fd-8f6d-543da48c5b4f}
+  - {name: 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2, server: zfyd.dawosima.xyz, port: 64826, type: vmess, uuid: b8ece814-f2a4-3149-ba06-82da68fd8ac5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5, server: fly0001.flyflylflyflysbs.sbs, port: 39788, type: trojan, password: e32651dc-3e4f-4517-ac6f-39f9718bbe59, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2", server: 104.19.47.128, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|, server: 104.19.57.143, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai_8"}}
+  - {name: 🇺🇸 美国__动态_推/Ins, server: ooo.jjjbnode.top, port: 14852, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇧🇷 超级|巴西1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: bx.chaozhijc.xyz}}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|, server: 103.172.116.94, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3, server: 108.186.177.220, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/351432291419}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|, server: 13.214.212.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4, server: 52.35.245.90, port: 14556, type: trojan, password: NKD(hUc2EesI, skip-cert-verify: true}
+  - {name: 🇮🇳 优化|o印度2, server: chaoji2.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dyd.chaozhijc.xyz}}}
+  - {name: 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2, server: sz.zj.my.1.76po.com, port: 33019, type: vmess, uuid: 76c191cd-fba1-4d6f-b766-6f68a7392f71, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|, server: 46.182.107.65, port: 41002, type: vmess, uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/151202240016}}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2, server: gy.58n.net, port: 20305, type: trojan, password: f28b3366-4a8d-3c1c-9707-40bacda81f36, skip-cert-verify: true}
+  - {name: 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2, server: 23.162.200.225, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3, server: fly0001.flyflylflyflysbs.sbs, port: 10598, type: trojan, password: 248c75d5-8a66-4a47-bf61-436b05488f25, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2, server: gy.58n.net, port: 11215, type: trojan, password: f28b3366-4a8d-3c1c-9707-40bacda81f36, skip-cert-verify: true}
+  - {name: 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05, server: jpid05.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15, server: 162.159.136.106, port: 80, type: vmess, uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇮🇪 爱尔兰 IPLC A03, server: ir03.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|, server: 47.236.246.45, port: 10000, type: vmess, uuid: 367a6994-059c-11ef-9ef7-00163e0de184, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇲🇽 墨西哥-蒙特雷, server: ooo.jjjbnode.top, port: 14770, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2, server: df.xiguajiasu.xyz, port: 41002, type: trojan, password: cbbccb66-abd3-4562-880c-cf63a805dcfb, skip-cert-verify: true}
+  - {name: 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|, server: kr01.victorialouisa.online, port: 80, type: vmess, uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr01.victorialouisa.online}}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3", server: free.2weradf.xyz, port: 36012, type: ss, cipher: chacha20-ietf-poly1305, password: c342c673-dd14-49c6-bc95-d2f433b4a0f8}
+  - {name: 🇭🇰 香港 17, server: 211.99.97.19, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3, server: 38.33.44.23, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/320410353223}}
+  - {name: 🇺🇸 美国实验性 IEPL 中继 A01, server: us06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6, server: ed.lvuy.xyz, port: 10069, type: ss, cipher: chacha20-ietf-poly1305, password: DqGAiuwrpamLJ18Z}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6, server: 38.174.165.71, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/150033210300}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4, server: 34.227.18.95, port: 12600, type: trojan, password: aVHXg1CYk94E, skip-cert-verify: true}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|, server: fly0001.flyflylflyflysbs.sbs, port: 20943, type: trojan, password: 6e4a99f6-d731-413f-9f17-85a23e825499, skip-cert-verify: true}
+  - {name: 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|, server: in-01.03-vip.top, port: 33018, type: vmess, uuid: ece5d10b-53f7-4d3b-b985-300687479706, alterId: 0, cipher: auto, tls: true}
+  - {name: ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|", server: 104.19.47.30, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2, server: df.xiguajiasu.xyz, port: 41001, type: trojan, password: ae8e7f83-9921-4c33-974d-c87c1228efb4, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3", server: 104.18.10.128, port: 443, type: vmess, uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /WgCmp8pxRWBtLTlTL}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5, server: gy.58n.net, port: 22741, type: trojan, password: f9a443f2-9008-3e54-953f-32b998509be0, skip-cert-verify: true}
+  - {name: 🇯🇵 日本 沪日IEPL A04 Netflix, server: jp04.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|, server: free.6vczxw.xyz, port: 30027, type: ss, cipher: chacha20-ietf-poly1305, password: 4138e0df-10e3-416f-aa37-353d398c8689}
+  - {name: ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2", server: 104.19.47.156, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 20288, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z288.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国 전라북도 전주시 商宽 A 04, server: krgame04.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇺🇸 _US_美国 3, server: 64.176.15.74, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|", server: tw02.mmyjiedian.com, port: 40007, type: ss, cipher: chacha20-ietf-poly1305, password: 8ee5ce59-a7e2-4850-b929-c903c653bf72}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2, server: gy.58n.net, port: 20305, type: trojan, password: 0a670e19-ddc0-3520-ae47-0892cf9d14c6, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|", server: cmlayer6.standurls.co, port: 562, type: ss, cipher: aes-128-gcm, password: f6fc43ba-faa2-4c71-88ba-4f49282f8326}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}}
+  - {name: 🇯🇵 日本 沪日IEPL A06 Netflix, server: jp06.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|, server: 104.19.45.88, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3, server: 183.236.51.59, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国7_凤凰城, server: ooo.jjjbnode.top, port: 14557, type: vmess, uuid: 55a4f1da-21f7-41e2-97cc-1c7d8231c0b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 优化|o德国1, server: chaoji1.chaozhijc.xyz, port: 2082, type: vmess, uuid: b389350b-4d26-496b-9c77-c4a16592fb7d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ddg.chaozhijc.xyz}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3, server: jp02.fredericamelody.online, port: 80, type: vmess, uuid: 90b2f590-5e7b-4ca2-a2d5-3bcc435d9650, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.fredericamelody.online}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2, server: 38.33.25.43, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/301925042401}}
+  - {name: "🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9", server: kr04.victorialouisa.online, port: 80, type: vmess, uuid: 25ea21e2-8455-4fca-85bf-4bfbc62646fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr04.victorialouisa.online}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7, server: 120.232.242.117, port: 31778, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 距离下次重置剩余：21 天 2, server: bgroup.node1.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: 2155145a-b1b5-443a-8977-670f6bd10f02, skip-cert-verify: false}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8, server: 108.186.31.115, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/171513211621}}
+  - {name: ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|", server: 183.240.220.84, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 24:SpYUtPeJYhRk4FWC, obfs-param: 6f41b24.microsoft.com}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5, server: 104.24.226.83, port: 2082, type: vmess, uuid: 7f68987a-1632-3b95-a22d-784f40f3e33f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.24.226.83}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4, server: 185.244.209.4, port: 443, type: vmess, uuid: 32a7da32-b2b7-4aa1-909d-532e2963f266, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /bb}}
+  - {name: 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix, server: sgp08.fjk.wtf, port: 45534, type: ss, cipher: aes-128-cfb, password: 27j2Oi}
+  - {name: 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|, server: gy.58n.net, port: 36821, type: trojan, password: 5d26bc53-90cb-3338-8241-57b9c8c54ea8, sni: z262.hongkongnode.top, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港 02
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇳 台湾3_台北
       - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇭🇰 香港4
-      - 🇭🇰 香港 19
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇭🇰 香港_高速_稳定在线
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 超级|台湾1
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇭🇰 香港 17
+      - 🇭🇰 香港5|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1316,183 +1335,186 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
-      - 🇺🇸 _US_美国
-      - 🇧🇷 巴西2-維涅杜
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies| 2
+      - 🇭🇰 香港 02
       - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Hs|0518|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies|
+      - 若无网络 切换别的节点
+      - 🇺🇸 美国高级 IEPL 中继 A04
       - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies|
-      - 🇨🇳 台湾 IEPL Game F
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies|
-      - 🇮🇳 印度 马哈拉 IPLC A01
-      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - 🇸🇪 瑞典1-斯德哥尔摩
       - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies|
-      - 🇨🇳 台湾 IEPL HiNet A14 Netflix 动画疯
-      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
-      - 🇨🇳 台湾 IPLC A11 Netflix 动画疯
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
-      - 🇭🇰 香港 IPLC Equinix HK2 A 20 1Gbps HBO TVB
-      - 🇨🇳 台湾 IEPL HiNet A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
-      - 🇺🇸 美国_高速_稳定在线
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
-      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
-      - 🇺🇸 美国 - 凤凰城 - Oracle Corporation - 16
-      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A03
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇩🇪 德国2
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - 🇬🇧 >🇬🇧 GB|Ls|0518|TG@FProxies|
       - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies|
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A01
-      - 🇭🇰 香港 油尖旺御金·国峯 名氣通電訊 A09
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A04
-      - 🇭🇰 香港4
-      - 🇩🇪 >🇩🇪 DE|Ms|0430|TG@FProxies|
-      - 🇺🇸 美国实验性 IEPL 中继 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
-      - 🇦🇺 >🇦🇺 AU|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 4
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0607|TG@FProxies| 2
-      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0518|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies|
+      - ATM MODE A06
+      - 🇨🇦 加拿大 IPLC A01
       - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 5
-      - 🇮🇪 爱尔兰 IPLC A03
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 6
-      - 🇬🇧 超级|英国1
-      - 注册网址：chaozhijc.xyz
-      - 🇬🇧 >🇬🇧 GB|Hs|0518|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 2"
-      - 🇨🇳 >🇹🇼 TW|Ls|0518|TG@FProxies|
-      - California Tj - B Group
-      - 🇷🇺 >🇷🇺 RU|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 3
-      - 🇺🇸 美国2_网页
-      - 🇺🇸 公益|美国1
-      - 🇭🇰 香港 19
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 6
-      - 🇩🇪 >🇩🇪 DE|Ms|0607|TG@FProxies| 2
-      - 🇩🇪 公益|德国3
-      - 🇫🇷 法国 IPLC A02
-      - 🇦🇪 迪拜1
-      - 🇩🇪 >🇩🇪 DE|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇨🇳 台湾 IPLC A08 Netflix 动画疯
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 4
-      - 🇺🇸 超级|美国1
-      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies| 4
-      - 🇯🇵 日本 MPLS A7 1000Mbps
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 8
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
-      - 🇰🇷 韩国 IPLC A02 Netflix
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
-      - 🇨🇦 加拿大 - 多伦多 - BrainStorm Network, Inc - 1
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 香港KT|@ripaojiedian
-      - 🇦🇺 澳大利亚 IPLC 悉尼 A03
-      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
-      - 🇦🇺 >🇦🇺 AU|Hs|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡 Magic IEPL 中继 A02 Netflix
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 05
+      - 🇭🇰 香港 IPLC Equinix HK2 A 16 1Gbps HBO TVB
+      - 🇨🇱 智利1-圣地亚哥
+      - 🇰🇷 超级|韩国2
+      - 🇰🇷 >🇰🇷 KR|Hs|0430|TG@FProxies|
+      - 🇨🇳 台湾3_台北
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies|
+      - 🇨🇳 台湾 IPLC A05 Netflix 动画疯
+      - 🇸🇬 新加坡 Magic IEPL 中继 A01 Netflix
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies|
+      - 🇨🇳 >🇹🇼 TW|Hs|0607|TG@FProxies|
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 A11
+      - 🇨🇳 台湾 IPLC A13 Netflix 动画疯
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 2
+      - 🇸🇬 新加坡高级 IEPL 中继 A01 Netflix
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies|
-      - 距离下次重置剩余：22 天
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 01
-      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies| 3"
-      - 🇩🇪 _DE_德国
-      - 🇨🇦 >🇨🇦 CA|Hs|0607|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies|"
-      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇨🇳 >🇹🇼 TW|Hs|0518|TG@FProxies|
+      - 🇰🇷 韩国 - 首尔特别市 - KOR VULTR - 31
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies|
+      - ATM MODE A04
+      - 🇦🇺 >🇦🇺 AU|Ms|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies|
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 18
+      - 🇰🇷 游戏 韩国 IEPL 6 3Gbps
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 2
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies|
+      - California Tj - B Group
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Hs|0607|TG@FProxies|"
+      - 🇨🇳 超级|台湾1
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 2
+      - 🇫🇷 法国3-马赛
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 2
+      - 🇯🇵 日本 MPLS A7 1000Mbps
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies|"
+      - 距离下次重置剩余：21 天
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Hs|0607|TG@FProxies| 3
+      - 🇺🇸 推特 ins 使用美国线路
+      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ms|0607|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
+      - 🇰🇷 >🇰🇷 KR|Ns|0518|TG@FProxies|
       - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies|
-      - 🇺🇸 _US_美国 2
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies|
+      - Incheon SS - B Group
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
+      - 🇯🇵 日本 MPLS A9 1000Mbps
+      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
+      - 🇸🇬 新加坡3_YouTube
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 3
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇨🇦 >🇨🇦 CA|Ms|0607|TG@FProxies|
+      - 🇨🇦 >🇨🇦 CA|Hs|0430|TG@FProxies|
+      - 🇭🇰 香港 IPLC Equinix HK2 A 05 1Gbps HBO TVB
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
+      - 🇺🇸 _US_美国
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 08
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇬🇧 >🇬🇧 GB|Ls|0607|TG@FProxies| 2
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 2
       - 🇨🇦 >🇨🇦 CA|Ls|0607|TG@FProxies|
       - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 2
-      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0607|TG@FProxies| 7
-      - 🇫🇷 法国 - 巴黎 - Akamai Technologies, Inc. - 1
-      - 🇭🇰 Hongkong SS - B Group
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 3
-      - 🇭🇰 >🇭🇰 HK|Ls|0518|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0518|TG@FProxies|
-      - 🇭🇰 香港 IPLC Equinix HK2 A 14 1Gbps HBO TVB
-      - 🇯🇵 >🇯🇵 JP|Ls|0607|TG@FProxies| 2
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 02
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 13
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 3
-      - 🇸🇬 >🇸🇬 SG|Ns|0607|TG@FProxies|
-      - 🇬🇧 英国 IPLC BBC A03
-      - 🇸🇬 优化|o新加坡1
-      - 🇷🇺 >🇷🇺 RU|Ms|0607|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Hs|0430|TG@FProxies|
-      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 7
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 3
+      - 🇬🇧 _GB_英国
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 4
+      - 🇸🇬 >🇸🇬 SG|Ms|0607|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 2
-      - 🇭🇰 >🇭🇰 HK|Ls|0607|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0607|TG@FProxies| 4
-      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 02
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ms|0607|TG@FProxies| 2"
-      - 🇯🇵 日本日本大阪 オプテージ A 07
-      - 🇸🇬 新加坡1_网页
-      - 🇯🇵 日本 MPLS A5 1000Mbps
-      - 🇳🇱 >🇳🇱 NL|Ms|0518|TG@FProxies|
-      - 🇩🇪 优化|o德国2
-      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 3
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇸🇬 新加坡高级 IEPL 中继 A04 Netflix
-      - 🇺🇸 _US_美国 3
-      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 07
-      - 🇰🇷 >🇰🇷 KR|Ls|0607|TG@FProxies|
-      - 🇭🇰 中国 - 香港 - Aeza International LTD - 9
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 4
-      - 🇰🇷 游戏 韩国 IEPL 1 3Gbps
+      - 🇸🇬 >🇸🇬 SG|Ls|0518|TG@FProxies|
       - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 3
-      - 🇭🇰 香港_高速_稳定在线
-      - ATM MODE A05
-      - 🇬🇧 >🇬🇧 GB|Hs|0607|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0518|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 6
-      - 🇰🇷 >🇰🇷 KR|Ms|0430|TG@FProxies| 5
-      - 🇨🇱 智利1-圣地亚哥
-      - 🇦🇺 澳大利亚2
-      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 4
-      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies|
-      - 🇺🇸 美国高级 IEPL 中继 A03
-      - 🇰🇷 韩国 京畿道板桥 原生游戏解锁 A 03
+      - 🇬🇧 >🇬🇧 GB|Ms|0518|TG@FProxies|
+      - 🇯🇵 日本 ソフトバンク A03 500Mbps 1x Netflix
+      - 🇫🇷 >🇫🇷 FR|Ls|0518|TG@FProxies|
+      - 🇬🇧 英国 IPLC BBC A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 4
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 03
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies|"
+      - 🇭🇰 中国 - 香港 - Mytek Trading PTY LTD - 20
+      - 🇺🇸 _US_美国 2
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 5
+      - 🇭🇰 中国 - 香港 - Aeza International LTD - 17
+      - 🇨🇳 台湾 IPLC A09 Netflix 动画疯
+      - 🇭🇰 香港 IPLC Equinix HK2 A 17 1Gbps HBO TVB
+      - 🇯🇵 日本__动态_推/Ins
+      - 🇬🇧 >🇬🇧 GB|Ms|0607|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Hs|0607|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Hs|0607|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 5
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 2"
+      - 🇭🇰 >🇭🇰 HK|Ns|0607|TG@FProxies|
+      - 🇺🇸 美国__动态_推/Ins
+      - 🇧🇷 超级|巴西1
+      - 🇸🇬 >🇸🇬 SG|Ms|0518|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ms|0430|TG@FProxies| 3
+      - 🇸🇬 >🇸🇬 SG|Ms|0430|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 4
+      - 🇮🇳 优化|o印度2
+      - 🇦🇺 >🇦🇺 AU|Ms|0518|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0518|TG@FProxies|
+      - 🇩🇪 >🇩🇪 DE|Hs|0430|TG@FProxies| 2
+      - 🇨🇦 >🇨🇦 CA|Ms|0430|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 2
+      - 🇯🇵 日本 まつやまし auひかり ホーム1ギガ A 05
+      - 🇺🇸 美国 - 圣克拉拉 - HostPapa - 15
+      - 🇮🇪 爱尔兰 IPLC A03
+      - 🇸🇬 >🇸🇬 SG|Hs|0430|TG@FProxies|
+      - 🇲🇽 墨西哥-蒙特雷
+      - 🇯🇵 >🇯🇵 JP|Hs|0518|TG@FProxies| 2
+      - 🇰🇷 >🇰🇷 KR|Ms|0518|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0518|TG@FProxies| 3"
+      - 🇭🇰 香港 17
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 3
+      - 🇺🇸 美国实验性 IEPL 中继 A01
+      - 🇩🇪 >🇩🇪 DE|Ls|0607|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Hs|0430|TG@FProxies| 4
+      - 🇩🇪 >🇩🇪 DE|Hs|0518|TG@FProxies|
+      - 🇮🇳 >🇮🇳 IN|Ms|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ns|0607|TG@FProxies| 3"
+      - 🇭🇰 >🇭🇰 HK|Ms|0607|TG@FProxies| 5
+      - 🇯🇵 日本 沪日IEPL A04 Netflix
+      - 🇨🇳 >🇹🇼 TW|Ns|0607|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ls|0607|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies|
+      - 🇰🇷 韩国 전라북도 전주시 商宽 A 04
+      - 🇺🇸 _US_美国 3
+      - ">Beta|🇺🇳 FP|Hs|0430|TG@FProxies|"
+      - 🇩🇪 >🇩🇪 DE|Ms|0518|TG@FProxies| 2
+      - ">Beta|🇺🇳 FP|Ls|0518|TG@FProxies|"
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 日本 沪日IEPL A06 Netflix
+      - 🇭🇰 >🇭🇰 HK|Ms|0430|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 3
+      - 🇺🇸 美国7_凤凰城
+      - 🇩🇪 优化|o德国1
+      - 🇯🇵 >🇯🇵 JP|Ms|0430|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0607|TG@FProxies| 2
+      - 🇰🇷 韩国 - 首尔特别市 - Amazon.com, Inc. - 9
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 7
+      - 距离下次重置剩余：21 天 2
+      - 🇺🇸 >🇺🇸 US|Hs|0518|TG@FProxies| 8
+      - ">Beta|🇺🇳 FP|Ms|0430|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Ns|0607|TG@FProxies| 5
+      - 🇭🇰 >🇭🇰 HK|Ms|0518|TG@FProxies| 4
+      - 🇸🇬 新加坡 Magic IEPL 中继 A03  Netflix
+      - 🇨🇳 >🇹🇼 TW|Ls|0607|TG@FProxies|
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
