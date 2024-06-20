@@ -5,396 +5,352 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本02【vip1】, server: f10001.flyflylflyflysbs.sbs, port: 29496, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: jp01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇯🇵 日本-03_解锁, server: jp03.ssyhi.xyz, port: 50212, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 38.121.43.248, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇻🇳 越南 02【vip2 | NEW】, server: f10011.flyflylflyflysbs.sbs, port: 64436, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10011.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇭🇰 香港01_专线【vip3】, server: fl0022.flyflylflyflysbs.sbs, port: 16706, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk05.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇧🇷 巴西, server: 183.232.195.179, port: 50245, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇵🇱 _PL_波兰, server: 51.77.53.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 美国02|1x, server: u-s02.love-english-edu.com, port: 35014, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇲🇾 马来西亚01【vip2】, server: f10001.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇩🇪 德国01【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 43654, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: de01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇭🇰 香港05【vip1】, server: f10001.flyflylflyflysbs.sbs, port: 25106, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇭🇰 香港 07【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 27969, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk02.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡 01【vip3 | 专线】, server: f10021.flyflylflyflysbs.sbs, port: 63150, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: dc0.forlive.live, port: 41003, type: trojan, password: 474fc263-23f8-44f6-b9d1-ebe3da9850d8, sni: ssl.sbgfw.info, skip-cert-verify: true}
-  - {name: 距离下次重置剩余：15 天, server: gonggao01.love-english-edu.com, port: 35001, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇻🇳 越南 04【vip1 | NEW】, server: f10003.flyflylflyflysbs.sbs, port: 64436, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10003.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇸🇬 新加坡 02【vip1 】, server: f10001.flyflylflyflysbs.sbs, port: 26606, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: sg01.ckcloud.info, skip-cert-verify: true}
   - {name: 🇻🇳 越南, server: 183.232.195.179, port: 50233, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇮🇳 印度01【vip2】, server: f10011.flyflylflyflysbs.sbs, port: 47497, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: id01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇮🇪 _IE_爱尔兰, server: 54.76.69.126, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇺🇸 _US_美国, server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm, headers: {Host: ip002.dtku47.xyz}}}
-  - {name: 🇬🇧 _GB_英国, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇭🇰 公测|香港 02 1x, server: baobaojichang.bbjc.xyz, port: 8080, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xianggang.mojc.xyz}}}
-  - {name: 🇩🇪 _DE_德国, server: 80.92.204.106, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
-  - {name: 🇺🇸 美国01【vip2 | NEW】, server: f10011.flyflylflyflysbs.sbs, port: 20701, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10011.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇭🇰 香港01【vip3 | NEW】, server: f10021.flyflylflyflysbs.sbs, port: 62082, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇫🇷 法国 OVH, server: 51.77.53.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇵🇱 _PL_波兰 2, server: 51.77.53.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 _US_美国 2, server: fbi.gov, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm, headers: {Host: ip002.dtku47.xyz}}}
-  - {name: 🇬🇧 英国02【vip1】, server: f10001.flyflylflyflysbs.sbs, port: 30273, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: uk01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 美国05【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 58563, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: us04.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇻🇳 越南 05【vip1 | NEW】, server: f10001.flyflylflyflysbs.sbs, port: 64436, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10001.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇺🇸 美国01【vip3】, server: f10021.flyflylflyflysbs.sbs, port: 51345, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: us03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国, server: kr01.ssyhi.xyz, port: 50246, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇮🇳 印度, server: 183.232.195.179, port: 50237, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: 120.232.240.56, port: 16928, type: vmess, uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /v2ray, headers: {Host: "%7B%22Host%22:%22193.25.215.160%22%7D"}}}
-  - {name: 🇺🇸 美国-03_解锁, server: 183.232.195.179, port: 50230, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇸🇬 新加坡 03【vip3 | NEW】, server: f10021.flyflylflyflysbs.sbs, port: 40603, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇵🇱 _PL_波兰 3, server: 51.77.53.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇹🇷 土耳其, server: ununim.yangliq.com, port: 27003, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇨🇳 台湾1, server: tw01.ssyhi.xyz, port: 50234, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇺🇸 公测|美国 05 1x, server: baobaojichang.bbjc.xyz, port: 2082, type: vmess, uuid: 36662862-9cb7-4d67-9561-f05b328155ba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: meiguo.mojc.xyz}}}
+  - {name: 🇫🇷 法国 OVH, server: 51.77.53.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: 183.232.139.22, port: 53981, type: trojan, password: gkviEOYc, skip-cert-verify: true}
+  - {name: 🇯🇵 日本01【vip3】, server: f10021.flyflylflyflysbs.sbs, port: 29496, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: jp01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国, server: cf3.ftclashcloud.site, port: 80, type: vmess, uuid: 67d2d4b7-a38e-4beb-8caf-ce50ff92420a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2560", headers: {Host: mhyusa01.ftclashcloud.online}}}
+  - {name: 🇨🇦 加拿大, server: ununim.yangliq.com, port: 27014, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 如无法使用请在网站发工单取得帮助, server: gonggao04.love-english-edu.com, port: 35004, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
   - {name: 🇭🇰 香港-01_解锁, server: 120.195.184.47, port: 50200, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 183.232.139.22, port: 50611, type: trojan, password: gkviEOYc, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡-10_解锁, server: sg10.ssyhi.xyz, port: 50227, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇰🇷 韩国 02【vip2 | NEW】, server: f10001.flyflylflyflysbs.sbs, port: 22850, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10001.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇭🇰 香港03_专线 【vip3 】, server: fl0022.flyflylflyflysbs.sbs, port: 27969, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk02.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇩🇪 _DE_德国 2, server: 80.92.204.106, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf}
-  - {name: 🇭🇰 香港04【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 25106, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇵🇱 _PL_波兰 4, server: 51.77.53.200, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: 🇦🇺 澳大利亚03【vip3】, server: f10003.flyflylflyflysbs.sbs, port: 20650, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: aus01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇯🇵 日本-06_解锁, server: jp06.ssyhi.xyz, port: 50215, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 _US_美国 3, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇨🇳 台湾2|@ripaojiedian, server: dc0.forlive.live, port: 41003, type: trojan, password: 474fc263-23f8-44f6-b9d1-ebe3da9850d8, sni: ssl.sbgfw.info, skip-cert-verify: true}
+  - {name: 🇳🇱 荷兰, server: nl01.ssyhi.xyz, port: 50240, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇨🇳 台湾03|1x, server: t-wn03.love-english-edu.com, port: 35019, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 🇸🇬 新加坡-08_解锁, server: 183.232.195.179, port: 50225, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇵🇱 波兰, server: ununim.yangliq.com, port: 27010, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: "🇸🇬 SGP||[特殊地区及海外用户]", server: adoredone.cc, port: 60008, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 山水云.com, server: hk05.ssyhi.xyz, port: 50204, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇭🇰 香港 01, server: ununim.yangliq.com, port: 21101, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇯🇵 日本-02_解锁, server: jp02.ssyhi.xyz, port: 50211, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 距离下次重置剩余：29 天, server: baobaojichang.bbjc.xyz, port: 80, type: vmess, uuid: 36662862-9cb7-4d67-9561-f05b328155ba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xianggang.mojc.xyz}}}
+  - {name: 🇯🇵 日本04【vip1 | NEW】, server: f10002.flyflylflyflysbs.sbs, port: 43372, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10002.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇸🇬 新加坡-07_解锁, server: 183.232.195.179, port: 50224, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: "🇺🇸 USA||[特殊地区及海外用户]", server: adoredone.cc, port: 60006, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 🇻🇳 越南 05【vip1 | NEW】, server: f10001.flyflylflyflysbs.sbs, port: 64436, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10001.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇯🇵 日本01【vip1】, server: f10002.flyflylflyflysbs.sbs, port: 29496, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: jp01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇯🇵 日本-07_解锁, server: jp07.ssyhi.xyz, port: 50216, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇺🇸 美国 麻省理工学院, server: 18.143.100.98, port: 16271, type: trojan, password: DgTeERlgX2qN, sni: appsvs.shop}
+  - {name: 🇮🇩 印尼, server: ununim.yangliq.com, port: 27019, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇻🇳 越南 2, server: ununim.yangliq.com, port: 27024, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇲🇾 马来西亚02【vip2】, server: f10002.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇮🇳 印度01【vip1】, server: f10002.flyflylflyflysbs.sbs, port: 47497, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: id01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡-03_解锁, server: sg03.ssyhi.xyz, port: 50220, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: "🇭🇰 HKT|[特殊地区及海外用户]", server: adoredone.cc, port: 60009, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 🇻🇳 越南 02【vip2 | NEW】, server: f10011.flyflylflyflysbs.sbs, port: 64436, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10011.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇹🇷 土耳其 01【vip2 | NEW】, server: f10011.flyflylflyflysbs.sbs, port: 54902, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10011.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇭🇰 香港11【vip2】, server: f10011.flyflylflyflysbs.sbs, port: 10187, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk04.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇯🇵 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 150be761-0f1b-464c-a0c7-09fd31bd2f31, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/P7EExoE2, headers: {Host: oA5FSz9Tjp1.yofnhkfc.xyz}}}
+  - {name: 🇧🇷 巴西, server: ununim.yangliq.com, port: 27009, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 距离下次重置剩余：15 天, server: gonggao01.love-english-edu.com, port: 35001, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 🇺🇸 _US_美国 2, server: fbi.gov, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm, headers: {Host: ip002.dtku47.xyz}}}
+  - {name: 🇲🇾 马来西亚03【vip2】, server: f10003.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇭🇰 公测|香港 02 1x
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇨🇳 台湾1
       - 🇭🇰 香港-01_解锁
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇭🇰 香港04【vip1】
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇨🇳 台湾03|1x
+      - 🇭🇰 香港 01
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇭🇰 香港11【vip2】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -410,55 +366,49 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本02【vip1】
-      - 🇯🇵 日本-03_解锁
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇻🇳 越南 02【vip2 | NEW】
-      - 🇭🇰 香港01_专线【vip3】
-      - 🇧🇷 巴西
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02|1x
-      - 🇲🇾 马来西亚01【vip2】
-      - 🇩🇪 德国01【vip1】
-      - 🇭🇰 香港05【vip1】
-      - 🇭🇰 香港 07【vip1】
-      - 🇸🇬 新加坡 01【vip3 | 专线】
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 距离下次重置剩余：15 天
-      - 🇻🇳 越南 04【vip1 | NEW】
+      - 🇸🇬 新加坡 02【vip1 】
       - 🇻🇳 越南
-      - 🇮🇳 印度01【vip2】
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _US_美国
-      - 🇬🇧 _GB_英国
-      - 🇭🇰 公测|香港 02 1x
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 美国01【vip2 | NEW】
-      - 🇭🇰 香港01【vip3 | NEW】
+      - 🇹🇷 土耳其
+      - 🇨🇳 台湾1
+      - 🇺🇸 公测|美国 05 1x
       - 🇫🇷 法国 OVH
-      - 🇵🇱 _PL_波兰 2
-      - 🇺🇸 _US_美国 2
-      - 🇬🇧 英国02【vip1】
-      - 🇺🇸 美国05【vip1】
-      - 🇻🇳 越南 05【vip1 | NEW】
-      - 🇺🇸 美国01【vip3】
-      - 🇰🇷 韩国
-      - 🇮🇳 印度
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 美国-03_解锁
-      - 🇸🇬 新加坡 03【vip3 | NEW】
-      - 🇵🇱 _PL_波兰 3
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇯🇵 日本01【vip3】
+      - 🇺🇸 _US_美国
+      - 🇨🇦 加拿大
+      - 如无法使用请在网站发工单取得帮助
       - 🇭🇰 香港-01_解锁
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇸🇬 新加坡-10_解锁
-      - 🇰🇷 韩国 02【vip2 | NEW】
-      - 🇭🇰 香港03_专线 【vip3 】
-      - 🇩🇪 _DE_德国 2
-      - 🇭🇰 香港04【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇦🇺 澳大利亚03【vip3】
-      - 🇯🇵 日本-06_解锁
-      - 🇺🇸 _US_美国 3
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇳🇱 荷兰
+      - 🇨🇳 台湾03|1x
+      - 🇸🇬 新加坡-08_解锁
+      - 🇵🇱 波兰
+      - 🇸🇬 SGP||[特殊地区及海外用户]
+      - 山水云.com
+      - 🇭🇰 香港 01
+      - 🇯🇵 日本-02_解锁
+      - 距离下次重置剩余：29 天
+      - 🇯🇵 日本04【vip1 | NEW】
+      - 🇸🇬 新加坡-07_解锁
+      - 🇺🇸 USA||[特殊地区及海外用户]
+      - 🇻🇳 越南 05【vip1 | NEW】
+      - 🇯🇵 日本01【vip1】
+      - 🇯🇵 日本-07_解锁
+      - 🇺🇸 美国 麻省理工学院
+      - 🇮🇩 印尼
+      - 🇻🇳 越南 2
+      - 🇲🇾 马来西亚02【vip2】
+      - 🇮🇳 印度01【vip1】
+      - 🇸🇬 新加坡-03_解锁
+      - 🇭🇰 HKT|[特殊地区及海外用户]
+      - 🇻🇳 越南 02【vip2 | NEW】
+      - 🇹🇷 土耳其 01【vip2 | NEW】
+      - 🇭🇰 香港11【vip2】
+      - 🇯🇵 日本2|@ripaojiedian
+      - 🇧🇷 巴西
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 _US_美国 2
+      - 🇲🇾 马来西亚03【vip2】
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

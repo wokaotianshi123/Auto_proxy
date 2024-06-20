@@ -5,410 +5,397 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇭🇰 香港6|@ripaojiedian, server: 112.132.212.19, port: 50004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾 01【vip1】, server: f10001.flyflylflyflysbs.sbs, port: 19949, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: tw01.ckcloud.info, skip-cert-verify: true}
   - {name: 🇩🇪 _DE_德国, server: 80.92.204.106, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
-  - {name: 🇭🇰 香港03|1x, server: h-k03.love-english-edu.com, port: 35007, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇭🇰 香港01|1x, server: h-k01.love-english-edu.com, port: 35005, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇸🇬 新加坡03|1x, server: s-g03.love-english-edu.com, port: 35027, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇺🇸 _US_美国, server: 15.204.87.225, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇫🇷 法国 OVH, server: 51.77.53.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇹🇷 土耳其 02【vip1 | NEW】, server: f10003.flyflylflyflysbs.sbs, port: 54902, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10003.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇭🇰 香港-04_解锁, server: 183.232.195.179, port: 50203, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.199.118, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}}
-  - {name: 🇺🇸 _US_美国 2, server: 15.204.87.225, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇰🇷 公测|韩国 02 1x, server: baobaojichang.bbjc.xyz, port: 8080, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: hanguo.mojc.xyz}}}
-  - {name: 🇺🇸 _US_美国 3, server: 205.134.180.139, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: lWaGPVFjmnag}
-  - {name: "🇭🇰 HKT|[特殊地区及海外用户]", server: adoredone.cc, port: 60009, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇨🇳 台湾 01【vip3 | NEW】, server: f10021.flyflylflyflysbs.sbs, port: 56741, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇺🇸 _US_美国 4, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 29eebb60-b27b-4a9d-bba5-947763d9205e-vm, headers: {Host: ip002.dtku47.xyz}}}
-  - {name: 🇹🇷 土耳其 01【vip3 | NEW】, server: f10021.flyflylflyflysbs.sbs, port: 54902, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
-  - {name: 🇰🇷 韩国04|1x, server: k-r04.love-english-edu.com, port: 35024, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇺🇸 美国 惠普HP, server: 15.204.87.225, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV}
-  - {name: 🇺🇸 _US_美国 5, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
-  - {name: 🇯🇵 日本-02_解锁, server: jp02.ssyhi.xyz, port: 50211, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇯🇵 公测|日本 04 1x, server: baobaojichang.bbjc.xyz, port: 2052, type: vmess, uuid: 36662862-9cb7-4d67-9561-f05b328155ba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: riben.mojc.xyz}}}
+  - {name: 🇮🇱 _IL_以色列, server: 193.182.144.240, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: true}
   - {name: 🇸🇬 新加坡01|1x, server: s-g01.love-english-edu.com, port: 35025, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇵🇱 _PL_波兰, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇺🇸 美国02【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 51345, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: us03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇲🇾 马来西亚03【vip2】, server: f10003.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇻🇳 越南R|@ripaojiedian, server: 59.56.77.178, port: 15083, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇩🇪 _DE_德国 2, server: 80.92.204.106, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
-  - {name: 电报群：@bbjc52, server: baobaojichang.bbjc.xyz, port: 2082, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: meiguo.mojc.xyz}}}
-  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: crackthecode.ftp.sh, port: 443, type: vmess, uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /gwdef.sbs:443/linkws, headers: {Host: vcp3.dehel15354.woRKErS.Dev}}}
-  - {name: 🇭🇰 公测|香港 04 1x, server: baobaojichang.bbjc.xyz, port: 2052, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xianggang.mojc.xyz}}}
-  - {name: 🇯🇵 日本-08_解锁, server: jp08.ssyhi.xyz, port: 50217, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 美国 Interland, server: 64.227.144.190, port: 50690, type: ss, cipher: chacha20-ietf-poly1305, password: e2y6gJdTZqyXNFb5qrVta0}
-  - {name: 🇺🇸 公测|美国 01 1x, server: baobaojichang.bbjc.xyz, port: 80, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: meiguo.mojc.xyz}}}
-  - {name: 🇺🇸 美国4|@ripaojiedian, server: 183.232.139.22, port: 53981, type: trojan, password: gkviEOYc, skip-cert-verify: true}
-  - {name: 🇩🇪 _FI_芬兰->🇩🇪_DE_德国, server: 65.109.226.6, port: 2053, type: vmess, uuid: d862cdd6-3dd6-4adc-83ca-99bf0ce86bee, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@V2RayyNGvpn, headers: {Host: divar.ir}}}
-  - {name: 🇨🇳 台湾1, server: tw01.ssyhi.xyz, port: 50234, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.24.200.140, port: 80, type: vmess, uuid: 1b1fd0c4-44d8-4c7b-ab61-f9c86b5df1c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /other, headers: {Host: 127.0.0.1.лыемаленькиебуквы.ultramanrising.極為輕鬆的工作.suonycars.buzz.}}}
-  - {name: 🇯🇵 日本06【vip1】, server: f10003.flyflylflyflysbs.sbs, port: 39520, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: jp03.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 6, server: 15.204.87.225, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇵🇱 _PL_波兰 2, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇵🇱 _PL_波兰 3, server: 51.77.53.200, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇨🇳 台湾 01【vip2】, server: f10011.flyflylflyflysbs.sbs, port: 19949, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: tw01.ckcloud.info, skip-cert-verify: true}
-  - {name: "🇨🇳 TWN|[特殊地区及海外用户]", server: adoredone.cc, port: 60010, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
-  - {name: 🇺🇸 _US_美国 7, server: russia.com, port: 8880, type: vmess, uuid: 56c6ef30-a930-4bcb-a159-85d9838fadae, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}}
-  - {name: 🇨🇦 _CA_加拿大, server: 108.181.200.220, port: 17163, type: vmess, uuid: d54814a1-7a93-45f8-9117-db317a25d100, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 公测|日本 05 1x, server: baobaojichang.bbjc.xyz, port: 2082, type: vmess, uuid: c3572b9c-db66-4656-91b2-853750a422ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: riben.mojc.xyz}}}
-  - {name: 🇩🇪 _DE_德国 3, server: 80.92.204.106, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt}
-  - {name: 🇨🇳 台湾 05【vip1】, server: f10001.flyflylflyflysbs.sbs, port: 49148, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: tw02.ckcloud.info, skip-cert-verify: true}
-  - {name: 🇵🇱 _PL_波兰 4, server: 51.77.53.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇪🇸 西班牙, server: 183.232.195.179, port: 50243, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
-  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦, server: 104.16.1.10, port: 443, type: trojan, password: qj1Dz1CJmFQRhWr1SP80aA, sni: cdn-21.gsmxreality.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: plie.5hihwoqjshdnxjahweqsda.shanghaiyige.cyou, port: 1002, type: ss, cipher: aes-128-gcm, password: 93902842-fc34-40e9-901c-3b76299fd008}
+  - {name: 🇸🇬 新加坡03|1x, server: s-g03.love-english-edu.com, port: 35027, type: ss, cipher: chacha20-ietf-poly1305, password: 8676e9a8-4189-4b95-980e-aff7ce6428cb}
+  - {name: 🇦🇷 阿根廷, server: ununim.yangliq.com, port: 27006, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇺🇸 美国-05_解锁, server: 183.232.195.179, port: 50232, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇸🇬 新加坡 01【vip3 | 专线】, server: f10021.flyflylflyflysbs.sbs, port: 63150, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10021.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇲🇾 马来西亚01【vip2】, server: f10001.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.60.8, port: 2082, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws, headers: {Host: worker-noisy-paper-fa00.hetoj18200.workers.dev}}}
+  - {name: 🇺🇸 美国-01_解锁, server: 183.232.195.179, port: 50228, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇹🇭 泰国, server: ununim.yangliq.com, port: 27016, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇨🇦 加拿大, server: ca01.ssyhi.xyz, port: 50236, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇲🇾 马来西亚02【vip3】, server: f10021.flyflylflyflysbs.sbs, port: 14900, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: my01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国, server: 15.204.87.225, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV}
+  - {name: 🇺🇦 乌克兰, server: ununim.yangliq.com, port: 27022, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇩🇪 _DE_德国 2, server: 80.92.204.106, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj}
+  - {name: 🇭🇰 公测|香港 01 1x, server: baobaojichang.bbjc.xyz, port: 80, type: vmess, uuid: 36662862-9cb7-4d67-9561-f05b328155ba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xianggang.mojc.xyz}}}
+  - {name: 🇭🇰 香港-08_解锁, server: 183.232.195.179, port: 50207, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇨🇭 瑞士, server: ununim.yangliq.com, port: 27007, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇭🇰 香港 08【vip3】, server: f10021.flyflylflyflysbs.sbs, port: 27969, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk02.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: s1c.v2.v001sss.xyz, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
+  - {name: 🇺🇸 美国 03, server: ununim.yangliq.com, port: 26003, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇦🇺 澳大利亚04【vip3】, server: f10021.flyflylflyflysbs.sbs, port: 20650, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: aus01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 2, server: 15.204.87.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇷🇺 俄罗斯, server: ununim.yangliq.com, port: 27025, type: ss, cipher: aes-128-gcm, password: 030741c1-8706-41f6-93ae-f97585365627}
+  - {name: 🇩🇪 _DE_德国 3, server: 80.92.204.106, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8}
+  - {name: 🇯🇵 公测|日本 03 1x, server: baobaojichang.bbjc.xyz, port: 8880, type: vmess, uuid: 36662862-9cb7-4d67-9561-f05b328155ba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: riben.mojc.xyz}}}
+  - {name: 🇧🇷 巴西R|@ripaojiedian, server: 59.56.77.178, port: 15111, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
+  - {name: 🇭🇰 香港-06_解锁, server: 183.232.195.179, port: 50205, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: 150be761-0f1b-464c-a0c7-09fd31bd2f31, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/bYdJ7Vc2We, headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}}}
+  - {name: 🇸🇪 瑞典, server: 183.232.195.179, port: 50239, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇵🇱 _PL_波兰, server: 51.77.53.200, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇺🇸 _US_美国 3, server: 15.204.87.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 188.116.20.185, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: 3pURuTUf-lFgg5qWg8euFA}
+  - {name: 🇬🇧 英国01【vip2 | NEW】, server: f10011.flyflylflyflysbs.sbs, port: 26734, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: f10011.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 🇮🇩 印尼, server: id01.ssyhi.xyz, port: 50238, type: ss, cipher: chacha20-ietf-poly1305, password: 033c8fd4-ef0c-479c-a4ff-cbd0f4bd3ef1}
+  - {name: 🇸🇬 新加坡 01【vip3 】, server: f10021.flyflylflyflysbs.sbs, port: 26606, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: sg01.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇵🇱 _PL_波兰 2, server: 51.77.53.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 香港 08【vip1】, server: f10002.flyflylflyflysbs.sbs, port: 27969, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: hk02.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇫🇮 _FI_芬兰, server: tu.miraclestory.top, port: 2053, type: vmess, uuid: d862cdd6-3dd6-4adc-83ca-99bf0ce86bee, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@V2RayyNGvpn, headers: {Host: divar.ir}}}
+  - {name: 🇺🇸 _US_美国 4, server: cf4.ftclashcloud.site, port: 80, type: vmess, uuid: 67d2d4b7-a38e-4beb-8caf-ce50ff92420a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2560", headers: {Host: mhyusa01.ftclashcloud.online}}}
+  - {name: 🇭🇰 香港03_专线 【vip3  | NEW】, server: fl0022.flyflylflyflysbs.sbs, port: 64833, type: vmess, uuid: 416dba75-3512-41ca-b3f4-389e4c140a24, alterId: 0, cipher: auto, tls: true, servername: fl0022.flyflylflyflysbs.sbs, network: grpc, grpc-opts: {grpc-service-name: posteio}}
+  - {name: 追云国外跳转域名：https://zhuiyun.shop, server: f10002.flyflylflyflysbs.sbs, port: 49148, type: trojan, password: 416dba75-3512-41ca-b3f4-389e4c140a24, sni: tw02.ckcloud.info, skip-cert-verify: true}
+  - {name: 🇺🇸 美国5|@ripaojiedian, server: 183.232.139.22, port: 50611, type: trojan, password: gkviEOYc, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇭🇰 香港-04_解锁
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇭🇰 公测|香港 04 1x
-      - 🇨🇳 台湾1
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 台湾 05【vip1】
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇭🇰 香港 08【vip3】
+      - 🇭🇰 香港-06_解锁
+      - 🇭🇰 香港 08【vip1】
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -424,57 +411,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾 01【vip1】
       - 🇩🇪 _DE_德国
-      - 🇭🇰 香港03|1x
-      - 🇭🇰 香港01|1x
-      - 🇸🇬 新加坡03|1x
-      - 🇺🇸 _US_美国
-      - 🇫🇷 法国 OVH
-      - 🇹🇷 土耳其 02【vip1 | NEW】
-      - 🇭🇰 香港-04_解锁
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 _US_美国 2
-      - 🇰🇷 公测|韩国 02 1x
-      - 🇺🇸 _US_美国 3
-      - 🇭🇰 HKT|[特殊地区及海外用户]
-      - 🇨🇳 台湾 01【vip3 | NEW】
-      - 🇺🇸 _US_美国 4
-      - 🇹🇷 土耳其 01【vip3 | NEW】
-      - 🇰🇷 韩国04|1x
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 _US_美国 5
-      - 🇯🇵 日本-02_解锁
+      - 🇯🇵 公测|日本 04 1x
+      - 🇮🇱 _IL_以色列
+      - 🇭🇰 香港4|@ripaojiedian
       - 🇸🇬 新加坡01|1x
-      - 🇵🇱 _PL_波兰
-      - 🇺🇸 美国02【vip1】
-      - 🇲🇾 马来西亚03【vip2】
-      - 🇻🇳 越南R|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇸🇬 新加坡03|1x
+      - 🇦🇷 阿根廷
+      - 🇺🇸 美国-05_解锁
+      - 🇸🇬 新加坡 01【vip3 | 专线】
+      - 🇲🇾 马来西亚01【vip2】
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国-01_解锁
+      - 🇹🇭 泰国
+      - 🇨🇦 加拿大
+      - 🇲🇾 马来西亚02【vip3】
+      - 🇺🇸 _US_美国
+      - 🇺🇦 乌克兰
       - 🇩🇪 _DE_德国 2
-      - 电报群：@bbjc52
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇭🇰 公测|香港 04 1x
-      - 🇯🇵 日本-08_解锁
-      - 🇺🇸 美国 Interland
-      - 🇺🇸 公测|美国 01 1x
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 _FI_芬兰->🇩🇪_DE_德国
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇯🇵 日本06【vip1】
-      - 🇺🇸 _US_美国 6
-      - 🇵🇱 _PL_波兰 2
-      - 🇵🇱 _PL_波兰 3
-      - 🇨🇳 台湾 01【vip2】
-      - 🇨🇳 TWN|[特殊地区及海外用户]
-      - 🇺🇸 _US_美国 7
-      - 🇨🇦 _CA_加拿大
-      - 🇯🇵 公测|日本 05 1x
+      - 🇭🇰 公测|香港 01 1x
+      - 🇭🇰 香港-08_解锁
+      - 🇨🇭 瑞士
+      - 🇭🇰 香港 08【vip3】
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇺🇸 美国 03
+      - 🇦🇺 澳大利亚04【vip3】
+      - 🇺🇸 _US_美国 2
+      - 🇷🇺 俄罗斯
       - 🇩🇪 _DE_德国 3
-      - 🇨🇳 台湾 05【vip1】
-      - 🇵🇱 _PL_波兰 4
-      - 🇪🇸 西班牙
-      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 公测|日本 03 1x
+      - 🇧🇷 巴西R|@ripaojiedian
+      - 🇭🇰 香港-06_解锁
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇸🇪 瑞典
+      - 🇵🇱 _PL_波兰
+      - 🇺🇸 _US_美国 3
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇬🇧 英国01【vip2 | NEW】
+      - 🇮🇩 印尼
+      - 🇸🇬 新加坡 01【vip3 】
+      - 🇵🇱 _PL_波兰 2
+      - 🇭🇰 香港 08【vip1】
+      - 🇫🇮 _FI_芬兰
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 香港03_专线 【vip3  | NEW】
+      - 追云国外跳转域名：https://zhuiyun.shop
+      - 🇺🇸 美国5|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
