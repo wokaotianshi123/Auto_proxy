@@ -5,317 +5,403 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇺🇸 [ss]美国 04 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27304, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇯🇵 日本5|@ripaojiedian, server: 107jpai.aixunx168.top, port: 30881, type: trojan, password: 32e6cda8-b070-45b6-b7ae-4820c918bdfa, sni: aixunx168.top, skip-cert-verify: true}
-  - {name: "🇸🇬 [ss]新加坡 01| 东部入口", server: east-v4-node1.pkyun.xyz, port: 27201, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇭🇰 [ss]香港 02| 东部入口", server: east-v4-node1.pkyun.xyz, port: 27802, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇸🇬 新加坡09-Singapore09, server: cm03.newcome.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇭🇰 香港05-Hongkong05, server: zx01.endhigh.xyz, port: 2414, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇭🇰 [ss]香港 03| 中部入口", server: central-v4-node1.pkyun.xyz, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 d美国-1, server: domg1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
-  - {name: "🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡", server: east-v4-node1.pkyun.xyz, port: 27804, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇭🇰 [ss]香港 05 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28005, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 美国4|@ripaojiedian, server: 223.113.54.154, port: 20344, type: trojan, password: RmdXQRXg, skip-cert-verify: true}
-  - {name: 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5, server: 104.16.60.8, port: 2086, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /afrhms07.xfixedfloat.cfd/linkws}}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 3.39.227.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 美国10-Usa10, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18, server: 183.240.235.162, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "[ss]南苏丹", server: east-v4-node1.pkyun.xyz, port: 42141, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇨🇭 o瑞士-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
-  - {name: US5, server: www.visa.com.hk, port: 8080, type: vmess, uuid: e9006976-d959-443e-ac7d-e35c60fca4c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cs.tashancloud.link}}}
-  - {name: "🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/u4eCZTxW, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}}
-  - {name: 🇨🇭 o瑞士-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
-  - {name: 🇯🇵 日本07-Japan07, server: cm01.newcome.xyz, port: 3716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇳🇱 d荷兰-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dohl1.gyyun.top}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6, server: 104.25.228.174, port: 80, type: vmess, uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: "[ss]古巴", server: east-v4-node1.pkyun.xyz, port: 42137, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇭🇰 香港10-Hongkong10, server: zx02.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: "🇺🇸 [ss]美国 03 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇩🇪 [ss]德国 01 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27801, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇪🇺 [ss]波兰 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27809, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "[ss]——LV3节点——", server: pokeryun.top, port: 11111, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇭🇰 [ss]Hong Kong 02", server: east-v4-node2.pkyun.xyz, port: 29002, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇪🇺 [ss]英国 01 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27802, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2, server: 104.20.30.14, port: 80, type: vmess, uuid: 43ac3b21-2e9b-4a7c-aef6-2e4b8f73ce2f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
+  - {name: 🇮🇳 d印度-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyd1.gyyun.top}}}
+  - {name: 🇸🇬 新加坡09-Singapore09, server: cm03.newcome.xyz, port: 6718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1, server: 94.182.150.230, port: 80, type: vmess, uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国->🇨🇳_CN_中国, server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本02-Japan02, server: cm01.newcome.xyz, port: 3711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 47.129.0.210, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "[ss]——特殊地区——", server: pokeryun.top, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15, server: 183.240.235.162, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 156.251.217.3, port: 23870, type: vmess, uuid: 7e32a0d3-8ee7-4542-a4fc-a8dfeefac923, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 d英国-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
   - {name: 🇺🇸 美国02-Usa02, server: cm01.newcome.xyz, port: 7711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇸🇬 l新加坡-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lxjp1.gyyun.top}}}
+  - {name: 🇯🇵 日本10-Japan10, server: cm01.newcome.xyz, port: 3719, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: "🇪🇺 [ss]意大利 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27811, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇨🇳 台湾02-Taiwan02, server: cm01.newcome.xyz, port: 5711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16, server: 183.236.51.23, port: 54100, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12", server: 104.16.61.8, port: 2082, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /obdii.cfd/linkws, headers: {Host: y-old-mode-9c0diab.wiriy73548.workers.dev}}}
+  - {name: 🇯🇵 日本03-Japan03, server: cm01.newcome.xyz, port: 3712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4, server: 104.16.61.8, port: 8880, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws}}
+  - {name: US4, server: www.visa.com.hk, port: 8080, type: vmess, uuid: e9006976-d959-443e-ac7d-e35c60fca4c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cs.tashancloud.link}}}
+  - {name: "🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!", server: central-v4-node1.pkyun.xyz, port: 28202, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇯🇵 日本08-Japan08, server: cm01.newcome.xyz, port: 3707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3", server: 104.19.47.214, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: "🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/u4eCZTxW, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}}
+  - {name: 🇯🇵 日本 - 东京 - Oracle Corporation - 1, server: 104.16.45.193, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai_8"}}
+  - {name: 🇨🇳 台湾01-Taiwan01, server: cm01.newcome.xyz, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
   - {name: 🇸🇬 d新加坡-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doxjp1.gyyun.top}}}
-  - {name: 🇯🇵 日本06-Japan06, server: cm01.newcome.xyz, port: 3715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/u4eCZTxW, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}}
-  - {name: 🇸🇬 新加坡05-Singapore05, server: cm03.newcome.xyz, port: 6714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡", server: east-v4-node1.pkyun.xyz, port: 27103, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 香港06-Hongkong06, server: zx02.endhigh.xyz, port: 2415, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 香港10-Hongkong10, server: zx02.endhigh.xyz, port: 2419, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇨🇳 台湾06-Taiwan06, server: cm01.newcome.xyz, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡", server: central-v4-node1.pkyun.xyz, port: 28004, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇭🇰 香港10-Hongkong10 2, server: zx02.endhigh.xyz, port: 2409, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: US1, server: proxyip.us.fxxk.dedyn.io, port: 8080, type: vmess, uuid: e9006976-d959-443e-ac7d-e35c60fca4c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cs.tashancloud.link}}}
+  - {name: 🇺🇸 _US_美国->🇧🇷_BR_巴西, server: 104.18.37.248, port: 2052, type: vmess, uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.20.17.186, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
+  - {name: "🇭🇰 [ss]香港 05 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27005, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇰🇷 [ss]韩国 01 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27411, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 d美国-1, server: domg1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
+  - {name: "🇺🇸 [ss]美国 02 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27302, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇺🇸 [ss]美国 01 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28301, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇭🇰 香港03-Hongkong03, server: zx01.endhigh.xyz, port: 2402, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇬🇧 d英国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
+  - {name: 🇺🇸 _US_美国, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk}
+  - {name: 🇯🇵 日本5|@ripaojiedian, server: 107jpai.aixunx168.top, port: 30881, type: trojan, password: 32e6cda8-b070-45b6-b7ae-4820c918bdfa, sni: aixunx168.top, skip-cert-verify: true}
+  - {name: "🇯🇵 [ss]日本 05 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27105, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇭🇰 香港09-Hongkong09, server: zx02.endhigh.xyz, port: 2418, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 p香港-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqxg1.gyyun.top}}}
+  - {name: 🇭🇰 香港03-Hongkong03 2, server: zx01.endhigh.xyz, port: 2412, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [ss]香港 02| 东部入口
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇨🇳 台湾01-Taiwan01
+      - 🇭🇰 香港06-Hongkong06
       - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -331,44 +417,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 [ss]美国 04 | 东部入口
-      - 🇯🇵 日本5|@ripaojiedian
-      - 🇸🇬 [ss]新加坡 01| 东部入口
-      - 🇭🇰 [ss]香港 02| 东部入口
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇫🇮 芬兰 - 赫尔辛基 - Stark Industries Solutions LTD - 2
+      - 🇮🇳 d印度-3
       - 🇸🇬 新加坡09-Singapore09
-      - 🇭🇰 香港05-Hongkong05
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 d美国-1
-      - 🇭🇰 [ss]香港 04 | 东部入口 | 负载均衡
-      - 🇭🇰 [ss]香港 05 | 中部入口
-      - 🇺🇸 美国4|@ripaojiedian
-      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 5
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 美国10-Usa10
-      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 18
-      - "[ss]南苏丹"
-      - 🇨🇭 o瑞士-2
-      - US5
-      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
-      - 🇨🇭 o瑞士-3
-      - 🇯🇵 日本07-Japan07
-      - 🇳🇱 d荷兰-1
-      - 🇺🇸 美国 - 洛杉矶 - Stark Industries Solutions LTD - 6
-      - "[ss]古巴"
-      - 🇭🇰 香港10-Hongkong10
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇩🇪 [ss]德国 01 | 欧洲入口
-      - 🇪🇺 [ss]波兰 | 欧洲入口
-      - "[ss]——LV3节点——"
-      - 🇭🇰 [ss]Hong Kong 02
+      - 🇳🇱 荷兰 - Meppel - Scalaxy B.V. - 1
+      - 🇺🇸 _US_美国->🇨🇳_CN_中国
+      - 🇯🇵 日本02-Japan02
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - "[ss]——特殊地区——"
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 15
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇬🇧 d英国-1
       - 🇺🇸 美国02-Usa02
-      - 🇸🇬 l新加坡-2
+      - 🇯🇵 日本10-Japan10
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 16
+      - 🇺🇸 美国 - 亚特兰大 - Akamai Technologies, Inc. - 12
+      - 🇯🇵 日本03-Japan03
+      - 🇩🇪 德国 - 法兰克福 - Akamai Technologies - 4
+      - US4
+      - 🇸🇬 [ss]新加坡 02| 中部入口 !!部分定位未拉回!!
+      - 🇯🇵 日本08-Japan08
+      - 🇨🇳 中国 - 台湾 - Chunghwa Telecom Co., Ltd. - 3
+      - 🇸🇬 新加坡 - 新加坡 - Akamai Technologies, Inc. - 13
+      - 🇯🇵 日本 - 东京 - Oracle Corporation - 1
+      - 🇨🇳 台湾01-Taiwan01
       - 🇸🇬 d新加坡-3
-      - 🇯🇵 日本06-Japan06
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇸🇬 新加坡05-Singapore05
-      - 🇯🇵 [ss]日本 03 | 东部入口 | 负载均衡
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
+      - 🇭🇰 香港06-Hongkong06
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇭🇰 [ss]香港 04 | 中部入口 | 负载均衡
+      - 🇭🇰 香港10-Hongkong10 2
+      - US1
+      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇰🇷 [ss]韩国 01 | 东部入口
+      - 🇺🇸 d美国-1
+      - 🇺🇸 [ss]美国 02 | 东部入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇭🇰 香港03-Hongkong03
+      - 🇬🇧 d英国-3
+      - 🇺🇸 _US_美国
+      - 🇯🇵 日本5|@ripaojiedian
+      - 🇯🇵 [ss]日本 05 | 东部入口
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 p香港-1
+      - 🇭🇰 香港03-Hongkong03 2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
