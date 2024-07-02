@@ -5,273 +5,311 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 13.124.244.90, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇯🇵 [ss]日本 06 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28106, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇵🇰 [ss]巴基斯坦", server: east-v4-node1.pkyun.xyz, port: 45303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇯🇵 日本R|@ripaojiedian, server: 59.56.77.178, port: 15084, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160, server: 104.19.45.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: "🇨🇳 [ss]台湾03 HiNet | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27403, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 新加坡 Amazon数据中心, server: 54.169.164.237, port: 16755, type: trojan, password: qTgbFSPBAkdq, sni: appsvs.shop}
+  - {name: 🇫🇷 法国 V2CROSS.COM, server: paris.telegavpn.com, port: 9802, type: ss, cipher: chacha20-ietf-poly1305, password: hFSW6cNWiFEkLtJUScfMqA}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171, server: 104.19.21.220, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇮🇳 d印度-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyd1.gyyun.top}}}
   - {name: "🇮🇳 [ss]印度", server: east-v4-node1.pkyun.xyz, port: 45306, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 d美国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
-  - {name: "🇭🇰 [ss]Hong Kong 01", server: east-v4-node2.pkyun.xyz, port: 29001, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇸🇬 Singapore 0.5x, server: 1e23.ens3.buzz, port: 24803, type: ss, cipher: aes-128-gcm, password: 56fac09c-9a2a-4f61-ada2-4f7ac30fc286}
-  - {name: "🇺🇸 [vmess]United States 01 Direct 电信优化", server: us1.pkyun.website, port: 80, type: vmess, uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f, alterId: 0, cipher: auto, tls: true, servername: us1.pkyun.website, network: ws, ws-opts: {path: /cfcloud, headers: {Host: us1.pkyun.website}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151, server: 104.19.45.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 o美国-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: opmg1.gyyun.top}}}
-  - {name: 🇸🇬 l新加坡-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lxjp1.gyyun.top}}}
-  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇵 朝鲜|cf优选, server: www.okcupid.com, port: 8443, type: vmess, uuid: 620b3ad2-6d72-4795-9b36-729a705a8070, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: cx6.888553.xyz}}}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: 59.56.77.178, port: 15084, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇺🇸 _US_美国->🇨🇳_CN_中国, server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 [ss]美国 01 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27301, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇷🇴 罗马尼亚|cf优选, server: www.okcupid.com, port: 443, type: vmess, uuid: 620b3ad2-6d72-4795-9b36-729a705a8070, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: hl2.888553.xyz}}}
-  - {name: 🇭🇰 p香港-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqxg1.gyyun.top}}}
-  - {name: 🇯🇵 日本5|@ripaojiedian, server: 107jpai.aixunx168.top, port: 30881, type: trojan, password: 32e6cda8-b070-45b6-b7ae-4820c918bdfa, sni: aixunx168.top, skip-cert-verify: true}
-  - {name: "[ss]南苏丹", server: east-v4-node1.pkyun.xyz, port: 42141, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡", server: central-v4-node1.pkyun.xyz, port: 28103, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "[ss]——LV3节点——", server: pokeryun.top, port: 11111, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇭🇰 香港|cf优选, server: www.okcupid.com, port: 8443, type: vmess, uuid: 620b3ad2-6d72-4795-9b36-729a705a8070, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: xg6.888553.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇧🇷_BR_巴西, server: 104.18.37.248, port: 2052, type: vmess, uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！, server: 127.0.0.1, port: 33333, type: ss, cipher: chacha20-ietf-poly1305, password: e9006976-d959-443e-ac7d-e35c60fca4c8}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 120.232.240.56, port: 16928, type: vmess, uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇭🇰 [ss]香港 03| 中部入口", server: central-v4-node1.pkyun.xyz, port: 28003, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇺🇸 [ss]美国 03 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 美国1, server: awszf1.chuanping.wang, port: 58384, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
-  - {name: 🇨🇭 o瑞士-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
+  - {name: 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5, server: baobaojichang.bbjc.xyz, port: 8080, type: vmess, uuid: 9f4b982c-9db1-4dd0-b44c-1f9376d0ee2c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: baobaojichang.bbjc.xyz}}}
+  - {name: "🇱🇺 [ss]卢森堡 | B/P下载", server: eu-v4-node.pkyun.xyz, port: 27805, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 _US_美国, server: cfcdn1.sanfencdn9.com, port: 2082, type: vmess, uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn1.sanfencdn9.com}}}
+  - {name: 🇸🇬 新加坡1, server: gd.trojanws.xyz, port: 10578, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: US3, server: proxyip.us.fxxk.dedyn.io, port: 8080, type: vmess, uuid: e9006976-d959-443e-ac7d-e35c60fca4c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cs.tashancloud.link}}}
+  - {name: 🇮🇳 d印度-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyd1.gyyun.top}}}
+  - {name: US5, server: www.visa.com.hk, port: 8080, type: vmess, uuid: e9006976-d959-443e-ac7d-e35c60fca4c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cs.tashancloud.link}}}
+  - {name: "🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x", server: east-v4-node1.pkyun.xyz, port: 27104, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: russia.com, port: 8080, type: vmess, uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}}
+  - {name: 🇬🇧 d英国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
+  - {name: 🇯🇵 日本6|@ripaojiedian, server: bvip.hongxingdl.vip, port: 37459, type: vmess, uuid: d5c462c7-859a-44e2-aac3-31d19a3e1362, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港R|@ripaojiedian, server: 59.56.77.178, port: 15001, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
+  - {name: 🇯🇵 日本3, server: gd.trojanws.xyz, port: 10577, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: 🇩🇪 德国2|cf优选, server: www.okcupid.com, port: 8443, type: vmess, uuid: 620b3ad2-6d72-4795-9b36-729a705a8070, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: de2.888553.xyz}}}
+  - {name: "🇭🇰 [ss]香港 05 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27005, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 _US_美国 2, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk}
+  - {name: 距离下次重置剩余：1 天, server: e7a0.ens3.buzz, port: 43873, type: ss, cipher: aes-128-gcm, password: 56fac09c-9a2a-4f61-ada2-4f7ac30fc286}
+  - {name: 🇺🇸 美国 - Ashburn - Oracle Corporation - 173, server: baobaojichang.bbjc.xyz, port: 80, type: vmess, uuid: 45295933-b077-4edf-ba9b-375441c8d6ae, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: baobaojichang.bbjc.xyz}}}
+  - {name: 🇯🇵 p日本-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156, server: 104.19.45.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157, server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172, server: 104.19.45.42, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: "🇳🇬 [ss]尼日利亚", server: central-v4-node1.pkyun.xyz, port: 23378, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: _CN_中国, server: 183.240.235.162, port: 54882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169, server: 23.227.38.8, port: 2095, type: vmess, uuid: e9555d84-a146-4e36-9c23-eac28387be48, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /WNh8bXQv/}}
+  - {name: 🇸🇪 _CN_中国->🇸🇪_SE_瑞典, server: deepf.hjkdsak2.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 99301d55-a41f-4919-986b-1435996533aa}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 172.104.49.76, port: 443, type: ss, cipher: aes-256-cfb, password: zoogvpn}
+  - {name: "🇺🇸 [ss]美国 02 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28302, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇰🇷 [ss]韩国 01 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28411, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇪🇺 [ss]瑞典 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27806, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 新加坡3, server: gd.trojanws.xyz, port: 10578, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇭🇰 p香港-3
-      - 🇭🇰 香港|cf优选
-      - 🇭🇰 [ss]香港 03| 中部入口
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -287,38 +325,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇯🇵 [ss]日本 06 | 中部入口
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇯🇵 日本R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 160
+      - 🇨🇳 [ss]台湾03 HiNet | 东部入口
+      - 🇸🇬 新加坡 Amazon数据中心
+      - 🇫🇷 法国 V2CROSS.COM
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 171
+      - 🇮🇳 d印度-1
       - 🇮🇳 [ss]印度
-      - 🇺🇸 d美国-3
-      - 🇭🇰 [ss]Hong Kong 01
-      - 🇸🇬 Singapore 0.5x
-      - 🇺🇸 [vmess]United States 01 Direct 电信优化
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 151
-      - 🇺🇸 o美国-1
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇰🇵 朝鲜|cf优选
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 _US_美国->🇨🇳_CN_中国
-      - 🇺🇸 [ss]美国 01 | 东部入口
-      - 🇷🇴 罗马尼亚|cf优选
-      - 🇭🇰 p香港-3
-      - 🇯🇵 日本5|@ripaojiedian
-      - "[ss]南苏丹"
-      - 🇯🇵 [ss]日本 03 | 中部入口 | 负载均衡
-      - "[ss]——LV3节点——"
-      - 🇭🇰 香港|cf优选
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇸🇬 ❤️建议每次使用前务必手动更新一下订阅！
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇭🇰 [ss]香港 03| 中部入口
-      - 🇺🇸 [ss]美国 03 | 中部入口
-      - 🇺🇸 美国1
-      - 🇨🇭 o瑞士-1
+      - 🇰🇷 韩国 - 首尔特别市 - Oracle Corporation - 5
+      - 🇱🇺 [ss]卢森堡 | B/P下载
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡1
+      - US3
+      - 🇮🇳 d印度-3
+      - US5
+      - 🇯🇵 [ss]日本 04 NTT | 东部入口 | 1.2x
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-3
+      - 🇯🇵 日本6|@ripaojiedian
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇯🇵 日本3
+      - 🇩🇪 德国2|cf优选
+      - 🇭🇰 [ss]香港 05 | 东部入口
+      - 🇺🇸 _US_美国 2
+      - 距离下次重置剩余：1 天
+      - 🇺🇸 美国 - Ashburn - Oracle Corporation - 173
+      - 🇯🇵 p日本-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 156
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 172
+      - 🇳🇬 [ss]尼日利亚
+      - _CN_中国
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 169
+      - 🇸🇪 _CN_中国->🇸🇪_SE_瑞典
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 [ss]美国 02 | 中部入口
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇸🇬 新加坡3
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
