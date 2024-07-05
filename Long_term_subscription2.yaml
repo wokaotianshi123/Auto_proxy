@@ -5,370 +5,401 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 新加坡02-Singapore02, server: cm03.newcome.xyz, port: 6711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇸🇬 新加坡09-Singapore09, server: cm03.newcome.xyz, port: 6718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇸🇬 [ss]Singapore 05 | IPV6入口", server: east-v6-node.pkyun.xyz, port: 17201, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇺🇸 [ss]美国 02 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27302, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 _US_美国, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk}
-  - {name: 🇯🇵 p日本-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
-  - {name: dash.ss301.top-免费节点01, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
-  - {name: 🇸🇬 Singapore 02, server: nice.yummybest.top, port: 12511, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇺🇸 美国08-Usa08, server: cm01.newcome.xyz, port: 7717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇸🇬 Singapore 05, server: good.yummybest.top, port: 12514, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 13.212.62.12, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 新加坡07-Singapore07, server: cm03.newcome.xyz, port: 6706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇸🇬 l新加坡-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lxjp1.gyyun.top}}}
-  - {name: "🇪🇺 [ss]土耳其 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27808, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇸🇬 新加坡 03, server: p1.bxy-fun3.xyz, port: 24105, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: dash.ss301.top-免费节点03, server: free-relay.themars.top, port: 32203, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
-  - {name: 🇺🇸 美国10-Usa10, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇨🇳 台湾03-Taiwan03, server: cm01.newcome.xyz, port: 5712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇯🇵 [ss]日本 06 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27106, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.45.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, servername: ip1.1457230.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇨🇭 o瑞士-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
-  - {name: 🇯🇵 日本03-Japan03, server: cm01.newcome.xyz, port: 3712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇨🇳 广东省 移动, server: 183.240.235.166, port: 31778, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "🇱🇺 [ss]卢森堡 | B/P下载", server: eu-v4-node.pkyun.xyz, port: 27805, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "🇨🇳 [ss]台湾 02 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27402, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇬🇧 英国 03, server: p1.bxy-fun3.xyz, port: 30472, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: 🇺🇸 美国 03, server: p1.bxy-fun3.xyz, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: 🇯🇵 日本07-Japan07, server: cm01.newcome.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇺🇸 _US_美国 2, server: 172.67.176.206, port: 2053, type: trojan, password: ZJU29smXwp, sni: damn-mci-again-3.danesh-bonyan.Store, network: ws, ws-opts: {path: "", headers: {Host: damn-mci-again-3.danesh-bonyan.Store}}}
-  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: gd1.chuanping.wang, port: 10596, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
-  - {name: 🇯🇵 日本10-Japan10, server: cm01.newcome.xyz, port: 3719, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇨🇳 台湾06-Taiwan06, server: cm01.newcome.xyz, port: 5715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇯🇵 日本09-Japan09, server: cm01.newcome.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇩🇪 d德国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg1.gyyun.top}}}
+  - {name: 🇬🇧 英国 - 伦敦 - OVH SAS - 2, server: 51.89.122.175, port: 30000, type: vmess, uuid: 9f58234c-355b-4065-ae21-d4a63099aba5, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/323127100515}}
+  - {name: 🇯🇵 日本3, server: gd2.chuanping.wang, port: 10292, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: 🇺🇸 美国2, server: gd1.chuanping.wang, port: 10599, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11, server: 198.2.223.134, port: 38000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/002132010928}}
+  - {name: 🇺🇸 美国02-Usa02, server: cm01.newcome.xyz, port: 7711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 香港10-Hongkong10, server: zx02.endhigh.xyz, port: 2419, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇺🇸 美国08-Usa08, server: cm01.newcome.xyz, port: 7707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}}
+  - {name: 🇯🇵 日本01-Japan01, server: cm01.newcome.xyz, port: 3710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: "🇨🇳 [ss]台湾03 HiNet | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28403, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
   - {name: 🇸🇬 新加坡2, server: gd1.chuanping.wang, port: 10596, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
-  - {name: 🇯🇵 Japan 05, server: good.yummybest.top, port: 22103, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: "🇰🇵 [ss]朝鲜", server: east-v4-node1.pkyun.xyz, port: 42134, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "[ss]-------LV1节点-------- 直连", server: pokeryun.top, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇯🇵 p日本-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
-  - {name: "🇵🇰 [ss]巴基斯坦", server: east-v4-node1.pkyun.xyz, port: 45303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇸🇬 新加坡08-Singapore08, server: cm03.newcome.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇸🇬 l新加坡-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lxjp1.gyyun.top}}}
-  - {name: 🇭🇰 香港06-Hongkong06, server: zx02.endhigh.xyz, port: 2405, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇲🇴 澳门 01, server: p1.bxy-edge.xyz, port: 19869, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1, server: ca-v2ray.ipracevpn.com, port: 443, type: vmess, uuid: 1b3d460b-91cc-46f9-909d-73823128ee0a, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1, server: hidd2.parthianempire.org, port: 443, type: vmess, uuid: 19c80ce9-0935-41b9-b077-277621316a87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /liUxUGJTGoPjd07ui73LZgwx8s, headers: {Host: hidd2.parthianempire.org}}}
+  - {name: "🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!", server: east-v4-node1.pkyun.xyz, port: 27202, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7, server: 104.19.45.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: 🇭🇰 Hongkong 05, server: good.yummybest.top, port: 12505, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
+  - {name: 🇺🇸 美国04-Usa04, server: cm01.newcome.xyz, port: 7703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇺🇸 美国10-Usa10, server: cm01.newcome.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇪🇺 [ss]瑞典 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27806, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1, server: www.okcupid.com, port: 443, type: vmess, uuid: 935ffb24-98af-4635-8f13-1faf8890294f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: www.okcupid.com}}}
+  - {name: 🇨🇳 台湾03-Taiwan03, server: cm01.newcome.xyz, port: 5702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇯🇵 l日本-3, server: yx3.gyyun.top, port: 2052, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lrb1.gyyun.top}}}
+  - {name: 🇨🇳 台湾 01, server: p1.bxy-fun1.xyz, port: 23102, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇯🇵 l日本-2, server: yx2.gyyun.top, port: 2052, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lrb1.gyyun.top}}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: hk05-auto-console.suya.ink, port: 18021, type: ss, cipher: aes-256-gcm, password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B}
+  - {name: 永久免费 加群关注电报频道获取延期码, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
+  - {name: 🇭🇰 香港09-Hongkong09, server: zx02.endhigh.xyz, port: 2408, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇪🇺 [ss]英国 02 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27810, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 新加坡04-Singapore04, server: cm03.newcome.xyz, port: 6713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 香港08-Hongkong08, server: zx02.endhigh.xyz, port: 2417, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: 🇬🇧 d英国-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
+  - {name: 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225, server: 183.238.202.173, port: 39041, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾 03, server: p1.bxy-fun3.xyz, port: 23106, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇺🇸 USA 06, server: nice.yummybest.top, port: 22117, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
+  - {name: 🇸🇬 新加坡03-Singapore03, server: cm03.newcome.xyz, port: 6712, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: dash.ss301.top-免费节点02, server: free-relay.themars.top, port: 32202, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
+  - {name: "🇪🇺 [ss]英国 01 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27802, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇩🇪 [ss]德国 01 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27801, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇯🇵 Japan 02, server: nice.yummybest.top, port: 12517, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
+  - {name: 🇯🇵 日本07-Japan07, server: cm01.newcome.xyz, port: 3716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇭🇰 香港R|@ripaojiedian, server: 59.56.77.178, port: 15001, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
+  - {name: 🇨🇳 Taiwan 02, server: nice.yummybest.top, port: 22106, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
+  - {name: "🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡", server: central-v4-node1.pkyun.xyz, port: 28401, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇰🇷 [ss]韩国 01 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28411, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇯🇵 日本2, server: gd2.chuanping.wang, port: 10292, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: 🇭🇰 香港07-Hongkong07, server: zx02.endhigh.xyz, port: 2416, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇨🇳 台湾 02, server: p1.bxy-fun2.xyz, port: 23105, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇸🇬 新加坡10-Singapore10, server: cm03.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x", server: central-v4-node1.pkyun.xyz, port: 28203, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 d新加坡-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doxjp1.gyyun.top}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港10-Hongkong10
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
       - 🇨🇳 台湾03-Taiwan03
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港06-Hongkong06
+      - 🇨🇳 台湾 01
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港09-Hongkong09
+      - 🇭🇰 香港08-Hongkong08
+      - 🇨🇳 台湾 03
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -384,52 +415,55 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇸🇬 新加坡09-Singapore09
-      - 🇸🇬 [ss]Singapore 05 | IPV6入口
-      - 🇺🇸 [ss]美国 02 | 东部入口
-      - 🇺🇸 _US_美国
-      - 🇯🇵 p日本-1
-      - dash.ss301.top-免费节点01
-      - 🇸🇬 Singapore 02
+      - 🇬🇧 英国 - 伦敦 - OVH SAS - 2
+      - 🇯🇵 日本3
+      - 🇺🇸 美国2
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 11
+      - 🇺🇸 美国02-Usa02
+      - 🇭🇰 香港10-Hongkong10
       - 🇺🇸 美国08-Usa08
-      - 🇸🇬 Singapore 05
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇸🇬 新加坡07-Singapore07
-      - 🇸🇬 l新加坡-1
-      - 🇪🇺 [ss]土耳其 | 欧洲入口
-      - 🇸🇬 新加坡 03
-      - dash.ss301.top-免费节点03
-      - 🇺🇸 美国10-Usa10
-      - 🇨🇳 台湾03-Taiwan03
-      - 🇯🇵 [ss]日本 06 | 东部入口
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇭 o瑞士-1
-      - 🇯🇵 日本03-Japan03
-      - 🇨🇳 广东省 移动
-      - 🇱🇺 [ss]卢森堡 | B/P下载
-      - 🇨🇳 [ss]台湾 02 | 东部入口
-      - 🇬🇧 英国 03
-      - 🇺🇸 美国 03
-      - 🇯🇵 日本07-Japan07
-      - 🇺🇸 _US_美国 2
-      - 🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本10-Japan10
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇯🇵 日本09-Japan09
-      - 🇩🇪 d德国-3
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇯🇵 日本01-Japan01
+      - 🇨🇳 [ss]台湾03 HiNet | 中部入口
       - 🇸🇬 新加坡2
-      - 🇯🇵 Japan 05
-      - 🇰🇵 [ss]朝鲜
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇯🇵 p日本-2
-      - 🇵🇰 [ss]巴基斯坦
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇸🇬 l新加坡-3
-      - 🇭🇰 香港06-Hongkong06
-      - 🇲🇴 澳门 01
-      - 🇨🇦 加拿大 - Beauharnois - OVH SAS - 1
-      - 🇳🇱 荷兰 - 阿姆斯特丹 - Choopa - 1
+      - 🇸🇬 [ss]新加坡 02| 东部入口 !!部分定位未拉回!!
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 Hongkong 05
+      - 🇺🇸 美国04-Usa04
+      - 🇺🇸 美国10-Usa10
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 🇹🇷 土耳其 - 伊斯坦布尔 - Aeza International LTD - 1
+      - 🇨🇳 台湾03-Taiwan03
+      - 🇯🇵 l日本-3
+      - 🇨🇳 台湾 01
+      - 🇯🇵 l日本-2
+      - 🇭🇰 香港|@ripaojiedian
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇭🇰 香港09-Hongkong09
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇸🇬 新加坡04-Singapore04
+      - 🇭🇰 香港08-Hongkong08
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇬🇧 d英国-1
+      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 225
+      - 🇨🇳 台湾 03
+      - 🇺🇸 USA 06
+      - 🇸🇬 新加坡03-Singapore03
+      - dash.ss301.top-免费节点02
+      - 🇪🇺 [ss]英国 01 | 欧洲入口
+      - 🇩🇪 [ss]德国 01 | 欧洲入口
+      - 🇯🇵 Japan 02
+      - 🇯🇵 日本07-Japan07
+      - 🇭🇰 香港R|@ripaojiedian
+      - 🇨🇳 Taiwan 02
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇰🇷 [ss]韩国 01 | 中部入口
+      - 🇯🇵 日本2
+      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 02
+      - 🇸🇬 新加坡10-Singapore10
+      - 🇸🇬 [ss]新加坡 03 | 中部入口 | 0.8x
+      - 🇸🇬 d新加坡-2
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
