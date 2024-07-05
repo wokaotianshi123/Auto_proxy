@@ -5,425 +5,408 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8, server: 104.19.46.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇸🇬 新加坡04-Singapore04, server: cm03.newcome.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: "🇸🇬 [ss]新加坡 01| 中部入口", server: central-v4-node1.pkyun.xyz, port: 28201, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 USA 04, server: nice.yummybest.top, port: 22115, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇯🇵 Japan 03, server: good.yummybest.top, port: 22101, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇭🇰 香港04-Hongkong04, server: zx01.endhigh.xyz, port: 2413, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇺🇸 [ss]美国 03 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 美国5|@ripaojiedian, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇸🇬 新加坡08-Singapore08, server: cm03.newcome.xyz, port: 6717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x", server: central-v4-node1.pkyun.xyz, port: 28104, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇨🇳 台湾05-Taiwan05, server: cm01.newcome.xyz, port: 5714, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 23.157.40.120, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化", server: jp1.pkyun.website, port: 80, type: vmess, uuid: d6ddf1e4-598e-4b08-960a-b60fea80c29f, alterId: 0, cipher: auto, tls: true, servername: jp1.pkyun.website, network: ws, ws-opts: {path: /cloud, headers: {Host: jp1.pkyun.website}}}
-  - {name: 🇺🇸 d美国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
-  - {name: 🇯🇵 日本3|@ripaojiedian, server: jp6.mmmmmmmmmm.cfd, port: 23234, type: vmess, uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/bYdJ7Vc2We, headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}}}
+  - {name: 🇺🇸 美国2, server: gd1.chuanping.wang, port: 10599, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
+  - {name: 🇸🇬 新加坡06-Singapore06, server: cm03.newcome.xyz, port: 6715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: "🇪🇺 [ss]瑞典 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27806, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 永久免费 加群关注电报频道获取延期码, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.51.238, port: 80, type: vmess, uuid: 43ac3b21-2e9b-4a7c-aef6-2e4b8f73ce2f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 127.0.0.1.kleksacademy.克萊克斯學院.aкадемияkлекс.警笛.wonkacapitano.buzz.}}}
+  - {name: 🇯🇵 日本02-Japan02, server: cm01.newcome.xyz, port: 3711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
   - {name: 动态无墙地址 http://172.104.188.109:8077, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
-  - {name: 🇯🇵 日本09-Japan09, server: cm01.newcome.xyz, port: 3718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: "[ss]-------LV1节点-------- 直连", server: pokeryun.top, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇭🇰 香港06-Hongkong06, server: zx02.endhigh.xyz, port: 2415, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇸🇬 新加坡3, server: gd1.chuanping.wang, port: 10596, type: ss, cipher: aes-128-gcm, password: d7fcff5d-e3c6-4d26-aa0a-2af2ab876757}
-  - {name: 距离下次重置剩余：26 天, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
-  - {name: 🇸🇬 Singapore 03, server: good.yummybest.top, port: 12512, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇨🇳 台湾06-Taiwan06, server: cm01.newcome.xyz, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇭🇰 香港07-Hongkong07, server: zx02.endhigh.xyz, port: 2406, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/c9efxRCi, headers: {Host: 7nAi74jJsg1.yofnhkfc.xyz}}}
-  - {name: 🇯🇵 Japan 04, server: nice.yummybest.top, port: 23102, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: 🇨🇳 台湾02-Taiwan02, server: cm01.newcome.xyz, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: "[ss]距离下次重置剩余：27 天", server: pokeryun.top, port: 11111, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: "[ss]——LV2节点——", server: pokeryun.top, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇳🇱 d荷兰-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dohl1.gyyun.top}}}
-  - {name: "🇯🇵 [ss]日本 05 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27105, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: dash.ss301.top-免费节点01, server: free-relay.themars.top, port: 32207, type: vmess, uuid: 4b2179c7-6eec-47cd-bb39-c54662e5d4d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv1.m3u8, headers: {Host: www.cctv.com}}}
-  - {name: 🇳🇱 荷兰 01, server: p1.bxy-edge.xyz, port: 30801, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: "🇭🇰 [ss]Hong Kong 02 | IPV6入口", server: east-v6-node.pkyun.xyz, port: 17006, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇺🇸 美国 03, server: p1.bxy-fun3.xyz, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇯🇵 日本03-Japan03, server: cm01.newcome.xyz, port: 3702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
   - {name: 🇯🇵 p日本-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
-  - {name: 🇨🇳 台湾04-Taiwan04, server: cm01.newcome.xyz, port: 5713, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
-  - {name: 🇺🇸 美国09-Usa09, server: cm01.newcome.xyz, port: 7708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇯🇵 日本01-Japan01, server: cm01.newcome.xyz, port: 3700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇺🇸 _US_美国, server: cfcdn1.sanfencdn9.com, port: 2082, type: vmess, uuid: cd0eb936-9e1e-4730-989e-be43e7fcaf3e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn1.sanfencdn9.com}}}
-  - {name: 🇷🇺 俄罗斯 01, server: p1.bxy-edge.xyz, port: 30201, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: 🇺🇸 a美国2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: akmg1.gyyun.top}}}
-  - {name: 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1, server: 104.20.208.225, port: 80, type: vmess, uuid: b1770d3a-34a6-11ef-922b-0016b061439e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: 🇺🇸 美国01-Usa01, server: cm01.newcome.xyz, port: 7700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35, server: 104.19.222.30, port: 2052, type: vmess, uuid: d22e082c-3742-421f-aabd-2511eec9148c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/VuDFdktz}}
-  - {name: 🇸🇬 新加坡02-Singapore02, server: cm03.newcome.xyz, port: 6701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大, server: 104.19.47.65, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 Japan 01, server: good.yummybest.top, port: 22100, type: ss, cipher: chacha20-ietf-poly1305, password: 9c109c7f-8989-434b-a431-199c85bc3172}
-  - {name: "🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x", server: central-v4-node1.pkyun.xyz, port: 28205, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
-  - {name: 🇭🇰 香港06-Hongkong06 2, server: zx02.endhigh.xyz, port: 2405, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
-  - {name: 🇯🇵 日本 01, server: p1.bxy-fun1.xyz, port: 26105, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
-  - {name: 🇨🇳 台湾04-Taiwan04 2, server: cm01.newcome.xyz, port: 5703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇳🇱 d荷兰-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dohl1.gyyun.top}}}
+  - {name: 🇨🇳 台湾 01, server: p1.bxy-fun1.xyz, port: 23102, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心, server: jp4.mmmmmmmmmm.cfd, port: 54234, type: trojan, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, sni: apple.com}
+  - {name: 🇸🇬 新加坡09-Singapore09, server: cm03.newcome.xyz, port: 6718, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: "🇺🇸 [ss]美国 04 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28304, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇬🇧 d英国-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
+  - {name: "🇪🇺 [ss]意大利 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27811, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 新加坡03-Singapore03, server: cm03.newcome.xyz, port: 6702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇱🇺 卢森堡 01, server: p1.bxy-edge.xyz, port: 30301, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇯🇵 日本04-Japan04, server: cm01.newcome.xyz, port: 3703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: "🇸🇬 [ss]新加坡 01| 东部入口", server: east-v4-node1.pkyun.xyz, port: 27201, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 美国07-Usa07, server: cm01.newcome.xyz, port: 7716, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇨🇳 台湾02-Taiwan02, server: cm01.newcome.xyz, port: 5711, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇨🇭 o瑞士-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
+  - {name: 🇯🇵 日本 03, server: p1.bxy-fun3.xyz, port: 35127, type: ss, cipher: chacha20-ietf-poly1305, password: 5328a330-1371-47aa-87fd-74516259c195}
+  - {name: 🇩🇪 d德国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dodg1.gyyun.top}}}
+  - {name: "🇺🇸 [ss]美国 03 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27303, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "[ss]——LV3节点——", server: pokeryun.top, port: 11111, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇳🇬 [ss]尼日利亚", server: central-v4-node1.pkyun.xyz, port: 23378, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇸🇬 新加坡01-Singapore01, server: cm03.newcome.xyz, port: 6710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: 183.232.139.22, port: 40081, type: trojan, password: GsKYmYOE, skip-cert-verify: true}
+  - {name: "🇪🇺 [ss]英国 02 | 欧洲入口", server: eu-v4-node.pkyun.xyz, port: 27810, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip005.dtku47.xyz}}}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.21.71, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
+  - {name: "🇨🇳 [ss]台湾 02 | 东部入口", server: east-v4-node1.pkyun.xyz, port: 27402, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡", server: central-v4-node1.pkyun.xyz, port: 28401, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇺🇸 美国05-Usa05, server: cm01.newcome.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇸🇬 新加坡08-Singapore08, server: cm03.newcome.xyz, port: 6717, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: "[ss]——特殊地区——", server: pokeryun.top, port: 8888, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/GQ2qE5Us9g, headers: {Host: tw1bQiWSE4x.fzbqfrse.xyz}}}
+  - {name: 🇭🇰 香港02-Hongkong02, server: zx01.endhigh.xyz, port: 2401, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, servername: ip1.1457230.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
+  - {name: "🇭🇰 [ss]Hong Kong 02 | IPV6入口", server: east-v6-node.pkyun.xyz, port: 17006, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇨🇳 台湾06-Taiwan06, server: cm01.newcome.xyz, port: 5715, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.19.46.233, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip002-2.dtku47.xyz}}}
+  - {name: "🇸🇬 [ss]Singapore 05 | IPV6入口", server: east-v6-node.pkyun.xyz, port: 17201, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: "🇺🇸 [ss]美国 01 | 中部入口", server: central-v4-node1.pkyun.xyz, port: 28301, type: ss, cipher: chacha20-ietf-poly1305, password: d6ddf1e4-598e-4b08-960a-b60fea80c29f}
+  - {name: 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4, server: 172.66.213.38, port: 80, type: vmess, uuid: f533e37c-9da5-4955-a218-a7886e5719b6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NkXnI0l6LGkotMyATWmx5f6MblN}}
+  - {name: 🇺🇸 美国01-Usa01, server: cm01.newcome.xyz, port: 7710, type: ss, cipher: rc4-md5, password: 2vzho5, plugin: obfs, plugin-opts: {mode: http, host: 89c19109670.microsoft.com}}
+  - {name: 🇺🇸 _US_美国, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk}
+  - {name: 🇸🇬 新加坡10-Singapore10, server: cm03.newcome.xyz, port: 6709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 109670:yooRnr, obfs-param: 89c19109670.microsoft.com}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港04-Hongkong04
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇭🇰 香港06-Hongkong06
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
+      - 🇨🇳 台湾 01
       - 🇨🇳 台湾02-Taiwan02
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇨🇳 台湾06-Taiwan06
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -439,59 +422,57 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 - 圣安东尼奥 - Dedicated.com - 8
-      - 🇸🇬 新加坡04-Singapore04
-      - 🇸🇬 [ss]新加坡 01| 中部入口
-      - 🇺🇸 USA 04
-      - 🇯🇵 Japan 03
-      - 🇭🇰 香港04-Hongkong04
-      - 🇺🇸 [ss]美国 03 | 东部入口
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇸🇬 新加坡08-Singapore08
-      - 🇯🇵 [ss]日本 04 NTT | 中部入口 | 1.2x
-      - 🇨🇳 台湾05-Taiwan05
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇯🇵 [vmess]Japan 01 Osaka Direct 联通优化
-      - 🇺🇸 d美国-3
-      - 🇯🇵 日本3|@ripaojiedian
-      - 🇺🇸 美国2|@ripaojiedian
+      - 🇺🇸 美国2
+      - 🇸🇬 新加坡06-Singapore06
+      - 🇪🇺 [ss]瑞典 | 欧洲入口
+      - 永久免费 加群关注电报频道获取延期码
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 日本02-Japan02
       - 动态无墙地址 http://172.104.188.109:8077
-      - 🇯🇵 日本09-Japan09
-      - "[ss]-------LV1节点-------- 直连"
-      - 🇭🇰 香港06-Hongkong06
-      - 🇸🇬 新加坡3
-      - 距离下次重置剩余：26 天
-      - 🇸🇬 Singapore 03
-      - 🇨🇳 台湾06-Taiwan06
-      - 🇭🇰 香港07-Hongkong07
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇯🇵 Japan 04
-      - 🇨🇳 台湾02-Taiwan02
-      - "[ss]距离下次重置剩余：27 天"
-      - "[ss]——LV2节点——"
-      - 🇳🇱 d荷兰-2
-      - 🇯🇵 [ss]日本 05 | 东部入口
-      - dash.ss301.top-免费节点01
-      - 🇳🇱 荷兰 01
-      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
-      - 🇺🇸 美国 03
+      - 🇯🇵 日本03-Japan03
       - 🇯🇵 p日本-1
-      - 🇨🇳 台湾04-Taiwan04
-      - 🇺🇸 美国09-Usa09
-      - 🇯🇵 日本01-Japan01
-      - 🇺🇸 _US_美国
-      - 🇷🇺 俄罗斯 01
-      - 🇺🇸 a美国2
-      - 🇦🇪 阿拉伯联合酋长国 - Bur Dubai - CLOUD-NETWORK - 1
+      - 🇳🇱 d荷兰-3
+      - 🇨🇳 台湾 01
+      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇸🇬 新加坡09-Singapore09
+      - 🇺🇸 [ss]美国 04 | 中部入口
+      - 🇬🇧 d英国-2
+      - 🇪🇺 [ss]意大利 | 欧洲入口
+      - 🇸🇬 新加坡03-Singapore03
+      - 🇱🇺 卢森堡 01
+      - 🇯🇵 日本04-Japan04
+      - 🇸🇬 [ss]新加坡 01| 东部入口
+      - 🇺🇸 美国07-Usa07
+      - 🇨🇳 台湾02-Taiwan02
+      - 🇨🇭 o瑞士-3
+      - 🇯🇵 日本 03
+      - 🇩🇪 d德国-3
+      - 🇺🇸 [ss]美国 03 | 东部入口
+      - "[ss]——LV3节点——"
+      - 🇳🇬 [ss]尼日利亚
+      - 🇸🇬 新加坡01-Singapore01
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇪🇺 [ss]英国 02 | 欧洲入口
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 [ss]台湾 02 | 东部入口
+      - 🇨🇳 [ss]台湾 01 | 中部入口 | 负载均衡
+      - 🇺🇸 美国05-Usa05
+      - 🇸🇬 新加坡08-Singapore08
+      - "[ss]——特殊地区——"
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇭🇰 香港02-Hongkong02
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 [ss]Hong Kong 02 | IPV6入口
+      - 🇨🇳 台湾06-Taiwan06
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 [ss]Singapore 05 | IPV6入口
+      - 🇺🇸 [ss]美国 01 | 中部入口
+      - 🇳🇱 荷兰 - 阿姆斯特丹 - Scalaxy B.V. - 4
       - 🇺🇸 美国01-Usa01
-      - 🇭🇰 中国 - 香港 - Eons Data Communications Limited - 35
-      - 🇸🇬 新加坡02-Singapore02
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大
-      - 🇯🇵 Japan 01
-      - 🇸🇬 [ss]新加坡 05 | 中部入口 | 0.8x
-      - 🇭🇰 香港06-Hongkong06 2
-      - 🇯🇵 日本 01
-      - 🇨🇳 台湾04-Taiwan04 2
+      - 🇺🇸 _US_美国
+      - 🇸🇬 新加坡10-Singapore10
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
