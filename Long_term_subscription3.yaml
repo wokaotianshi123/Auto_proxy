@@ -5,198 +5,295 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 54.251.87.81, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: hk.rweek.top, port: 2052, type: vmess, uuid: a14fd489-6bf4-40bb-fb74-efb137ac1d42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aa, headers: {Host: aa.insbot.filegear-sg.me}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.171.43, port: 80, type: vmess, uuid: b79a6959-6feb-43ba-b3c7-f1afae9ea32c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: Uk2.vmess.site.}}}
-  - {name: 🇭🇰 香港R|@ripaojiedian, server: 59.56.77.178, port: 15001, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇸🇬 l新加坡-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lxjp1.gyyun.top}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇹🇷 Turkey | 冷门, server: rhsdrhwa.cfprefer1.xyz, port: 10005, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
-  - {name: 🇦🇷 Argentina | 冷门, server: rhsdrhwa.cfprefer1.xyz, port: 10006, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 183.232.139.22, port: 4027, type: trojan, password: RmdXQRXg, skip-cert-verify: true}
+  - {name: 🇺🇸 美国6|@ripaojiedian, server: 104.19.38.18, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn2.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.45.194, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇧🇷 巴西圣保罗 CloudFlare节点, server: 188.114.96.221, port: 80, type: vmess, uuid: 310fabb7-2abc-4301-b302-22aa49c954fb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: dl2.127.0.0.1.pикерл.里克爾.kлексaкадемия.kl3ksacad3my.克萊克斯學院.wonkacapitano.buzz.}}}
+  - {name: 🇭🇰 Hong Kong | 家宽 3.0x, server: rhsdrhwa.cfprefer1.xyz, port: 10065, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
+  - {name: 🇨🇭 o瑞士-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oprs1.gyyun.top}}}
+  - {name: 🇬🇧 英国 社会保险安全部, server: 51.178.87.37, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip005.dtku47.xyz}}}
+  - {name: 🇨🇳 台湾省台北市 中華電信, server: tw7.170203.xyz, port: 670, type: trojan, password: 518a6ff8-7233-4f28-8a40-d3fa82a5875d}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.46.63, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.26.0.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-4.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.19.21.81, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.19.48.11, port: 8443, type: vmess, uuid: 39135a39-e6ca-43df-a360-d859eea58d86, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk01.linkitnow.net}}}
+  - {name: 🇨🇳 广东省 移动, server: 183.240.235.166, port: 31778, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.75.137.66, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 104.239.87.127, port: 46828, type: trojan, password: Oih2ooEH99}
+  - {name: 🇬🇧 United Kingdom 02, server: rhsdrhwa.cfprefer1.xyz, port: 10014, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
   - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54, server: 104.19.45.17, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43, server: 104.19.38.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇸🇬 Singapore 02, server: rhsdrhwa.cfprefer1.xyz, port: 43934, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
-  - {name: 🇺🇸 d美国-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
-  - {name: 🇨🇳 台湾|@ripaojiedian, server: sg1111.156786.xyz, port: 703, type: trojan, password: 518a6ff8-7233-4f28-8a40-d3fa82a5875d, sni: sg1111.156786.xyz}
-  - {name: 🇯🇵 日本08, server: jp08.421421.xyz, port: 20230, type: trojan, password: b44da489-fc70-4fd0-8997-a83b51f59267, sni: 421421.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM 2, server: 23.154.136.137, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 172.64.233.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇰🇷 South Korea | 家宽 3.0x, server: rhsdrhwa.cfprefer1.xyz, port: 10053, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
+  - {name: 🇭🇰 Hong Kong 03, server: rhsdrhwa.cfprefer1.xyz, port: 10000, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
   - {name: 🇯🇵 日本R|@ripaojiedian, server: 59.56.77.178, port: 15084, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇯🇵 Japan 01, server: aca-cm-js-4g.cfprefer1.xyz, port: 19563, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41, server: 104.19.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: ❗防失联❗https://ncfb.github.io, server: 1.1.1.1, port: 1234, type: ss, cipher: chacha20-ietf-poly1305, password: 75be34b0-bc02-42e2-a65d-7de6631a9b8c}
-  - {name: 邀请循环70返利, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: opmg1.gyyun.top}}}
-  - {name: 🇸🇬 新加坡07|流媒体, server: sg07.421421.xyz, port: 20230, type: trojan, password: b44da489-fc70-4fd0-8997-a83b51f59267, sni: 421421.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 Japan 03, server: aca-cm-js-4g.cfprefer1.xyz, port: 28436, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
+  - {name: 🇺🇸 a美国2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: akmg1.gyyun.top}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49, server: 104.18.57.111, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59, server: 172.64.233.17, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇯🇵 l日本-1, server: yx1.gyyun.top, port: 2052, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lrb1.gyyun.top}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.47.18, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}}
+  - {name: 🇯🇵 p日本-2, server: yx2.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56, server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.19.45.205, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 US-Emby专用 0.01x, server: dtjaswffgyjh.cfprefer1.xyz, port: 39808, type: ss, cipher: aes-256-gcm, password: 5722e884-271b-4d4d-b4ed-bf70e6d7916a}
+  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, servername: ip2.1457230.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.19.45.240, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -212,27 +309,41 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇺🇸 美国6|@ripaojiedian
       - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港R|@ripaojiedian
-      - 🇸🇬 l新加坡-1
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
-      - 🇹🇷 Turkey | 冷门
-      - 🇦🇷 Argentina | 冷门
+      - 🇧🇷 巴西圣保罗 CloudFlare节点
+      - 🇭🇰 Hong Kong | 家宽 3.0x
+      - 🇨🇭 o瑞士-2
+      - 🇬🇧 英国 社会保险安全部
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇨🇳 台湾省台北市 中華電信
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省 移动
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇬🇧 United Kingdom 02
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 54
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
-      - 🇸🇬 Singapore 02
-      - 🇺🇸 d美国-2
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇯🇵 日本08
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇰🇷 South Korea | 家宽 3.0x
+      - 🇭🇰 Hong Kong 03
       - 🇯🇵 日本R|@ripaojiedian
-      - 🇯🇵 Japan 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 41
-      - ❗防失联❗https://ncfb.github.io
-      - 邀请循环70返利
-      - 🇸🇬 新加坡07|流媒体
-      - 🇯🇵 Japan 03
+      - 🇺🇸 a美国2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 59
+      - 🇯🇵 l日本-1
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇯🇵 p日本-2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 56
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 US-Emby专用 0.01x
+      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
