@@ -5,243 +5,333 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 a美国1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: akmg1.gyyun.top}}}
-  - {name: "[直连] 亚太普速 3", server: tls.03.node-for-bigairport.win, port: 12443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.03.node-for-bigairport.win}}}
-  - {name: "[直连] 下载专用 14", server: tls.94.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.94.node-for-bigairport.win}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15, server: 104.19.46.123, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
-  - {name: "[直连] 下载专用 20", server: tls.100.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.100.node-for-bigairport.win}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.46.103, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}}
-  - {name: "[直连] 下载专用 13", server: tls.93.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.93.node-for-bigairport.win}}}
-  - {name: 🇨🇳 广东省云浮市 移动, server: 183.232.139.22, port: 4027, type: trojan, password: RmdXQRXg, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡05|流媒体, server: sg005.421421.xyz, port: 20230, type: trojan, password: 2e660d96-f2d2-43c0-aa62-bf92edbac0cf, sni: 421421.xyz, skip-cert-verify: false}
-  - {name: "🇯🇵 [直连] 日本高速 2 C", server: 0000000000000000000000000062.cgroup-node-for-bigairport.sbs, port: 42351, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000062.cgroup-node-for-bigairport.sbs}}}
-  - {name: 🇯🇵 l日本-2, server: yx2.gyyun.top, port: 2052, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lrb1.gyyun.top}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25, server: 104.19.58.175, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.42.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇺🇸 美国|@ripaojiedian, server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip005.dtku47.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.58.185, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
+  - {name: "🇸🇬 [直连] 新加坡高速 8 C", server: 0000000000000000000000000068.cgroup-node-for-bigairport.sbs, port: 42354, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000068.cgroup-node-for-bigairport.sbs}}}
+  - {name: 🇳🇱 d荷兰-1, server: yx1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dohl1.gyyun.top}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.55.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 02hz.rvxpwa.tech, port: 35013, type: ss, cipher: aes-256-gcm, password: 48d20ad2-7416-49a8-b5d4-b4f1e0a29274}
   - {name: 🇬🇧 d英国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: doyg1.gyyun.top}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: www.speedtest.net, port: 2053, type: vmess, uuid: 00fb7867-95ad-4eaf-99f1-22255beb6251, alterId: 0, cipher: auto, tls: true, servername: www.speedtest.net, network: grpc, grpc-opts: {grpc-service-name: /}}
-  - {name: "[直连] 下载专用 2", server: tls.82.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.82.node-for-bigairport.win}}}
-  - {name: "[直连] 下载专用 16", server: tls.96.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.96.node-for-bigairport.win}}}
-  - {name: 🇯🇵 p日本-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pqrb1.gyyun.top}}}
-  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 123.88.148.9, port: 50046, type: ss, cipher: chacha20-ietf-poly1305, password: fe3038e9-5653-4ec1-be64-04532782d8b0}
-  - {name: 🇰🇷 韩国|@ripaojiedian, server: kkr100515a.go02.top, port: 30056, type: trojan, password: M3lOal9RPR}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.47.138, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: oiictw.yydsii.com}}}
+  - {name: "[直连] 亚太普速 20", server: tls.20.node-for-bigairport.win, port: 44443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.20.node-for-bigairport.win}}}
   - {name: "[直连] 下载专用 6", server: tls.86.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.86.node-for-bigairport.win}}}
-  - {name: "[直连] 备用节点 2", server: tls.112.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.112.node-for-bigairport.win}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31, server: 104.19.47.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 美二|cf优选, server: visa.com, port: 8443, type: vmess, uuid: cbc5ad2e-8389-4a5a-962e-8ff74045a28f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: de.888553.xyz}}}
-  - {name: "[直连] 亚太普速 12", server: tls.12.node-for-bigairport.win, port: 33443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.12.node-for-bigairport.win}}}
-  - {name: "🇺🇸 [直连] 美国高速 10 C", server: 0000000000000000000000000070.cgroup-node-for-bigairport.sbs, port: 42355, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000070.cgroup-node-for-bigairport.sbs}}}
+  - {name: "[直连] 备用节点 6", server: tls.116.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.116.node-for-bigairport.win}}}
+  - {name: 🇺🇸 d美国-3, server: yx3.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.47.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
+  - {name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心, server: 52.28.68.58, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: 🇸🇬 新加坡07|流媒体, server: sg007.421421.xyz, port: 20230, type: trojan, password: 2e660d96-f2d2-43c0-aa62-bf92edbac0cf, sni: 421421.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 上海市 电信, server: 2a53.ens3.buzz, port: 29803, type: ss, cipher: aes-128-gcm, password: 5bc60592-aa74-48c1-baad-15bfa9b939d9}
+  - {name: 🇻🇳 越南R|@ripaojiedian, server: 59.56.77.178, port: 15083, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group, server: 1.1.1.1, port: 65535, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.19.45.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47, server: 104.19.38.8, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}}
+  - {name: 🇺🇸 d美国-1, server: domg1.gyyun.top, port: 8880, type: vmess, uuid: f3049610-7c44-4912-b20e-00c296d55d6c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: domg1.gyyun.top}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11, server: 104.19.58.185, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
+  - {name: 🇯🇵 日本08, server: jp008.421421.xyz, port: 20230, type: trojan, password: 2e660d96-f2d2-43c0-aa62-bf92edbac0cf, sni: 421421.xyz, skip-cert-verify: false}
+  - {name: "🇺🇸 [直连] 美国高速 5 C", server: 0000000000000000000000000065.cgroup-node-for-bigairport.sbs, port: 22353, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000065.cgroup-node-for-bigairport.sbs}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.32.226, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
+  - {name: "[直连] 下载专用 9", server: tls.89.node-for-bigairport.win, port: 443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.89.node-for-bigairport.win}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23, server: 104.19.42.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: "🇭🇰 [直连] 香港高速 1 C", server: 0000000000000000000000000061.cgroup-node-for-bigairport.sbs, port: 22351, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000061.cgroup-node-for-bigairport.sbs}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43, server: 104.19.21.71, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}}
+  - {name: "[直连] 亚太普速 7", server: tls.07.node-for-bigairport.win, port: 34443, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.07.node-for-bigairport.win}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.21.73, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14, server: 104.19.123.31, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 172.64.233.9, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42, server: 104.19.59.89, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇩🇪 德国2|cf优选, server: www.okcupid.com, port: 8443, type: vmess, uuid: cbc5ad2e-8389-4a5a-962e-8ff74045a28f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: de2.888553.xyz}}}
+  - {name: "🇸🇬 [直连] 新加坡高速 3 C", server: 0000000000000000000000000063.cgroup-node-for-bigairport.sbs, port: 22352, type: vmess, uuid: 1b98966d-1326-4ca5-9b96-c87e8a2dfa88, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 0000000000000000000000000063.cgroup-node-for-bigairport.sbs}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.45.171, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.20.36.139, port: 80, type: vmess, uuid: 2d14e84b-226b-412a-9a3c-ffce70b02bdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 127.0.0.1.dl.эврика.mrarsha.尤里卡.醫生.специалист.wonkacapitano.buzz.}}}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: 183.232.139.22, port: 40081, type: trojan, password: GsKYmYOE, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.19.45.154, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24, server: 104.19.32.216, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -257,34 +347,46 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 a美国1
-      - "[直连] 亚太普速 3"
-      - "[直连] 下载专用 14"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 15
-      - "[直连] 下载专用 20"
+      - 🇸🇬 [直连] 新加坡高速 8 C
+      - 🇳🇱 d荷兰-1
       - 🇺🇸 美国 CloudFlare节点
-      - "[直连] 下载专用 13"
-      - 🇨🇳 广东省云浮市 移动
-      - 🇸🇬 新加坡05|流媒体
-      - 🇯🇵 [直连] 日本高速 2 C
-      - 🇯🇵 l日本-2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 25
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 香港3|@ripaojiedian
       - 🇬🇧 d英国-3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - "[直连] 下载专用 2"
-      - "[直连] 下载专用 16"
-      - 🇯🇵 p日本-3
-      - 🇸🇬 新加坡|@ripaojiedian
-      - 🇰🇷 韩国|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "[直连] 亚太普速 20"
       - "[直连] 下载专用 6"
-      - "[直连] 备用节点 2"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 31
-      - 美二|cf优选
-      - "[直连] 亚太普速 12"
-      - 🇺🇸 [直连] 美国高速 10 C
+      - "[直连] 备用节点 6"
+      - 🇺🇸 d美国-3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
+      - 🇸🇬 新加坡07|流媒体
+      - 🇨🇳 上海市 电信
+      - 🇻🇳 越南R|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 国内入口：bigairport-mirror.com 固定入口：大机场.com  电报讨论群组：BigAirport_Group
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 47
+      - 🇺🇸 d美国-1
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 11
+      - 🇯🇵 日本08
+      - 🇺🇸 [直连] 美国高速 5 C
+      - 🇺🇸 美国 CloudFlare节点 6
+      - "[直连] 下载专用 9"
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 23
+      - 🇭🇰 [直连] 香港高速 1 C
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 43
+      - "[直连] 亚太普速 7"
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 14
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 42
+      - 🇩🇪 德国2|cf优选
+      - 🇸🇬 [直连] 新加坡高速 3 C
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 24
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
