@@ -5,621 +5,727 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|, server: fr1.trojanvpn.de, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true}
-  - {name: 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|, server: 43.201.58.61, port: 16575, type: trojan, password: qxMIVAZgMOlS, sni: appsvs.shop, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|, server: 18.183.186.14, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2, server: fr1.test3.net, port: 443, type: trojan, password: 6feb4d30-389f-11ef-8c37-1239d0255272, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|, server: 38.91.106.43, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: vk.com}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2, server: 69.50.95.101, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇭🇰 香港 04 | tcp, server: 45975a96-8e25-f0bf-6e5c-5589026317b6.oneplus.pub, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇮 芬兰 01 | ws, server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl, port: 20012, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|, server: 192.74.247.211, port: 37007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/210117200317}}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|, server: 156.249.18.139, port: 41002, type: vmess, uuid: 6e79eea4-5f72-4683-ad0e-5339f013421b, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1720265884595}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|, server: 52.59.211.127, port: 16575, type: trojan, password: ax2naQP)FsNy, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|, server: gy.58n.net, port: 41767, type: trojan, password: 97c7d36e-7c53-3ba4-9506-5629a8d27cfa, skip-cert-verify: true}
-  - {name: 🇨🇳 甘肃省兰州市 移动, server: ooo.jjjbnode.top, port: 14955, type: vmess, uuid: 2329c63f-e991-4a8a-9056-b6761c11912b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|, server: gy.58n.net, port: 20130, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: x130.flybar.work, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2, server: tls.86.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.86.node-for-bigairport.win}}}
-  - {name: 🇨🇳 徐州移动 03 | ws | ipv6, server: 2409:8c20:26c2:4:c000::36, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|, server: 142.4.104.100, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/023114310920}}
-  - {name: 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|, server: xgcta.dx002.top, port: 19812, type: vmess, uuid: 1fccf626-89e1-3ef1-937b-54ee1b2497f8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本 02 | ws, server: 56e4e417-d752-7f4e-9441-f8ff3fa01faf.oneplus.pub, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|, server: 19211tj.matrixxx888.com, port: 19211, type: trojan, password: 8d7b9b69-2cd0-325d-8259-c03c1790494b, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2, server: ip001.dtku47.xyz, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip001.dtku47.xyz}}}
-  - {name: "🇭🇰 香港2[快]", server: hk02.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk02.thomasina.buzz}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3, server: gy.58n.net, port: 41767, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: x114.flybar.work, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2, server: us.eaxeg.be, port: 80, type: vmess, uuid: ec451354-ad9c-4a01-9c93-5dbb9409623d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5k7oCLn871DU5O2ONZ6a2i, headers: {Host: us.eaxeg.be}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3, server: 104.19.59.89, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇯🇵 日本|@ripaojiedian, server: 183.232.139.24, port: 51012, type: trojan, password: yEnxJlVC, skip-cert-verify: true}
-  - {name: 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|, server: hk8.lvuy.xyz, port: 10074, type: ss, cipher: chacha20-ietf-poly1305, password: REYHjalgLAwn4MHg}
-  - {name: 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|, server: 103.248.61.51, port: 10000, type: vmess, uuid: 64d0cb9e-42be-11ef-9311-5e730d7ebdbb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.121.43.248, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|", server: hk8.lvuy.xyz, port: 10074, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
-  - {name: 🇯🇵 日本5|@ripaojiedian, server: mmjp11.micloud.buzz, port: 46011, type: vmess, uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmjp11.micloud.buzz}}}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.212.98.234, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/011410073331, headers: {Host: www.59795160.xyz}}}
-  - {name: 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|, server: xgcma.dx002.top, port: 19821, type: vmess, uuid: 278ac075-9eef-3d9d-8532-9f7f50f73972, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇭🇰 香港3[稳]", server: hk03s.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.thomasina.buzz}}}
-  - {name: 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|, server: 16.v2-ray.cyou, port: 23616, type: vmess, uuid: cbd378ac-85f3-366e-a41e-90993c749e5e, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 16.v2-ray.cyou}}}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2, server: 8jwbv-g03.jp03-7d22-vm0.entry.fr0307a.art, port: 21583, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 1, cipher: auto, tls: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|, server: jp-1.dugusite3.top, port: 5061, type: vmess, uuid: 798b4058-ad79-38a9-bd8f-ffd48c9a10a6, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3, server: 69.50.95.86, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: "🇺🇸 美国2[快]", server: us02.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us02.thomasina.buzz}}}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.98.251.64, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2, server: 17.v2-ray.cyou, port: 23617, type: vmess, uuid: cbd378ac-85f3-366e-a41e-90993c749e5e, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 17.v2-ray.cyou}}}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2, server: 46.182.107.138, port: 41002, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120918182200}}
-  - {name: 🇯🇵 日本 04 | tcp, server: d811ce06-6dec-6ccf-8633-2af47e9d2699.oneplus.pub, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 13.229.243.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4, server: 192.74.242.241, port: 38001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/190330021409}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3, server: 38.28.128.233, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/043432142527}}
-  - {name: 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3, server: gy.58n.net, port: 20139, type: trojan, password: 97c7d36e-7c53-3ba4-9506-5629a8d27cfa, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4, server: 198.2.222.114, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/010904342631}}
-  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3, server: kis7as.9sjd2dkesl2.shop, port: 25912, type: ss, cipher: chacha20-ietf-poly1305, password: XoYrrEfZYxxHL3AI}
-  - {name: 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|, server: xgcma.dx002.top, port: 19821, type: vmess, uuid: d08fd875-6625-3867-bf40-0acfa0f55cb7, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇩🇪 德国1[快]", server: de01.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: de01.thomasina.buzz}}}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5, server: 38.11.9.163, port: 37007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/270123140506}}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2", server: free.2apzhfa.xyz, port: 31111, type: ss, cipher: chacha20-ietf-poly1305, password: 485031e8-1aaa-4137-b5f2-625bebf8b148}
-  - {name: 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|, server: 103.172.116.94, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3", server: a1.45s6e224gdr.shop, port: 10022, type: ss, cipher: chacha20-ietf-poly1305, password: XoYrrEfZYxxHL3AI}
-  - {name: 🇯🇵 日本4|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 9a403efc-18d7-4a78-8532-fb15541ef836, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/X37qXHip, headers: {Host: 6Sn8mFtTjp3.yofnhkfc.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.60.8, port: 8880, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /linde06.indiavideo.sbs/linkws, headers: {Host: square-snowflake-486a.beshir-beisel.workers.dev}}}
   - {name: 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|, server: gy.58n.net, port: 17806, type: trojan, password: 97c7d36e-7c53-3ba4-9506-5629a8d27cfa, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2, server: 54.95.250.39, port: 16582, type: trojan, password: 8mJExeRQ4FQ), skip-cert-verify: true}
-  - {name: 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2, server: gy.58n.net, port: 21247, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: x91.flybar.work, skip-cert-verify: true}
-  - {name: "🇺🇸 美国2[稳]", server: us02s.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us02.thomasina.buzz}}}
-  - {name: ">🇻🇳 VN|Ms|0720|TG@FProxies|", server: zz2.yuzhou889.top, port: 37048, type: trojan, password: 36d0e73b-0249-40dc-aba4-01cc873dbaad, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4, server: tls.91.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.91.node-for-bigairport.win}}}
-  - {name: 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2, server: gy.58n.net, port: 33323, type: trojan, password: 0b400c06-5762-39a4-a7f7-e7b50c2c0aa1, sni: z261.hongkongnode.top, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|, server: gy.58n.net, port: 20296, type: trojan, password: 4d865c93-0a9e-3bd9-9c5e-1048ba397b91, skip-cert-verify: true}
-  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5, server: zz1.yuzhou889.top, port: 37045, type: trojan, password: 4d54a2fc-d9be-42b0-85e5-27ead69f8277, skip-cert-verify: true}
-  - {name: 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2, server: 15.v2-ray.cyou, port: 23615, type: vmess, uuid: 92131313-744b-3a1c-8c18-974fa0534ab1, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 15.v2-ray.cyou}}}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4", server: hk5.lvuy.xyz, port: 10034, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 23.157.40.102, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2, server: any.hmbiplc-02.com, port: 54596, type: ss, cipher: chacha20-ietf-poly1305, password: f2e800fd-5780-471e-8335-9da18a502ec3}
-  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6, server: 120.232.153.37, port: 42055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "🇺🇸 美国4[快]", server: us04.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us04.thomasina.buzz}}}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5, server: 172.64.233.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5", server: hk7.lvuy.xyz, port: 10072, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
-  - {name: 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|, server: 89.163.129.6, port: 30003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/181721272114}}
-  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6, server: 69.50.95.53, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|, server: in2.lvuy.xyz, port: 10051, type: ss, cipher: chacha20-ietf-poly1305, password: 7ekjWEmPTuk2mGlA}
-  - {name: 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2, server: entrance2-6.jjsagcajvv.xyz, port: 30006, type: vmess, uuid: cbfb021c-8816-3e57-b6f5-b531b062ce1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: entrance2-6.jjsagcajvv.xyz}}}
-  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6", server: xgcta.dx002.top, port: 19812, type: vmess, uuid: aebcd733-50b2-3385-bcf5-c631a8c89017, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4, server: gy.58n.net, port: 21970, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: x41.flybar.work, skip-cert-verify: true}
-  - {name: "🇸🇬 回家第一件事：更新订阅！[快]", server: kr02.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr02.thomasina.buzz}}}
-  - {name: ">🇻🇳 VN|Ms|0720|TG@FProxies| 2", server: zz2.yuzhou889.top, port: 37048, type: trojan, password: c02cca7c-2bdf-41d5-9587-b80bccf2befa, skip-cert-verify: true}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|, server: 183.236.51.23, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|, server: 14.v2-ray.cyou, port: 23614, type: vmess, uuid: 4760ed37-8765-3cd6-91ef-8a45821e6563, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 14.v2-ray.cyou}}}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|, server: 46.182.107.138, port: 41002, type: vmess, uuid: bd249e37-7359-41ee-84a7-09e49e0ec5c4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/120918182200}}
+  - {name: 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2, server: 183.236.51.23, port: 54437, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇹🇭 [vmess]泰国家宽", server: jx.jixingnetwork.sbs, port: 2052, type: vmess, uuid: 6bdcb5de-dc42-4908-b090-46c1b2243641, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dfafadfa, headers: {Host: tg01.jixingnetwork.sbs}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|, server: gy.58n.net, port: 20296, type: trojan, password: 0b400c06-5762-39a4-a7f7-e7b50c2c0aa1, sni: z296.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇨🇦 加拿大✈数据中心(协议一), server: MI.HUY.OVH, port: 38408, type: vmess, uuid: 9ca329cb-e805-4606-a24c-f46ae3844f23, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2, server: 156.249.18.253, port: 41002, type: vmess, uuid: 078eb24d-8d1d-4fbd-b914-ee58a897a35e, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/231532261007}}
+  - {name: "🇯🇵 日本3[稳]", server: jp03s.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.thomasina.buzz}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|, server: 38.33.44.43, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/183302042709}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|", server: hk7.lvuy.xyz, port: 10072, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|, server: zz1.yuzhou889.top, port: 37045, type: trojan, password: 4d54a2fc-d9be-42b0-85e5-27ead69f8277, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2", server: 14.v2-ray.cyou, port: 23614, type: vmess, uuid: 7cdd6fad-cb1e-37ef-8206-bec80eb957f3, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 14.v2-ray.cyou}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2, server: 142.4.104.100, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/023114310920}}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: mmjp11.micloud.buzz, port: 46011, type: vmess, uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmjp11.micloud.buzz}}}
+  - {name: 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2, server: 120.232.153.71, port: 34965, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇯🇵 日本✈数据中心[2](协议二)", server: MI.HUY.OVH, port: 39410, type: ss, cipher: aes-256-gcm, password: 9ca329cb-e805-4606-a24c-f46ae3844f23}
+  - {name: 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|, server: 104.19.47.97, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2"}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3", server: dibai1.lvuy.xyz, port: 10056, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4", server: free.2apzhfa.xyz, port: 31141, type: ss, cipher: chacha20-ietf-poly1305, password: 485031e8-1aaa-4137-b5f2-625bebf8b148}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5", server: free.2apzhfa.xyz, port: 31145, type: ss, cipher: chacha20-ietf-poly1305, password: 485031e8-1aaa-4137-b5f2-625bebf8b148}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6", server: hk8.lvuy.xyz, port: 10074, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2, server: tls.84.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.84.node-for-bigairport.win}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|, server: 84.32.44.80, port: 443, type: vmess, uuid: 939720ea-8220-4310-e48c-d87110930205, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "//?ed=2048"}}
+  - {name: 🇨🇳 徐州移动 04 | tcp | ipv6, server: 2409:8c20:26c2:4:c000::37, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|, server: 137.220.130.39, port: 443, type: vmess, uuid: 78e1c35c-7f45-4998-b45a-578cef59a5cf, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/073308302711}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3, server: tls.97.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.97.node-for-bigairport.win}}}
+  - {name: "🇺🇸 美国2[快]", server: us02.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us02.thomasina.buzz}}}
+  - {name: 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2, server: gy.58n.net, port: 33323, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: z261.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3, server: 38.33.44.37, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/052601062204}}
+  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|, server: fr1.trojanvpn.de, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2, server: 150.136.244.26, port: 80, type: vmess, uuid: ee7c8b76-92a9-4121-b021-e88ea7499564, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gw.alicdn.com}}}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3, server: 148.135.12.177, port: 30003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/231532261007}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4, server: 142.4.126.243, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/131517210934}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5, server: 172.64.53.41, port: 2052, type: vmess, uuid: a58f7898-e34e-3515-b9d8-e300a2d0e8f5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.53.41}}
+  - {name: "🇯🇵 [ss]日本1极速中转", server: jszz.polestar.lol, port: 36659, type: ss, cipher: 2022-blake3-aes-256-gcm, password: NTM3NDBjZTg2YzdlOTcxZDA0ZDMyOTg0Mzc4NjcwZDI=:NmJkY2I1ZGUtZGM0Mi00OTA4LWIwOTAtNDZjMWIyMjQ=}
+  - {name: "🇨🇳 [vmess]台湾3-流媒体解锁|3x", server: jx.jixingnetwork.sbs, port: 80, type: vmess, uuid: 6bdcb5de-dc42-4908-b090-46c1b2243641, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /adfd123afafa, headers: {Host: tw03.polestar.lol}}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|, server: 104.16.29.227, port: 443, type: vmess, uuid: e83c2455-e944-4763-89c9-5baca330fb8d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 2086, type: vmess, uuid: 9a403efc-18d7-4a78-8532-fb15541ef836, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/Z7qdcrAGRw, headers: {Host: us77SmSk86j.fzbqfrse.xyz}}}
+  - {name: 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|, server: ydthree.9sjd2dkesl2.shop, port: 35698, type: ss, cipher: chacha20-ietf-poly1305, password: XoYrrEfZYxxHL3AI}
+  - {name: 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|, server: gy.58n.net, port: 22741, type: trojan, password: 4d865c93-0a9e-3bd9-9c5e-1048ba397b91, skip-cert-verify: true}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7", server: free.2apzhfa.xyz, port: 31341, type: ss, cipher: chacha20-ietf-poly1305, password: 485031e8-1aaa-4137-b5f2-625bebf8b148}
+  - {name: 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|, server: xn1.lvuy.xyz, port: 10055, type: ss, cipher: chacha20-ietf-poly1305, password: 7ekjWEmPTuk2mGlA}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4, server: zz2.yuzhou889.top, port: 37045, type: trojan, password: 1c1e1fb1-51f7-4f7f-939a-9e553e8afa51, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2, server: 15.v2-ray.cyou, port: 23615, type: vmess, uuid: 4f14b2c5-15a7-35c6-962e-6e37b5b227a8, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 15.v2-ray.cyou}}}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3, server: 154.85.1.44, port: 41003, type: vmess, uuid: d3133484-f2bf-4b0c-8d38-f8e645b65687, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/012405040932}}
+  - {name: 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3, server: gy.58n.net, port: 20288, type: trojan, password: 97c7d36e-7c53-3ba4-9506-5629a8d27cfa, skip-cert-verify: true}
+  - {name: 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|, server: eedp257bubu2wefy1.lovebaipiao.net, port: 54321, type: vmess, uuid: a911d34d-d580-4dc1-aea9-1932a681e336, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iphone, headers: {Host: eedp257bubu2wefy1.lovebaipiao.net}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|, server: a52rr-g03.jp06-7c5a-vm0.entry.fr0307a.art, port: 28785, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 1, cipher: auto, tls: true}
+  - {name: "🇭🇰 香港3[稳]", server: hk03s.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk03.thomasina.buzz}}}
+  - {name: 🇷🇺 俄罗斯 01 | ws, server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl, port: 20003, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|, server: free.2weradf.xyz, port: 36471, type: ss, cipher: chacha20-ietf-poly1305, password: 8d56474f-3a4b-43a9-9af5-768400a222bc}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2, server: 120.232.233.217, port: 21146, type: trojan, password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4, server: 198.2.222.114, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/010904342631}}
+  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2, server: hdfy6d3.cpi1.eu.org, port: 443, type: vmess, uuid: 4804f14b-c1f8-452d-a6ec-eff1490aeac9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lRkGCkYS9X5GDNJYMWXN7kCm3lL, headers: {Host: hdfy6d3.cpi1.eu.org}}}
+  - {name: 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|, server: 156.225.67.238, port: 41001, type: vmess, uuid: 9c026efe-6af0-465f-b8c0-3f58c8c2d4c5, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1720786430176}}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 69.50.95.179, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: aa01gg.sssyun.xyz, port: 19527, type: ss, cipher: chacha20-ietf-poly1305, password: 713366e0-20b8-4d5d-be5d-988317e086c7}
+  - {name: 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|, server: 43.201.82.97, port: 16575, type: trojan, password: iPlymaUSa0qD, skip-cert-verify: true}
+  - {name: 🇫🇮 芬兰 01 | ws, server: ddbcb0bb-0765-dacc-887b-bf8c113b6d02.xn--37qy2m7z0cohn.xn--6qq986b3xl, port: 20012, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
+  - {name: ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|", server: gy.58n.net, port: 20302, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: z302.hongkongnode.top, skip-cert-verify: true}
+  - {name: 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2, server: 36.151.195.77, port: 20819, type: trojan, password: MfqALmAJ, skip-cert-verify: true}
+  - {name: 🇨🇳 广东省云浮市 移动, server: 183.232.139.24, port: 51012, type: trojan, password: yEnxJlVC, skip-cert-verify: true}
+  - {name: 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|, server: cf.s7.now.cc, port: 80, type: vmess, uuid: 41631bd2-4463-48a0-ab4c-15dcba237a90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: cf.s7.now.cc}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5, server: tls.91.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.91.node-for-bigairport.win}}}
+  - {name: 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|, server: 23.158.56.49, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 日本✈数据中心[2](协议一)", server: MI.HUY.OVH, port: 38410, type: vmess, uuid: 9ca329cb-e805-4606-a24c-f46ae3844f23, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6, server: gy.58n.net, port: 20139, type: trojan, password: e5726a6e-51c1-3fef-a7af-232a23e101a7, sni: z139.hongkongnode.top, skip-cert-verify: true}
+  - {name: ">🇻🇳 VN|Ls|0720|TG@FProxies|", server: zz2.yuzhou889.top, port: 37048, type: trojan, password: ed99f8f7-c83b-4188-83f8-bd2cf65869b4, skip-cert-verify: true}
+  - {name: 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5, server: 38.28.128.239, port: 37006, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/303122292825}}
+  - {name: 🇵🇱 波兰✈数据中心(协议一), server: MI.HUY.OVH, port: 38416, type: vmess, uuid: 9ca329cb-e805-4606-a24c-f46ae3844f23, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3, server: h4tan-g03.jp05-6786-vm0.entry.fr0307a.art, port: 46484, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 1, cipher: auto, tls: false}
+  - {name: "🇰🇷 韩国2[稳]", server: kr02s.thomasina.buzz, port: 80, type: vmess, uuid: e3dd1fbb-06ad-4467-8e02-bb8e9287ffa8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr02.thomasina.buzz}}}
+  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3, server: 51.77.200.55, port: 10000, type: vmess, uuid: 329ca152-42be-11ef-83f1-6bbc07c8700f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnjantit}}
+  - {name: 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3, server: 172.67.172.235, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7, server: entrance3-100.jjsagcajvv.xyz, port: 30100, type: vmess, uuid: cbfb021c-8816-3e57-b6f5-b531b062ce1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: entrance3-100.jjsagcajvv.xyz}}}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8", server: free.2apzhfa.xyz, port: 31721, type: ss, cipher: chacha20-ietf-poly1305, password: 485031e8-1aaa-4137-b5f2-625bebf8b148}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6, server: 137.175.42.233, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/121818073230}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7, server: 104.19.42.79, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4, server: 154.84.1.245, port: 41001, type: vmess, uuid: 84d1de11-ce12-4a15-8312-1338356d4ac4, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1720265884595}}
+  - {name: 🇸🇬 新加坡 03 | tcp, server: b5446620-31eb-31dd-2c10-f1aa77e5eb19.oneplus.pub, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8, server: us.eaxeg.be, port: 80, type: vmess, uuid: ec451354-ad9c-4a01-9c93-5dbb9409623d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /5k7oCLn871DU5O2ONZ6a2i, headers: {Host: us.eaxeg.be}}}
+  - {name: 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2, server: xn1.lvuy.xyz, port: 10055, type: ss, cipher: chacha20-ietf-poly1305, password: REYHjalgLAwn4MHg}
+  - {name: 🇨🇳 台湾 04 | tcp, server: 98ee7637-0cdb-3fe7-dd09-2f619134fb1c.bugtik.ltd, port: 80, type: vmess, uuid: 8ad49981-c89d-41ba-8e4e-d7b48e277b53, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4, server: 104.16.60.8, port: 2082, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws}}
+  - {name: 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9, server: 142.4.103.164, port: 38002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/340434130032}}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 263, server: mmus36.micloud.buzz, port: 46036, type: vmess, uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmus36.micloud.buzz}}}
+  - {name: 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3, server: a1.45s6e224gdr.shop, port: 16985, type: ss, cipher: chacha20-ietf-poly1305, password: XoYrrEfZYxxHL3AI}
+  - {name: ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9", server: us3.lvuy.xyz, port: 10042, type: ss, cipher: chacha20-ietf-poly1305, password: Le6UeaqehgZruk80}
+  - {name: 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|, server: 5.v2-ray.cyou, port: 23605, type: vmess, uuid: 4f14b2c5-15a7-35c6-962e-6e37b5b227a8, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 5.v2-ray.cyou}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8, server: tls.82.node-for-bigairport.win, port: 443, type: vmess, uuid: ef5fca10-41bc-4623-87a3-1170a7b51827, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.82.node-for-bigairport.win}}}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4, server: any.hmbiplc-02.com, port: 53393, type: ss, cipher: chacha20-ietf-poly1305, password: f2e800fd-5780-471e-8335-9da18a502ec3}
+  - {name: 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5, server: 54.95.250.39, port: 16582, type: trojan, password: 8mJExeRQ4FQ), skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚✈数据中心(协议一), server: MI.HUY.OVH, port: 38407, type: vmess, uuid: 9ca329cb-e805-4606-a24c-f46ae3844f23, alterId: 0, cipher: auto, tls: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 04 | tcp
-      - 🇭🇰 香港2[快]
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
       - 🇭🇰 香港3[稳]
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇨🇳 台湾 04 | tcp
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -635,88 +741,103 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
-      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies|
-      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
-      - 🇭🇰 香港 04 | tcp
-      - 🇫🇮 芬兰 01 | ws
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
-      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
-      - 🇨🇳 甘肃省兰州市 移动
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
-      - 🇨🇳 徐州移动 03 | ws | ipv6
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
-      - 🇭🇰 >🇭🇰 HK|Ns|0720|TG@FProxies|
-      - 🇯🇵 日本 02 | ws
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
-      - 🇭🇰 香港2[快]
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
-      - 🇯🇵 日本|@ripaojiedian
-      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
-      - 🇮🇳 >🇮🇳 IN|Ls|0720|TG@FProxies|
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
-      - 🇯🇵 日本5|@ripaojiedian
-      - 亚太地区 V2CROSS.COM
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
-      - 🇭🇰 香港3[稳]
-      - 🇩🇪 >🇩🇪 DE|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 3
-      - 🇺🇸 美国2[快]
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
-      - 🇯🇵 日本 04 | tcp
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
-      - 🇯🇵 >🇯🇵 JP|Hs|0720|TG@FProxies| 3
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
-      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
-      - 🇨🇳 >🇹🇼 TW|Ms|0720|TG@FProxies|
-      - 🇩🇪 德国1[快]
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies|
-      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
-      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 美国2[稳]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies|"
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
-      - 🇨🇳 >🇹🇼 TW|Ls|0720|TG@FProxies| 2
       - 🇺🇸 美国 CloudFlare节点
+      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies|
       - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies|
-      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
-      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies|
+      - 🇸🇬 >🇸🇬 SG|Ms|0720|TG@FProxies| 2
+      - 🇹🇭 [vmess]泰国家宽
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies|
+      - 🇨🇦 加拿大✈数据中心(协议一)
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 2
+      - 🇯🇵 日本3[稳]
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies|"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 2"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 2
+      - 🇯🇵 日本3|@ripaojiedian
+      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 2
+      - 🇯🇵 日本✈数据中心[2](协议二)
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 3"
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 4"
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇸🇬 >🇸🇬 SG|Ns|0720|TG@FProxies| 2
-      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 6
-      - 🇺🇸 美国4[快]
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 5"
-      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
-      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
-      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
-      - 🇸🇬 >🇸🇬 SG|Ls|0720|TG@FProxies| 2
       - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 6"
-      - 🇺🇸 >🇺🇸 US|Ms|0720|TG@FProxies| 4
-      - 🇸🇬 回家第一件事：更新订阅！[快]
-      - ">🇻🇳 VN|Ms|0720|TG@FProxies| 2"
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies|
+      - 🇨🇳 徐州移动 04 | tcp | ipv6
+      - 🇯🇵 >🇯🇵 JP|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 3
+      - 🇺🇸 美国2[快]
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 3
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies|
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 5
+      - 🇯🇵 [ss]日本1极速中转
+      - 🇨🇳 [vmess]台湾3-流媒体解锁|3x
+      - 🇭🇰 >🇭🇰 HK|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇨🇳 >🇹🇼 TW|Hs|0720|TG@FProxies|
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies|
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 7"
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 3
+      - 🇺🇸 >🇺🇸 US|Ns|0720|TG@FProxies| 3
+      - 🇷🇺 >🇷🇺 RU|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies|
+      - 🇭🇰 香港3[稳]
+      - 🇷🇺 俄罗斯 01 | ws
+      - 🇩🇪 >🇩🇪 DE|Ms|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 2
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 4
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 2
+      - 🇳🇱 >🇳🇱 NL|Ms|0720|TG@FProxies|
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇰🇷 >🇰🇷 KR|Ls|0720|TG@FProxies|
+      - 🇫🇮 芬兰 01 | ws
+      - ">Beta|🇺🇳 FP|Ls|0720|TG@FProxies|"
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 2
+      - 🇨🇳 广东省云浮市 移动
+      - 🇮🇳 >🇮🇳 IN|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 5
+      - 🇩🇪 >🇩🇪 DE|Hs|0720|TG@FProxies|
+      - 🇯🇵 日本✈数据中心[2](协议一)
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 6
+      - ">🇻🇳 VN|Ls|0720|TG@FProxies|"
+      - 🇺🇸 >🇺🇸 US|Hs|0720|TG@FProxies| 5
+      - 🇵🇱 波兰✈数据中心(协议一)
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 3
+      - 🇰🇷 韩国2[稳]
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 3
+      - 🇨🇳 >🇹🇼 TW|Ns|0720|TG@FProxies| 3
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 7
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 8"
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 6
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 7
+      - 🇳🇱 >🇳🇱 NL|Hs|0720|TG@FProxies| 4
+      - 🇸🇬 新加坡 03 | tcp
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 8
+      - 🇦🇺 >🇦🇺 AU|Ns|0720|TG@FProxies| 2
+      - 🇨🇳 台湾 04 | tcp
+      - 🇫🇷 >🇫🇷 FR|Ns|0720|TG@FProxies| 4
+      - 🇺🇸 >🇺🇸 US|Ls|0720|TG@FProxies| 9
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 263
+      - 🇭🇰 >🇭🇰 HK|Ls|0720|TG@FProxies| 3
+      - ">Beta|🇺🇳 FP|Ns|0720|TG@FProxies| 9"
+      - 🇬🇧 >🇬🇧 GB|Ns|0720|TG@FProxies|
+      - 🇯🇵 >🇯🇵 JP|Ns|0720|TG@FProxies| 8
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 4
+      - 🇯🇵 >🇯🇵 JP|Ls|0720|TG@FProxies| 5
+      - 🇦🇺 澳大利亚✈数据中心(协议一)
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
