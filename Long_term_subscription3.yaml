@@ -5,71 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.38.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: 45.159.50.44, port: 50577, type: vmess, uuid: e5d19b57-2fb4-49c0-a141-a716572e1656, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国5|@ripaojiedian, server: 120.232.153.27, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.45.34, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.45.130, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 23.150.152.56, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 距离下次重置剩余：29 天, server: hkjpkrsg.diao.icu, port: 2052, type: vmess, uuid: 6d5dc2f3-7059-40c4-8646-6c1d511a9ba1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr.diao.icu}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.19.45.114, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
+  - {name: 🇰🇷 韩国2|@ripaojiedian, server: naiu-other.05vr9nyqg5.download, port: 13036, type: trojan, password: c471ef32-798d-40a0-a57c-acf3475a204e, sni: cloudflare.node-ssl.cdn-alibaba.com}
+  - {name: "🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25", server: z6.fragranceninja.com, port: 12951, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 592d0884-c322-43a0-abbd-f3e421e420f5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/RPKZwKFW, headers: {Host: zqWukzdtjp1.wzjwkqya.xyz}}}
   - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1, server: 172.64.167.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 172.64.175.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: 🇳🇱 -NL²-Mojia-Tel-@iranPwner, server: 0:0:0:0:0:ffff:68f8:cdd7, port: 8888, type: vmess, uuid: Mojia-telegram-iranPwner, alterId: 0, cipher: auto, tls: false, network: grpc, servername: "", grpc-opts: {grpc-service-name: / خسته شدم از زندگی تو ایران@iranPwner}}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.45.190, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -81,53 +53,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -143,18 +94,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇺🇸 美国5|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 距离下次重置剩余：29 天
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇰🇷 韩国2|@ripaojiedian
+      - 🇰🇷 韩国 - 首尔特别市 - The Constant Company, LLC - 25
+      - 🇺🇸 美国4|@ripaojiedian
       - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 1
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇳🇱 -NL²-Mojia-Tel-@iranPwner
-      - 🇺🇸 美国 CloudFlare节点 6
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
