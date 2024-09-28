@@ -5,442 +5,401 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
-  - {name: 🇺🇸 美国 - 17, server: 104.26.12.140, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 139.64.165.144, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇻🇳 越南 ·原生 01 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30051, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2vn01.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
-  - {name: undefined - 9, server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇬🇧 英国 · 02 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 20227, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2uk01.fuqiangren.com, skip-cert-verify: true}
-  - {name: undefined - 36, server: 104.19.45.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 法罗群岛-冷门, server: zf.520js.lol, port: 24108, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇹🇳 突尼斯-冷门, server: zf.520js.lol, port: 25819, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.45.175, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: undefined - 76, server: 172.64.175.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: undefined - 20, server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇭🇰 香港 - 28, server: 220.246.57.32, port: 16301, type: vmess, uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: undefined - 49, server: 172.64.166.2, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇯🇵 日本-海豚白嫖, server: scm.zarelayv1.com, port: 43699, type: trojan, password: 233e69a4-34f5-379f-9012-fa191392f468, sni: jp-neko.zodport.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.64.166.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇷🇺 俄罗斯家宽-01, server: zf.520js.lol, port: 20561, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇬🇧 英国专线-01, server: zf.520js.lol, port: 22166, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇭🇰 香港HGC ·原生  01 · 线路2, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30006, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2hgc03.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.26.5.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇮🇪 爱尔兰家宽-01, server: zf.520js.lol, port: 46074, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇦🇹 奥地利斯, server: zf.520js.lol, port: 31780, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 阿富汗家宽-02, server: zf.520js.lol, port: 35639, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇦 乌克兰-冷门, server: zf.520js.lol, port: 40257, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: undefined - 45, server: 104.19.47.65, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11-2.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare公司CDN节点(shopify), server: 23.227.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-10.freegradely.xyz}}}
-  - {name: 百慕大-冷门, server: zf.520js.lol, port: 12260, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇿🇦 南非-冷门, server: zf.520js.lol, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇭🇰 香港4|@ripaojiedian, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.26.9.156, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇬🇧 英国家宽-01, server: zf.520js.lol, port: 51932, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: singapore.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.19.45.82, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: undefined - 35, server: 104.20.17.186, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: undefined - 67, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.121.43.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇸🇬 新加坡-海豚白嫖, server: scm.zarelayv1.com, port: 65510, type: trojan, password: 233e69a4-34f5-379f-9012-fa191392f468, sni: sg-misaka3.zodport.com, skip-cert-verify: true}
+  - {name: undefined - 42, server: 172.64.166.28, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
   - {name: "🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1", server: ae5f1a2a-fb75-4800.gttysd.com, port: 30072, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: sk02.zygbx.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 172.64.167.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇸🇬 新加坡家宽-02, server: zf.520js.lol, port: 46034, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇧🇪 比利时-家宽-01, server: zf.520js.lol, port: 43193, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.16.60.8, port: 8880, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws, headers: {Host: nd-truth-210a8hwjhs.bonar11011.workers.dev}}}
-  - {name: undefined - 37, server: skk.moe, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇲🇾 马来西亚·原生 01 · 线路1, server: ae5f1a2a-fb75-4800.gttysd.com, port: 40005, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: malayisia.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.19.47.45, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 12, server: 104.18.57.111, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
-  - {name: 🇭🇰 香港-01（改ip专用）, server: zf.520js.lol, port: 17315, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: undefined - 59, server: 172.64.166.20, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 🇯🇵 日本-海豚白嫖 2, server: ecu.zarelay.com, port: 43699, type: trojan, password: 233e69a4-34f5-379f-9012-fa191392f468, sni: jp-neko.zodport.com, skip-cert-verify: true}
-  - {name: 🇨🇦 加拿大 · 01 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30068, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: ca01.6kk.org, skip-cert-verify: true}
-  - {name: 🇵🇰 巴基斯坦-冷门, server: zf.520js.lol, port: 19159, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 69.50.95.103, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 美国 CloudFlare节点 13, server: 104.19.47.65, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11-2.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 · 01 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 20224, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2usa01.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 14, server: russia.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: immense-buzzard.mite885.beauty, port: 443, type: trojan, password: !<str> 3672449442956713984}
-  - {name: 🇺🇸 美国 CloudFlare节点 15, server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 16, server: 104.26.5.145, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
+  - {name: undefined - 39, server: 104.19.59.89, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.22.36.243, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
+  - {name: 距离下次重置剩余：28 天, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30072, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: sk08.6kk.org, skip-cert-verify: true}
+  - {name: 南极洲-冷门, server: zf.520js.lol, port: 30973, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: undefined - 25, server: 104.19.21.71, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
+  - {name: undefined - 7, server: 172.64.166.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇨🇳 台湾Hinet ·原生 04 · 线路1, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30003, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2tw01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 - 2, server: ip.sb, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.45.7, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: undefined - 43, server: 104.19.47.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇯🇵 日本 · 02 · 直连, server: aws.gutingting.com, port: 41201, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: zzjp01.gutingting.com, skip-cert-verify: true}
+  - {name: 安哥拉-冷门, server: zf.520js.lol, port: 17684, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机, server: shs1.12123.org, port: 30001, type: vmess, uuid: b0e13ec6-d2e6-48d7-86d1-702635a17b19, alterId: 0, cipher: auto, tls: true, servername: shs1.12123.org, network: ws, ws-opts: {path: /12123.org, headers: {Host: www.baidu.com}}}
+  - {name: 🇭🇰 香港 · 03 · 线路1, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30007, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: hktn2.6kk.org, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.18.57.111, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
+  - {name: 🇭🇰 香港专线-01, server: zf.520js.lol, port: 28970, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇮🇱 以色列4Gbps - 大带宽欢乐机, server: 2603:c027:4002:5912:b94e:cd25:aaf:b4e, port: 30000, type: ss, cipher: chacha20-ietf-poly1305, password: b0e13ec6-d2e6-48d7-86d1-702635a17b19}
+  - {name: 🇲🇳 蒙古家宽-01, server: zf.520js.lol, port: 21832, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇭🇰 香港HGC ·原生  02 · 线路2, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30038, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2hgc03.fuqiangren.com, skip-cert-verify: true}
+  - {name: 缅甸家宽-01, server: zf.520js.lol, port: 12944, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: undefined - 86, server: 104.20.18.168, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: undefined - 18, server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 · 01 · 直连, server: aws.gutingting.com, port: 41202, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: zzus01.gutingting.com, skip-cert-verify: true}
+  - {name: undefined - 12, server: 172.64.167.44, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 172.64.166.16, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: undefined - 1, server: 104.19.45.13, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: undefined - 29, server: 104.26.5.66, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
+  - {name: 🇭🇰 香港 - 28, server: 220.246.57.32, port: 16301, type: vmess, uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 香港 · 02 · 线路2, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30005, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2hgc01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 23.157.40.120, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 伊拉克-家宽-01, server: zf.520js.lol, port: 16892, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 不丹-冷门, server: zf.520js.lol, port: 41606, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 法罗群岛-冷门, server: zf.520js.lol, port: 24108, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 172.64.167.29, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.47.80, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
+  - {name: 🇵🇪 秘鲁-冷门, server: zf.520js.lol, port: 34219, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇵🇭 菲律宾专线-01, server: zf.520js.lol, port: 17906, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: ChatGPT · 04 · 限 30 Mbs, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30062, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: gpt04.6kk.org, skip-cert-verify: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 34.246.106.160, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
+  - {name: 🇯🇵 日本3|@ripaojiedian, server: naiu-jp.05vr9nyqg5.download, port: 13011, type: trojan, password: c471ef32-798d-40a0-a57c-acf3475a204e, sni: cloudflare.node-ssl.cdn-alibaba.com}
+  - {name: undefined - 8, server: 104.19.38.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 土库曼-冷门, server: zf.520js.lol, port: 48166, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇬🇧 英国|@ripaojiedian, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: undefined - 87, server: 63.lwdh.us, port: 12953, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 - 28
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇭🇰 香港4|@ripaojiedian
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇭🇰 香港-01（改ip专用）
-      - 🇭🇰 香港|@ripaojiedian
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇭🇰 香港专线-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -456,62 +415,56 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 - 17
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇻🇳 越南 ·原生 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 2
-      - undefined - 9
-      - 🇬🇧 英国 · 02 · 线路3
-      - undefined - 36
-      - 法罗群岛-冷门
-      - 🇹🇳 突尼斯-冷门
-      - 🇺🇸 美国 CloudFlare节点 3
-      - undefined - 76
-      - undefined - 20
-      - 🇭🇰 香港 - 28
-      - undefined - 49
-      - 🇯🇵 日本-海豚白嫖
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇷🇺 俄罗斯家宽-01
-      - 🇬🇧 英国专线-01
-      - 🇭🇰 香港HGC ·原生  01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇮🇪 爱尔兰家宽-01
-      - 🇦🇹 奥地利斯
-      - 阿富汗家宽-02
-      - 🇺🇦 乌克兰-冷门
-      - undefined - 45
-      - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
-      - 百慕大-冷门
-      - 🇿🇦 南非-冷门
-      - 🇭🇰 香港4|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇬🇧 英国家宽-01
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
-      - undefined - 35
+      - undefined - 67
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇸🇬 新加坡-海豚白嫖
+      - undefined - 42
       - 🇭🇰 [ 快速 ] 香港F1 · 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡家宽-02
-      - 🇧🇪 比利时-家宽-01
-      - 🇺🇸 美国 CloudFlare节点 10
-      - undefined - 37
-      - 🇲🇾 马来西亚·原生 01 · 线路1
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇭🇰 香港-01（改ip专用）
-      - undefined - 59
-      - 🇯🇵 日本-海豚白嫖 2
-      - 🇨🇦 加拿大 · 01 · 线路3
-      - 🇵🇰 巴基斯坦-冷门
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 🇺🇸 美国 · 01 · 线路3
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 CloudFlare节点 16
+      - undefined - 39
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 距离下次重置剩余：28 天
+      - 南极洲-冷门
+      - undefined - 25
+      - undefined - 7
+      - 🇨🇳 台湾Hinet ·原生 04 · 线路1
+      - 🇺🇸 美国 - 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - undefined - 43
+      - 🇯🇵 日本 · 02 · 直连
+      - 安哥拉-冷门
+      - 🇺🇸 圣何塞vmess 50Mbps - 电信快乐机
+      - 🇭🇰 香港 · 03 · 线路1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 香港专线-01
+      - 🇮🇱 以色列4Gbps - 大带宽欢乐机
+      - 🇲🇳 蒙古家宽-01
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 缅甸家宽-01
+      - undefined - 86
+      - undefined - 18
+      - 🇺🇸 美国 · 01 · 直连
+      - undefined - 12
+      - 🇺🇸 美国 CloudFlare节点 5
+      - undefined - 1
+      - undefined - 29
+      - 🇭🇰 香港 - 28
+      - 🇭🇰 香港 · 02 · 线路2
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 伊拉克-家宽-01
+      - 不丹-冷门
+      - 法罗群岛-冷门
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇵🇪 秘鲁-冷门
+      - 🇵🇭 菲律宾专线-01
+      - ChatGPT · 04 · 限 30 Mbs
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇯🇵 日本3|@ripaojiedian
+      - undefined - 8
+      - 土库曼-冷门
+      - 🇬🇧 英国|@ripaojiedian
+      - undefined - 87
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
