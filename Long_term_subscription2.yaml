@@ -5,370 +5,408 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 · 03 · 线路1, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30021, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: jp03.6kk.org, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.45.34, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: 备站【jiasu.lol】, server: zf.520js.lol, port: 49730, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 162.159.140.93, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 43.201.254.74, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 142.202.49.122, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇦🇺 澳大利亚专线-02, server: zf.520js.lol, port: 26333, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇷🇸 塞尔维亚-01, server: zf.520js.lol, port: 37317, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇷🇴 罗马尼亚-冷门, server: zf.520js.lol, port: 35061, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 23.157.40.95, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇺🇸 美国 · 01 · 直连, server: aws.gutingting.com, port: 41202, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: zzus01.gutingting.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.110.1.46, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇯🇵 日本 · 02 · 直连, server: aws.gutingting.com, port: 41201, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: zzjp01.gutingting.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡家宽-02, server: zf.520js.lol, port: 46034, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.16.60.8, port: 8880, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /linde06.indiavideo.sbs/linkws, headers: {Host: square-snowflake-486a.beshir-beisel.workers.dev}}}
-  - {name: 🇺🇦 乌克兰-冷门, server: zf.520js.lol, port: 40257, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国-中转-13, server: 02-foxi-biegongkai.gangbi.vip, port: 26883, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.64.166.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}}
-  - {name: 格林兰家宽-01, server: zf.520js.lol, port: 12061, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: "🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1", server: ae5f1a2a-fb75-4800.gttysd.com, port: 30073, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: sk05.zygbx.com, skip-cert-verify: true}
-  - {name: 🇬🇧 英国 · 01 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 20226, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2uk01.fuqiangren.com, skip-cert-verify: false}
-  - {name: 🇹🇭 泰国 ·原生  02 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 40001, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2th02.fuqiangren.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 · 04 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30000, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v1usa01.6kk.org, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.74.197.154, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇸🇬 🇸🇬  新加坡-IEPL-31, server: 120.232.218.27, port: 58121, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
-  - {name: 法罗群岛-冷门, server: zf.520js.lol, port: 24108, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.20.19.168, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇨🇳 广东省广州市 移动, server: 120.232.153.27, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国家宽-01, server: zf.520js.lol, port: 30878, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国5|@ripaojiedian, server: 120.232.153.27, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 卡塔尔家宽-01, server: zf.520js.lol, port: 27296, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.47.80, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 162.159.140.89, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.16.68.38, port: 2086, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /linde06.indiavideo.sbs/linkws, headers: {Host: misty-dew-e2f1.turkeys-radford.workers.dev}}}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 169.197.142.216, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 续费账号：3372299506@qq.com, server: zf.520js.lol, port: 49730, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇸🇰 斯洛伐克-冷门, server: zf.520js.lol, port: 19528, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
   - {name: 文莱家宽-01, server: zf.520js.lol, port: 19949, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇩🇪 德国-专线-02, server: zf.520js.lol, port: 38310, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.45.172, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: 🇭🇰 香港电讯2-海豚白嫖, server: scm.zarelayv1.com, port: 52201, type: trojan, password: 233e69a4-34f5-379f-9012-fa191392f468, sni: baidu.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港-02（支持流媒体）, server: zf.520js.lol, port: 51878, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.45.82, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.16.61.8, port: 2052, type: vmess, uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /afrhms07.xfixedfloat.cfd/linkws, headers: {Host: vpnsupportfast.vpnsuortfast.workers.dev}}}
+  - {name: 🇺🇸 美国家宽-01, server: zf.520js.lol, port: 30878, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.45.70, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1, server: iplc01.my1188.org, port: 3214, type: vmess, uuid: fe0346d9-a972-3d8a-bac7-310604fa108f, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.19.45.150, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇯🇵 日本专线-01, server: zf.520js.lol, port: 40980, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: malaysia.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}}
+  - {name: 🇺🇸 美国专线-03, server: zf.520js.lol, port: 21685, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇭🇰 香港HGC ·原生  02 · 线路2, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30038, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2hgc03.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇹🇭 泰国 · 01 · 线路3, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30052, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v2th01.fuqiangren.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.45.17, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
   - {name: 🇫🇷 法国家宽-01, server: zf.520js.lol, port: 12131, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.123.11, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 · 02 · 直连, server: aws.gutingting.com, port: 41203, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: zzus01.gutingting.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港-中转-12, server: 03-neibuyong.gangbi.vip, port: 20162, type: ss, cipher: 2022-blake3-aes-128-gcm, password: MmJlNjFiMThkZmJjMzEzMA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.19.45.92, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇬🇧 江苏省宿迁市 联通/蒲公英网络, server: yidong1.liulangdiqiu.life, port: 10714, type: ss, cipher: chacha20-ietf-poly1305, password: dd29d7ad-5fda-4f64-a57e-716ca6010e65}
+  - {name: 🇧🇷 🇧🇷 巴西-IEPL-31, server: 120.232.218.27, port: 23601, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 43.207.213.253, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇭🇰 香港4|@ripaojiedian, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-中转-22, server: 03-neibuyong.gangbi.vip, port: 26772, type: ss, cipher: 2022-blake3-aes-128-gcm, password: NjMyNzdmZDI5ZmVhMTVlYQ==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心, server: 52.60.60.252, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: 🇺🇸 美国 惠普公司, server: 15.223.96.180, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
+  - {name: 🇨🇳 台湾家宽-01（支持Netflix）, server: zf.520js.lol, port: 27553, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇻🇳 越南专线-01, server: zf.520js.lol, port: 31705, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇸🇬 新加坡-中转-13, server: 02-foxi-biegongkai.gangbi.vip, port: 30004, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇭🇰 🇭🇰 香港-IEPL-33, server: 120.232.218.27, port: 58113, type: ss, cipher: 2022-blake3-aes-128-gcm, password: NjMyNzdmZDI5ZmVhMTVlYQ==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1, server: 45.130.147.162, port: 4434, type: vmess, uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 备站【jiasu.lol】, server: zf.520js.lol, port: 49730, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇸🇬 新加坡家宽-03, server: zf.520js.lol, port: 23345, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇰🇷 韩国专线-01, server: zf.520js.lol, port: 12749, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇩🇪 德国-中转-12, server: 01-aidadebieyong.gangbi.vip, port: 17876, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇺🇸 🇺🇸 美国-IEPL-01, server: 120.232.218.27, port: 36025, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇸🇬 新加坡-中转-12, server: 01-aidadebieyong.gangbi.vip, port: 30003, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇯🇵 日本-中转-12, server: 01-aidadebieyong.gangbi.vip, port: 20642, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇳🇿 新西兰家宽-01, server: zf.520js.lol, port: 47253, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 142.202.49.122, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 220.246.57.32, port: 16301, type: vmess, uuid: 6074a3b0-f2a0-4b05-b1c9-4066e8b876c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM 2, server: 23.150.152.16, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇯🇵 日本-中转-13, server: 02-foxi-biegongkai.gangbi.vip, port: 20643, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.45.33, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
+  - {name: 🇺🇸 美国 · 03 · 线路1, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30048, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: v1usa01.6kk.org, skip-cert-verify: true}
+  - {name: 🇮🇸 冰岛家宽-02, server: zf.520js.lol, port: 24592, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
+  - {name: 🇮🇩 印尼-中转-13, server: 03-neibuyong.gangbi.vip, port: 16671, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
   - {name: 🇸🇬 新加坡-中转-14, server: 03-neibuyong.gangbi.vip, port: 30005, type: ss, cipher: 2022-blake3-aes-128-gcm, password: YzU0NTNhNmNkNmVlZWFjNA==:ODVkZTkwYjEtNmZlYi00OQ==}
-  - {name: 🇻🇳 越南-海豚白嫖, server: scm.zarelayv1.com, port: 57777, type: trojan, password: 233e69a4-34f5-379f-9012-fa191392f468, sni: vn-tot.zodlink.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.19.45.245, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
-  - {name: 乌兹别克斯坦-冷门, server: zf.520js.lol, port: 41262, type: ss, cipher: chacha20-ietf-poly1305, password: 55b867f4-8de1-4675-a243-2c44ab8d0f8d}
-  - {name: 🇨🇳 台湾混合 · 01 · 线路2, server: ae5f1a2a-fb75-4800.gttysd.com, port: 30058, type: trojan, password: ae81349a-0b23-4870-8e1a-1b568a7fc821, sni: sni.gutingting.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.19.38.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.19.45.238, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
-      - 🇨🇳 台湾混合 · 01 · 线路2
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇭🇰 香港-中转-12
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇭🇰 香港5|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -384,52 +422,57 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 · 03 · 线路1
-      - 🇺🇸 美国 CloudFlare节点
-      - 备站【jiasu.lol】
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇦🇺 澳大利亚专线-02
-      - 🇷🇸 塞尔维亚-01
-      - 🇷🇴 罗马尼亚-冷门
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 · 01 · 直连
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇯🇵 日本 · 02 · 直连
-      - 🇸🇬 新加坡家宽-02
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇦 乌克兰-冷门
-      - 🇺🇸 美国-中转-13
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 格林兰家宽-01
-      - 🇭🇰 [ 快速 ] 香港F1 · 02 · 线路1
-      - 🇬🇧 英国 · 01 · 线路3
-      - 🇹🇭 泰国 ·原生  02 · 线路3
-      - 🇺🇸 美国 · 04 · 线路3
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇸🇬 🇸🇬  新加坡-IEPL-31
-      - 法罗群岛-冷门
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇺🇸 美国家宽-01
-      - 🇺🇸 美国5|@ripaojiedian
-      - 卡塔尔家宽-01
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 CloudFlare节点 8
+      - 续费账号：3372299506@qq.com
+      - 🇸🇰 斯洛伐克-冷门
       - 文莱家宽-01
-      - 🇩🇪 德国-专线-02
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇭🇰 香港电讯2-海豚白嫖
-      - 🇭🇰 香港-02（支持流媒体）
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇦🇺 澳大利亚 - 悉尼 - Cogent Communications - 1
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇯🇵 日本专线-01
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国专线-03
+      - 🇭🇰 香港HGC ·原生  02 · 线路2
+      - 🇹🇭 泰国 · 01 · 线路3
+      - 🇺🇸 美国 CloudFlare节点 6
       - 🇫🇷 法国家宽-01
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 · 02 · 直连
+      - 🇭🇰 香港-中转-12
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇬🇧 江苏省宿迁市 联通/蒲公英网络
+      - 🇧🇷 🇧🇷 巴西-IEPL-31
+      - 🇰🇷 韩国特殊|@ripaojiedian
+      - 🇭🇰 香港4|@ripaojiedian
+      - 🇭🇰 香港-中转-22
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇺🇸 美国 惠普公司
+      - 🇨🇳 台湾家宽-01（支持Netflix）
+      - 🇻🇳 越南专线-01
+      - 🇸🇬 新加坡-中转-13
+      - 🇭🇰 🇭🇰 香港-IEPL-33
+      - 🇸🇬 俄罗斯 - 新西伯利亚 - LLC Baxet - 1
+      - 备站【jiasu.lol】
+      - 🇸🇬 新加坡家宽-03
+      - 🇰🇷 韩国专线-01
+      - 🇩🇪 德国-中转-12
+      - 🇺🇸 🇺🇸 美国-IEPL-01
+      - 🇸🇬 新加坡-中转-12
+      - 🇯🇵 日本-中转-12
+      - 🇳🇿 新西兰家宽-01
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 北美地区 V2CROSS.COM 2
+      - 🇯🇵 日本-中转-13
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 · 03 · 线路1
+      - 🇮🇸 冰岛家宽-02
+      - 🇮🇩 印尼-中转-13
       - 🇸🇬 新加坡-中转-14
-      - 🇻🇳 越南-海豚白嫖
       - 🇺🇸 美国 CloudFlare节点 10
-      - 乌兹别克斯坦-冷门
-      - 🇨🇳 台湾混合 · 01 · 线路2
-      - 🇺🇸 美国 CloudFlare节点 11
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
