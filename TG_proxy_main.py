@@ -377,6 +377,7 @@ def get_cfmem():
             target_span = soup.find('span', style="background-color:#fff;color:#111;font-size:15px")
             if target_span:
                 sub_url = re.search(r'https://fs\.v2rayse\.com/share/\d{8}/\w+\.txt', target_span.text).group()
+                print(sub_url)
                 try_sub.append(sub_url)
                 e_sub.append(sub_url)
                 print("获取cfmem.com完成！")
@@ -432,7 +433,7 @@ def get_nodefree():
             print(sub_url)
             try_sub.append(sub_url)
             e_sub.append(sub_url)
-            print("获取v2rayshare.com完成！")
+            print("获取nodefree.org完成！")
         else:
             print("未找到目标 p 标签")
     except Exception as e:
