@@ -10,6 +10,7 @@ import random, string
 import datetime
 from time import sleep
 import chardet
+from bs4 import BeautifulSoup
 
 #试用机场链接
 home_urls = (
@@ -376,16 +377,32 @@ def get_kkzui():
 # ========== 抓取 cfmem.com 的节点 ==========
 def get_cfmem():
     try:
-        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
-        res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
-        article_url = re.search(r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html",res.text).group()
-        #print(article_url)
-        res = requests.get(article_url,headers=headers)
-        sub_url = re.search(r'>v2ray订阅链接&#65306;(.*?)</span>',res.text).groups()[0]
-        #print(sub_url)
-        try_sub.append(sub_url)
-        e_sub.append(sub_url)
-        print("获取cfmem.com完成！")
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"
+        }
+        res = requests.get("https://www.cfmem.com/search/label/free", headers=headers)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        
+        # 查找目标 h2 并提取 URL
+        target_h2 = soup.find('h2', class_='entry-title')
+        if target_h2:
+            article_url = target_h2.find('a')['href']
+            #print(article_url)
+            
+            res = requests.get(article_url, headers=headers)
+            soup = BeautifulSoup(res.text, 'html.parser')
+            
+            # 查找订阅地址
+            target_span = soup.find('span', style="background-color:#fff;color:#111;font-size:15px")
+            if target_span:
+                sub_url = re.search(r'https://fs\.v2rayse\.com/share/\d{8}/\w+\.txt', target_span.text).group()
+                try_sub.append(sub_url)
+                e_sub.append(sub_url)
+                print("获取cfmem.com完成！")
+            else:
+                print("未找到订阅地址")
+        else:
+            print("未找到目标 h2")
     except Exception as e:
         print(e)
         print("获取cfmem.com失败！")
