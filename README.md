@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1948`
+`Total number of merge nodes: 1947`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 240`
+`Total number of merge nodes: 239`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `4`
-Updata：`2024-10-02 05:17:19`
+Updata：`2024-10-02 08:55:24`
 
 
 <details>
@@ -13229,22 +13229,30 @@ Updata：`2024-10-02 05:17:19`
 
 
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=47510211aa59dd85913d9d4d20d35bdc`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=47510211aa59dd85913d9d4d20d35bdc`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f39d632a5f376cbaf9e93ea3e5bb308f`
+
+
+
 
 >Trial subscription：
-`https://fs.v2rayse.com/share/20241001/hywaq7neyp.txt`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=f39d632a5f376cbaf9e93ea3e5bb308f`
+
+>Trial subscription：
+`https://fs.v2rayse.com/share/20241002/15hpjyzy6w.txt`
 
 
 
 >Trial subscription：
-`https://fs.v2rayse.com/share/20241001/hywaq7neyp.txt`
+`https://fs.v2rayse.com/share/20241002/15hpjyzy6w.txt`
 
 
 >Trial subscription：
