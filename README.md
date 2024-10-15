@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1382`
+`Total number of merge nodes: 1383`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 171`
+`Total number of merge nodes: 172`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `5`
-Updata：`2024-10-15 20:47:25`
+Updata：`2024-10-15 23:28:02`
 
 
 <details>
@@ -14254,47 +14254,57 @@ Updata：`2024-10-15 20:47:25`
 
 
 
->Trial subscription：
-`https://fs.v2rayse.com/share/20241015/q5r5s6yl4n.txt`
 
 
 
 
->Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=1c31cdb9716d9e86ca004f4e00927d00`
 
->Trial subscription：
-`https://fs.v2rayse.com/share/20241015/q5r5s6yl4n.txt`
+
 
 
 
 
 >Trial subscription：
-`https://fastestcloud.xyz/api/v1/client/subscribe?token=1c31cdb9716d9e86ca004f4e00927d00`
-
->Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/10/20241015.txt`
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=e88e3d281a18a5354a50ce1eb79421d9`
 
 
-
->Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/10/20241015.txt`
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=e9663ae8fdd30ff0537537503e62d4c5`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=cf65df5586f0be5fb1751ffa85922444`
+
+>Trial subscription：
+`https://fastestcloud.xyz/api/v1/client/subscribe?token=e88e3d281a18a5354a50ce1eb79421d9`
+
+
 
 
 >Trial subscription：
-`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=e9663ae8fdd30ff0537537503e62d4c5`
+`https://xn--30rs3bu7r87f.com/api/v1/client/subscribe?token=cf65df5586f0be5fb1751ffa85922444`
+
+>Trial subscription：
+`https://v2rayshare.githubrowcontent.com/2024/10/20241015.txt`
 
 
 
 >Trial subscription：
 `https://v2rayshare.githubrowcontent.com/2024/10/20241015.txt`
 
+
 >Trial subscription：
-`https://v2rayshare.githubrowcontent.com/2024/10/20241015.txt`
+`https://fs.v2rayse.com/share/20241015/q5r5s6yl4n.txt`
+
+
+>Trial subscription：
+`https://fs.v2rayse.com/share/20241015/q5r5s6yl4n.txt`
+
+
+
+>Trial subscription：
+`https://nodefree.githubrowcontent.com/2024/10/20241015.txt`
+
+>Trial subscription：
+`https://nodefree.githubrowcontent.com/2024/10/20241015.txt`
 
 
 
