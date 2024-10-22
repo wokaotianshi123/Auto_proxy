@@ -22,7 +22,7 @@ home_urls = (
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
-end_list_clash = []
+end_list_clash = ['https://paste.gg/p/jimbob/e33da6f7c8484ec6adb184f0f5fd058c/files/a7cd0b4e32304d9987fc15d386136e20/raw']
 #所有的v2ray订阅链接
 end_list_v2ray = []
 #所有的节点明文信息
