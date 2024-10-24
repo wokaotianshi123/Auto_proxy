@@ -5,245 +5,308 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 1|_US__5, server: 3.39.227.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: ambxxid02hk.dorabbb.top, port: 44826, type: vmess, uuid: 5c0126d0-0435-4024-8656-c93b7a9591e9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
+  - {name: 🇯🇵 Japan 07, server: aca-cm-js-4g.cfprefer1.xyz, port: 10021, type: ss, cipher: aes-256-gcm, password: 624f20fd-ab32-43a7-ac2a-f006909ce7c8}
+  - {name: "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn2.sanfencdn9.com}}}
+  - {name: 🇭🇰 05 香港 Home, server: sh-cn-1.dnspro.icu, port: 20025, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iso, headers: {Host: mirrors.ustc.edu.cn}}}
+  - {name: 🇺🇸 美国 惠普公司, server: 15.235.50.172, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: baradiha.com}}}
   - {name: "🇺🇸 1,6|🇺🇸_US_美国 #15", server: 104.19.51.232, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2, server: 172.64.167.19, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip19.6929198.xyz}}}
-  - {name: 🇷🇺 _RU_俄罗斯, server: f41.maryam1500.top, port: 2098, type: vmess, uuid: 83876222-64a4-4912-aa18-b7d9d34959de, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [f41.maryam1500.top]}}}
-  - {name: 🇩🇪 2|🇩🇪_DE_德国, server: de-frankfurt-oracle-b26cf5.ip1.shop, port: 45103, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: de-frankfurt-oracle-b26cf5.ip1.shop}}}
-  - {name: "🇩🇪 15,16|德国2|@ripaojiedian", server: 151.101.2.133, port: 80, type: vmess, uuid: a888b89a-08ac-40e6-8ad7-cfce9569f967, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /racevpn, headers: {Host: gerMAnyISvP.iR}}}
-  - {name: 🇳🇬 27 尼日利亚 Africa, server: steam.dnspro.icu, port: 20028, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3, server: 172.64.167.25, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip15.6016725.xyz}}}
-  - {name: 🇷🇺 俄罗斯+v2rayfree.eu.org, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
-  - {name: 🇭🇰 香港|@ripaojiedian, server: 1.65.205.116, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇻🇳 20 越南 ISP Asia, server: asia-1.dnspro.icu, port: 5506, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国_1, server: yidong1.liulangdiqiu.life, port: 10712, type: ss, cipher: chacha20-ietf-poly1305, password: dd29d7ad-5fda-4f64-a57e-716ca6010e65}
+  - {name: 🇺🇸 _US_美国_4, server: 142.202.49.122, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7, server: 104.19.21.71, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip15.6016725.xyz}}}
+  - {name: 🇺🇸 _US_美国_16, server: 142.202.49.119, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3", server: 151.101.2.133, port: 80, type: vmess, uuid: a888b89a-08ac-40e6-8ad7-cfce9569f967, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /racevpn}}
+  - {name: 🇩🇪 德国2|@ripaojiedian, server: 151.101.2.133, port: 80, type: vmess, uuid: a888b89a-08ac-40e6-8ad7-cfce9569f967, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /racevpn, headers: {Host: gerMAnyISvP.iR}}}
+  - {name: 🇮🇹 意大利+v2rayfree.eu.org, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
+  - {name: 🇬🇧 United Kingdom 01, server: rhsdrhwa.cfprefer1.xyz, port: 10013, type: ss, cipher: aes-256-gcm, password: 624f20fd-ab32-43a7-ac2a-f006909ce7c8}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.64.166.9, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}}
+  - {name: "🇺🇸 2|🇺🇸_US_美国 #3", server: 148.135.40.190, port: 8080, type: vmess, uuid: f6c4905b-0308-4164-b1ad-4157531a8378, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇫🇷 法国 格拉沃利讷OVH数据中心, server: 54.36.174.181, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 1|_FR_->_RU_, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇹🇭 19 泰国 ISP Asia, server: asia-1.dnspro.icu, port: 5504, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.64.167.8, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}}
+  - {name: 🇵🇰 Pakistan | 家宽 3.0x, server: rhsdrhwa.cfprefer1.xyz, port: 10059, type: ss, cipher: aes-256-gcm, password: 624f20fd-ab32-43a7-ac2a-f006909ce7c8}
+  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #3", server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server32.beheshtbaneh.com}}}
+  - {name: 🇭🇰 16|香港3|@ripaojiedian, server: ambxxid02hk.dorabbb.top, port: 44826, type: vmess, uuid: 5c0126d0-0435-4024-8656-c93b7a9591e9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国_7, server: 69.50.92.72, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇸🇬 07 新加坡 BGP, server: cu-hn.dnspro.icu, port: 4000, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iso, headers: {Host: mirrors.ustc.edu.cn}}}
+  - {name: 1|_US__11, server: 51.141.73.244, port: 29814, type: ss, cipher: chacha20-ietf-poly1305, password: nEyOTWmtPG5tdgZqMQEq4R}
   - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2", server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇨🇳 3,17|🇨🇳_CN_中国 #1", server: 183.240.235.162, port: 54882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1", server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国_23, server: 142.202.49.119, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6", server: 104.19.47.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国_19, server: 38.110.1.12, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国 #22", server: russia.com, port: 8080, type: vmess, uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: russia.com}}}
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 52.193.244.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #7", server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 02 香港 BGP, server: st-1.dnspro.icu, port: 9111, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian, server: 52.193.244.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #11", server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇲🇾 18 马来西亚 Asia, server: asia-1.dnspro.icu, port: 5505, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度 v2rayfree.eu.org, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}}
-  - {name: 🇺🇸 28 阿根廷 Americas, server: steam.dnspro.icu, port: 41000, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 03 香港 BGP, server: gtm-hk-8lb3vyic401.dnspro.icu, port: 5500, type: vmess, uuid: e36b038e-174f-3189-8a37-325907cb5e65, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国 OVH, server: 51.77.20.137, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: tilebani.com}}}
+  - {name: 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: gdcub.yunnode.win, port: 31650, type: ss, cipher: chacha20-ietf-poly1305, password: 0f2dc2f1-4556-4a36-bbb1-f13a23ad73f3}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4", server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 1|_US__7, server: 38.114.114.207, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: 🇬🇧 英国 伦敦Amazon数据中心, server: 3.11.27.8, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false}
+  - {name: "🇺🇸 2|🇺🇸_US_美国 #2", server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 183.232.229.165, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb}
+  - {name: 🇺🇸 _US_美国_26, server: 69.50.92.110, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 02 香港 BGP
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇭🇰 03 香港 BGP
+      - 🇭🇰 香港2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -259,34 +322,43 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 1|_US__5
-      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇯🇵 Japan 07
+      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
+      - 🇭🇰 05 香港 Home
+      - 🇺🇸 美国 惠普公司
       - "🇺🇸 1,6|🇺🇸_US_美国 #15"
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 2
-      - 🇷🇺 _RU_俄罗斯
-      - 🇩🇪 2|🇩🇪_DE_德国
-      - 🇩🇪 15,16|德国2|@ripaojiedian
-      - 🇳🇬 27 尼日利亚 Africa
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 3
-      - 🇷🇺 俄罗斯+v2rayfree.eu.org
-      - 🇭🇰 香港|@ripaojiedian
-      - 🇻🇳 20 越南 ISP Asia
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国_1
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 7
+      - 🇺🇸 _US_美国_16
+      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 3
+      - 🇩🇪 德国2|@ripaojiedian
+      - 🇮🇹 意大利+v2rayfree.eu.org
+      - 🇬🇧 United Kingdom 01
+      - 🇺🇸 美国 CloudFlare节点 3
+      - "🇺🇸 2|🇺🇸_US_美国 #3"
+      - 🇫🇷 法国 格拉沃利讷OVH数据中心
+      - 1|_FR_->_RU_
+      - 🇹🇭 19 泰国 ISP Asia
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇵🇰 Pakistan | 家宽 3.0x
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #3"
+      - 🇭🇰 16|香港3|@ripaojiedian
+      - 🇺🇸 _US_美国_7
+      - 🇸🇬 07 新加坡 BGP
+      - 1|_US__11
       - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇺🇸 _US_美国_23
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
-      - 🇺🇸 _US_美国_19
-      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇭🇰 02 香港 BGP
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇲🇾 18 马来西亚 Asia
-      - 🇮🇳 印度 v2rayfree.eu.org
-      - 🇺🇸 28 阿根廷 Americas
+      - 🇭🇰 03 香港 BGP
+      - 🇫🇷 法国 OVH
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
+      - 1|_US__7
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - "🇺🇸 2|🇺🇸_US_美国 #2"
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 _US_美国_26
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
