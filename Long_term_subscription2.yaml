@@ -5,407 +5,453 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇰🇷 韩国, server: svip.88de.hongxingdl.vip, port: 26309, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇸🇦 沙特阿拉伯, server: svip.88de.hongxingdl.vip, port: 47360, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇸🇬 Singapore-01, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56041, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 香港 04, server: iepl2.097420.xyz, port: 52424, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇸🇬 Singapore-09, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56049, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇯🇵 日本4隧道快, server: twjpzz.170809.xyz, port: 13608, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 Japan-03, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56033, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 距离下次重置剩余：14 天, server: 0862.4a11.a51c.hongxingdl.vip, port: 44829, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇪🇸 西班牙, server: svip.88de.hongxingdl.vip, port: 24958, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡, server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ccd92698-4499-472d-a06f-f90e7e89ba4f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/3YKfzGw4, headers: {Host: rpmlybgzsg2.yofnhkfc.xyz}}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #14", server: 104.19.46.123, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 新加坡|01|直连A快, server: 3sg00017d48c58a-f335-c28a-54d2-03b96293e206.233235.xyz, port: 912, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 3sg00017d48c58a-f335-c28a-54d2-03b96293e206.233235.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 HK, New Territories", server: 52.69.236.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 Hong Kong-14, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56014, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 Hong Kong-03, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56003, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇨🇦 加拿大, server: svip.88de.hongxingdl.vip, port: 56638, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn2.sanfencdn9.com}}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #19", server: 104.19.45.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国2, server: 0862.4a11.a51c.hongxingdl.vip, port: 59861, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 183.236.48.161, port: 31878, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3", server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 Japan-04, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56034, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇬🇧 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3}
-  - {name: 🇨🇳 台湾|04奈飞ChatGPT3, server: sg1111.170809.xyz, port: 8080, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: sg1111.170809.xyz, skip-cert-verify: false}
-  - {name: 🇬🇧 UK-05, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56065, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: "🇨🇳 TW, Taipei", server: 54.254.7.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 Hong Kong-08, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56008, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: 183.236.51.23, port: 48009, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国, server: svip.88de.hongxingdl.vip, port: 15708, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇺🇸 美国  04, server: iepl2.097420.xyz, port: 39393, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇯🇵 Japan-02, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56032, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇨🇳 Taiwan-03, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56023, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian, server: 52.221.255.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 新加坡02直连快, server: 2sgmax02.170203.xyz, port: 10150, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2sgmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇲🇾 Malaysia-04, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56069, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 15|🇭🇰 香港|@ripaojiedian, server: 103.36.91.32, port: 8388, type: ss, cipher: chacha20-ietf, password: asd123456}
-  - {name: 🇯🇵 日本 01, server: iepl1.097420.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇭🇰 Hong Kong-06, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56006, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: "🇨🇳 3,17|🇨🇳_CN_中国 #1", server: 183.240.235.162, port: 54882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 距离下次重置剩余：28 天, server: iepl1.097420.xyz, port: 52424, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
   - {name: 🇺🇸 美国|05奈飞ChatGPT0, server: twjpzz2.170809.xyz, port: 30752, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: usmax05.170203.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 USA-06, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56056, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: "🇺🇸 2|🇺🇸_US_美国 #1", server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇩🇪 德国, server: svip.88de.hongxingdl.vip, port: 46326, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 1|_CN_, server: 59.56.77.178, port: 15082, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #16", server: 104.19.46.233, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇯🇵 JP,", server: 54.169.139.18, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 Hong Kong-19, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56019, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
-  - {name: 🇨🇳 台湾 04, server: iepl2.097420.xyz, port: 29479, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇬🇧 _GB_英国_2, server: 145.239.6.202, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: 🇨🇳 Taiwan-05, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56025, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇸🇬 Singapore-06, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56046, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇺🇸 美国3, server: 0862.4a11.a51c.hongxingdl.vip, port: 59861, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇨🇳 台湾 IPV6, server: ipv6.hongxingdl.vip, port: 56697, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗, server: 45.87.175.171, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
+  - {name: 🇯🇵 日本B, server: 110.40.69.43, port: 21616, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港3, server: 0862.4a11.a51c.hongxingdl.vip, port: 44829, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇫🇷 法国, server: svip.88de.hongxingdl.vip, port: 15708, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇭🇰 Hong Kong-05, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56005, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 距离下次重置剩余：4 天, server: iepl1.097420.xyz, port: 52424, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇺🇸 美国, server: 40.172.49.150, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
+  - {name: 🇺🇸 USA-03, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56053, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4, server: 52.10.33.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2", server: 104.18.37.248, port: 2052, type: vmess, uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇮🇳 12|github.com/freefq - 印度  2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: irsoft.sytes.net}}}
+  - {name: 🇰🇷 韩国, server: svip.88de.hongxingdl.vip, port: 26309, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: m003.mmzhk.website, port: 8080, type: vmess, uuid: 6dde3b3f-0a00-448a-a406-26d0960d1655, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /xyz, headers: {Host: daohang.mmzhk.website}}}
+  - {name: "🇭🇰 HK,", server: 52.198.194.170, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇭🇰 香港6|@ripaojiedian, server: 103.224.80.119, port: 52636, type: vmess, uuid: fbbe5895-5fd2-4ccc-b72a-84b81d0714b1, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇱 智利 01, server: iepl1.097420.xyz, port: 18579, type: ss, cipher: chacha20-ietf-poly1305, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇨🇳 台湾|03奈飞ChatGPT1, server: tw60.233235.xyz, port: 703, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: tw60.233235.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 Taiwan-01, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56021, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇭🇰 香港AK-A, server: 110.40.69.43, port: 27153, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.20.18.142, port: 443, type: trojan, password: auto, sni: b96ef9ae.trojanfree-76s.pages.dev, network: ws, ws-opts: {path: /b96ef9ae.trojanfree-76s.pages.dev/, headers: {Host: b96ef9ae.trojanfree-76s.pages.dev}}}
+  - {name: 🇹🇷 Turkey-02, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56098, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇨🇳 Taiwan-09, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56029, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1, server: 54.213.247.125, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇴 哥伦比亚, server: svip.88de.hongxingdl.vip, port: 32998, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇭🇰 香港7|@ripaojiedian, server: 183.240.255.75, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: df52203b-7cc6-4199-ae2d-e9f2f76f3381}
+  - {name: 🇦🇷 Argentina-01, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56099, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇨🇳 台湾|01奈飞ChatGPT2, server: 2gzdx21.170809.xyz, port: 8080, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2gzdx21.170809.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾|02奈飞ChatGPT0, server: tw1.170203.xyz, port: 6678, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: tw1.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇿 捷克 V2CROSS.COM, server: 79.127.239.84, port: 19175, type: ss, cipher: chacha20-ietf-poly1305, password: 5Au7NhFmcBqMnika4KVk7h4ZdV3wD4hFtJ8PJ3AlHzLeU1chEBaz19a643q7hBPV}
+  - {name: 🇸🇬 新加坡 03, server: iepl2.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇯🇵 Japan-05, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56035, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 1|_US__5, server: 3.39.227.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本 04, server: iepl2.097420.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}}
+  - {name: 🇸🇬 Singapore-04, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56044, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇬🇧 UK-05, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56065, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇨🇳 台湾 02, server: iepl1.097420.xyz, port: 29479, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇭🇰 香港2, server: 0862.4a11.a51c.hongxingdl.vip, port: 44829, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇨🇭 瑞士 01, server: iepl1.097420.xyz, port: 18037, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: "🇸🇬 SG,", server: 54.255.237.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 新加坡 04, server: iepl2.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: es.nurul.homes, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: linkvws, headers: {Host: es.nurul.homes}}}
+  - {name: 🇸🇬 Singapore-03, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56043, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇦🇪 迪拜, server: svip.88de.hongxingdl.vip, port: 14426, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.66.47.53, port: 443, type: trojan, password: bpb-trojan, sni: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv, network: ws, ws-opts: {path: /trSo3btsDgOHHUM6Nb, headers: {Host: 403b3611-99bC-43b7-88D7-26ED5D0825A9-3.pagES.DEv}}}
+  - {name: 🇭🇰 Hong Kong-10, server: 62b547fd.fbnode-all.6pzfwf.com, port: 56010, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇯🇵 日本 02, server: iepl1.097420.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: "🇯🇵 JP,", server: 43.201.254.211, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇩🇰 丹麦 V2CROSS.COM, server: 195.85.59.95, port: 80, type: vmess, uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: open.alipay.ovh}}}
+  - {name: 🇮🇹 意大利 01, server: iepl1.097420.xyz, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇺🇸 2|🇺🇸_US_美国, server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.26.7.132, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港 04
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇨🇳 台湾 04
+      - 🇨🇳 台湾 IPV6
+      - 🇭🇰 香港3
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇭🇰 香港AK-A
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -421,57 +467,63 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 韩国
-      - 🇸🇦 沙特阿拉伯
-      - 🇸🇬 Singapore-01
-      - 🇭🇰 香港 04
-      - 🇸🇬 Singapore-09
-      - 🇯🇵 日本4隧道快
-      - 🇯🇵 Japan-03
-      - 距离下次重置剩余：14 天
-      - 🇪🇸 西班牙
-      - 🇸🇬 2|🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 HK, New Territories
-      - 🇭🇰 Hong Kong-14
-      - 🇭🇰 Hong Kong-03
-      - 🇨🇦 加拿大
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
-      - 🇺🇸 美国2
-      - 🇭🇰 香港2|@ripaojiedian
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇯🇵 Japan-04
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇨🇳 台湾|04奈飞ChatGPT3
-      - 🇬🇧 UK-05
-      - 🇨🇳 TW, Taipei
-      - 🇭🇰 Hong Kong-08
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇫🇷 法国
-      - 🇺🇸 美国  04
-      - 🇯🇵 Japan-02
-      - 🇨🇳 Taiwan-03
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇸🇬 新加坡02直连快
-      - 🇲🇾 Malaysia-04
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本 01
-      - 🇭🇰 Hong Kong-06
+      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
+      - 距离下次重置剩余：28 天
       - 🇺🇸 美国|05奈飞ChatGPT0
-      - 🇺🇸 USA-06
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 🇩🇪 德国
-      - 1|_CN_
-      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国3
+      - 🇨🇳 台湾 IPV6
+      - 🇩🇪 _DE_德国->🇦🇫_AF_阿富汗
+      - 🇯🇵 日本B
+      - 🇭🇰 香港3
+      - 🇫🇷 法国
+      - 🇭🇰 Hong Kong-05
+      - 距离下次重置剩余：4 天
+      - 🇺🇸 美国
+      - 🇺🇸 USA-03
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_4
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #2"
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - 🇰🇷 韩国
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇭🇰 HK,
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇱 智利 01
+      - 🇨🇳 台湾|03奈飞ChatGPT1
+      - 🇨🇳 Taiwan-01
+      - 🇭🇰 香港AK-A
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇹🇷 Turkey-02
+      - 🇨🇳 Taiwan-09
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡_1
+      - 🇨🇴 哥伦比亚
+      - 🇭🇰 香港7|@ripaojiedian
+      - 🇦🇷 Argentina-01
+      - 🇨🇳 台湾|01奈飞ChatGPT2
+      - 🇨🇳 台湾|02奈飞ChatGPT0
+      - 🇨🇿 捷克 V2CROSS.COM
+      - 🇸🇬 新加坡 03
+      - 🇯🇵 Japan-05
+      - 1|_US__5
+      - 🇯🇵 日本 04
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇸🇬 Singapore-04
+      - 🇬🇧 UK-05
+      - 🇨🇳 台湾 02
+      - 🇭🇰 香港2
+      - 🇨🇭 瑞士 01
+      - 🇸🇬 SG,
+      - 🇸🇬 新加坡 04
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇸🇬 Singapore-03
+      - 🇦🇪 迪拜
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇭🇰 Hong Kong-10
+      - 🇯🇵 日本 02
       - 🇯🇵 JP,
-      - 🇭🇰 Hong Kong-19
-      - 🇩🇪 德国下萨克森州萨尔茨吉特 德国电信
-      - 🇨🇳 台湾 04
-      - 🇬🇧 _GB_英国_2
-      - 🇨🇳 Taiwan-05
-      - 🇸🇬 Singapore-06
+      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇮🇹 意大利 01
+      - 🇺🇸 2|🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 5
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
