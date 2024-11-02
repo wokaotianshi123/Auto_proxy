@@ -5,454 +5,372 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇲🇽 墨西哥 01, server: iepl1.097420.xyz, port: 30931, type: ss, cipher: chacha20-ietf-poly1305, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇭🇰 香港2, server: 0862.4a11.a51c.hongxingdl.vip, port: 44829, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇪🇸 西班牙, server: svip.88de.hongxingdl.vip, port: 24958, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 1|_US_->_ES_, server: fuck5.mmmmmmmmmm.cfd, port: 59019, type: ss, cipher: chacha20-ietf-poly1305, password: 2062a5ca-a34e-47bf-9810-db91185f07fc}
-  - {name: 🇺🇸 美国|03奈飞ChatGPT1, server: twjpzz2.170809.xyz, port: 20263, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: usmax03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 Taiwan-10, server: 802266ca.fbnode-all.6pzfwf.com, port: 56030, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5", server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇬🇧 UK-03, server: 802266ca.fbnode-all.6pzfwf.com, port: 56063, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇯🇵 15|🇯🇵 日本4|@ripaojiedian, server: 149.22.87.240, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49, server: 104.19.59.89, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇸🇬 新加坡|01|直连A快, server: 3sg00017d48c58a-f335-c28a-54d2-03b96293e206.233235.xyz, port: 912, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 3sg00017d48c58a-f335-c28a-54d2-03b96293e206.233235.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港5|@ripaojiedian, server: 143.92.42.65, port: 2902, type: vmess, uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 USA-04, server: 802266ca.fbnode-all.6pzfwf.com, port: 56054, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 香港 01, server: iepl1.097420.xyz, port: 52424, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇦🇪 阿联酋 01, server: iepl1.097420.xyz, port: 56437, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇫🇷 法国, server: svip.88de.hongxingdl.vip, port: 15708, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇺🇸 美国 IPV6, server: xjv6.cloudfisher.xyz, port: 39393, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇸🇬 Singapore-01, server: 802266ca.fbnode-all.6pzfwf.com, port: 56041, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇲🇾 Malaysia-02, server: 802266ca.fbnode-all.6pzfwf.com, port: 56067, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇬🇧 _GB_英国_3, server: 145.239.6.202, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇭 瑞士 01, server: iepl1.097420.xyz, port: 18037, type: ss, cipher: chacha20-ietf-poly1305, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇯🇵 Japan-05, server: 802266ca.fbnode-all.6pzfwf.com, port: 56035, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2", server: 104.19.47.126, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #18", server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 1|_CN_, server: 59.56.77.178, port: 15082, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: "🇺🇸 2|🇺🇸_US_美国 #3", server: 148.135.40.190, port: 8080, type: vmess, uuid: f6c4905b-0308-4164-b1ad-4157531a8378, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 新加坡 04, server: iepl2.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4", server: 183.240.235.162, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡|01直连快, server: 2sg000001.170203.xyz, port: 8080, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2sg000001.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本2, server: 0862.4a11.a51c.hongxingdl.vip, port: 12599, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇺🇸 USA-01, server: 802266ca.fbnode-all.6pzfwf.com, port: 56051, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇸🇬 新加坡 01, server: iepl1.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇯🇵 日本 03, server: iepl2.097420.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇨🇳 台湾 03, server: iepl2.097420.xyz, port: 29479, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇺🇸 _US_美国_7, server: 23.134.94.168, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 USA-08, server: 802266ca.fbnode-all.6pzfwf.com, port: 56058, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇸🇦 沙特阿拉伯, server: svip.88de.hongxingdl.vip, port: 47360, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇮🇹 意大利 01, server: iepl1.097420.xyz, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
-  - {name: 🇨🇳 台湾 04, server: iepl2.097420.xyz, port: 29479, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇭🇰 Hong Kong-01, server: 802266ca.fbnode-all.6pzfwf.com, port: 56001, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇭🇰 Hong Kong-03, server: 802266ca.fbnode-all.6pzfwf.com, port: 56003, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇨🇳 台湾2, server: 0862.4a11.a51c.hongxingdl.vip, port: 56697, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: "🇭🇰 HK, New Territories", server: 52.69.236.102, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 15|🇯🇵 日本|@ripaojiedian, server: 61.172.235.22, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: df52203b-7cc6-4199-ae2d-e9f2f76f3381}
+  - {name: 🇿🇦 南非 01, server: iepl1.097420.xyz, port: 40415, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇯🇵 日本 IPV6, server: xjv6.cloudfisher.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇯🇵 Japan-06, server: 802266ca.fbnode-all.6pzfwf.com, port: 56036, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇯🇵 日本|@ripaojiedian, server: 61.172.235.22, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: df52203b-7cc6-4199-ae2d-e9f2f76f3381}
+  - {name: 🇭🇰 Hong Kong-19, server: 802266ca.fbnode-all.6pzfwf.com, port: 56019, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇨🇳 12|github.com/freefq - 广东省移动 7, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: 🇯🇵 日本C, server: 110.40.69.43, port: 21616, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1, server: 0862.4a11.a51c.hongxingdl.vip, port: 56697, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇭🇰 香港3, server: 0862.4a11.a51c.hongxingdl.vip, port: 44829, type: ss, cipher: aes-128-gcm, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51, server: 104.19.38.11, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip6.6929198.xyz}}}
   - {name: 🇦🇷 Argentina-01, server: 802266ca.fbnode-all.6pzfwf.com, port: 56099, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: "🇮🇳 11,12|github.com/freefq - 印度  2", server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: irsoft.sytes.net}}}
-  - {name: 🇬🇧 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3}
-  - {name: 🇭🇰 Hong Kong-12, server: 802266ca.fbnode-all.6pzfwf.com, port: 56012, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 香港-lala-B, server: 110.40.69.43, port: 41785, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52, server: 104.26.5.67, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇺🇸 美国|03奈飞ChatGPT快, server: twjpzz.170809.xyz, port: 63639, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: usmax03.170203.xyz, skip-cert-verify: false}
-  - {name: 1|_US__7, server: 38.114.114.207, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇨🇳 台湾02直连ChatGPT3, server: 5gzdx.233235.xyz, port: 725, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 5gzdx.233235.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 Taiwan-07, server: 802266ca.fbnode-all.6pzfwf.com, port: 56027, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇲🇾 Malaysia-01, server: 802266ca.fbnode-all.6pzfwf.com, port: 56066, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇭🇰 Hong Kong-09, server: 802266ca.fbnode-all.6pzfwf.com, port: 56009, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇨🇱 智利, server: svip.88de.hongxingdl.vip, port: 32808, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
-  - {name: 🇨🇳 台湾 02, server: iepl1.097420.xyz, port: 29479, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
-  - {name: 🇯🇵 Japan-08, server: 802266ca.fbnode-all.6pzfwf.com, port: 56038, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
-  - {name: 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian, server: 52.198.194.170, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇨🇳 台湾|03奈飞ChatGPTC, server: tw3.233235.xyz, port: 11125, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: tw3.233235.xyz, skip-cert-verify: false}
+  - {name: 🇨🇴 哥伦比亚 01, server: iepl1.097420.xyz, port: 57217, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇯🇵 Japan-04, server: 802266ca.fbnode-all.6pzfwf.com, port: 56034, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇯🇵 日本4隧道快, server: twjpzz.170809.xyz, port: 13608, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz, skip-cert-verify: false}
+  - {name: "🇭🇰 HK, Los Angeles", server: 34.210.94.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本1直连快, server: 1jp001.170809.xyz, port: 10170, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 1jp001.170809.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本|03|直连快, server: jp03.170809.xyz, port: 10150, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: jp03.170809.xyz, skip-cert-verify: false}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国 #22", server: russia.com, port: 8080, type: vmess, uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: russia.com}}}
+  - {name: 🇺🇸 _US_美国_2, server: 18.246.235.247, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇬🇧 英国AWS, server: 110.40.69.43, port: 38944, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8", server: 104.19.47.65, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 防失联页https://github.com/feiniaoyun, server: twjpzz.170809.xyz, port: 63227, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2jp04162531be-29a9-2764-8627-51a5f4436fbd.233235.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 Singapore-04, server: 802266ca.fbnode-all.6pzfwf.com, port: 56044, type: ss, cipher: chacha20-ietf-poly1305, password: dpcf4H}
+  - {name: 🇺🇸 美国  04, server: iepl2.097420.xyz, port: 39393, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇨🇦 加拿大|@ripaojiedian, server: 149.22.95.183, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇸🇬 节点超时请尝试重新导入, server: iepl1.097420.xyz, port: 52424, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇫🇷 法国, server: svip.88de.hongxingdl.vip, port: 15708, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇸🇬 新加坡AWS, server: 110.40.69.43, port: 48546, type: vmess, uuid: 432dd1c8-b83c-47a0-82d9-453beeda35dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 16|德国|@ripaojiedian, server: 120.232.153.71, port: 43526, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇮🇱 以色列, server: svip.88de.hongxingdl.vip, port: 14007, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: 🇸🇬 新加坡 01, server: iepl1.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇮🇹 意大利 01, server: iepl1.097420.xyz, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: 006d4b77-0cfd-4c71-b9e5-414e265e0cfd}
+  - {name: 🇯🇵 日本 04, server: iepl2.097420.xyz, port: 16201, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #18", server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国|02隧道, server: twjpzz2.170809.xyz, port: 35602, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: 2usmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇩🇪 _DE_德国, server: 52.58.64.85, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.ukhttp/1.1}
+  - {name: 🇨🇳 台湾01直连ChatGPT3, server: tw2.233235.xyz, port: 725, type: trojan, password: a48d9102-3eb4-4576-8de7-482e58bc1a39, sni: tw2.233235.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46, server: 172.64.167.10, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip14.6016725.xyz}}}
+  - {name: "🇨🇳 TW, Taipei", server: 54.254.7.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 新加坡 04, server: iepl2.097420.xyz, port: 36562, type: ss, cipher: aes-128-gcm, password: 32bfc87d-84be-11ef-bb6b-bc241111d95d}
+  - {name: 🇸🇦 沙特阿拉伯, server: svip.88de.hongxingdl.vip, port: 47360, type: ss, cipher: chacha20-ietf-poly1305, password: 4d6dc51a-0943-4d12-bd1e-03a021b8be26}
+  - {name: "🇨🇦 CA,", server: 35.87.185.248, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇭🇰 香港 01
-      - 🇨🇳 台湾 03
-      - 🇨🇳 台湾 04
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 台湾 02
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇳 台湾2
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -468,63 +386,52 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇲🇽 墨西哥 01
-      - 🇭🇰 香港2
-      - 🇪🇸 西班牙
-      - 1|_US_->_ES_
-      - 🇺🇸 美国|03奈飞ChatGPT1
-      - 🇨🇳 Taiwan-10
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5"
-      - 🇬🇧 UK-03
-      - 🇯🇵 15|🇯🇵 日本4|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 49
-      - 🇸🇬 新加坡|01|直连A快
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 USA-04
-      - 🇭🇰 香港 01
-      - 🇦🇪 阿联酋 01
-      - 🇫🇷 法国
-      - 🇺🇸 美国 IPV6
-      - 🇸🇬 Singapore-01
-      - 🇲🇾 Malaysia-02
-      - 🇬🇧 _GB_英国_3
-      - 🇨🇭 瑞士 01
-      - 🇯🇵 Japan-05
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 1|_CN_
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇸🇬 新加坡 04
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇸🇬 新加坡|01直连快
-      - 🇯🇵 日本2
-      - 🇺🇸 USA-01
-      - 🇸🇬 新加坡 01
-      - 🇯🇵 日本 03
-      - 🇨🇳 台湾 03
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 USA-08
-      - 🇸🇦 沙特阿拉伯
-      - 🇮🇹 意大利 01
-      - 🇨🇳 台湾 04
-      - 🇭🇰 Hong Kong-01
+      - 🇭🇰 Hong Kong-03
+      - 🇨🇳 台湾2
+      - 🇭🇰 HK, New Territories
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇿🇦 南非 01
+      - 🇯🇵 日本 IPV6
+      - 🇯🇵 Japan-06
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇭🇰 Hong Kong-19
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇯🇵 日本C
+      - 🇨🇳 台湾1
+      - 🇭🇰 香港3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 51
       - 🇦🇷 Argentina-01
-      - 🇮🇳 11,12|github.com/freefq - 印度  2
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - 🇭🇰 Hong Kong-12
-      - 🇭🇰 香港-lala-B
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 52
-      - 🇺🇸 美国|03奈飞ChatGPT快
-      - 1|_US__7
-      - 🇨🇳 台湾02直连ChatGPT3
-      - 🇨🇳 Taiwan-07
-      - 🇲🇾 Malaysia-01
-      - 🇭🇰 Hong Kong-09
-      - 🇨🇱 智利
-      - 🇨🇳 台湾 02
-      - 🇯🇵 Japan-08
-      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇨🇳 台湾|03奈飞ChatGPTC
+      - 🇨🇴 哥伦比亚 01
+      - 🇯🇵 Japan-04
+      - 🇯🇵 日本4隧道快
+      - 🇭🇰 HK, Los Angeles
+      - 🇯🇵 日本1直连快
+      - 🇯🇵 日本|03|直连快
+      - "🇺🇸 3,17|🇺🇸_US_美国 #22"
+      - 🇺🇸 _US_美国_2
+      - 🇬🇧 英国AWS
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
+      - 防失联页https://github.com/feiniaoyun
+      - 🇸🇬 Singapore-04
+      - 🇺🇸 美国  04
+      - 🇨🇦 加拿大|@ripaojiedian
+      - 🇸🇬 节点超时请尝试重新导入
+      - 🇫🇷 法国
+      - 🇸🇬 新加坡AWS
+      - 🇩🇪 16|德国|@ripaojiedian
+      - 🇮🇱 以色列
+      - 🇸🇬 新加坡 01
+      - 🇮🇹 意大利 01
+      - 🇯🇵 日本 04
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇺🇸 美国|02隧道
+      - 🇩🇪 _DE_德国
+      - 🇨🇳 台湾01直连ChatGPT3
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 46
+      - 🇨🇳 TW, Taipei
+      - 🇸🇬 新加坡 04
+      - 🇸🇦 沙特阿拉伯
+      - 🇨🇦 CA,
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
