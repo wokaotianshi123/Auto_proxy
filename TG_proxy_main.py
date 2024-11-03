@@ -14,10 +14,7 @@ from bs4 import BeautifulSoup
 
 #试用机场链接
 home_urls = (
-    'https://xn--30rs3bu7r87f.com',
-    'https://seeworld.pro',          #5T   永久
-    'https://fastestcloud.xyz',      #2G   1天
-    'https://www.ckcloud.xyz',       #1G   1天
+    'https://api.fenghuolun.xyz',    #10G  5天
 )
 #文件路径
 update_path = "./sub/"
