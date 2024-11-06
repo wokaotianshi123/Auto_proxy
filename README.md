@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1675`
+`Total number of merge nodes: 1679`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 205`
+`Total number of merge nodes: 209`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `3`
-Updata：`2024-11-06 11:45:40`
+Updata：`2024-11-06 14:38:40`
 
 
 <details>
@@ -15952,20 +15952,29 @@ Updata：`2024-11-06 11:45:40`
 
 
 
->Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241105.txt`
+
+
+
+
+
+
 
 
 
 >Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241105.txt`
+`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
+
+
+
+>Trial subscription：
+`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
 
 
 >Trial subscription：
 `https://fs.v2rayse.com/share/20241106/ht0zi73k2z.txt`
 
 >Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241105.txt`
+`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
 
 
 >Trial subscription：
@@ -15977,13 +15986,13 @@ Updata：`2024-11-06 11:45:40`
 
 
 >Trial subscription：
-`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
+`https://nodefree.githubrowcontent.com/2024/11/20241106.txt`
 
 >Trial subscription：
-`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
+`https://nodefree.githubrowcontent.com/2024/11/20241106.txt`
 
 >Trial subscription：
-`https://v2rayshare.githubrowcontent.com/2024/11/20241106.txt`
+`https://nodefree.githubrowcontent.com/2024/11/20241106.txt`
 
 
 
