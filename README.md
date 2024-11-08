@@ -20,39 +20,39 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 1699`
+`Total number of merge nodes: 1621`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.comPangTouY00/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription5`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7`
-`Total number of merge nodes: 213`
+`Total number of merge nodes: 203`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 208`
+`Total number of merge nodes: 200`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `3`
-Updata：`2024-11-08 05:33:05`
+Updata：`2024-11-08 09:12:05`
 
 
 <details>
@@ -16078,20 +16078,29 @@ Updata：`2024-11-08 05:33:05`
 
 
 
->Trial subscription：
-`https://fs.v2rayse.com/share/20241107/v3bsuv8kb1.txt`
+
+
+
+
+
+
 
 
 
 >Trial subscription：
-`https://fs.v2rayse.com/share/20241107/v3bsuv8kb1.txt`
+`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
+
+
+
+>Trial subscription：
+`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
 
 
 >Trial subscription：
 `https://v2rayshare.githubrowcontent.com/2024/11/20241107.txt`
 
 >Trial subscription：
-`https://fs.v2rayse.com/share/20241107/v3bsuv8kb1.txt`
+`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
 
 
 >Trial subscription：
@@ -16103,13 +16112,13 @@ Updata：`2024-11-08 05:33:05`
 
 
 >Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
+`https://fs.v2rayse.com/share/20241108/h06v8gn359.txt`
 
 >Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
+`https://fs.v2rayse.com/share/20241108/h06v8gn359.txt`
 
 >Trial subscription：
-`https://nodefree.githubrowcontent.com/2024/11/20241107.txt`
+`https://fs.v2rayse.com/share/20241108/h06v8gn359.txt`
 
 
 
