@@ -13,7 +13,17 @@ import chardet
 from bs4 import BeautifulSoup
 
 #试用机场链接
-home_urls = (
+url_try = "https://raw.githubusercontent.com/PangTouY00/aggregator/refs/heads/main/data/valid-domains.txt"
+
+# 发送GET请求获取内容
+response = requests.get(url_try)
+
+# 检查请求是否成功
+if response.status_code == 200:
+    # 按行分割内容并存入列表
+    home_urls = response.text.splitlines()
+else:
+    home_urls = (
     'https://ch.louwangzhiyu.xyz',   #100G  永久
     'https://dashuai.us',            #2G  1天
     'https://xiaofeiyun7.top',
@@ -29,7 +39,9 @@ home_urls = (
     'https://hy-2.com',
     'https://666666222.xyz',
     'https://xiaofeiyun3.cfd',
-)
+    )
+
+
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
