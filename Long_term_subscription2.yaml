@@ -5,815 +5,457 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7, server: 104.26.0.8, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1, server: shs.xiaoqi666.xyz, port: 2086, type: vmess, uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: shs.xiaoqi666.xyz}}}
-  - {name: 1, server: 42.236.73.72, port: 443, type: trojan, password: fuck, sni: www.zitian.cn}
-  - {name: 🇨🇳 台湾|@ripaojiedian, server: naiu-other.05vr9nyqg5.download, port: 13035, type: trojan, password: 5e2ce79c-170e-484a-8802-40584a1a3a12, sni: cloudflare.node-ssl.cdn-alibaba.com}
-  - {name: "🇫🇷 [vmess]法国3｜1x", server: www.digitalocean.com, port: 8880, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: lnfr.pmcloud.top}}}
-  - {name: 1|_CN_, server: 59.56.77.178, port: 15082, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.114.33, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.45.42, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2", server: 104.19.47.126, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港 14, server: hk.miaolianyunapp.com, port: 51114, type: ss, cipher: chacha20-ietf-poly1305, password: 8a516ece-57ec-4977-8dc9-9cfbf40c4e3b}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3", server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 10, server: us.miaolianyunapp.com, port: 51160, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164, server: 104.18.114.99, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇷🇺 _RU_俄罗斯, server: 193.124.22.253, port: 33068, type: ss, cipher: chacha20-ietf-poly1305, password: 3MgIhqwp4pjM8SKwixNkYZ}
-  - {name: 🇺🇸 _US_美国_22, server: 169.197.142.216, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.238.145, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.21.238.41, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: "🇯🇵 JP, Tokyo @mfbpn", server: 13.212.36.13, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 新加坡 02, server: sg.miaolianyunapp.com, port: 51136, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇯🇵 日本 01, server: jp.miaolianyunapp.com, port: 51119, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇸🇬 新加坡 10, server: sg.miaolianyunapp.com, port: 51144, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #11", server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54, server: 104.18.114.132, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115, server: 104.21.238.146, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 距离下次重置剩余：28 天, server: 1.1.1.1, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: 9d765687-536c-4626-a2e2-6a403219e381}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #7", server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.26.0.250, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175, server: 104.26.0.75, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇭🇰 香港 07, server: hk.miaolianyunapp.com, port: 51107, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇭🇰 香港 16, server: hk.miaolianyunapp.com, port: 51116, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇸🇬 新加坡 09, server: sg.miaolianyunapp.com, port: 51143, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: 🇺🇸 美国 09, server: us.miaolianyunapp.com, port: 51159, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: 🇭🇰 13|🇭🇰 香港6|@ripaojiedian, server: h-k01.loveroise.com, port: 54000, type: ss, cipher: chacha20-ietf-poly1305, password: 09833a6f-4d46-426e-87fe-7793a5489f84}
-  - {name: "🇸🇬 SG, Singapore @mfbpn", server: 47.129.181.171, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 日本 07, server: jp.miaolianyunapp.com, port: 51125, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇯🇵 日本 04, server: jp.miaolianyunapp.com, port: 51122, type: ss, cipher: chacha20-ietf-poly1305, password: 8a516ece-57ec-4977-8dc9-9cfbf40c4e3b}
-  - {name: 🇭🇰 香港 06, server: hk.miaolianyunapp.com, port: 51106, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇰🇷 14|韩国2|@ripaojiedian, server: k-r03.loveroise.com, port: 54012, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowOTgzM2E2Zi00ZDQ2LTQyNmUtODdmZS03NzkzYTU0ODlmODQ}
-  - {name: 🇨🇳 台湾 03, server: tw.miaolianyunapp.com, port: 51163, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇰🇷 韩国 KT电信, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2}
-  - {name: 🇸🇬 新加坡 06, server: sg.miaolianyunapp.com, port: 51140, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1, server: 190.93.246.178, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip18.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171, server: 104.18.114.103, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇭🇰 15|🇭🇰 香港6|@ripaojiedian, server: h-k01.loveroise.com, port: 54000, type: ss, cipher: chacha20-ietf-poly1305, password: 09833a6f-4d46-426e-87fe-7793a5489f84}
-  - {name: 5|d*********g.com_1, server: 104.21.238.201, port: 8443, type: vmess, uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43, alterId: 0, cipher: auto, tls: true, servername: http1.9290254.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: http1.9290254.xyz}}}
-  - {name: "🇯🇵 [vmess]日本1｜1x", server: follow.ikuai66.xyz, port: 2086, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: lnjp.pmcloud.top}}}
-  - {name: 🇯🇵 日本 11, server: jp.miaolianyunapp.com, port: 51129, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: "0,15|HK_speednode_0019", server: 43.198.187.75, port: 44560, type: trojan, password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb, sni: jp12.bilibili.com, skip-cert-verify: true}
-  - {name: 0|--2, server: 18.143.178.37, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇭🇰 香港 14 2, server: hk.miaolianyunapp.com, port: 51114, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇺🇸 美国 07, server: us.miaolianyunapp.com, port: 51157, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: "🇯🇵 13,14|日本|@ripaojiedian", server: 36.151.192.242, port: 27381, type: trojan, password: QwwHvrnN, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 04, server: us.miaolianyunapp.com, port: 51154, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇸🇬 新加坡 02 2, server: sg.miaolianyunapp.com, port: 51136, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇸🇬 新加坡 06 2, server: sg.miaolianyunapp.com, port: 51140, type: ss, cipher: chacha20-ietf-poly1305, password: 8a516ece-57ec-4977-8dc9-9cfbf40c4e3b}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.26.0.103, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇸🇬 新加坡 06 3, server: sg.miaolianyunapp.com, port: 51140, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.114.58, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: e4.6929198.xyz}}}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4", server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.114.132, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
   - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89, server: 104.21.238.51, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇭🇰 14|香港5|@ripaojiedian, server: 183.236.48.163, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡 03, server: sg.miaolianyunapp.com, port: 51137, type: ss, cipher: chacha20-ietf-poly1305, password: 8a516ece-57ec-4977-8dc9-9cfbf40c4e3b}
-  - {name: 🇸🇬 新加坡 11, server: sg.miaolianyunapp.com, port: 51145, type: ss, cipher: chacha20-ietf-poly1305, password: 8a516ece-57ec-4977-8dc9-9cfbf40c4e3b}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82, server: 104.18.114.73, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian, server: 47.129.236.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 _US_美国_29, server: 69.50.95.53, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
-  - {name: 🇺🇸 美国 04 2, server: us.miaolianyunapp.com, port: 51154, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇨🇳 台湾 01, server: tw.miaolianyunapp.com, port: 51161, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇸🇬 新加坡 12, server: sg.miaolianyunapp.com, port: 51146, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4, server: 190.93.244.64, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip18.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
-  - {name: 1|_FR_->_RU_, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.26.0.171, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96, server: 104.21.238.240, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107, server: 104.18.114.63, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117, server: 104.18.114.145, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.21.238.160, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118, server: 104.18.114.79, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇯🇵 日本 15, server: jp.miaolianyunapp.com, port: 51133, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1", server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港 06 2, server: hk.miaolianyunapp.com, port: 51106, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇭🇰 香港 09, server: hk.miaolianyunapp.com, port: 51109, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: 🇭🇰 香港 15, server: hk.miaolianyunapp.com, port: 51115, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇭🇰 香港5|@ripaojiedian, server: 183.236.48.163, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128, server: 162.159.45.28, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇸🇬 新加坡 05, server: sg.miaolianyunapp.com, port: 51139, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.18.114.22, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
-  - {name: 🇸🇬 新加坡 09 2, server: sg.miaolianyunapp.com, port: 51143, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇺🇸 _US_美国_1, server: 13.60.145.61, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.ukhttp/1.1}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.18.114.36, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: e4.6929198.xyz}}}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168, server: 104.18.114.136, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: p1.613055.xyz}}}
-  - {name: 🇸🇬 新加坡 04, server: sg.miaolianyunapp.com, port: 51138, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173, server: 104.26.0.168, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: p1.613055.xyz}}}
-  - {name: 🇨🇳 台湾 05, server: tw.miaolianyunapp.com, port: 51165, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇯🇵 日本 11 2, server: jp.miaolianyunapp.com, port: 51129, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇯🇵 日本 04 2, server: jp.miaolianyunapp.com, port: 51122, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: "🇨🇦 [vmess]加拿大1｜1x", server: follow.ikuai66.xyz, port: 8880, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: doca.pmcloud.top}}}
-  - {name: 🇯🇵 日本 04 3, server: jp.miaolianyunapp.com, port: 51122, type: ss, cipher: chacha20-ietf-poly1305, password: 1d40ceed-308d-4fd8-bdf5-8d2042081e9f}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3, server: 104.26.0.232, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138, server: 104.21.238.171, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #19", server: 104.19.45.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113, server: 104.21.238.209, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157, server: 45.142.120.53, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip18.6929198.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36, server: 104.26.0.65, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35, server: 104.26.0.123, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39, server: 104.26.0.37, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 11|5|d*********g.com_3, server: 104.21.238.203, port: 8443, type: vmess, uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43, alterId: 0, cipher: auto, tls: true, servername: http1.9290254.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: http1.9290254.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.18.114.48, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91, server: 104.21.238.80, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
   - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143, server: 104.18.114.240, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇸🇬 新加坡 13, server: sg.miaolianyunapp.com, port: 51147, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126, server: 104.18.114.200, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇺🇸 美国 07 2, server: us.miaolianyunapp.com, port: 51157, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇯🇵 日本 10, server: jp.miaolianyunapp.com, port: 51128, type: ss, cipher: chacha20-ietf-poly1305, password: 85f38c04-a44e-4fd2-b46d-dc7d3daf2e57}
-  - {name: 🇯🇵 日本 13, server: jp.miaolianyunapp.com, port: 51131, type: ss, cipher: chacha20-ietf-poly1305, password: 27b3ba6c-d283-4650-85e4-8cc523ecc782}
-  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55, server: 104.21.238.218, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
-  - {name: 🇭🇰 香港 10, server: hk.miaolianyunapp.com, port: 51110, type: ss, cipher: chacha20-ietf-poly1305, password: 372f01d2-d3cc-4bbf-8848-b727e038a475}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.18.114.118, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: e4.6929198.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64, server: 104.18.114.128, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99, server: 104.21.238.32, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.26.0.69, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: e4.6929198.xyz}}}
+  - {name: 🇷🇺 2|🇷🇺_RU_俄罗斯联邦, server: 45.147.200.170, port: 35972, type: vmess, uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian, server: 47.129.236.42, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇳 12|github.com/freefq - 广东省移动 7, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.21.238.5, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 183.236.48.163, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.21.238.206, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: p1.613055.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22, server: 104.26.0.192, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181, server: 104.18.114.153, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: "🇺🇸 [vmess]美国西雅图3｜1x", server: www.digitalocean.com, port: 8880, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: lnus.pmcloud.top}}}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11", server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2", server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇷🇺 [vmess]俄罗斯3｜1x", server: www.digitalocean.com, port: 8880, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: azmsk.pmcloud.top}}}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 120.232.153.63, port: 40972, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #7", server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 [vmess]美国纽约3｜1x", server: www.digitalocean.com, port: 8880, type: vmess, uuid: 47ca88f4-7dc9-401c-aef2-a7cc6d020c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dousny.pmcloud.top}}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40, server: 104.26.0.231, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109, server: 104.18.114.115, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31, server: 104.26.0.133, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇰🇷 韩国01, server: 119.xn--fhqu06a8m1asto.icu, port: 10341, type: ss, cipher: chacha20-ietf-poly1305, password: d3ecf8c2-0931-4781-9592-7e7bed29622d}
+  - {name: 🇨🇦 _GB_英国->🇨🇦_CA_加拿大, server: 45.8.211.242, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip18.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: 🇨🇦 _FR_法国->🇨🇦_CA_加拿大, server: 146.19.21.61, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip18.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5, server: 104.26.0.145, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72, server: 104.18.114.248, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182, server: 104.26.0.187, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
+  - {name: 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.18.114.90, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: m1.106778.xyz}}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88, server: 104.21.238.115, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.18.114.103, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
+  - {name: 1|_CN_, server: 59.56.77.178, port: 15082, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25, server: 104.26.0.120, port: 8880, type: vmess, uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇭🇰 香港|@ripaojiedian, server: 36.151.192.242, port: 51377, type: trojan, password: DNUMdmnJ, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12, server: 104.26.0.32, port: 2086, type: vmess, uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: p1.613055.xyz}}}
+  - {name: 🇺🇸 _US_美国_1, server: 52.12.67.119, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇭🇰 11,16|香港5|@ripaojiedian", server: 183.236.48.163, port: 58831, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184, server: 45.131.211.23, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29, server: 104.26.0.95, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999}}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.21.238.163, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: c3.6016725.xyz}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇭🇰 香港 14
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇭🇰 香港 06
-      - 🇨🇳 台湾 03
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 🇭🇰 香港 14 2
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇨🇳 台湾 01
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -829,111 +471,61 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 7
-      - 阿拉伯联合酋长国 - Masdar City - Oracle Corporation - 1
-      - 1
-      - 🇨🇳 台湾|@ripaojiedian
-      - 🇫🇷 [vmess]法国3｜1x
-      - 1|_CN_
       - 🇺🇸 美国 CloudFlare节点
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇺🇸 美国 CloudFlare节点 2
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇭🇰 香港 14
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇺🇸 美国 10
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 164
-      - 🇷🇺 _RU_俄罗斯
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇯🇵 JP, Tokyo @mfbpn
-      - 🇸🇬 新加坡 02
-      - 🇯🇵 日本 01
-      - 🇸🇬 新加坡 10
-      - "🇺🇸 1,6|🇺🇸_US_美国 #11"
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 54
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 115
-      - 距离下次重置剩余：28 天
-      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 175
-      - 🇭🇰 香港 07
-      - 🇭🇰 香港 16
-      - 🇸🇬 新加坡 09
-      - 🇺🇸 美国 09
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 🇸🇬 SG, Singapore @mfbpn
-      - 🇯🇵 日本 07
-      - 🇯🇵 日本 04
-      - 🇭🇰 香港 06
-      - 🇰🇷 14|韩国2|@ripaojiedian
-      - 🇨🇳 台湾 03
-      - 🇰🇷 韩国 KT电信
-      - 🇸🇬 新加坡 06
-      - 🇨🇦 _CR_哥斯达黎加->🇨🇦_CA_加拿大_1
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 171
-      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
-      - 5|d*********g.com_1
-      - 🇯🇵 [vmess]日本1｜1x
-      - 🇯🇵 日本 11
-      - 0,15|HK_speednode_0019
-      - 0|--2
-      - 🇭🇰 香港 14 2
-      - 🇺🇸 美国 07
-      - 🇯🇵 13,14|日本|@ripaojiedian
-      - 🇺🇸 美国 04
-      - 🇸🇬 新加坡 02 2
-      - 🇸🇬 新加坡 06 2
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇸🇬 新加坡 06 3
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 89
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇸🇬 新加坡 03
-      - 🇸🇬 新加坡 11
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 82
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇺🇸 _US_美国_29
-      - 🇺🇸 美国 04 2
-      - 🇨🇳 台湾 01
-      - 🇸🇬 新加坡 12
-      - 🇺🇸 _US_美国->🇨🇦_CA_加拿大_4
-      - 1|_FR_->_RU_
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 96
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 107
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 117
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 118
-      - 🇯🇵 日本 15
-      - "🇷🇺 2|🇷🇺_RU_俄罗斯联邦 #1"
-      - 🇭🇰 香港 06 2
-      - 🇭🇰 香港 09
-      - 🇭🇰 香港 15
-      - 🇭🇰 香港5|@ripaojiedian
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 128
-      - 🇸🇬 新加坡 05
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇸🇬 新加坡 09 2
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 168
-      - 🇸🇬 新加坡 04
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 173
-      - 🇨🇳 台湾 05
-      - 🇯🇵 日本 11 2
-      - 🇯🇵 日本 04 2
-      - 🇨🇦 [vmess]加拿大1｜1x
-      - 🇯🇵 日本 04 3
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 138
+      - "🇺🇸 1,6|🇺🇸_US_美国 #19"
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 113
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 157
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 36
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 35
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 39
+      - 11|5|d*********g.com_3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 91
       - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 143
-      - 🇸🇬 新加坡 13
-      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 126
-      - 🇺🇸 美国 07 2
-      - 🇯🇵 日本 10
-      - 🇯🇵 日本 13
-      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 55
-      - 🇭🇰 香港 10
-      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 64
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 99
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇷🇺 2|🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 22
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 181
+      - 🇺🇸 [vmess]美国西雅图3｜1x
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 [vmess]俄罗斯3｜1x
+      - 🇭🇰 香港3|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇺🇸 [vmess]美国纽约3｜1x
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 40
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 109
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 31
+      - 🇰🇷 韩国01
+      - 🇨🇦 _GB_英国->🇨🇦_CA_加拿大
+      - 🇨🇦 _FR_法国->🇨🇦_CA_加拿大
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 5
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 72
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 182
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 88
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 1|_CN_
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 25
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇺🇸 美国 - 沃尔纳特 - Psychz Networks - 12
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 11,16|香港5|@ripaojiedian
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 184
+      - 🇺🇸 美国 - 洛杉矶 - Psychz Networks - 29
+      - 🇺🇸 美国 CloudFlare节点 9
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
