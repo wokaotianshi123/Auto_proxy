@@ -5,607 +5,501 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇳🇱 荷兰01|流媒体|Udp-569, server: nl.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: nl.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 69.50.95.53, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV}
-  - {name: 0|--15, server: 13.250.115.217, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 _US_美国_2, server: 69.50.95.53, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 🇺🇸 _GB_英国->🇺🇸_US_美国, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇨🇭 Switzerland 087, server: console.03.aliyun.aq.kunlunaqs.com, port: 45582, type: ss, cipher: chacha20-ietf-poly1305, password: c9fa2bcffa379937679e, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
   - {name: 1|_CN_, server: 59.56.77.178, port: 15082, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD}
-  - {name: "🇫🇷 13,14|法国|@ripaojiedian", server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, servername: ameblo.jp, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}}
-  - {name: 0|--6, server: 34.213.200.250, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian, server: 3.112.236.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇫🇷 法国02|流媒体|Udp-569, server: fr.1010520.xyz, port: 1002, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: fr.1010520.xyz, skip-cert-verify: false}
-  - {name: RO海外直连 1x, server: 2a0e:8f02:f04f:1027:0000:0000:a10d:9b8b, port: 4001, type: ss, cipher: aes-128-gcm, password: 89b90001-4206-4871-a99d-1744d48f215b}
-  - {name: 🇳🇱 荷兰04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 18749, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇫🇮 芬兰02|流媒体|Udp-569, server: fi.1010520.xyz, port: 1002, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: fi.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 Hongkong 020, server: console.01.aliyun.aq.kunlunaqs.com, port: 45904, type: ss, cipher: aes-128-gcm, password: 6113536135af69e572c6, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇮🇹 Italy 091, server: console.03.aliyun.aq.kunlunaqs.com, port: 45587, type: ss, cipher: chacha20-ietf-poly1305, password: 6180d9dc7075e7fe509b, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 1|_US__5, server: 3.39.227.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5, server: 151.101.128.155, port: 80, type: vmess, uuid: e5662328-13fc-450c-b78f-967e4ffc4419, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=80"}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4", server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: SCP-NSC 05, server: tw.ssrxray.click, port: 36918, type: ss, cipher: aes-256-gcm, password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ}
-  - {name: "🇲🇾 13,14|马来西亚|@ripaojiedian", server: 120.233.26.140, port: 50015, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: my.doubledou.icu, skip-cert-verify: false}
-  - {name: 16|d*********g.com_2, server: 42.236.73.72, port: 443, type: vmess, uuid: 044f0177-0675-4dcf-89d4-804b6788e518, alterId: 0, cipher: auto, tls: true, servername: www.zitian.cn}
-  - {name: 🇸🇬 Singapore 057, server: console.03.aliyun.aq.kunlunaqs.com, port: 45937, type: ss, cipher: aes-128-gcm, password: 4092a0d31011e2046687, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 183.236.51.23, port: 40434, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4", server: 183.240.235.162, port: 54002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇮🇹 意大利01|流媒体|Udp-569, server: it.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: it.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 18749, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇯🇵 日本05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 18109, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇺🇸 _US_美国_4, server: 13.48.36.27, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: "🇺🇸 2|🇺🇸_US_美国 #1", server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 15|CN_speednode_0014, server: 125.88.149.205, port: 50015, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: ia2.aaaa.gay, skip-cert-verify: true}
-  - {name: 🇹🇷 土耳其04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 27192, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇸🇬 新加坡01|流媒体|Udp-569, server: sg.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: sg.1010520.xyz, skip-cert-verify: false}
-  - {name: 15|CN_speednode_0019, server: 125.88.149.205, port: 50021, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: los4.aaaa.gay, skip-cert-verify: true}
-  - {name: 🇷🇺 _RU_俄罗斯_2, server: 217.30.10.18, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
-  - {name: 🇳🇱 荷兰01|流媒体|Udp-569 2, server: nl.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: nl.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 28865, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇳🇴 挪威01|流媒体|Udp-569, server: no.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: no.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇲🇾 Malaysia 075 *1.5, server: console.03.aliyun.aq.kunlunaqs.com, port: 45576, type: ss, cipher: aes-128-gcm, password: fe51727afe2fca582ebf, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇨🇦 加拿大01|流媒体|Udp-569, server: ca.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: ca.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇧🇬 保加利亚03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 30571, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇭🇰 ☀HK-香港IPV6, server: hkv6_2.doubledou.icu, port: 4580, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: wtt.doubledou.win}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7", server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 Taiwan 065, server: console.03.aliyun.aq.kunlunaqs.com, port: 45916, type: ss, cipher: aes-128-gcm, password: cfc6f3f75f5ef7b2665c, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.41.145.5, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 3.112.236.3, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇦🇪 迪拜01|流媒体|Udp-569, server: ae.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: ae.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 Hongkong 019, server: console.01.aliyun.aq.kunlunaqs.com, port: 45903, type: ss, cipher: aes-128-gcm, password: b16cb18d8992f3b83b7d, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇭🇰 Hongkong 008, server: console.02.aliyun.aq.kunlunaqs.com, port: 45936, type: ss, cipher: aes-128-gcm, password: a643f6f3733c9962851d, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇨🇳 Taiwan 031, server: console.03.aliyun.aq.kunlunaqs.com, port: 45915, type: ss, cipher: aes-128-gcm, password: b74518fb49bd645e6ce7, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇹🇭 泰国01|流媒体|Udp-569, server: th.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: th.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇩🇪 德国03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 18779, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇯🇵 Japan 028, server: console.02.aliyun.aq.kunlunaqs.com, port: 45912, type: ss, cipher: aes-128-gcm, password: 97998add7bf4fea885ef, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇸🇬 新加坡05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 18759, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1, server: 193.29.107.234, port: 49020, type: vmess, uuid: 2e967dd5-8d24-4099-a901-412dcb4024fd, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇹🇭 泰国02|流媒体|Udp-569, server: th.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: th.1010520.xyz, skip-cert-verify: false}
+  - {name: 永久公益免费节点, server: gy2.kuailejc.xyz, port: 443, type: trojan, password: 6529d9cc-2b22-4259-8ade-797d4d3c35e9, sni: fmg.kuailejc.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: /kuaile, headers: {Host: fmg.kuailejc.xyz}}}
+  - {name: 🇩🇪 DE海外直连 1x, server: 130.61.77.41, port: 57754, type: ss, cipher: aes-128-gcm, password: 89b90001-4206-4871-a99d-1744d48f215b}
+  - {name: "🇸🇬 11,15,16|新加坡|@ripaojiedian", server: www.aetv.com, port: 80, type: vmess, uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd.al}}}
+  - {name: "[ss]过滤掉1条线路", server: ss.2.lianjievpn.com, port: 10295, type: ss, cipher: chacha20-ietf-poly1305, password: 94822d00-e682-40cf-8eb1-f28beadc0235}
+  - {name: 🇳🇱 荷兰01|流媒体|Udp-569, server: nl.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: nl.1010520.xyz, skip-cert-verify: false}
+  - {name: 15|US_speednode_0053, server: 172.67.207.57, port: 443, type: trojan, password: yaml777, sni: yaml7.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaml7.ggff.net}}}
+  - {name: 🇨🇿 捷克01|流媒体|Udp-569, server: cz.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: cz.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇷🇸 塞尔维亚03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 23984, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 15|IN_speednode_0028, server: 13.235.160.41, port: 443, type: trojan, password: !<str> 3648425794742788096, sni: mint-pangolin.treefrog761.one, skip-cert-verify: true}
+  - {name: 🇺🇦 乌克兰-1, server: bbq1.kuailejc.xyz, port: 443, type: trojan, password: 6529d9cc-2b22-4259-8ade-797d4d3c35e9, sni: fwkl.kuailejc.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: /kuaile, headers: {Host: fwkl.kuailejc.xyz}}}
+  - {name: 🇳🇱 荷兰02|流媒体|Udp-569, server: nl.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: nl.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇱🇺 卢森堡05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 27564, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇮🇩 印度尼西亚01|流媒体|Udp-569, server: id.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: id.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇦🇺 澳洲01|流媒体|Udp-569, server: au.1010520.xyz, port: 29952, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: au.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇨🇿 捷克04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 26415, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
   - {name: 🇩🇰 丹麦01|流媒体|Udp-569, server: dk.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: dk.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇷🇴 罗马尼亚01|流媒体|Udp-569, server: ro.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: ro.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 USA 069, server: console.02.aliyun.aq.kunlunaqs.com, port: 45938, type: ss, cipher: aes-128-gcm, password: 3938bfae997974860251, plugin: obfs, plugin-opts: {mode: http, host: 215996dd9f1c3db1e54b.microsoft.com}}
-  - {name: 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}}
+  - {name: 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian, server: 221.150.109.88, port: 24934, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇨🇳 台湾省苗栗县 中华电信, server: 1.170.241.81, port: 30337, type: trojan, password: 1a668915-d98f-4440-8bac-2c51d508f811, sni: ddns.200566.xyz}
+  - {name: 🇧🇬 保加利亚05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 30571, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.110.1.105, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 15|CN_speednode_0015, server: 120.233.26.140, port: 50000, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: gg.doubledou.icu, skip-cert-verify: true}
+  - {name: 0|--8, server: 34.211.229.86, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇩🇪 德国03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 18779, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
   - {name: 🇺🇸 2|🇺🇸_US_美国, server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 69.50.95.53, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 0|--21, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇧🇷 巴西05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 32481, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇱🇺 卢森堡03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 27564, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇨🇳 台湾01|流媒体|Udp-569, server: tw.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: tw.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇫🇷 法国05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 29186, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇧🇷 巴西01|流媒体|Udp-569, server: br.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: br.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇷🇴 罗马尼亚01|流媒体|Udp-569 2, server: ro.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: ro.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇦🇪 迪拜03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 22349, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: 🇰🇷 韩国04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 18119, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇨🇭 瑞士03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 26436, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇸🇬 新加坡02|流媒体|Udp-569, server: sg.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: sg.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇮🇩 印度尼西亚05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 27483, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇰🇷 韩国02|流媒体|Udp-569, server: kr.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: kr.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian, server: 18.181.162.137, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇳 台湾04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 28865, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇸🇬 SG海外直连 1x, server: 185.81.28.114, port: 4001, type: ss, cipher: aes-128-gcm, password: 89b90001-4206-4871-a99d-1744d48f215b}
+  - {name: 🇨🇦 公益 加拿大 04, server: fbi.gov, port: 80, type: vmess, uuid: d004d7f5-c98c-4fe3-8dd2-45e0001c9ff9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ca.yuyun.one}}}
+  - {name: 🇧🇬 保加利亚04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 30571, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇬🇧 英国02|流媒体|Udp-569, server: uk.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: uk.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 14|日本2|@ripaojiedian, server: jpp1.pfdsddla.com, port: 38953, type: vmess, uuid: fa98714c-1d2b-3b60-81e0-f7151110e801, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian, server: 18.181.176.227, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 软件需开启跳过证书验证！！！, server: hgc.node-is.green, port: 44184, type: trojan, password: 9cb4048a-6c79-401b-ada0-8c16f7e52bc8, sni: hk12.bilibili.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国_10, server: 69.50.95.53, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
   - {name: 🇷🇴 罗马尼亚03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 23781, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
-  - {name: 🇪🇸 西班牙03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 45719, type: ss, cipher: chacha20-ietf-poly1305, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da}
-  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #2", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
-  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 69.50.95.53, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇮🇳 印度01|流媒体|Udp-569, server: in.1010520.xyz, port: 1001, type: hysteria2, password: 8a3b7d4b-39c4-4bb3-8775-56bd65b771da, sni: in.1010520.xyz, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9, server: 195.58.49.86, port: 29025, type: vmess, uuid: 727d1e03-2aed-4190-bff5-30890097c1c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 0|--14, server: 18.179.197.216, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5, server: 151.101.128.155, port: 80, type: vmess, uuid: e5662328-13fc-450c-b78f-967e4ffc4419, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=80"}}
+  - {name: 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian, server: 18.181.176.227, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 新加坡04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 18759, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇺🇸 _US_美国_3, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8}
+  - {name: 0|--25, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: 0|--3, server: 35.90.2.104, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇮🇳 印度03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 18799, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇫🇷 法国05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 29186, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇰🇷 15|🇰🇷 韩国|@ripaojiedian, server: 27.255.82.135, port: 2884, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇨🇭 瑞士01|流媒体|Udp-569, server: ch.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: ch.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_11, server: 167.88.61.235, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇪🇸 西班牙03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 45719, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇸🇬 新加坡05|流媒体|专线3-569, server: zx3.1010520.xyz, port: 18759, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇹🇭 泰国04|流媒体|专线2-569, server: zx2.1010520.xyz, port: 26543, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇺🇸 美国 04, server: 152.53.52.233, port: 55111, type: hysteria2, password: 83c36b93-e698-4bf3-9427-ca15a3e52b1f, sni: bing.com, skip-cert-verify: true}
+  - {name: 🇺🇸 f美国4号-3, server: bbq3.kuailejc.xyz, port: 443, type: trojan, password: 6529d9cc-2b22-4259-8ade-797d4d3c35e9, sni: fmg.kuailejc.xyz, skip-cert-verify: false, network: ws, ws-opts: {path: /kuaile, headers: {Host: fmg.kuailejc.xyz}}}
+  - {name: 🇭🇰 HK海外直连 1x, server: 103.17.99.54, port: 4001, type: ss, cipher: aes-128-gcm, password: 89b90001-4206-4871-a99d-1744d48f215b}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7", server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇮🇳 印度02|流媒体|Udp-569, server: in.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: in.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇳🇴 挪威03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 56315, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #1", server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}}
+  - {name: 🇧🇬 保加利亚03|流媒体|专线1-569, server: zx1.1010520.xyz, port: 30571, type: ss, cipher: chacha20-ietf-poly1305, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24}
+  - {name: 🇱🇺 卢森堡01|流媒体|Udp-569, server: lu.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: lu.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇨🇦 加拿大02|流媒体|Udp-569, server: ca.1010520.xyz, port: 1002, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: ca.1010520.xyz, skip-cert-verify: false}
+  - {name: "13,14,15|CN_speednode_0016", server: 120.233.26.140, port: 50001, type: trojan, password: 2add6241-8fe8-3922-8347-da25e8ced601, sni: jpcn2.doubledou.icu, skip-cert-verify: true}
+  - {name: 🇩🇪 德国01|流媒体|Udp-569, server: de.1010520.xyz, port: 1001, type: hysteria2, password: cc6fc498-1c98-4ecd-b3a4-37d782c56d24, sni: de.1010520.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: 156.251.189.225, port: 30895, type: vmess, uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3, alterId: 0, cipher: auto, tls: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - 🇨🇳 台湾01|流媒体|Udp-569
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇨🇳 台湾04|流媒体|专线2-569
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -621,86 +515,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱 荷兰01|流媒体|Udp-569
-      - 🇺🇸 美国 V2CROSS.COM
-      - 0|--15
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇨🇭 Switzerland 087
       - 1|_CN_
-      - 🇫🇷 13,14|法国|@ripaojiedian
-      - 0|--6
-      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
-      - 🇫🇷 法国02|流媒体|Udp-569
-      - RO海外直连 1x
-      - 🇳🇱 荷兰04|流媒体|专线2-569
-      - 🇫🇮 芬兰02|流媒体|Udp-569
-      - 🇭🇰 Hongkong 020
-      - 🇮🇹 Italy 091
-      - 1|_US__5
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
-      - SCP-NSC 05
-      - 🇲🇾 13,14|马来西亚|@ripaojiedian
-      - 16|d*********g.com_2
-      - 🇸🇬 Singapore 057
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #4"
-      - 🇮🇹 意大利01|流媒体|Udp-569
-      - 🇳🇱 荷兰05|流媒体|专线3-569
-      - 🇯🇵 日本05|流媒体|专线3-569
-      - 🇺🇸 _US_美国_4
-      - "🇺🇸 2|🇺🇸_US_美国 #1"
-      - 15|CN_speednode_0014
-      - 🇹🇷 土耳其04|流媒体|专线2-569
-      - 🇸🇬 新加坡01|流媒体|Udp-569
-      - 15|CN_speednode_0019
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇳🇱 荷兰01|流媒体|Udp-569 2
-      - 🇨🇳 台湾05|流媒体|专线3-569
-      - 🇳🇴 挪威01|流媒体|Udp-569
-      - 🇲🇾 Malaysia 075 *1.5
-      - 🇨🇦 加拿大01|流媒体|Udp-569
-      - 🇧🇬 保加利亚03|流媒体|专线1-569
-      - 🇭🇰 ☀HK-香港IPV6
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
-      - 🇨🇳 Taiwan 065
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇸🇬 狮城特殊|@ripaojiedian
-      - 🇦🇪 迪拜01|流媒体|Udp-569
-      - 🇭🇰 Hongkong 019
-      - 🇭🇰 Hongkong 008
-      - 🇨🇳 Taiwan 031
-      - 🇹🇭 泰国01|流媒体|Udp-569
-      - 🇩🇪 德国03|流媒体|专线1-569
-      - 🇯🇵 Japan 028
-      - 🇸🇬 新加坡05|流媒体|专线3-569
-      - 🇩🇰 丹麦 - 巴勒魯普自治市 - M247 Europe SRL - 1
-      - 🇹🇭 泰国02|流媒体|Udp-569
+      - 永久公益免费节点
+      - 🇩🇪 DE海外直连 1x
+      - 🇸🇬 11,15,16|新加坡|@ripaojiedian
+      - "[ss]过滤掉1条线路"
+      - 🇳🇱 荷兰01|流媒体|Udp-569
+      - 15|US_speednode_0053
+      - 🇨🇿 捷克01|流媒体|Udp-569
+      - 🇷🇸 塞尔维亚03|流媒体|专线1-569
+      - 15|IN_speednode_0028
+      - 🇺🇦 乌克兰-1
+      - 🇳🇱 荷兰02|流媒体|Udp-569
+      - 🇱🇺 卢森堡05|流媒体|专线3-569
+      - 🇮🇩 印度尼西亚01|流媒体|Udp-569
+      - 🇦🇺 澳洲01|流媒体|Udp-569
+      - 🇨🇿 捷克04|流媒体|专线2-569
       - 🇩🇰 丹麦01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569
-      - 🇺🇸 USA 069
-      - 🇺🇸 2|🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇰🇷 13|🇰🇷 韩国2|@ripaojiedian
+      - 🇨🇳 台湾省苗栗县 中华电信
+      - 🇧🇬 保加利亚05|流媒体|专线3-569
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 15|CN_speednode_0015
+      - 0|--8
+      - 🇩🇪 德国03|流媒体|专线1-569
       - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 0|--21
-      - 🇧🇷 巴西05|流媒体|专线3-569
-      - 🇱🇺 卢森堡03|流媒体|专线1-569
-      - 🇨🇳 台湾01|流媒体|Udp-569
-      - 🇫🇷 法国05|流媒体|专线3-569
-      - 🇧🇷 巴西01|流媒体|Udp-569
-      - 🇷🇴 罗马尼亚01|流媒体|Udp-569 2
-      - 🇦🇪 迪拜03|流媒体|专线1-569
-      - 🇰🇷 韩国04|流媒体|专线2-569
-      - 🇨🇭 瑞士03|流媒体|专线1-569
-      - 🇸🇬 新加坡02|流媒体|Udp-569
+      - 🇮🇩 印度尼西亚05|流媒体|专线3-569
+      - 🇰🇷 韩国02|流媒体|Udp-569
+      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
+      - 🇨🇳 台湾04|流媒体|专线2-569
+      - 🇸🇬 SG海外直连 1x
+      - 🇨🇦 公益 加拿大 04
+      - 🇧🇬 保加利亚04|流媒体|专线2-569
+      - 🇬🇧 英国02|流媒体|Udp-569
+      - 🇯🇵 14|日本2|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 狮城特殊|@ripaojiedian
+      - 软件需开启跳过证书验证！！！
+      - 🇺🇸 _US_美国_10
       - 🇷🇴 罗马尼亚03|流媒体|专线1-569
+      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 5
+      - 🇸🇬 15|🇸🇬 狮城特殊|@ripaojiedian
+      - 🇸🇬 新加坡04|流媒体|专线2-569
+      - 🇺🇸 _US_美国_3
+      - 0|--25
+      - 0|--3
+      - 🇮🇳 印度03|流媒体|专线1-569
+      - 🇫🇷 法国05|流媒体|专线3-569
+      - 🇰🇷 15|🇰🇷 韩国|@ripaojiedian
+      - 🇨🇭 瑞士01|流媒体|Udp-569
+      - 🇺🇸 _US_美国_11
       - 🇪🇸 西班牙03|流媒体|专线1-569
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇮🇳 印度01|流媒体|Udp-569
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 0|--14
+      - 🇸🇬 新加坡05|流媒体|专线3-569
+      - 🇹🇭 泰国04|流媒体|专线2-569
+      - 🇺🇸 美国 04
+      - 🇺🇸 f美国4号-3
+      - 🇭🇰 HK海外直连 1x
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #7"
+      - 🇮🇳 印度02|流媒体|Udp-569
+      - 🇳🇴 挪威03|流媒体|专线1-569
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #1"
+      - 🇧🇬 保加利亚03|流媒体|专线1-569
+      - 🇱🇺 卢森堡01|流媒体|Udp-569
+      - 🇨🇦 加拿大02|流媒体|Udp-569
+      - 13,14,15|CN_speednode_0016
+      - 🇩🇪 德国01|流媒体|Udp-569
+      - 🇺🇸 美国|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
