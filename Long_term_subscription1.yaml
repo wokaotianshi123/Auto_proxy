@@ -5,10 +5,98 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "[trojan]试用未开放外国节点+中转+专线", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 01247218-f990-406c-9bb6-d00f2cdf9dfa, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "🇸🇬 [trojan]更新版本2.5", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 01247218-f990-406c-9bb6-d00f2cdf9dfa, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "[trojan]直连不能用是地区问题", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 01247218-f990-406c-9bb6-d00f2cdf9dfa, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "🇭🇰 [ss]公益路线-香港HK 限速50Mbps", server: jehw72eh.97kb.com, port: 49709, type: ss, cipher: aes-256-gcm, password: 01247218-f990-406c-9bb6-d00f2cdf9dfa}
+  - {name: 过滤掉12条线路, server: 195.58.49.42, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-015, server: 195.58.49.42, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-014, server: 195.58.49.50, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-013, server: 194.87.69.52, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-012, server: 195.58.49.86, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-011, server: 194.87.68.115, port: 28153, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-010, server: 176.32.33.100, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-009, server: 46.29.161.224, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-008, server: 176.32.33.73, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-007, server: 176.32.32.68, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-006, server: 46.29.161.15, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-005, server: 176.32.33.124, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-004, server: 46.29.161.228, port: 6814, type: vmess, uuid: 01944a82-d438-4976-b08d-4a02f86baf33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "[ss]去除7条不合适线路", server: gsgs.hy2.one, port: 60193, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇩🇪 [ss]德国SS-12", server: gsgs.hy2.one, port: 60193, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇬🇧 [ss]英国SS-13", server: gsgs.hy2.one, port: 60194, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日本SS中转25x", server: g2.hy2.one, port: 13106, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇨🇳 [ss]台湾SS中转25x", server: g2.hy2.one, port: 13108, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日-本SS中转25x", server: g2.hy2.one, port: 13107, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日本2SS中转15x", server: g.hy2.one, port: 20546, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日本3SS中转25x", server: g3.hy2.one, port: 22063, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇭🇰 [ss]香港1高速中转2x", server: gsgs.hy2.one, port: 53349, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇭🇰 [ss]香港2高速中转2x", server: gsgs.hy2.one, port: 53348, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇭🇰 [ss]香港4高速中转5x", server: gsgs.hy2.one, port: 53346, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇭🇰 [ss]香港5高速中转5x", server: gsgs.hy2.one, port: 53345, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇭🇰 [ss]香港6高速中转", server: gsgs.hy2.one, port: 53344, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇸🇬 [ss]新加坡1高速中转3x", server: gsgs.hy2.one, port: 53342, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇸🇬 [ss]新加坡2高速中转3x", server: gsgs.hy2.one, port: 53341, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇸🇬 [ss]新加坡3高速中转3x", server: gsgs.hy2.one, port: 53340, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日本1高速中转", server: gsgs.hy2.one, port: 53339, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇯🇵 [ss]日本2高速中转", server: gsgs.hy2.one, port: 53338, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇺🇸 [ss]美国2高速中转", server: gsgs.hy2.one, port: 53333, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇨🇳 [ss]台湾高速中转", server: gsgs.hy2.one, port: 53332, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇹🇭 [ss]泰国ISP高速中转3x", server: gsgs.hy2.one, port: 63329, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇹🇷 [ss]土耳其高速中转", server: gsgs.hy2.one, port: 63327, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇻🇳 [ss]越南高速中转", server: gsgs.hy2.one, port: 63326, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇺🇸 [ss]美国高速中转4", server: gsgs.hy2.one, port: 63324, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇰🇷 [ss]韩国高速中转3", server: gsgs.hy2.one, port: 63321, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:YjAzZGNlYjYtZTk5Yy00ZmUwLTkyZmUtMWZkNjg3MGQ=}
+  - {name: "🇨🇳 [vmess]台湾02-3x-流媒体", server: cf.hy2.one, port: 80, type: vmess, uuid: b03dceb6-e99c-4fe0-92fe-1fd6870d7341, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /af323d, headers: {Host: tw02.hy2.one}}}
+  - {name: "🇭🇰 [vmess]香港06-流媒体", server: cf.hy2.one, port: 80, type: vmess, uuid: b03dceb6-e99c-4fe0-92fe-1fd6870d7341, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk06.hy-2.top}}}
+  - {name: "🇸🇬 [vmess]新加坡02-V4-流媒体", server: cf.hy2.one, port: 2052, type: vmess, uuid: b03dceb6-e99c-4fe0-92fe-1fd6870d7341, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /0, headers: {Host: sg0002.hy-2.top}}}
+  - {name: "🇺🇸 [vmess]美国03", server: cf.hy2.one, port: 2052, type: vmess, uuid: b03dceb6-e99c-4fe0-92fe-1fd6870d7341, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us03.hy-2.top}}}
+  - {name: "🇺🇸 [vmess]美国04", server: cf.hy2.one, port: 2052, type: vmess, uuid: b03dceb6-e99c-4fe0-92fe-1fd6870d7341, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us04.hy-2.top}}}
+  - {name: 🇸🇬 SG新加坡中转25x-1, server: v2.sulink.one, port: 13102, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇸🇬 SG新加坡中转25x-2, server: v2.sulink.one, port: 13103, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇸🇬 SG新加坡中转25x-3, server: v2.sulink.one, port: 13107, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇸🇬 SG新加坡中转25x-4, server: v2.sulink.one, port: 13109, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇸🇬 SG新加坡中转25x-5, server: v2.sulink.one, port: 13110, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇭🇰 香港2中转25x-三网入口, server: s2.sulink.one, port: 13105, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇭🇰 香港3中转25x, server: s3.sulink.one, port: 22068, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇨🇳 台湾中转25x, server: s2.sulink.one, port: 13109, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇯🇵 日本中转25x-三网入口, server: s.sulink.one, port: 20544, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇯🇵 日本SS中转1, server: pro.sulink.one, port: 48889, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇯🇵 日本SS中转4, server: pro.sulink.one, port: 48886, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇨🇳 台湾1SS中转|3x, server: pro.sulink.one, port: 48885, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇨🇳 台湾2SS中转|3x, server: pro.sulink.one, port: 48884, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇺🇸 美国1SS中转, server: pro.sulink.one, port: 48881, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇺🇸 美国2SS中转, server: pro.sulink.one, port: 48880, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇺🇸 美国3SS中转, server: pro.sulink.one, port: 48879, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇭🇰 香港2SS中转, server: pro.sulink.one, port: 48876, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇭🇰 香港3SS中转, server: pro.sulink.one, port: 48875, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:YmVkZTI2YTEtNTQ1ZC00YmQ4LTliYmYtZDNhM2VhNGU=}
+  - {name: 🇭🇰 三网中转香港|5x, server: ahkt.sulink.one, port: 21064, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾2全天极速优先使用|X3, server: yx.sulink.one, port: 2052, type: vmess, uuid: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tw02.xn--io0a7iw0ab67b.xyz}}}
+  - {name: 🇺🇸 美国5, server: yx.sulink.one, port: 80, type: vmess, uuid: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us5.sulink.one}}}
+  - {name: 🇨🇳 台湾-02-奈非-3x, server: tw02v6.sulian.life, port: 30001, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国02, server: us02.sulink.one, port: 10522, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国05, server: us05.sulink.one, port: 42052, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: us05.sulink.one, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡03奈非-5x, server: sg03v6.sulink.one, port: 22052, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡07奈非-5x, server: sg07v6.sulink.one, port: 32052, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: www.bing.com, skip-cert-verify: true}
+  - {name: 🇪🇸 西班牙IPV6, server: sp01.sulink.one, port: 20649, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: sp01.sulink.one, skip-cert-verify: true}
+  - {name: 🇵🇱 波兰IPV6-01, server: bl01.sulink.one, port: 40148, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: bl01.sulink.one, skip-cert-verify: true}
+  - {name: 🇫🇷 法国IPV6-09, server: fr09.sulian.life, port: 40149, type: hysteria2, password: bede26a1-545d-4bd8-9bbf-d3a3ea4e5782, sni: fr09.sulian.life, skip-cert-verify: true}
+  - {name: xueyejiasu.xyz发布地址不迷路, server: hk.kfsldflk.xyz, port: 1200, type: ss, cipher: aes-256-gcm, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇨🇳 台湾 1, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇨🇳 台湾01, server: gy.666666222.shop, port: 47564, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇭🇰 香港01, server: gy.666666222.shop, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇭🇰 香港02, server: gy.666666222.shop, port: 20035, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇭🇰 香港03, server: gy.666666222.shop, port: 20052, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇯🇵 日本01, server: gy.666666222.shop, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇯🇵 日本02, server: gy.666666222.shop, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇯🇵 日本03, server: gy.666666222.shop, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇯🇵 日本04, server: gy.666666222.shop, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇺🇸 美国 纽约01, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: 🇺🇸 美国 纽约2, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: fc7eb00a-5981-4e56-b78f-4b0f43d349d7}
+  - {name: "[trojan]试用未开放外国节点+中转+专线", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 8c0bb2fa-ed5e-4e75-8852-4431fd1422e1, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "🇸🇬 [trojan]更新版本2.5", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 8c0bb2fa-ed5e-4e75-8852-4431fd1422e1, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "[trojan]直连不能用是地区问题", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 8c0bb2fa-ed5e-4e75-8852-4431fd1422e1, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "🇭🇰 [ss]公益路线-香港HK 限速50Mbps", server: jehw72eh.97kb.com, port: 49709, type: ss, cipher: aes-256-gcm, password: 8c0bb2fa-ed5e-4e75-8852-4431fd1422e1}
+  - {name: "[trojan]试用未开放外国节点+中转+专线 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: e4f3a58c-95da-427e-ba45-e1b64e43119c, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "🇸🇬 [trojan]更新版本2.5 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: e4f3a58c-95da-427e-ba45-e1b64e43119c, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "[trojan]直连不能用是地区问题 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: e4f3a58c-95da-427e-ba45-e1b64e43119c, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
+  - {name: "🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2", server: jehw72eh.97kb.com, port: 49709, type: ss, cipher: aes-256-gcm, password: e4f3a58c-95da-427e-ba45-e1b64e43119c}
   - {name: 🇮🇪 _IE_爱尔兰, server: 13.79.98.64, port: 55939, type: ss, cipher: chacha20-ietf-poly1305, password: 49JPbl6SMH1hDoskOR6irG}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 183.236.51.23, port: 40434, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
   - {name: 🇺🇸 _US_美国_2, server: 69.50.95.53, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
@@ -36,329 +124,140 @@ proxies:
   - {name: 🇯🇵 _US_美国->🇯🇵_JP_日本, server: h.522226.xyz, port: 45800, type: trojan, password: xjN4xcuPGg55, sni: h.522226.xyz}
   - {name: 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰, server: 51.15.15.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: 🇷🇺 _RU_俄罗斯_8, server: 217.30.10.18, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
-  - {name: 🇸🇬 SG新加坡中转25x-1, server: v2.sulink.one, port: 13102, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇸🇬 SG新加坡中转25x-2, server: v2.sulink.one, port: 13103, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇸🇬 SG新加坡中转25x-3, server: v2.sulink.one, port: 13107, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇸🇬 SG新加坡中转25x-4, server: v2.sulink.one, port: 13109, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇸🇬 SG新加坡中转25x-5, server: v2.sulink.one, port: 13110, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇭🇰 香港2中转25x-三网入口, server: s2.sulink.one, port: 13105, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇭🇰 香港3中转25x, server: s3.sulink.one, port: 22068, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇨🇳 台湾中转25x, server: s2.sulink.one, port: 13109, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇯🇵 日本中转25x-三网入口, server: s.sulink.one, port: 20544, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇯🇵 日本SS中转1, server: pro.sulink.one, port: 48889, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇯🇵 日本SS中转4, server: pro.sulink.one, port: 48886, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇨🇳 台湾1SS中转|3x, server: pro.sulink.one, port: 48885, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇨🇳 台湾2SS中转|3x, server: pro.sulink.one, port: 48884, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇺🇸 美国1SS中转, server: pro.sulink.one, port: 48881, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇺🇸 美国2SS中转, server: pro.sulink.one, port: 48880, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇺🇸 美国3SS中转, server: pro.sulink.one, port: 48879, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇭🇰 香港2SS中转, server: pro.sulink.one, port: 48876, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇭🇰 香港3SS中转, server: pro.sulink.one, port: 48875, type: ss, cipher: 2022-blake3-aes-256-gcm, password: ZGFkYzNhN2Q2OWNhMDc4Yjc0MTVmOTFiODVlMDc4ODM=:ZGQ3NWY4YjYtODUyOS00MjI1LTk0NmQtN2JkZDVmMDY=}
-  - {name: 🇭🇰 三网中转香港|5x, server: ahkt.sulink.one, port: 21064, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾2全天极速优先使用|X3, server: yx.sulink.one, port: 2052, type: vmess, uuid: dd75f8b6-8529-4225-946d-7bdd5f06adee, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tw02.xn--io0a7iw0ab67b.xyz}}}
-  - {name: 🇺🇸 美国5, server: yx.sulink.one, port: 80, type: vmess, uuid: dd75f8b6-8529-4225-946d-7bdd5f06adee, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us5.sulink.one}}}
-  - {name: 🇨🇳 台湾-02-奈非-3x, server: tw02v6.sulian.life, port: 30001, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国02, server: us02.sulink.one, port: 10522, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国05, server: us05.sulink.one, port: 42052, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: us05.sulink.one, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡03奈非-5x, server: sg03v6.sulink.one, port: 22052, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡07奈非-5x, server: sg07v6.sulink.one, port: 32052, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇪🇸 西班牙IPV6, server: sp01.sulink.one, port: 20649, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: sp01.sulink.one, skip-cert-verify: true}
-  - {name: 🇵🇱 波兰IPV6-01, server: bl01.sulink.one, port: 40148, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: bl01.sulink.one, skip-cert-verify: true}
-  - {name: 🇫🇷 法国IPV6-09, server: fr09.sulian.life, port: 40149, type: hysteria2, password: dd75f8b6-8529-4225-946d-7bdd5f06adee, sni: fr09.sulian.life, skip-cert-verify: true}
-  - {name: "[ss]去除7条不合适线路", server: gsgs.hy2.one, port: 60193, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇩🇪 [ss]德国SS-12", server: gsgs.hy2.one, port: 60193, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇬🇧 [ss]英国SS-13", server: gsgs.hy2.one, port: 60194, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日本SS中转25x", server: g2.hy2.one, port: 13106, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇨🇳 [ss]台湾SS中转25x", server: g2.hy2.one, port: 13108, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日-本SS中转25x", server: g2.hy2.one, port: 13107, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日本2SS中转15x", server: g.hy2.one, port: 20546, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日本3SS中转25x", server: g3.hy2.one, port: 22063, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇭🇰 [ss]香港1高速中转2x", server: gsgs.hy2.one, port: 53349, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇭🇰 [ss]香港2高速中转2x", server: gsgs.hy2.one, port: 53348, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇭🇰 [ss]香港4高速中转5x", server: gsgs.hy2.one, port: 53346, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇭🇰 [ss]香港5高速中转5x", server: gsgs.hy2.one, port: 53345, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇭🇰 [ss]香港6高速中转", server: gsgs.hy2.one, port: 53344, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇸🇬 [ss]新加坡1高速中转3x", server: gsgs.hy2.one, port: 53342, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇸🇬 [ss]新加坡2高速中转3x", server: gsgs.hy2.one, port: 53341, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇸🇬 [ss]新加坡3高速中转3x", server: gsgs.hy2.one, port: 53340, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日本1高速中转", server: gsgs.hy2.one, port: 53339, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇯🇵 [ss]日本2高速中转", server: gsgs.hy2.one, port: 53338, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇺🇸 [ss]美国2高速中转", server: gsgs.hy2.one, port: 53333, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇨🇳 [ss]台湾高速中转", server: gsgs.hy2.one, port: 53332, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇹🇭 [ss]泰国ISP高速中转3x", server: gsgs.hy2.one, port: 63329, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇹🇷 [ss]土耳其高速中转", server: gsgs.hy2.one, port: 63327, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇻🇳 [ss]越南高速中转", server: gsgs.hy2.one, port: 63326, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇺🇸 [ss]美国高速中转4", server: gsgs.hy2.one, port: 63324, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇰🇷 [ss]韩国高速中转3", server: gsgs.hy2.one, port: 63321, type: ss, cipher: 2022-blake3-aes-256-gcm, password: OGYyMGNmOTA4MjJlMTE3NmFlNTMzZDdmZDVlZWQwYzE=:NWNiNWRmOWQtOWEwZC00MmQxLWJlYzYtOTQ4OTMzYjA=}
-  - {name: "🇨🇳 [vmess]台湾02-3x-流媒体", server: cf.hy2.one, port: 80, type: vmess, uuid: 5cb5df9d-9a0d-42d1-bec6-948933b0c917, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /af323d, headers: {Host: tw02.hy2.one}}}
-  - {name: "🇭🇰 [vmess]香港06-流媒体", server: cf.hy2.one, port: 80, type: vmess, uuid: 5cb5df9d-9a0d-42d1-bec6-948933b0c917, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk06.hy-2.top}}}
-  - {name: "🇸🇬 [vmess]新加坡02-V4-流媒体", server: cf.hy2.one, port: 2052, type: vmess, uuid: 5cb5df9d-9a0d-42d1-bec6-948933b0c917, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /0, headers: {Host: sg0002.hy-2.top}}}
-  - {name: "🇺🇸 [vmess]美国03", server: cf.hy2.one, port: 2052, type: vmess, uuid: 5cb5df9d-9a0d-42d1-bec6-948933b0c917, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us03.hy-2.top}}}
-  - {name: "🇺🇸 [vmess]美国04", server: cf.hy2.one, port: 2052, type: vmess, uuid: 5cb5df9d-9a0d-42d1-bec6-948933b0c917, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us04.hy-2.top}}}
-  - {name: 距离下次重置剩余：7 天, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 7a9d35a8-970e-43a8-99ef-3e7861cff78d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国-三网优化2, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: 7a9d35a8-970e-43a8-99ef-3e7861cff78d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false}
-  - {name: "目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6", server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x）, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x）, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.1（GPT奈飞等）, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.2（GPT奈飞等）, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.1（GPT）, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.2（GPT）, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇲🇴 澳门NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港（直连）, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: fb0ef13c-444f-4ea8-b88b-22d97808e0e0, alterId: 0, cipher: auto, tls: false}
-  - {name: xueyejiasu.xyz发布地址不迷路, server: hk.kfsldflk.xyz, port: 1200, type: ss, cipher: aes-256-gcm, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇨🇳 台湾 1, server: gy.666666222.shop, port: 20032, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇨🇳 台湾01, server: gy.666666222.shop, port: 47564, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇭🇰 香港01, server: gy.666666222.shop, port: 34338, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇭🇰 香港02, server: gy.666666222.shop, port: 20035, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇭🇰 香港03, server: gy.666666222.shop, port: 20052, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇯🇵 日本01, server: gy.666666222.shop, port: 20002, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇯🇵 日本02, server: gy.666666222.shop, port: 20004, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇯🇵 日本03, server: gy.666666222.shop, port: 20006, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇯🇵 日本04, server: gy.666666222.shop, port: 20008, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇺🇸 美国 纽约01, server: gy.666666222.shop, port: 20013, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 🇺🇸 美国 纽约2, server: gy.666666222.shop, port: 20016, type: ss, cipher: chacha20-ietf-poly1305, password: db3254a6-7eae-4ad2-9256-baab6e5019f0}
-  - {name: 过滤掉32条线路, server: 194.87.69.50, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-016, server: 194.87.69.50, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-015, server: 195.58.49.42, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-014, server: 195.58.49.50, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-013, server: 194.87.69.52, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-012, server: 195.58.49.86, port: 6814, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-011, server: 194.87.68.115, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-010, server: 176.32.33.100, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-009, server: 46.29.161.224, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-008, server: 176.32.33.73, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-007, server: 176.32.32.68, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-006, server: 46.29.161.15, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-005, server: 176.32.33.124, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-004, server: 46.29.161.228, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-003, server: 46.29.161.109, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-002, server: 46.29.161.159, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-001, server: 176.32.33.158, port: 53009, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-001, server: 194.87.68.196, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-002, server: 195.58.49.12, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-003, server: 195.58.48.220, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-004, server: 194.87.69.42, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-005, server: 195.58.49.173, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-006, server: 195.58.49.152, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-007, server: 176.32.39.181, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-008, server: 194.87.69.244, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-009, server: 194.87.69.56, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-010, server: 194.87.68.228, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-VM-001, server: 176.32.35.194, port: 31416, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-003, server: 176.32.35.198, port: 5743, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-芝加哥-001, server: 166.88.159.111, port: 29025, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇭 瑞士-日内瓦-001, server: 194.87.18.248, port: 45016, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇦 加拿大-多伦多-001, server: 141.195.112.167, port: 45016, type: vmess, uuid: a9c0fb54-be87-4caa-b5bb-0fc390169a0b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 过滤掉32条线路 2, server: 194.87.69.50, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-016 2, server: 194.87.69.50, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-015 2, server: 195.58.49.42, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-014 2, server: 195.58.49.50, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-013 2, server: 194.87.69.52, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-012 2, server: 195.58.49.86, port: 6814, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-011 2, server: 194.87.68.115, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-010 2, server: 176.32.33.100, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-009 2, server: 46.29.161.224, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-008 2, server: 176.32.33.73, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-007 2, server: 176.32.32.68, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-006 2, server: 46.29.161.15, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-005 2, server: 176.32.33.124, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-004 2, server: 46.29.161.228, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-003 2, server: 46.29.161.109, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-002 2, server: 46.29.161.159, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-001 2, server: 176.32.33.158, port: 53009, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-001 2, server: 194.87.68.196, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-002 2, server: 195.58.49.12, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-003 2, server: 195.58.48.220, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-004 2, server: 194.87.69.42, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-005 2, server: 195.58.49.173, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-006 2, server: 195.58.49.152, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-007 2, server: 176.32.39.181, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-008 2, server: 194.87.69.244, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-009 2, server: 194.87.69.56, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-010 2, server: 194.87.68.228, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-VM-001 2, server: 176.32.35.194, port: 31416, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-003 2, server: 176.32.35.198, port: 5743, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-芝加哥-001 2, server: 166.88.159.111, port: 29025, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇭 瑞士-日内瓦-001 2, server: 194.87.18.248, port: 45016, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇦 加拿大-多伦多-001 2, server: 141.195.112.167, port: 45016, type: vmess, uuid: 2f4023bb-a03a-4c9c-ab0c-c58f688e67bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "[trojan]试用未开放外国节点+中转+专线 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 42ab7a48-1aa2-48fe-ab05-4a03ef6e3f83, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "🇸🇬 [trojan]更新版本2.5 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 42ab7a48-1aa2-48fe-ab05-4a03ef6e3f83, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "[trojan]直连不能用是地区问题 2", server: forward-03.sudatech.store, port: 43500, type: trojan, password: 42ab7a48-1aa2-48fe-ab05-4a03ef6e3f83, sni: vpn-4-6.sudatech.store, skip-cert-verify: true}
-  - {name: "🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2", server: jehw72eh.97kb.com, port: 49709, type: ss, cipher: aes-256-gcm, password: 42ab7a48-1aa2-48fe-ab05-4a03ef6e3f83}
-  - {name: 网址发布页：fb.needss1.top, server: i.needss.top, port: 20013, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇭🇰 [3x] 香港 IEPL专线NO1", server: i.needss.top, port: 20013, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇭🇰 [3x] 香港 IEPL专线NO2", server: i.needss.top, port: 20013, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇨🇳 [3x] 台湾 IEPL专线NO1", server: i.needss.top, port: 52103, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇨🇳 [3x] 台湾 IEPL专线NO2", server: i.needss.top, port: 52103, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇯🇵 [3x] 日本 IEPL专线NO1", server: i.needss.top, port: 20017, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇯🇵 [3x] 日本 IEPL专线NO2", server: i.needss.top, port: 20017, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇯🇵 [3x] 日本 IEPL专线NO3", server: i.needss.top, port: 52117, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇯🇵 [3x] 日本 IEPL专线NO4", server: i.needss.top, port: 52117, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO1", server: i.needss.top, port: 20015, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO2", server: i.needss.top, port: 20015, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO3", server: i.needss.top, port: 44412, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO4", server: i.needss.top, port: 44412, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇦🇷 [3x] 阿根廷 IEPL专线NO1", server: i.needss.top, port: 20014, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇦🇷 [3x] 阿根廷 IEPL专线NO2", server: i.needss.top, port: 20014, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x] 韩国 IEPL专线NO1", server: i.needss.top, port: 20021, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x] 韩国 IEPL专线NO2", server: i.needss.top, port: 20021, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇮🇩 [3x] 印尼 IEPL专线NO1", server: i.needss.top, port: 25129, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇮🇩 [3x] 印尼 IEPL专线NO2", server: i.needss.top, port: 25129, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 [3x] 美国 IEPL专线NO1", server: i.needss.top, port: 54770, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 [3x] 美国 IEPL专线NO2", server: i.needss.top, port: 54770, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "[3x]  非洲 IEPL专线 NO1", server: i.needss.top, port: 44410, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "[3x]  非洲 IEPL专线 NO2", server: i.needss.top, port: 44410, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇷🇺 [3x] 俄罗斯 IEPL专线NO1", server: i.needss.top, port: 21111, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇷🇺 [3x] 俄罗斯 IEPL专线NO2", server: i.needss.top, port: 21111, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇮🇹 [3x] 意大利 IEPL专线NO1", server: i.needss.top, port: 33322, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇮🇹 [3x] 意大利 IEPL专线NO2", server: i.needss.top, port: 33322, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇩🇪 [3x] 德国 IEPL专线NO1", server: i.needss.top, port: 54787, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇩🇪 [3x] 德国 IEPL专线NO2", server: i.needss.top, port: 54787, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇵🇹 [3x] 葡萄牙 IEPL专线NO1", server: i.needss.top, port: 31001, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇵🇹 [3x] 葡萄牙 IEPL专线NO2", server: i.needss.top, port: 31001, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇨🇦 [2x] 加拿大 IEPL专线NO1", server: qd.needss.top, port: 20013, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇨🇦 [2x] 加拿大 IEPL专线NO2", server: qd.needss.top, port: 20013, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇬🇧 [2x] 英国 IEPL专线NO1", server: qd.needss.top, port: 54774, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇬🇧 [2x] 英国 IEPL专线NO2", server: qd.needss.top, port: 54774, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇫🇷 [1x] 法国 CM 隧道NO1", server: qd.needss.top, port: 52108, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇫🇷 [1x] 法国 CM 隧道NO2", server: qd.needss.top, port: 52108, type: vmess, uuid: faa0c423-45ff-4084-a039-db5d7357a219, alterId: 0, cipher: auto, tls: false}
-  - {name: 过滤掉32条线路 3, server: 194.87.69.50, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-016 3, server: 194.87.69.50, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-015 3, server: 195.58.49.42, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-014 3, server: 195.58.49.50, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-013 3, server: 194.87.69.52, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-012 3, server: 195.58.49.86, port: 6814, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-011 3, server: 194.87.68.115, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-010 3, server: 176.32.33.100, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-009 3, server: 46.29.161.224, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-008 3, server: 176.32.33.73, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-007 3, server: 176.32.32.68, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-006 3, server: 46.29.161.15, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-005 3, server: 176.32.33.124, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-004 3, server: 46.29.161.228, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-003 3, server: 46.29.161.109, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-002 3, server: 46.29.161.159, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-喀山-001 3, server: 176.32.33.158, port: 53009, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-001 3, server: 194.87.68.196, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-002 3, server: 195.58.49.12, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-003 3, server: 195.58.48.220, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-004 3, server: 194.87.69.42, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-005 3, server: 195.58.49.173, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-006 3, server: 195.58.49.152, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-007 3, server: 176.32.39.181, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-008 3, server: 194.87.69.244, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-009 3, server: 194.87.69.56, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-010 3, server: 194.87.68.228, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-VM-001 3, server: 176.32.35.194, port: 31416, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯-莫斯科-003 3, server: 176.32.35.198, port: 5743, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-芝加哥-001 3, server: 166.88.159.111, port: 29025, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇭 瑞士-日内瓦-001 3, server: 194.87.18.248, port: 45016, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇦 加拿大-多伦多-001 3, server: 141.195.112.167, port: 45016, type: vmess, uuid: 3112bdc7-ff38-48e2-8b1d-cadeeed18927, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国_1, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf}
-  - {name: 🇷🇺 _RU_俄罗斯_1 2, server: 217.30.10.18, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
-  - {name: 🇷🇺 _RU_俄罗斯_2 2, server: 217.30.10.18, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
-  - {name: 🇷🇺 _RU_俄罗斯_3 2, server: 185.22.155.228, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇷🇺 _RU_俄罗斯_4 2, server: 217.30.10.18, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
-  - {name: 🇷🇺 _RU_俄罗斯_5 2, server: 217.30.10.18, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq}
-  - {name: 🇷🇺 _RU_俄罗斯_6 2, server: 217.30.10.18, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
-  - {name: 🇺🇸 _US_美国_4 2, server: 34.222.132.123, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇬🇧 _GB_英国_1, server: 51.13.115.105, port: 48963, type: ss, cipher: chacha20-ietf-poly1305, password: ZTqcA3pg0tY0qKKP240BQT}
-  - {name: 🇷🇺 _RU_俄罗斯_7 2, server: 217.30.10.18, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c}
-  - {name: 🇷🇺 _RU_俄罗斯_8 2, server: 217.30.10.18, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
-  - {name: 🇬🇧 _GB_英国_2, server: series-a2.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg}
-  - {name: 🇷🇺 _RU_俄罗斯_9, server: 217.30.10.18, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ}
+  - {name: 距离下次重置剩余：1 天, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: "目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6", server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x）, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x）, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等）, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等）, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT）, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT）, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇲🇴 澳门NO.2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港（直连）, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: 3edc4d30-6ab1-44ad-8337-1096c807079f, alterId: 0, cipher: auto, tls: false}
+  - {name: 距离下次重置剩余：8 天, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: ccaf62bc-e52f-4f1b-8155-bfbc2cb8187d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国-三网优化2, server: kr-qingyun.dwyun.me, port: 44732, type: trojan, password: ccaf62bc-e52f-4f1b-8155-bfbc2cb8187d, sni: kr-qingyun.dwyun.me, skip-cert-verify: false}
+  - {name: 🇮🇪 _IE_爱尔兰 2, server: 13.79.98.64, port: 55939, type: ss, cipher: chacha20-ietf-poly1305, password: 49JPbl6SMH1hDoskOR6irG}
   - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 183.236.51.23, port: 40434, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国_5 2, server: 52.89.164.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _CN_中国, server: 107.155.57.11, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6}
-  - {name: 🇩🇪 _DE_德国->🇬🇧_GB_英国, server: 18.196.173.35, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇷🇺 _RU_俄罗斯_10, server: 217.30.10.18, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt}
-  - {name: 🇷🇺 _RU_俄罗斯_11, server: 217.30.10.18, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX}
-  - {name: 🇬🇧 _GB_英国->🇳🇱_NL_荷兰, server: 51.15.15.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇷🇺 _RU_俄罗斯_12, server: 217.30.10.18, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
-  - {name: _BH_巴林, server: 157.175.15.50, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ}
-  - {name: 🇬🇧 _GB_英国_3, server: 51.44.149.176, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.ukhttp/1.1}
-  - {name: 🇱🇻 _LV_拉脱维亚, server: 46.183.217.232, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇷🇺 _RU_俄罗斯_13, server: 217.30.10.18, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH}
-  - {name: 🇷🇺 _RU_俄罗斯_14, server: 217.30.10.18, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: 🇺🇸 _US_美国_2 2, server: 69.50.95.53, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 _US_美国_3 2, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8}
+  - {name: 🇺🇸 _US_美国_4 2, server: 13.48.36.27, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
+  - {name: 🇺🇸 _US_美国_5 2, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 _US_美国_6 2, server: 69.50.95.53, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇷🇺 _RU_俄罗斯_1 2, server: 217.30.10.18, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+  - {name: 🇺🇸 _US_美国_7 2, server: 69.50.95.53, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇷🇺 _RU_俄罗斯_2 2, server: 217.30.10.18, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu}
+  - {name: 🇺🇸 _GB_英国->🇺🇸_US_美国 2, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: 🇬🇧 _GB_英国 2, server: 51.13.115.105, port: 48963, type: ss, cipher: chacha20-ietf-poly1305, password: ZTqcA3pg0tY0qKKP240BQT}
+  - {name: 🇺🇸 _US_美国_8 2, server: 69.50.95.53, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇷🇺 _RU_俄罗斯_3 2, server: 217.30.10.18, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ}
+  - {name: 🇺🇸 _US_美国_9 2, server: 69.50.95.53, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: 🇷🇺 _RU_俄罗斯_4 2, server: 217.30.10.18, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
+  - {name: 🇺🇸 _US_美国_10 2, server: 69.50.95.53, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇺🇸 _US_美国_11 2, server: 69.50.95.53, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇷🇺 _RU_俄罗斯_5 2, server: 217.30.10.18, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
+  - {name: 🇺🇸 _US_美国_12 2, server: 69.50.95.53, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇷🇺 _RU_俄罗斯_6 2, server: 217.30.10.18, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa}
+  - {name: 🇷🇺 _RU_俄罗斯_7 2, server: 217.30.10.18, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: 🇺🇸 _US_美国_13 2, server: 34.222.136.128, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国_14 2, server: 69.50.95.53, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 _US_美国->🇯🇵_JP_日本 2, server: h.522226.xyz, port: 45800, type: trojan, password: xjN4xcuPGg55, sni: h.522226.xyz}
+  - {name: 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2, server: 51.15.15.82, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇷🇺 _RU_俄罗斯_8 2, server: 217.30.10.18, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga}
+  - {name: 过滤掉12条线路 2, server: 195.58.49.42, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-015 2, server: 195.58.49.42, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-014 2, server: 195.58.49.50, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-013 2, server: 194.87.69.52, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-012 2, server: 195.58.49.86, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-011 2, server: 194.87.68.115, port: 28153, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-010 2, server: 176.32.33.100, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-009 2, server: 46.29.161.224, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-008 2, server: 176.32.33.73, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-007 2, server: 176.32.32.68, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-006 2, server: 46.29.161.15, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-005 2, server: 176.32.33.124, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-004 2, server: 46.29.161.228, port: 6814, type: vmess, uuid: e57ee5be-2b21-4630-affd-7ae97cb04939, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 距离下次重置剩余：1 天 2, server: i.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: 网址发布页：fb.needss1.top, server: i.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇭🇰 [3x] 香港 IEPL专线NO1", server: i.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇭🇰 [3x] 香港 IEPL专线NO2", server: i.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇳 [3x] 台湾 IEPL专线NO1", server: i.needss.top, port: 52103, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇳 [3x] 台湾 IEPL专线NO2", server: i.needss.top, port: 52103, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [3x] 日本 IEPL专线NO1", server: i.needss.top, port: 20017, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [3x] 日本 IEPL专线NO2", server: i.needss.top, port: 20017, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [3x] 日本 IEPL专线NO3", server: i.needss.top, port: 52117, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇯🇵 [3x] 日本 IEPL专线NO4", server: i.needss.top, port: 52117, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO1", server: i.needss.top, port: 20015, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO2", server: i.needss.top, port: 20015, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO3", server: i.needss.top, port: 44412, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇸🇬 [3x] 新加坡 IEPL专线NO4", server: i.needss.top, port: 44412, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇦🇷 [3x] 阿根廷 IEPL专线NO1", server: i.needss.top, port: 20014, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇦🇷 [3x] 阿根廷 IEPL专线NO2", server: i.needss.top, port: 20014, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x] 韩国 IEPL专线NO1", server: i.needss.top, port: 20021, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x] 韩国 IEPL专线NO2", server: i.needss.top, port: 20021, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇮🇩 [3x] 印尼 IEPL专线NO1", server: i.needss.top, port: 25129, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇮🇩 [3x] 印尼 IEPL专线NO2", server: i.needss.top, port: 25129, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 [3x] 美国 IEPL专线NO1", server: i.needss.top, port: 54770, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 [3x] 美国 IEPL专线NO2", server: i.needss.top, port: 54770, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "[3x]  非洲 IEPL专线 NO1", server: i.needss.top, port: 44410, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "[3x]  非洲 IEPL专线 NO2", server: i.needss.top, port: 44410, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇷🇺 [3x] 俄罗斯 IEPL专线NO1", server: i.needss.top, port: 21111, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇷🇺 [3x] 俄罗斯 IEPL专线NO2", server: i.needss.top, port: 21111, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇮🇹 [3x] 意大利 IEPL专线NO1", server: i.needss.top, port: 33322, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇮🇹 [3x] 意大利 IEPL专线NO2", server: i.needss.top, port: 33322, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇩🇪 [3x] 德国 IEPL专线NO1", server: i.needss.top, port: 54787, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇩🇪 [3x] 德国 IEPL专线NO2", server: i.needss.top, port: 54787, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇵🇹 [3x] 葡萄牙 IEPL专线NO1", server: i.needss.top, port: 31001, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇵🇹 [3x] 葡萄牙 IEPL专线NO2", server: i.needss.top, port: 31001, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇦 [2x] 加拿大 IEPL专线NO1", server: qd.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇦 [2x] 加拿大 IEPL专线NO2", server: qd.needss.top, port: 20013, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇬🇧 [2x] 英国 IEPL专线NO1", server: qd.needss.top, port: 54774, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇬🇧 [2x] 英国 IEPL专线NO2", server: qd.needss.top, port: 54774, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇫🇷 [1x] 法国 CM 隧道NO1", server: qd.needss.top, port: 52108, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇫🇷 [1x] 法国 CM 隧道NO2", server: qd.needss.top, port: 52108, type: vmess, uuid: d91c465d-2486-4e35-bd84-798cd508f512, alterId: 0, cipher: auto, tls: false}
+  - {name: 过滤掉12条线路 3, server: 195.58.49.42, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-015 3, server: 195.58.49.42, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-014 3, server: 195.58.49.50, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-013 3, server: 194.87.69.52, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-012 3, server: 195.58.49.86, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-011 3, server: 194.87.68.115, port: 28153, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-010 3, server: 176.32.33.100, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-009 3, server: 46.29.161.224, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-008 3, server: 176.32.33.73, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-007 3, server: 176.32.32.68, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-006 3, server: 46.29.161.15, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-005 3, server: 176.32.33.124, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-喀山-004 3, server: 46.29.161.228, port: 6814, type: vmess, uuid: ba9f2c25-8d41-4c3d-9538-14f1645cb890, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -389,8 +288,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -412,52 +386,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -470,28 +428,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -529,8 +466,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -543,115 +479,24 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -682,8 +527,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -705,52 +625,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -763,28 +667,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -822,8 +705,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -836,116 +718,25 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -976,8 +767,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -999,52 +865,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -1057,28 +907,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -1116,8 +945,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -1130,55 +958,19 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - 🇨🇳 [ss]台湾SS中转25x
+      - 🇭🇰 [ss]香港1高速中转2x
+      - 🇭🇰 [ss]香港2高速中转2x
+      - 🇭🇰 [ss]香港4高速中转5x
+      - 🇭🇰 [ss]香港5高速中转5x
+      - 🇭🇰 [ss]香港6高速中转
+      - 🇨🇳 [ss]台湾高速中转
+      - 🇨🇳 [vmess]台湾02-3x-流媒体
+      - 🇭🇰 [vmess]香港06-流媒体
       - 🇭🇰 香港2中转25x-三网入口
       - 🇭🇰 香港3中转25x
       - 🇨🇳 台湾中转25x
@@ -1189,26 +981,18 @@ proxy-groups:
       - 🇭🇰 三网中转香港|5x
       - 🇨🇳 台湾2全天极速优先使用|X3
       - 🇨🇳 台湾-02-奈非-3x
-      - 🇨🇳 [ss]台湾SS中转25x
-      - 🇭🇰 [ss]香港1高速中转2x
-      - 🇭🇰 [ss]香港2高速中转2x
-      - 🇭🇰 [ss]香港4高速中转5x
-      - 🇭🇰 [ss]香港5高速中转5x
-      - 🇭🇰 [ss]香港6高速中转
-      - 🇨🇳 [ss]台湾高速中转
-      - 🇨🇳 [vmess]台湾02-3x-流媒体
-      - 🇭🇰 [vmess]香港06-流媒体
-      - 🇨🇳 台湾1(GPT等流媒体1.5x）
-      - 🇨🇳 台湾2(GPT等流媒体1.5x）
-      - 🇭🇰 香港NO.1（GPT奈飞等）
-      - 🇭🇰 香港NO.2（GPT奈飞等）
-      - 🇭🇰 香港（直连）
       - 🇨🇳 台湾 1
       - 🇨🇳 台湾01
       - 🇭🇰 香港01
       - 🇭🇰 香港02
       - 🇭🇰 香港03
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
       - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇨🇳 台湾1(GPT等流媒体1.5x）
+      - 🇨🇳 台湾2(GPT等流媒体1.5x）
+      - 🇭🇰 香港NO.1（GPT奈飞等）
+      - 🇭🇰 香港NO.2（GPT奈飞等）
+      - 🇭🇰 香港（直连）
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
       - 🇨🇳 [3x] 台湾 IEPL专线NO1
@@ -1219,66 +1003,19 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -1309,8 +1046,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1332,52 +1144,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -1390,28 +1186,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -1449,8 +1224,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -1463,115 +1237,24 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -1602,8 +1285,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1625,52 +1383,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -1683,28 +1425,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -1742,8 +1463,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -1756,116 +1476,25 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -1896,8 +1525,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1919,52 +1623,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -1977,28 +1665,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -2036,8 +1703,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -2050,50 +1716,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2109,66 +1731,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "[trojan]试用未开放外国节点+中转+专线"
-      - 🇸🇬 [trojan]更新版本2.5
-      - "[trojan]直连不能用是地区问题"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
-      - 🇮🇪 _IE_爱尔兰
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_2
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇷🇺 _RU_俄罗斯_1
-      - 🇺🇸 _US_美国_7
-      - 🇷🇺 _RU_俄罗斯_2
-      - 🇺🇸 _GB_英国->🇺🇸_US_美国
-      - 🇬🇧 _GB_英国
-      - 🇺🇸 _US_美国_8
-      - 🇷🇺 _RU_俄罗斯_3
-      - 🇺🇸 _US_美国_9
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇷🇺 _RU_俄罗斯_5
-      - 🇺🇸 _US_美国_12
-      - 🇷🇺 _RU_俄罗斯_6
-      - 🇷🇺 _RU_俄罗斯_7
-      - 🇺🇸 _US_美国_13
-      - 🇺🇸 _US_美国_14
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
-      - 🇷🇺 _RU_俄罗斯_8
-      - 🇸🇬 SG新加坡中转25x-1
-      - 🇸🇬 SG新加坡中转25x-2
-      - 🇸🇬 SG新加坡中转25x-3
-      - 🇸🇬 SG新加坡中转25x-4
-      - 🇸🇬 SG新加坡中转25x-5
-      - 🇭🇰 香港2中转25x-三网入口
-      - 🇭🇰 香港3中转25x
-      - 🇨🇳 台湾中转25x
-      - 🇯🇵 日本中转25x-三网入口
-      - 🇯🇵 日本SS中转1
-      - 🇯🇵 日本SS中转4
-      - 🇨🇳 台湾1SS中转|3x
-      - 🇨🇳 台湾2SS中转|3x
-      - 🇺🇸 美国1SS中转
-      - 🇺🇸 美国2SS中转
-      - 🇺🇸 美国3SS中转
-      - 🇭🇰 香港2SS中转
-      - 🇭🇰 香港3SS中转
-      - 🇭🇰 三网中转香港|5x
-      - 🇨🇳 台湾2全天极速优先使用|X3
-      - 🇺🇸 美国5
-      - 🇨🇳 台湾-02-奈非-3x
-      - 🇺🇸 美国02
-      - 🇺🇸 美国05
-      - 🇸🇬 新加坡03奈非-5x
-      - 🇸🇬 新加坡07奈非-5x
-      - 🇪🇸 西班牙IPV6
-      - 🇵🇱 波兰IPV6-01
-      - 🇫🇷 法国IPV6-09
+      - 过滤掉12条线路
+      - 🇷🇺 俄罗斯-圣彼得堡-015
+      - 🇷🇺 俄罗斯-圣彼得堡-014
+      - 🇷🇺 俄罗斯-圣彼得堡-013
+      - 🇷🇺 俄罗斯-圣彼得堡-012
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - 🇷🇺 俄罗斯-喀山-010
+      - 🇷🇺 俄罗斯-喀山-009
+      - 🇷🇺 俄罗斯-喀山-008
+      - 🇷🇺 俄罗斯-喀山-007
+      - 🇷🇺 俄罗斯-喀山-006
+      - 🇷🇺 俄罗斯-喀山-005
+      - 🇷🇺 俄罗斯-喀山-004
       - "[ss]去除7条不合适线路"
       - 🇩🇪 [ss]德国SS-12
       - 🇬🇧 [ss]英国SS-13
@@ -2199,8 +1774,83 @@ proxy-groups:
       - 🇸🇬 [vmess]新加坡02-V4-流媒体
       - 🇺🇸 [vmess]美国03
       - 🇺🇸 [vmess]美国04
-      - 距离下次重置剩余：7 天
-      - 🇰🇷 韩国-三网优化2
+      - 🇸🇬 SG新加坡中转25x-1
+      - 🇸🇬 SG新加坡中转25x-2
+      - 🇸🇬 SG新加坡中转25x-3
+      - 🇸🇬 SG新加坡中转25x-4
+      - 🇸🇬 SG新加坡中转25x-5
+      - 🇭🇰 香港2中转25x-三网入口
+      - 🇭🇰 香港3中转25x
+      - 🇨🇳 台湾中转25x
+      - 🇯🇵 日本中转25x-三网入口
+      - 🇯🇵 日本SS中转1
+      - 🇯🇵 日本SS中转4
+      - 🇨🇳 台湾1SS中转|3x
+      - 🇨🇳 台湾2SS中转|3x
+      - 🇺🇸 美国1SS中转
+      - 🇺🇸 美国2SS中转
+      - 🇺🇸 美国3SS中转
+      - 🇭🇰 香港2SS中转
+      - 🇭🇰 香港3SS中转
+      - 🇭🇰 三网中转香港|5x
+      - 🇨🇳 台湾2全天极速优先使用|X3
+      - 🇺🇸 美国5
+      - 🇨🇳 台湾-02-奈非-3x
+      - 🇺🇸 美国02
+      - 🇺🇸 美国05
+      - 🇸🇬 新加坡03奈非-5x
+      - 🇸🇬 新加坡07奈非-5x
+      - 🇪🇸 西班牙IPV6
+      - 🇵🇱 波兰IPV6-01
+      - 🇫🇷 法国IPV6-09
+      - xueyejiasu.xyz发布地址不迷路
+      - 🇨🇳 台湾 1
+      - 🇨🇳 台湾01
+      - 🇭🇰 香港01
+      - 🇭🇰 香港02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇯🇵 日本04
+      - 🇺🇸 美国 纽约01
+      - 🇺🇸 美国 纽约2
+      - "[trojan]试用未开放外国节点+中转+专线"
+      - 🇸🇬 [trojan]更新版本2.5
+      - "[trojan]直连不能用是地区问题"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps
+      - "[trojan]试用未开放外国节点+中转+专线 2"
+      - 🇸🇬 [trojan]更新版本2.5 2
+      - "[trojan]直连不能用是地区问题 2"
+      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 🇮🇪 _IE_爱尔兰
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇺🇸 _US_美国_2
+      - 🇺🇸 _US_美国_3
+      - 🇺🇸 _US_美国_4
+      - 🇺🇸 _US_美国_5
+      - 🇺🇸 _US_美国_6
+      - 🇷🇺 _RU_俄罗斯_1
+      - 🇺🇸 _US_美国_7
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国_8
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇺🇸 _US_美国_9
+      - 🇷🇺 _RU_俄罗斯_4
+      - 🇺🇸 _US_美国_10
+      - 🇺🇸 _US_美国_11
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇺🇸 _US_美国_12
+      - 🇷🇺 _RU_俄罗斯_6
+      - 🇷🇺 _RU_俄罗斯_7
+      - 🇺🇸 _US_美国_13
+      - 🇺🇸 _US_美国_14
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯_8
+      - 距离下次重置剩余：1 天
       - 目前国内网址：xc1.shishi1.buzz   被墙可按下面规律：网址前缀xc4,xc5,xc6
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -2222,52 +1872,36 @@ proxy-groups:
       - 🇫🇷 法国1
       - 🇫🇷 法国2
       - 🇭🇰 香港（直连）
-      - xueyejiasu.xyz发布地址不迷路
-      - 🇨🇳 台湾 1
-      - 🇨🇳 台湾01
-      - 🇭🇰 香港01
-      - 🇭🇰 香港02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本04
-      - 🇺🇸 美国 纽约01
-      - 🇺🇸 美国 纽约2
-      - 过滤掉32条线路
-      - 🇷🇺 俄罗斯-圣彼得堡-016
-      - 🇷🇺 俄罗斯-圣彼得堡-015
-      - 🇷🇺 俄罗斯-圣彼得堡-014
-      - 🇷🇺 俄罗斯-圣彼得堡-013
-      - 🇷🇺 俄罗斯-圣彼得堡-012
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇷🇺 俄罗斯-喀山-010
-      - 🇷🇺 俄罗斯-喀山-009
-      - 🇷🇺 俄罗斯-喀山-008
-      - 🇷🇺 俄罗斯-喀山-007
-      - 🇷🇺 俄罗斯-喀山-006
-      - 🇷🇺 俄罗斯-喀山-005
-      - 🇷🇺 俄罗斯-喀山-004
-      - 🇷🇺 俄罗斯-喀山-003
-      - 🇷🇺 俄罗斯-喀山-002
-      - 🇷🇺 俄罗斯-喀山-001
-      - 🇷🇺 俄罗斯-圣彼得堡-001
-      - 🇷🇺 俄罗斯-圣彼得堡-002
-      - 🇷🇺 俄罗斯-圣彼得堡-003
-      - 🇷🇺 俄罗斯-圣彼得堡-004
-      - 🇷🇺 俄罗斯-圣彼得堡-005
-      - 🇷🇺 俄罗斯-圣彼得堡-006
-      - 🇷🇺 俄罗斯-圣彼得堡-007
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇷🇺 俄罗斯-圣彼得堡-009
-      - 🇷🇺 俄罗斯-圣彼得堡-010
-      - 🇷🇺 俄罗斯-莫斯科-VM-001
-      - 🇷🇺 俄罗斯-莫斯科-003
-      - 🇺🇸 美国-芝加哥-001
-      - 🇨🇭 瑞士-日内瓦-001
-      - 🇨🇦 加拿大-多伦多-001
-      - 过滤掉32条线路 2
-      - 🇷🇺 俄罗斯-圣彼得堡-016 2
+      - 距离下次重置剩余：8 天
+      - 🇰🇷 韩国-三网优化2
+      - 🇮🇪 _IE_爱尔兰 2
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸 _US_美国_2 2
+      - 🇺🇸 _US_美国_3 2
+      - 🇺🇸 _US_美国_4 2
+      - 🇺🇸 _US_美国_5 2
+      - 🇺🇸 _US_美国_6 2
+      - 🇷🇺 _RU_俄罗斯_1 2
+      - 🇺🇸 _US_美国_7 2
+      - 🇷🇺 _RU_俄罗斯_2 2
+      - 🇺🇸 _GB_英国->🇺🇸_US_美国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇺🇸 _US_美国_8 2
+      - 🇷🇺 _RU_俄罗斯_3 2
+      - 🇺🇸 _US_美国_9 2
+      - 🇷🇺 _RU_俄罗斯_4 2
+      - 🇺🇸 _US_美国_10 2
+      - 🇺🇸 _US_美国_11 2
+      - 🇷🇺 _RU_俄罗斯_5 2
+      - 🇺🇸 _US_美国_12 2
+      - 🇷🇺 _RU_俄罗斯_6 2
+      - 🇷🇺 _RU_俄罗斯_7 2
+      - 🇺🇸 _US_美国_13 2
+      - 🇺🇸 _US_美国_14 2
+      - 🇯🇵 _US_美国->🇯🇵_JP_日本 2
+      - 🇬🇧 _GB_英国->🇺🇦_UA_乌克兰 2
+      - 🇷🇺 _RU_俄罗斯_8 2
+      - 过滤掉12条线路 2
       - 🇷🇺 俄罗斯-圣彼得堡-015 2
       - 🇷🇺 俄罗斯-圣彼得堡-014 2
       - 🇷🇺 俄罗斯-圣彼得堡-013 2
@@ -2280,28 +1914,7 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 2
       - 🇷🇺 俄罗斯-喀山-005 2
       - 🇷🇺 俄罗斯-喀山-004 2
-      - 🇷🇺 俄罗斯-喀山-003 2
-      - 🇷🇺 俄罗斯-喀山-002 2
-      - 🇷🇺 俄罗斯-喀山-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-001 2
-      - 🇷🇺 俄罗斯-圣彼得堡-002 2
-      - 🇷🇺 俄罗斯-圣彼得堡-003 2
-      - 🇷🇺 俄罗斯-圣彼得堡-004 2
-      - 🇷🇺 俄罗斯-圣彼得堡-005 2
-      - 🇷🇺 俄罗斯-圣彼得堡-006 2
-      - 🇷🇺 俄罗斯-圣彼得堡-007 2
-      - 🇷🇺 俄罗斯-圣彼得堡-008 2
-      - 🇷🇺 俄罗斯-圣彼得堡-009 2
-      - 🇷🇺 俄罗斯-圣彼得堡-010 2
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 2
-      - 🇷🇺 俄罗斯-莫斯科-003 2
-      - 🇺🇸 美国-芝加哥-001 2
-      - 🇨🇭 瑞士-日内瓦-001 2
-      - 🇨🇦 加拿大-多伦多-001 2
-      - "[trojan]试用未开放外国节点+中转+专线 2"
-      - 🇸🇬 [trojan]更新版本2.5 2
-      - "[trojan]直连不能用是地区问题 2"
-      - 🇭🇰 [ss]公益路线-香港HK 限速50Mbps 2
+      - 距离下次重置剩余：1 天 2
       - 网址发布页：fb.needss1.top
       - 🇭🇰 [3x] 香港 IEPL专线NO1
       - 🇭🇰 [3x] 香港 IEPL专线NO2
@@ -2339,8 +1952,7 @@ proxy-groups:
       - 🇬🇧 [2x] 英国 IEPL专线NO2
       - 🇫🇷 [1x] 法国 CM 隧道NO1
       - 🇫🇷 [1x] 法国 CM 隧道NO2
-      - 过滤掉32条线路 3
-      - 🇷🇺 俄罗斯-圣彼得堡-016 3
+      - 过滤掉12条线路 3
       - 🇷🇺 俄罗斯-圣彼得堡-015 3
       - 🇷🇺 俄罗斯-圣彼得堡-014 3
       - 🇷🇺 俄罗斯-圣彼得堡-013 3
@@ -2353,50 +1965,6 @@ proxy-groups:
       - 🇷🇺 俄罗斯-喀山-006 3
       - 🇷🇺 俄罗斯-喀山-005 3
       - 🇷🇺 俄罗斯-喀山-004 3
-      - 🇷🇺 俄罗斯-喀山-003 3
-      - 🇷🇺 俄罗斯-喀山-002 3
-      - 🇷🇺 俄罗斯-喀山-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-001 3
-      - 🇷🇺 俄罗斯-圣彼得堡-002 3
-      - 🇷🇺 俄罗斯-圣彼得堡-003 3
-      - 🇷🇺 俄罗斯-圣彼得堡-004 3
-      - 🇷🇺 俄罗斯-圣彼得堡-005 3
-      - 🇷🇺 俄罗斯-圣彼得堡-006 3
-      - 🇷🇺 俄罗斯-圣彼得堡-007 3
-      - 🇷🇺 俄罗斯-圣彼得堡-008 3
-      - 🇷🇺 俄罗斯-圣彼得堡-009 3
-      - 🇷🇺 俄罗斯-圣彼得堡-010 3
-      - 🇷🇺 俄罗斯-莫斯科-VM-001 3
-      - 🇷🇺 俄罗斯-莫斯科-003 3
-      - 🇺🇸 美国-芝加哥-001 3
-      - 🇨🇭 瑞士-日内瓦-001 3
-      - 🇨🇦 加拿大-多伦多-001 3
-      - 🇺🇸 _US_美国_1
-      - 🇷🇺 _RU_俄罗斯_1 2
-      - 🇷🇺 _RU_俄罗斯_2 2
-      - 🇷🇺 _RU_俄罗斯_3 2
-      - 🇷🇺 _RU_俄罗斯_4 2
-      - 🇷🇺 _RU_俄罗斯_5 2
-      - 🇷🇺 _RU_俄罗斯_6 2
-      - 🇺🇸 _US_美国_4 2
-      - 🇬🇧 _GB_英国_1
-      - 🇷🇺 _RU_俄罗斯_7 2
-      - 🇷🇺 _RU_俄罗斯_8 2
-      - 🇬🇧 _GB_英国_2
-      - 🇷🇺 _RU_俄罗斯_9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国_5 2
-      - _CN_中国
-      - 🇩🇪 _DE_德国->🇬🇧_GB_英国
-      - 🇷🇺 _RU_俄罗斯_10
-      - 🇷🇺 _RU_俄罗斯_11
-      - 🇬🇧 _GB_英国->🇳🇱_NL_荷兰
-      - 🇷🇺 _RU_俄罗斯_12
-      - _BH_巴林
-      - 🇬🇧 _GB_英国_3
-      - 🇱🇻 _LV_拉脱维亚
-      - 🇷🇺 _RU_俄罗斯_13
-      - 🇷🇺 _RU_俄罗斯_14
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
