@@ -5,347 +5,323 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 日本|东京IEPL-TS8, server: jsyd.tangu.win, port: 21278, type: ss, cipher: chacha20-ietf-poly1305, password: 1e36add4-7284-4c58-8e2a-c335cbe7b526}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-008, server: 194.87.69.244, port: 2019, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 ⚡️专线|美国04解锁|倍率1, server: zfd-usv2.01byx31qzn.download, port: 16106, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 中国 - 成都 - PEG TECH INC - 1, server: 199.188.105.57, port: 31004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1736415675034, headers: {Host: www.46554484.xyz}}}
-  - {name: 🇱🇹 ⚡️专线|立陶宛01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16320, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本|东京IEPL-TS5, server: jsyd.yeahfast.com, port: 52841, type: ss, cipher: chacha20-ietf-poly1305, password: 1e36add4-7284-4c58-8e2a-c335cbe7b526}
-  - {name: 🇸🇬 |新加坡-中转 01, server: CN-SHCM.catcat-123.com, port: 9205, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: SG-02.oneok.link, skip-cert-verify: false}
-  - {name: "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn2.sanfencdn9.com}}}
-  - {name: 🇩🇪 DE Hetzner Z广东CM, server: gdydbzgsv.ccooz.top, port: 20374, type: ss, cipher: aes-128-gcm, password: d5e9f8ef-a939-4d0d-8790-381f82b07208}
-  - {name: "🇨🇳 3,17|🇨🇳_CN_中国 #1", server: 183.240.235.162, port: 54882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 ⚡️标准|台湾01原生|倍率1, server: zfd-twv1.01byx31qzn.download, port: 16129, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3, server: 151.101.2.216, port: 80, type: vmess, uuid: 67650521-85de-4679-bf72-920a09781374, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=80/#id-telegram:--->@vpn_whal<---"}}
-  - {name: 🇰🇷 |韩国-中转 02, server: CN-AH.catcat-123.com, port: 9450, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: kr-01.oneok.link, skip-cert-verify: false}
-  - {name: 🇯🇵 日本|东京IEPL-TS12, server: jsyd.tangu.win, port: 24327, type: ss, cipher: chacha20-ietf-poly1305, password: 1e36add4-7284-4c58-8e2a-c335cbe7b526}
-  - {name: 🇦🇷 TJ|阿根廷C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ar.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇮🇹 意大利 V2CROSS.COM, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇭🇰 香港6|@ripaojiedian, server: 183.232.229.164, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: 54f4e2f4-f0e1-4a15-a0cf-3a3234ab58fb}
-  - {name: 导航页：星爸爸.lol, server: 8.8.8.8, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: bc566d69-193d-48d8-8b98-88727963b1d1}
-  - {name: 🇯🇵 中转-日本02, server: jp02.wbhlink.com, port: 30504, type: ss, cipher: chacha20-ietf-poly1305, password: 1ada1669-1002-4275-a66b-6d766e252865}
-  - {name: 🇯🇵 日本 - 東京都 - Misaka Network - 3, server: tky1.sdwan.day, port: 443, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /name, headers: {Host: tky1.sdwan.day}}}
-  - {name: "13,14|È¶ôÊ∏Ø|@ripaojiedian", server: 36.150.215.222, port: 12524, type: trojan, password: vzhXXZVw, skip-cert-verify: true}
-  - {name: "13,14|Êó•Êú¨2|@ripaojiedian", server: lm.kaiqsz.com, port: 57468, type: trojan, password: 2ff730d5-567f-4800-8c76-5d9b07079eed, sni: yg01.redapricotcloud.com, skip-cert-verify: false}
-  - {name: 🇷🇺 |俄罗斯-IEPL 01, server: IEPL01.catcat-123.com, port: 20026, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: ru.oneok.link, skip-cert-verify: false}
-  - {name: 🇯🇵 ⚡️标准|日本03解锁|倍率1, server: zfd-jpv1.01byx31qzn.download, port: 16121, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 120.232.217.96, port: 21332, type: trojan, password: 7daf833c-37b9-4afc-8495-96590f03f781, sni: 120.232.217.96, skip-cert-verify: true}
-  - {name: 11|16|d*********g.com_2, server: 42.236.73.72, port: 443, type: vmess, uuid: 044f0177-0675-4dcf-89d4-804b6788e518, alterId: 0, cipher: auto, tls: true, servername: www.zitian.cn}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: s4.cn-db.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.25.124.184, headers: {Host: 100-106-60-74.s4.cn-db.top}}}
-  - {name: 🇮🇹 ⚡️专线|意大利01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16295, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 TJ|英国C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: gb.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16298, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 |美国-IEPL 01, server: IEPL-00.catcat-123.com, port: 20007, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: us-02.oneok.link, skip-cert-verify: false}
-  - {name: 🇨🇳 游戏|上海-台湾|10x消耗, server: 106.75.226.79, port: 20018, type: ss, cipher: 2022-blake3-aes-128-gcm, password: M2YwMmE3ZWNkNTJjMzIyMg==:NzhhNDI5MGQtZTAyMy00Nw==}
-  - {name: 🇯🇵 |日本原生-中转 04, server: CN-FS.catcat-123.com, port: 9425, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: JP-03.oneok.link, skip-cert-verify: false}
-  - {name: 🇮🇱 ⚡️专线|以色列01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16299, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: chacha20-ietf-poly1305, password: f16d3752-7bae-474e-87dc-f892df2caeaf}
-  - {name: 0|--3, server: 213.109.147.242, port: 62685, type: ss, cipher: chacha20-ietf-poly1305, password: VpKABcOpNNA0l5G2AVOmw8}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 8, server: s4.db-link01.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.42.220, headers: {Host: 100-74-179-50.s4.db-link01.top}}}
-  - {name: 🇨🇳 |台湾-进阶IEPL 02, server: IEPL04.catcat-123.com, port: 20045, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: hinet-01.oneok.link, skip-cert-verify: false}
-  - {name: 🇨🇦 TJ|加拿大C01|IDC, server: 9bab8e381d446fa5eaa6473e6f3f291a.node.tro.node-is.green, port: 40145, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ca.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇹🇭 |泰国-IEPL 01, server: IEPL-01.catcat-123.com, port: 20023, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: TH.oneok.link, skip-cert-verify: false}
-  - {name: 🇸🇬 ⚡️标准|新加坡03解锁|倍率1, server: zfd-sgv1.01byx31qzn.download, port: 16109, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #2", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
-  - {name: 🇭🇰 ⚡️标准|香港04解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16114, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #14", server: 104.19.46.123, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港8|@ripaojiedian, server: 38.147.189.188, port: 23782, type: vmess, uuid: 6ba78aee-1390-4bbe-9fca-a07c736948cd, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇻🇳 TJ|越南C01|IDC, server: 51b2877b10b7fc936424cf635da2f218.node.tro.node-is.green, port: 42591, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: vn.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3", server: p3.v2raybrasil.cloud, port: 2052, type: vmess, uuid: 60bcbd52-0c88-4da3-aee2-cc1f9d5ca224, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: p3.v2raybrasil.cloud}}}
-  - {name: 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2, server: 151.101.0.155, port: 80, type: vmess, uuid: 67650521-85de-4679-bf72-920a09781374, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=80/#id-telegram:--->@vpn_whal<---", headers: {Host: khamenei-313.IR.}}}
-  - {name: 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55, server: sjc5.sdwan.day, port: 4430, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /stream, headers: {Host: sjc5.sdwan.day}}}
-  - {name: 0|--41, server: oriented-terrier.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: oriented-terrier.boa152.lol, skip-cert-verify: true}
-  - {name: 🇳🇬 |尼日利亚-IEPL 01, server: IEPL00.catcat-123.com, port: 20051, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: NG-01.oneok.link, skip-cert-verify: false}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #18", server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 游戏|上海-美国|10x消耗, server: 106.75.226.79, port: 20020, type: ss, cipher: 2022-blake3-aes-128-gcm, password: M2YwMmE3ZWNkNTJjMzIyMg==:NzhhNDI5MGQtZTAyMy00Nw==}
-  - {name: 🇭🇰 专线-香港01, server: hk01.wbhlink.com, port: 40724, type: ss, cipher: chacha20-ietf-poly1305, password: 1ada1669-1002-4275-a66b-6d766e252865}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8", server: 104.19.47.65, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇪🇸 ⚡️专线|西班牙01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16306, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 |台湾-进阶IEPL 03, server: IEPL-01.catcat-123.com, port: 20045, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: hinet-01.oneok.link, skip-cert-verify: false}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #8", server: 104.19.47.122, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇲🇾 TJ|马来西亚C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: my.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇯🇵 ⚡️专线|日本04解锁|倍率1, server: zfd-jpv2.01byx31qzn.download, port: 16122, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 ⚡️专线|美国03解锁|倍率1, server: zfd-usv2.01byx31qzn.download, port: 16105, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: ⚡️专线|马尼拉01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16260, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 中转-日本06, server: jp06.wbhlink.com, port: 30508, type: ss, cipher: chacha20-ietf-poly1305, password: 1ada1669-1002-4275-a66b-6d766e252865}
-  - {name: 🇬🇷 TJ|希腊C01|IDC, server: 6ec0893e530d80022c90e64f0b011da6.node.tro.node-is.green, port: 46633, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: gr.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-011, server: 194.87.68.115, port: 2019, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: chacha20-ietf-poly1305, password: f16d3752-7bae-474e-87dc-f892df2caeaf}
-  - {name: 🇨🇳 TJ|台湾C01|NF解锁, server: 4e97b70b3cc70ab539f7f2a8696bf951.node.tro.node-is.green, port: 44328, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: tw.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇷🇺 _RU_俄罗斯_4, server: 217.30.10.18, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA}
-  - {name: 🇹🇷 |土耳其-IEPL 03, server: IEPL01.catcat-123.com, port: 20027, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: tr-03.oneok.link, skip-cert-verify: false}
-  - {name: 🇺🇦 TJ|乌克兰C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ua.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇦🇺 TJ|澳大利亚C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: au.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇺🇸 |美国-中转 03, server: CN-BJ.catcat-123.com, port: 8310, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: us-02.oneok.link, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV}
-  - {name: 🇭🇰 |香港-IEPL 01, server: IEPL-00.catcat-123.com, port: 20010, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: cmhk-01.oneok.link, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_10, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇧🇷 TJ|巴西C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: br.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇸🇬 ⚡️专线|新加坡01解锁|倍率1, server: zfd-sgv2.01byx31qzn.download, port: 16107, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 _RU_俄罗斯_6, server: 217.30.10.18, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU}
+  - {name: 🇨🇦 TJ|加拿大C01|IDC, server: 983820f3da3c56df9b2bf9270955794c.node.tro.node-is.green, port: 40558, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ca.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 52.195.182.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 |日本-中转 01, server: CN-SHCU.catcat-123.com, port: 9410, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: JP-02.oneok.link, skip-cert-verify: false}
+  - {name: 🇸🇬 如遇节点失效，请尝试更新订阅, server: b.naiun.node-is.green, port: 51201, type: vmess, uuid: e27be03b-029c-4405-9225-63ccc78f53a1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: live.bilibili.com}}}
+  - {name: 🇺🇸 SS|美国A01|NF解锁, server: a.naiun.node-is.green, port: 51105, type: ss, cipher: chacha20-ietf-poly1305, password: e27be03b-029c-4405-9225-63ccc78f53a1}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 66, server: 198.41.209.70, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.42.220, headers: {Host: 100-74-179-50.s4.db-link01.top}}}
+  - {name: 🇺🇸 US Akile Z广东CM, server: gdydbzgsv.ccooz.top, port: 29467, type: ss, cipher: aes-128-gcm, password: d5e9f8ef-a939-4d0d-8790-381f82b07208}
   - {name: 🇭🇰 中国-香港-005, server: 212.192.12.70, port: 2019, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.36.215.83, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇻🇳 TJ|越南C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: vn.01.naiun.bilibili.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国|华盛顿IEPL-TT8A, server: sg-iepl.com, port: 36396, type: trojan, password: 1e36add4-7284-4c58-8e2a-c335cbe7b526, sni: fruit-jam.gamevoideo.top, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_1, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇭🇰 SS|香港01|IPLC x3, server: c.naiun.node-is.green, port: 52101, type: ss, cipher: chacha20-ietf-poly1305, password: e27be03b-029c-4405-9225-63ccc78f53a1}
+  - {name: 🇭🇰 |香港-中转 04, server: CN-SHCM.catcat-123.com, port: 9150, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: cmhk-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16315, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 V2|香港B01|NF解锁, server: b.naiun.node-is.green, port: 51201, type: vmess, uuid: e27be03b-029c-4405-9225-63ccc78f53a1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: live.bilibili.com}}}
+  - {name: 🇨🇳 ⚡️标准|台湾01原生|倍率1, server: zfd-twv1.01byx31qzn.download, port: 16129, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53, server: mo1.sdwan.day, port: 443, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /auth, headers: {Host: mo1.sdwan.day}}}
+  - {name: 🇦🇷 TJ|阿根廷C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ar.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇵🇱 ⚡️专线|波兰01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16276, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇷 TJ|希腊C01|IDC, server: a7ebca23ccb4389b2518f1be7f260c4a.node.tro.node-is.green, port: 47433, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: gr.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇨🇳 游戏|上海-台湾|10x消耗, server: 106.75.226.79, port: 20018, type: ss, cipher: 2022-blake3-aes-128-gcm, password: M2YwMmE3ZWNkNTJjMzIyMg==:NzhhNDI5MGQtZTAyMy00Nw==}
+  - {name: 🇯🇵 |日本-中转 Disney+优化 02, server: CN-ZB.catcat-123.com, port: 9415, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: JP-03.oneok.link, skip-cert-verify: false}
+  - {name: 🇮🇹 _IT_意大利, server: 37.143.129.230, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇯🇵 ⚡️专线|日本04解锁|倍率1, server: zfd-jpv2.01byx31qzn.download, port: 16122, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #12", server: 104.19.21.230, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian, server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: sg02.trojanyyds.xyz, skip-cert-verify: false}
+  - {name: 🇨🇭 瑞士-日内瓦-001, server: 194.87.18.248, port: 11325, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9", server: 104.18.57.111, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇦 TJ|加拿大C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: ca.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: SCP-NSC 05, server: tw.ssrxray.click, port: 36918, type: ss, cipher: aes-256-gcm, password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ}
+  - {name: 🇨🇱 |智利-IEPL 02, server: IEPL05.catcat-123.com, port: 20062, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: cl.oneok.link, skip-cert-verify: false}
+  - {name: 🇲🇾 |马来西亚-IEPL 04, server: IEPL05.catcat-123.com, port: 20031, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: my.oneok.link, skip-cert-verify: false}
+  - {name: 🇸🇬 14|新加坡|@ripaojiedian, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmMTZkMzc1Mi03YmFlLTQ3NGUtODdkYy1mODkyZGYyY2FlYWY}
+  - {name: 🇨🇳 游戏|广州-台湾|10x消耗, server: 106.75.191.24, port: 20018, type: ss, cipher: 2022-blake3-aes-128-gcm, password: M2YwMmE3ZWNkNTJjMzIyMg==:NzhhNDI5MGQtZTAyMy00Nw==}
+  - {name: 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1", server: 104.19.21.240, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 V2|香港01|IPLC x3, server: c.naiun.node-is.green, port: 52201, type: vmess, uuid: e27be03b-029c-4405-9225-63ccc78f53a1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: live.bilibili.com}}}
+  - {name: 🇨🇳 |台湾-进阶 03, server: CN-CQCM.catcat-123.com, port: 9300, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: hinet-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇮🇳 |印度-IEPL 01, server: IEPL00.catcat-123.com, port: 20034, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: in-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇹🇷 |土耳其-IEPL 03, server: IEPL01.catcat-123.com, port: 20027, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: tr-03.oneok.link, skip-cert-verify: false}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-010, server: 194.87.68.228, port: 2019, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇮🇳 TJ|印度C01|IDC, server: 998558063da57f4d56a3312f1fb7f930.node.tro.node-is.green, port: 48458, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: in.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: ⚡️专线|马斯喀特01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16313, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 _RU_俄罗斯_1, server: 80.240.112.167, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: ample-cockatoo.boa152.lol}
+  - {name: 通知频道：@stardadlol, server: 8.8.8.8, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: bc566d69-193d-48d8-8b98-88727963b1d1}
+  - {name: 🇭🇰 |香港-IEPL 03, server: IEPL01.catcat-123.com, port: 20033, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: cmhk-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇮🇹 |意大利-IEPL 02, server: IEPL02.catcat-123.com, port: 20065, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: it.oneok.link, skip-cert-verify: false}
+  - {name: 🇺🇸 |美国-进阶IEPL 02, server: IEPL04.catcat-123.com, port: 20043, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: us-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16282, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 TJ|印度C01|IDC 2, server: 448deefac3d5378ad0b436f1502d1c79.node.tro.node-is.green, port: 49441, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: in.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-008, server: 194.87.69.244, port: 2019, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 |日本-IEPL 02, server: IEPL02.catcat-123.com, port: 20009, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: JP-02.oneok.link, skip-cert-verify: false}
+  - {name: 🇦🇺 |澳洲 IEPL 01, server: IEPL05.catcat-123.com, port: 20053, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: au-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇸🇬 |新加坡-中转 03, server: CN-FS.catcat-123.com, port: 9220, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: SG-05.oneok.link, skip-cert-verify: false}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #16", server: 104.19.46.233, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51, server: 183.236.48.172, port: 31878, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇰🇷 |韩国-IEPL 03, server: IEPL05.catcat-123.com, port: 20014, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: kr-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 120.232.217.96, port: 21332, type: trojan, password: 7daf833c-37b9-4afc-8495-96590f03f781, sni: 120.232.217.96, skip-cert-verify: true}
+  - {name: 🇨🇳 |台湾-进阶IEPL 01, server: IEPL03.catcat-123.com, port: 20045, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: hinet-01.oneok.link, skip-cert-verify: false}
+  - {name: 0|--9, server: 112.213.102.228, port: 4231, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
+  - {name: 🇳🇬 |尼日利亚-IEPL 02, server: IEPL03.catcat-123.com, port: 20051, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: NG-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇭🇰 ⚡️标准|香港01解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16111, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇹 ⚡️专线|奥地利01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16308, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6", server: 104.19.47.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 ⚡️标准|香港05解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16115, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 TJ|英国C02|IDC, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: e27be03b-029c-4405-9225-63ccc78f53a1, sni: gb.01.naiun.bilibili.com, skip-cert-verify: true}
+  - {name: 🇨🇳 |台湾-家宽IEPL 01, server: IEPL00.catcat-123.com, port: 20025, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: hinet-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇦🇺 |澳洲 IEPL 04, server: IEPL02.catcat-123.com, port: 20053, type: trojan, password: 78a4290d-e023-4759-947a-53554ac4697d, sni: au-01.oneok.link, skip-cert-verify: false}
+  - {name: 🇷🇺 _RU_俄罗斯_5, server: 217.30.10.18, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN}
+  - {name: 🇭🇰 13|🇭🇰 香港5|@ripaojiedian, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇯🇵 SS|日本B01|NF解锁, server: b.naiun.node-is.green, port: 51104, type: ss, cipher: chacha20-ietf-poly1305, password: e27be03b-029c-4405-9225-63ccc78f53a1}
+  - {name: 15|SC_speednode_0012, server: 154.197.64.67, port: 443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: 🇯🇵 ⚡️专线|日本01解锁|倍率1, server: zfd-jpv2.01byx31qzn.download, port: 16119, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: s3.db-link01.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.25.204.117, headers: {Host: 100-6-204-129.s3.db-link01.top}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -364,363 +340,343 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇭🇰 香港6|@ripaojiedian
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇨🇳 |台湾-进阶IEPL 02
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇭🇰 专线-香港01
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇭🇰 |香港-IEPL 01
       - 🇭🇰 中国-香港-005
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇭🇰 |香港-IEPL 03
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -736,87 +692,81 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本|东京IEPL-TS8
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 🇺🇸 ⚡️专线|美国04解锁|倍率1
-      - 🇨🇳 中国 - 成都 - PEG TECH INC - 1
-      - 🇱🇹 ⚡️专线|立陶宛01标准|倍率5
-      - 🇨🇳 广东省广州市 移动
-      - 🇯🇵 日本|东京IEPL-TS5
-      - 🇸🇬 |新加坡-中转 01
-      - "🇸🇬 1,6|🇺🇸_US_美国->🇸🇬_SG_新加坡 #1"
-      - 🇩🇪 DE Hetzner Z广东CM
-      - "🇨🇳 3,17|🇨🇳_CN_中国 #1"
-      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 3
-      - 🇰🇷 |韩国-中转 02
-      - 🇯🇵 日本|东京IEPL-TS12
-      - 🇦🇷 TJ|阿根廷C02|IDC
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇭🇰 香港6|@ripaojiedian
-      - 导航页：星爸爸.lol
-      - 🇯🇵 中转-日本02
-      - 🇯🇵 日本 - 東京都 - Misaka Network - 3
-      - 13,14|È¶ôÊ∏Ø|@ripaojiedian
-      - 13,14|Êó•Êú¨2|@ripaojiedian
-      - 🇷🇺 |俄罗斯-IEPL 01
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 11|16|d*********g.com_2
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇹 ⚡️专线|意大利01标准|倍率5
-      - 🇬🇧 TJ|英国C02|IDC
-      - 🇮🇩 ⚡️专线|印度尼西亚01标准|倍率5
-      - 🇺🇸 |美国-IEPL 01
-      - 🇨🇳 游戏|上海-台湾|10x消耗
-      - 🇯🇵 |日本原生-中转 04
-      - 🇮🇱 ⚡️专线|以色列01标准|倍率5
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 0|--3
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇳 |台湾-进阶IEPL 02
+      - 🇸🇬 ⚡️专线|新加坡01解锁|倍率1
+      - 🇷🇺 _RU_俄罗斯_6
       - 🇨🇦 TJ|加拿大C01|IDC
-      - 🇹🇭 |泰国-IEPL 01
-      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - "🇺🇸 1,6|🇺🇸_US_美国 #14"
-      - 🇭🇰 香港8|@ripaojiedian
-      - 🇻🇳 TJ|越南C01|IDC
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇧🇷_BR_巴西 #3"
-      - 🇩🇪 德国 - Falkenstein - Hetzner Online GmbH - 2
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 55
-      - 0|--41
-      - 🇳🇬 |尼日利亚-IEPL 01
-      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
-      - 🇺🇸 游戏|上海-美国|10x消耗
-      - 🇭🇰 专线-香港01
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #8"
-      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
-      - 🇨🇳 |台湾-进阶IEPL 03
-      - "🇺🇸 1,6|🇺🇸_US_美国 #8"
-      - 🇲🇾 TJ|马来西亚C02|IDC
-      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国03解锁|倍率1
-      - ⚡️专线|马尼拉01标准|倍率5
-      - 🇯🇵 中转-日本06
-      - 🇬🇷 TJ|希腊C01|IDC
-      - 🇷🇺 俄罗斯-圣彼得堡-011
-      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
-      - 🇨🇳 TJ|台湾C01|NF解锁
-      - 🇷🇺 _RU_俄罗斯_4
-      - 🇹🇷 |土耳其-IEPL 03
-      - 🇺🇦 TJ|乌克兰C02|IDC
-      - 🇦🇺 TJ|澳大利亚C02|IDC
-      - 🇺🇸 |美国-中转 03
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇭🇰 |香港-IEPL 01
-      - 🇺🇸 _US_美国_10
-      - 🇧🇷 TJ|巴西C02|IDC
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 |日本-中转 01
+      - 🇸🇬 如遇节点失效，请尝试更新订阅
+      - 🇺🇸 SS|美国A01|NF解锁
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
+      - 🇺🇸 US Akile Z广东CM
       - 🇭🇰 中国-香港-005
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇻🇳 TJ|越南C02|IDC
-      - 🇺🇸 美国|华盛顿IEPL-TT8A
+      - 🇺🇸 _US_美国_1
+      - 🇭🇰 SS|香港01|IPLC x3
+      - 🇭🇰 |香港-中转 04
+      - 🇵🇰 ⚡️专线|巴基斯坦01标准|倍率5
+      - 🇭🇰 V2|香港B01|NF解锁
+      - 🇨🇳 ⚡️标准|台湾01原生|倍率1
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 - 紐約 - S.C. INFOTECH-GRUP S.R.L. - 53
+      - 🇦🇷 TJ|阿根廷C02|IDC
+      - 🇵🇱 ⚡️专线|波兰01标准|倍率5
+      - 🇬🇷 TJ|希腊C01|IDC
+      - 🇨🇳 游戏|上海-台湾|10x消耗
+      - 🇯🇵 |日本-中转 Disney+优化 02
+      - 🇮🇹 _IT_意大利
+      - 🇯🇵 ⚡️专线|日本04解锁|倍率1
+      - "🇺🇸 1,6|🇺🇸_US_美国 #12"
+      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
+      - 🇨🇭 瑞士-日内瓦-001
+      - "🇺🇸 1,3,6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9"
+      - 🇨🇦 TJ|加拿大C02|IDC
+      - SCP-NSC 05
+      - 🇨🇱 |智利-IEPL 02
+      - 🇲🇾 |马来西亚-IEPL 04
+      - 🇸🇬 14|新加坡|@ripaojiedian
+      - 🇨🇳 游戏|广州-台湾|10x消耗
+      - 🇭🇰 中国 - 香港 - CTG Server Ltd. - 7
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #1"
+      - 🇭🇰 V2|香港01|IPLC x3
+      - 🇨🇳 |台湾-进阶 03
+      - 🇮🇳 |印度-IEPL 01
+      - 🇹🇷 |土耳其-IEPL 03
+      - 🇷🇺 俄罗斯-圣彼得堡-010
+      - 🇮🇳 TJ|印度C01|IDC
+      - ⚡️专线|马斯喀特01标准|倍率5
+      - 🇷🇺 _RU_俄罗斯_1
+      - 通知频道：@stardadlol
+      - 🇭🇰 |香港-IEPL 03
+      - 🇮🇹 |意大利-IEPL 02
+      - 🇺🇸 |美国-进阶IEPL 02
+      - 🇱🇻 ⚡️专线|拉脱维亚01标准|倍率5
+      - 🇮🇳 TJ|印度C01|IDC 2
+      - 🇷🇺 俄罗斯-圣彼得堡-008
+      - 🇯🇵 |日本-IEPL 02
+      - 🇦🇺 |澳洲 IEPL 01
+      - 🇸🇬 |新加坡-中转 03
+      - "🇺🇸 1,6|🇺🇸_US_美国 #16"
+      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
+      - 🇰🇷 |韩国-IEPL 03
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇨🇳 |台湾-进阶IEPL 01
+      - 0|--9
+      - 🇳🇬 |尼日利亚-IEPL 02
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6"
+      - 🇭🇰 ⚡️标准|香港05解锁|倍率1
+      - 🇬🇧 TJ|英国C02|IDC
+      - 🇨🇳 |台湾-家宽IEPL 01
+      - 🇦🇺 |澳洲 IEPL 04
+      - 🇷🇺 _RU_俄罗斯_5
+      - 🇭🇰 13|🇭🇰 香港5|@ripaojiedian
+      - 🇯🇵 SS|日本B01|NF解锁
+      - 15|SC_speednode_0012
+      - 🇯🇵 ⚡️专线|日本01解锁|倍率1
+      - 🇺🇸 美国 CloudFlare节点
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
