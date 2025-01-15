@@ -5,259 +5,215 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 15|CN_speednode_0001, server: 36.150.215.222, port: 12524, type: trojan, password: vzhXXZVw, skip-cert-verify: true}
-  - {name: 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian, server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: sg02.trojanyyds.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4", server: hk3.sdwan.day, port: 443, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /auth, headers: {Host: hk3.sdwan.day}}}
-  - {name: 🇮🇳 ⚡️专线|印度01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16312, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 _DE_德国_1, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
-  - {name: ⚡️专线|马斯喀特01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16313, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 JP流媒体专用4x1, server: cshgz1.fuckcdn.top, port: 38520, type: ss, cipher: aes-128-gcm, password: d3ef9871-9e98-497a-8c5b-e3bd002c7941}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 2, server: s3.cn-db.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.48.5, headers: {Host: 100-28-116-101.s3.cn-db.top}}}
-  - {name: 🇸🇬 ⚡️专线|新加坡04解锁|倍率1, server: zfd-sgv2.01byx31qzn.download, port: 16110, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3", server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 ⚡️标准|香港04解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16114, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 ⚡️专线|美国01解锁|倍率1, server: zfd-usv2.01byx31qzn.download, port: 16103, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国_14, server: 23.157.40.87, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 0|--9, server: 168.126.234.233, port: 40915, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16262, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国_10, server: 23.157.40.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 8, server: s4.db-link01.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.42.220, headers: {Host: 100-74-179-50.s4.db-link01.top}}}
-  - {name: 🇨🇦 _CA_加拿大, server: 23.154.136.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org", server: cn02.crosswall.org, port: 28837, type: ss, cipher: 2022-blake3-aes-256-gcm, password: NjliNDc4ODA1YTRmNDI0N2MwMjQ1NTUzMDhjMjhmZTg=:ZjAzZTNiZjItY2U1Yi00NWVmLTg2ZWYtMTM2YTdlNTc=}
-  - {name: 🇨🇳 台湾2|@ripaojiedian, server: 74.226.136.204, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8, sni: tw02.trojanyyds.xyz}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #17", server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 ⚡️标准|台湾04原生|倍率1, server: zfd-twv1.01byx31qzn.download, port: 16132, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58, server: sjc6.sdwan.day, port: 443, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /name, headers: {Host: sjc6.sdwan.day}}}
-  - {name: 🇭🇰 ⚡️标准|香港01解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16111, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇧🇪 ⚡️专线|比利时01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16307, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 ⚡️专线|荷兰01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16278, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 14|日本特殊|@ripaojiedian, server: 52.198.226.5, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
-  - {name: 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62, server: jp4.sdwan.day, port: 4431, type: vmess, uuid: fade2b35-7872-442e-a54e-6ccf9b970476, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /stream, headers: {Host: jp4.sdwan.day}}}
-  - {name: 🇺🇸 美国 - 迈阿密 - GTHost - 16, server: 38.91.107.36, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 38.91.107.36}}}
-  - {name: 🇭🇰 13|🇭🇰 香港6|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: aes-256-gcm, password: YPNNBXGRNCAXB9N7}
-  - {name: 0|--12, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
-  - {name: 🇺🇸 _US_美国_3, server: 23.157.40.5, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: Telegram群组：t.me/bpjclol, server: 47.74.19.104, port: 80, type: vmess, uuid: 204226e7-6d63-4b5e-bf68-dbe33f170a05, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: gw.alicdn.com}}}
-  - {name: 🇭🇰 ⚡️专线|香港01解锁|倍率1, server: zfd-hkv2.01byx31qzn.download, port: 16111, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 亚特兰大, server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8}
-  - {name: 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16307, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 0|--17, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
-  - {name: 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51, server: 183.236.48.172, port: 31878, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: RU2x1, server: cshgz1.fuckcdn.top, port: 39905, type: ss, cipher: aes-256-gcm, password: d3ef9871-9e98-497a-8c5b-e3bd002c7941}
-  - {name: 过滤掉4条线路, server: 8.8.8.8, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: bc566d69-193d-48d8-8b98-88727963b1d1}
   - {name: 🇬🇷 ⚡️专线|希腊01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16310, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 1|_US__11, server: 51.141.73.244, port: 29814, type: ss, cipher: chacha20-ietf-poly1305, password: nEyOTWmtPG5tdgZqMQEq4R}
-  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 66, server: 198.41.209.70, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.42.220, headers: {Host: 100-74-179-50.s4.db-link01.top}}}
-  - {name: "🇯🇵 11,15,16|日本2|@ripaojiedian", server: jp.cowvpn.org, port: 443, type: vmess, uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3, alterId: 0, cipher: auto, tls: true, servername: jpcf.cowvpn.org, network: ws, ws-opts: {path: /cctv13/vmess_jpcf, headers: {Host: jpcf.cowvpn.org}}}
-  - {name: 🇸🇬 ⚡️标准|新加坡01解锁|倍率1, server: zfd-sgv1.01byx31qzn.download, port: 16107, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇿🇦 ⚡️专线|南非01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16266, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 14|香港7|@ripaojiedian, server: dns.a123.my, port: 44471, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYTJiYTg2My1jYmNlLTQ5OTEtODRhYy00NTA1YzIyNTMxODM}
-  - {name: 🇭🇰 14|香港6|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206WVBOTkJYR1JOQ0FYQjlONw}
-  - {name: 🇭🇰 ⚡️专线|香港05解锁|倍率1, server: zfd-hkv2.01byx31qzn.download, port: 16115, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇪🇸 ⚡️专线|西班牙01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16306, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 _US_美国_10, server: 23.157.40.5, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇭🇰 ⚡️标准|香港06解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16116, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16300, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇭🇰 15|🇭🇰 香港6|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: aes-256-gcm, password: YPNNBXGRNCAXB9N7}
+  - {name: 🇭🇰 ⚡️标准|香港01解锁|倍率1, server: zfd-hkv1.01byx31qzn.download, port: 16111, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 ⚡️标准|新加坡03解锁|倍率1, server: zfd-sgv1.01byx31qzn.download, port: 16109, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-006, server: 195.58.49.152, port: 17926, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇦🇹 ⚡️专线|奥地利01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16308, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 14|香港4|@ripaojiedian, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 16|d*********g.com_2, server: 42.236.73.72, port: 443, type: vmess, uuid: 044f0177-0675-4dcf-89d4-804b6788e518, alterId: 0, cipher: auto, tls: true, servername: www.zitian.cn}
+  - {name: 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16319, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 ⚡️专线|香港03解锁|倍率1, server: zfd-hkv2.01byx31qzn.download, port: 16113, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 12|github.com/freefq - 印度  2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: irsoft.sytes.net}}}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2", server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-011, server: 194.87.68.115, port: 17926, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: UK1x1, server: cshgz1.fuckcdn.top, port: 28918, type: ss, cipher: chacha20-ietf-poly1305, password: d3ef9871-9e98-497a-8c5b-e3bd002c7941}
+  - {name: 🇯🇵 15|🇯🇵 日本3|@ripaojiedian, server: 8tv68qhq.slashdevslashnetslashtun.net, port: 18013, type: ss, cipher: aes-256-gcm, password: 7ZD182CF9QZLXPRW}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: w72tapyb.slashdevslashnetslashtun.net, port: 16016, type: ss, cipher: aes-256-gcm, password: 6KYL3YM7UAOAE94Q}
+  - {name: 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: chacha20-ietf-poly1305, password: f16d3752-7bae-474e-87dc-f892df2caeaf}
+  - {name: 🇺🇸 美国 01 解锁|80端口|1.0x, server: 47.251.66.27, port: 80, type: vmess, uuid: 204226e7-6d63-4b5e-bf68-dbe33f170a05, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: apple.com}}}
+  - {name: 🇰🇷 ⚡️专线|韩国03解锁|倍率1, server: zfd-krv2.01byx31qzn.download, port: 16254, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 167.88.63.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 0|--4, server: 23.157.40.5, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: 🇰🇷 ⚡️标准|韩国02解锁|倍率1, server: zfd-krv1.01byx31qzn.download, port: 16253, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: "13,14|È¶ôÊ∏Ø2|@ripaojiedian", server: 223.113.54.145, port: 36442, type: trojan, password: phXKwfrd, skip-cert-verify: true}
-  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #2", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
-  - {name: 🇯🇵 ⚡️标准|日本03解锁|倍率1, server: zfd-jpv1.01byx31qzn.download, port: 16121, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian, server: 52.198.226.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇷🇺 俄罗斯-圣彼得堡-008, server: 194.87.69.244, port: 61291, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 11|0|--28, server: 38.174.190.80, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/102206282005}}
-  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2", server: 104.19.47.126, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 9, server: s1.cn-db.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.18.179.207, headers: {Host: 100-70-193-42.s1.cn-db.top}}}
-  - {name: 0|--10, server: 45.87.175.157, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: 🇰🇷 ⚡️标准|韩国01解锁|倍率1, server: zfd-krv1.01byx31qzn.download, port: 16252, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1", server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: us.cowvpn.org, port: 443, type: vmess, uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3, alterId: 0, cipher: auto, tls: true, servername: us2cf.cowvpn.org, network: ws, ws-opts: {path: /cctv13/vmess_us1, headers: {Host: us2cf.cowvpn.org}}}
+  - {name: 🇸🇬 狮城特殊|@ripaojiedian, server: 43.201.19.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 13|🇯🇵 日本5|@ripaojiedian, server: chiyu.myfczy169.top, port: 51578, type: ss, cipher: chacha20-ietf-poly1305, password: bb3193b4-e426-40e9-9664-19b7bc331c30}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: sg02.trojanyyds.xyz, port: 443, type: trojan, password: 243eab52-9ac1-405c-887c-eb112c0985b8}
+  - {name: 🇸🇬 ⚡️专线|新加坡03解锁|倍率1, server: zfd-sgv2.01byx31qzn.download, port: 16109, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 ⚡️标准|美国03解锁|倍率1, server: zfd-usv1.01byx31qzn.download, port: 16105, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3", server: 120.232.240.56, port: 16928, type: vmess, uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 使用前请点击更新订阅, server: cshgz1.fuckcdn.top, port: 29899, type: ss, cipher: aes-128-gcm, password: d3ef9871-9e98-497a-8c5b-e3bd002c7941}
+  - {name: 🇭🇰 香港6|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 15010, type: ss, cipher: aes-256-gcm, password: YPNNBXGRNCAXB9N7}
+  - {name: 🇨🇳 海南省海口市 电信, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: chacha20-ietf-poly1305, password: f16d3752-7bae-474e-87dc-f892df2caeaf}
+  - {name: 🇬🇷 GR希腊1x1, server: cshgz1.fuckcdn.top, port: 46094, type: ss, cipher: aes-256-gcm, password: d3ef9871-9e98-497a-8c5b-e3bd002c7941}
+  - {name: 🇷🇺 _RU_俄罗斯_2, server: 195.133.93.234, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: wise-cowbird.boa152.lol}
+  - {name: 🇮🇳 ⚡️专线|印度01标准|倍率5, server: zfd-boardv2.01byx31qzn.download, port: 16312, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 ⚡️专线|香港01解锁|倍率1, server: zfd-hkv2.01byx31qzn.download, port: 16111, type: vmess, uuid: 57e6938f-92e3-3e4c-ad9d-6c8622486768, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3", server: 104.19.47.16, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 0|--13, server: 13.250.30.129, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇳 江苏省徐州市 移动, server: 223.113.54.145, port: 36442, type: trojan, password: vzhXXZVw, skip-cert-verify: true}
+  - {name: 🇺🇸 14|美国4|@ripaojiedian, server: 137.175.113.215, port: 8388, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zjphc2QxMjM0NTY}
+  - {name: 0|--9, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -276,273 +232,226 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇨🇳 台湾2|@ripaojiedian
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇭🇰 香港6|@ripaojiedian
       - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -558,65 +467,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 15|CN_speednode_0001
-      - 13|üá∫üá∏ ÁæéÂõΩ|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Misaka Network, Inc. - 4
-      - 🇮🇳 ⚡️专线|印度01标准|倍率5
-      - 🇩🇪 _DE_德国_1
-      - ⚡️专线|马斯喀特01标准|倍率5
-      - 🇯🇵 JP流媒体专用4x1
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 2
-      - 🇸🇬 ⚡️专线|新加坡04解锁|倍率1
-      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
-      - 🇭🇰 ⚡️标准|香港04解锁|倍率1
-      - 🇺🇸 ⚡️专线|美国01解锁|倍率1
-      - 🇺🇸 _US_美国_14
-      - 0|--9
-      - 🇰🇭 ⚡️专线|柬埔寨01标准|倍率5
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇸 [ss]美国01-国内中转02-1x-crosswall.org
-      - 🇨🇳 台湾2|@ripaojiedian
-      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
-      - 🇨🇳 ⚡️标准|台湾04原生|倍率1
-      - 🇺🇸 美国 - 圣克拉拉 - EGIHosting - 58
-      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
-      - 🇧🇪 ⚡️专线|比利时01标准|倍率5
-      - 🇳🇱 ⚡️专线|荷兰01标准|倍率5
-      - 🇯🇵 14|日本特殊|@ripaojiedian
-      - 🇺🇸 美国 - 芝加哥 - Edgenap LTD - 62
-      - 🇺🇸 美国 - 迈阿密 - GTHost - 16
-      - 🇭🇰 13|🇭🇰 香港6|@ripaojiedian
-      - 0|--12
-      - 🇺🇸 _US_美国_3
-      - Telegram群组：t.me/bpjclol
-      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
-      - 🇺🇸 美国 亚特兰大
-      - 🇮🇪 ⚡️专线|爱尔兰01标准|倍率5
-      - 0|--17
-      - 🇺🇸 美国 - 西雅圖 - Cnservers LLC - 51
-      - RU2x1
-      - 过滤掉4条线路
       - 🇬🇷 ⚡️专线|希腊01标准|倍率5
-      - 1|_US__11
-      - 🇺🇸 美国 - 水牛城 - HostPapa - 66
-      - 🇯🇵 11,15,16|日本2|@ripaojiedian
-      - 🇸🇬 ⚡️标准|新加坡01解锁|倍率1
-      - 🇿🇦 ⚡️专线|南非01标准|倍率5
-      - 🇭🇰 14|香港7|@ripaojiedian
-      - 🇭🇰 14|香港6|@ripaojiedian
-      - 🇭🇰 ⚡️专线|香港05解锁|倍率1
+      - 🇪🇸 ⚡️专线|西班牙01标准|倍率5
+      - 🇺🇸 _US_美国_10
+      - 🇭🇰 ⚡️标准|香港06解锁|倍率1
+      - 🇷🇴 ⚡️专线|罗马尼亚01标准|倍率5
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇭🇰 15|🇭🇰 香港6|@ripaojiedian
+      - 🇭🇰 ⚡️标准|香港01解锁|倍率1
+      - 🇸🇬 ⚡️标准|新加坡03解锁|倍率1
+      - 🇷🇺 俄罗斯-圣彼得堡-006
+      - 🇦🇹 ⚡️专线|奥地利01标准|倍率5
+      - 🇭🇰 14|香港4|@ripaojiedian
+      - 16|d*********g.com_2
+      - 🇦🇿 ⚡️专线|阿塞拜疆01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港03解锁|倍率1
+      - 🇮🇳 12|github.com/freefq - 印度  2
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2"
+      - 🇷🇺 俄罗斯-圣彼得堡-011
+      - UK1x1
+      - 🇯🇵 15|🇯🇵 日本3|@ripaojiedian
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 13|🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇸 美国 01 解锁|80端口|1.0x
+      - 🇰🇷 ⚡️专线|韩国03解锁|倍率1
+      - 🇸🇪 瑞典 V2CROSS.COM
+      - 0|--4
       - 🇰🇷 ⚡️标准|韩国02解锁|倍率1
-      - 13,14|È¶ôÊ∏Ø2|@ripaojiedian
-      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
-      - 🇯🇵 ⚡️标准|日本03解锁|倍率1
-      - 🇯🇵 13|🇯🇵 日本特殊|@ripaojiedian
-      - 🇷🇺 俄罗斯-圣彼得堡-008
-      - 11|0|--28
-      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇳_CN_中国 #2"
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 9
-      - 0|--10
+      - 🇰🇷 ⚡️标准|韩国01解锁|倍率1
+      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇸🇬 狮城特殊|@ripaojiedian
+      - 🇯🇵 13|🇯🇵 日本5|@ripaojiedian
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇬 ⚡️专线|新加坡03解锁|倍率1
+      - 🇺🇸 ⚡️标准|美国03解锁|倍率1
+      - "🇺🇸 3,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇸🇬 使用前请点击更新订阅
+      - 🇭🇰 香港6|@ripaojiedian
+      - 🇨🇳 海南省海口市 电信
+      - 🇬🇷 GR希腊1x1
+      - 🇷🇺 _RU_俄罗斯_2
+      - 🇮🇳 ⚡️专线|印度01标准|倍率5
+      - 🇭🇰 ⚡️专线|香港01解锁|倍率1
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇳_CN_中国 #3"
+      - 0|--13
+      - 🇨🇳 江苏省徐州市 移动
+      - 🇺🇸 14|美国4|@ripaojiedian
+      - 0|--9
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
