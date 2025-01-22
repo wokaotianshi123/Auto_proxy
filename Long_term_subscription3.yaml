@@ -5,307 +5,255 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 「🇺🇸」EMO | 天元果 x3, server: t33.emoyes.top, port: 656, type: trojan, password: c9d1e9e4-2812-4a50-a113-a6c914e9c832, sni: www.python.org, skip-cert-verify: true}
-  - {name: "🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2", server: 64.225.109.206, port: 2082, type: vmess, uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇨🇳 台湾-优化3, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
-  - {name: SCP-NSC 01, server: www.aetv.com, port: 80, type: vmess, uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd.al}}}
-  - {name: 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian, server: qh62onjn.slashdevslashnetslashtun.net, port: 16007, type: ss, cipher: aes-256-gcm, password: TOU9PB2B767TFQVU}
-  - {name: 🇯🇵 日本-优化2, server: m.cnmjin.net, port: 16617, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 🇺🇦 乌克兰UA-T, server: ua.mjt000.com, port: 443, type: trojan, password: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, sni: ua.mjt000.com, skip-cert-verify: false}
-  - {name: 15|AM_speednode_0002, server: 188.164.159.248, port: 2053, type: trojan, password: Aimer, sni: amepo.ambercc.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: amepo.ambercc.filegear-sg.me}}}
-  - {name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 15, server: s2.db-link01.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.61.61, headers: {Host: 100-253-20-251.s2.db-link01.top}}}
-  - {name: 🇵🇹 葡萄牙PT-T, server: pt.mjt000.com, port: 443, type: trojan, password: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, sni: pt.mjt000.com, skip-cert-verify: false}
-  - {name: 🇻🇳 越南VN-T, server: vn.mjt000.com, port: 443, type: trojan, password: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74, sni: vn.mjt000.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19, server: 212.192.12.70, port: 17926, type: vmess, uuid: fd80fdc7-6dee-4594-b487-a111a17a55cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57, server: 194.87.69.52, port: 17926, type: vmess, uuid: 3644b069-d06e-40b5-872e-f3b4c0cbfa19, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇩🇪 德国-优化, server: yes.mojcn.com, port: 16644, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 🇷🇺 俄罗斯RU-T, server: ru.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: ru.mjt000.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡-优化, server: yes.mojcn.com, port: 16618, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 0|--4, server: 54.187.174.202, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 过滤掉3条线路, server: yes.mojcn.com, port: 16617, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59, server: 194.87.69.52, port: 17926, type: vmess, uuid: eb060c08-f284-49be-adb8-5188fb0521a5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港WAP-优化, server: yes.mojcn.com, port: 16622, type: vmess, uuid: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 29ccb95fee6e7a522c0b433acceeb3cf.mobgslb.tbcache.com}}}
-  - {name: 🇸🇬 新加坡-优化2, server: m.cnmjin.net, port: 16618, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
-  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 167.88.63.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15, server: 212.192.12.70, port: 17926, type: vmess, uuid: 680ab8f5-2d55-40bc-bf8d-a35bd63426a7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国LA-优化2-GPT, server: m.cnmjin.net, port: 16648, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: hk1.899994.xyz, port: 443, type: vmess, uuid: a0605527-28e4-449c-80ee-5642cc16a8af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /index, headers: {Host: hk1.899994.xyz}}}
+  - {name: ----以下为线路----, server: gdgs.tarioblink.me, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cc14127-cf4e-4e6b-a222-beeddb02ff66}
+  - {name: 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12, server: 141.145.205.115, port: 8443, type: vmess, uuid: 97a21172-89a0-411e-b017-6a27c61c743d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/vmess-argo?ed=2048"}}
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37, server: 194.87.69.52, port: 17926, type: vmess, uuid: 02ca12e0-d5dc-4389-9922-956582504340, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53, server: 194.87.69.52, port: 17926, type: vmess, uuid: c882b684-ab94-4b46-b34e-609d1f3b5c0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港wap-T, server: waphk.mjt000.com, port: 443, type: trojan, password: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74, sni: waphk.mjt000.com, skip-cert-verify: false}
-  - {name: 🇺🇸 2|🇺🇸_US_美国, server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇺🇸 美国LA-优化3-GPT, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: 79ea97a5-2a26-4ead-ba3f-7f51a4445f74, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 29ccb95fee6e7a522c0b433acceeb3cf.mobgslb.tbcache.com}}}
-  - {name: 15|US_speednode_0077, server: 108.165.152.55, port: 2096, type: trojan, password: Aimer, sni: amepo.ambercc.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: amepo.ambercc.filegear-sg.me}}}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 195.58.49.86, port: 55899, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80, server: 195.58.49.86, port: 17926, type: vmess, uuid: 0d144c6f-1919-4bda-a60b-36b944633a56, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43, server: 194.87.69.52, port: 17926, type: vmess, uuid: f126347a-b060-4069-ba84-33a314015603, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 台湾-优化, server: yes.mojcn.com, port: 16616, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
-  - {name: 🇯🇵 日本-优化, server: yes.mojcn.com, port: 16617, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 🇰🇵 朝鲜KP-T, server: kp.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: kp.mjt000.com, skip-cert-verify: false}
-  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23, server: 212.192.12.70, port: 17926, type: vmess, uuid: de3695e9-b174-4788-ba90-16bc9e46f53c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港wap-T 2, server: waphk.mjt000.com, port: 443, type: trojan, password: ee3f1a9f-c42a-471e-8d50-b5832910eaca, sni: waphk.mjt000.com, skip-cert-verify: false}
-  - {name: 🇮🇳 印度-优化, server: yes.mojcn.com, port: 16626, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9, server: 195.58.49.50, port: 17926, type: vmess, uuid: 8f918f29-00d7-47ed-9601-965f897350ec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1, server: 15.235.83.228, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: 0|--55, server: 94.182.150.230, port: 80, type: vmess, uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大-优化2, server: m.cnmjcn.com, port: 16641, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: 「🇦🇺」EMO | 红富士 x3, server: t34.emoyes.top, port: 663, type: trojan, password: c9d1e9e4-2812-4a50-a113-a6c914e9c832, sni: www.python.org, skip-cert-verify: true}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 36.150.215.196, port: 18681, type: trojan, password: phXKwfrd, skip-cert-verify: true}
-  - {name: 16|d*********g.com_3, server: 42.236.73.72, port: 443, type: trojan, password: fuck, sni: www.zitian.cn}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38, server: 194.87.69.52, port: 17926, type: vmess, uuid: 131d1070-3626-4978-93bd-0b3568bc6da0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 果宝特攻-免费节点-新加坡-B2, server: gdgs.tarioblink.me, port: 30003, type: ss, cipher: chacha20-ietf-poly1305, password: 5cc14127-cf4e-4e6b-a222-beeddb02ff66}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98, server: 194.87.69.52, port: 17926, type: vmess, uuid: 0e31f1df-a782-4368-b956-d40520a0e077, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇳 果宝特攻-免费线路-台湾-长期, server: gdgs.tarioblink.me, port: 30002, type: ss, cipher: chacha20-ietf-poly1305, password: 5cc14127-cf4e-4e6b-a222-beeddb02ff66}
+  - {name: 1|_SG_, server: 54.179.87.28, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5, server: 47.254.171.15, port: 8443, type: vmess, uuid: 97a21172-89a0-411e-b017-6a27c61c743d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/vmess-argo?ed=2048"}}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #18", server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36, server: 194.87.69.52, port: 17926, type: vmess, uuid: aaff7f05-9482-44dc-8c1a-a68ccea768ec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 - 洛杉矶 - HostPapa - 19, server: 23.94.243.79, port: 443, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dabai.in104.20.27.115}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65, server: 195.58.49.86, port: 17926, type: vmess, uuid: 597980f7-bfa4-46e6-a656-acd239a2714b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94, server: 194.87.69.52, port: 17926, type: vmess, uuid: 84551ec3-0575-4ea0-9db6-fae0f442c4fe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 15|🇯🇵 日本2|@ripaojiedian, server: w72tapyb.slashdevslashnetslashtun.net, port: 18012, type: ss, cipher: aes-256-gcm, password: 2T2TOL67SAUD3SME}
-  - {name: 🇭🇰 14|香港5|@ripaojiedian, server: w72tapyb.slashdevslashnetslashtun.net, port: 15008, type: ss, cipher: ss, password: //YWVzLTI1Ni1nY206RDhUUTBEOTkzTlM2WEswSw}
-  - {name: "🇺🇸 2|🇺🇸_US_美国 #3", server: 148.135.40.190, port: 8080, type: vmess, uuid: f6c4905b-0308-4164-b1ad-4157531a8378, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48, server: 194.87.69.50, port: 17926, type: vmess, uuid: c882b684-ab94-4b46-b34e-609d1f3b5c0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国LA-优化3-GPT 2, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7, server: v17.emovpn.buzz, port: 1452, type: vmess, uuid: 82667668-4bfd-4906-ab31-c2745d0de78e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v17.emovpn.buzz}}}
-  - {name: SCP-NSC 02, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, servername: ameblo.jp, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}}
-  - {name: 🇸🇬 14|新加坡|@ripaojiedian, server: ctmm.gscloud.bond, port: 31620, type: ss, cipher: ss, password: //Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpmMTZkMzc1Mi03YmFlLTQ3NGUtODdkYy1mODkyZGYyY2FlYWY}
-  - {name: "🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian", server: 109.104.154.146, port: 33333, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇩🇪 德国-优化 2, server: yes.mojcn.com, port: 16644, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
+  - {name: 🇬🇧 英国|@ripaojiedian, server: 5.39.254.196, port: 23985, type: vmess, uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33, server: 194.87.69.52, port: 17926, type: vmess, uuid: dd89fd66-2ae4-4868-aae5-20e1977a84c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43, server: 194.87.69.52, port: 17926, type: vmess, uuid: f126347a-b060-4069-ba84-33a314015603, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: Win/Mac/安卓 教程已推出, server: gdgs.tarioblink.me, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cc14127-cf4e-4e6b-a222-beeddb02ff66}
+  - {name: 🇬🇧 _GB_英国_2, server: 51.21.64.83, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.ukhttp/1.1}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13, server: 195.58.49.42, port: 17926, type: vmess, uuid: 181eee04-aa88-49a1-b583-9fc80c444431, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 15|🇯🇵 日本|@ripaojiedian, server: w72tapyb.slashdevslashnetslashtun.net, port: 18008, type: ss, cipher: aes-256-gcm, password: 9KGIJUHW23WGZMHJ}
+  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14, server: 212.192.12.70, port: 17926, type: vmess, uuid: dd89fd66-2ae4-4868-aae5-20e1977a84c4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2, server: 140.238.218.65, port: 8443, type: vmess, uuid: 97a21172-89a0-411e-b017-6a27c61c743d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/vmess-argo?ed=2048"}}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: nl.899994.xyz, port: 8443, type: vmess, uuid: a0605527-28e4-449c-80ee-5642cc16a8af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /index, headers: {Host: nl.899994.xyz}}}
+  - {name: "🇺🇸 12|github.com/freefq - 美国CloudFla... #2", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
+  - {name: 🇨🇭 _CH_瑞士->🇨🇳_CN_中国, server: 84.17.53.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67, server: 194.87.69.52, port: 17926, type: vmess, uuid: 32ed8a2f-1946-4c1a-bee8-1215d17b42c6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81, server: 195.58.49.86, port: 17926, type: vmess, uuid: 3e200091-324f-47ec-a767-15782ca937f8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本 2, server: e.1fengxin.xyz, port: 13002, type: trojan, password: e5fadca3-94c5-40eb-b7e5-1488ac829cc7, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1, server: 45.158.171.110, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A}
+  - {name: 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2, server: 193.29.139.189, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: s2.db-link02.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.6.224, headers: {Host: 100-34-100-44.s2.db-link02.top}}}
+  - {name: 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国, server: vip3.niuniupremium.xyz, port: 16928, type: vmess, uuid: 2ab54438-8af9-3711-bf1a-676fcc144586, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip3.niuniupremium.xyz}}}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}}
+  - {name: 🇸🇬 果宝特攻-免费节点-新加坡-A2, server: gdgs.tarioblink.me, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: 5cc14127-cf4e-4e6b-a222-beeddb02ff66}
+  - {name: 🇸🇬 新加坡 1, server: s.1fengxin.xyz, port: 14001, type: trojan, password: e5fadca3-94c5-40eb-b7e5-1488ac829cc7, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91, server: 195.58.49.42, port: 17926, type: vmess, uuid: 8f918f29-00d7-47ed-9601-965f897350ec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #17", server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11", server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本 3, server: e.1fengxin.xyz, port: 13003, type: trojan, password: e5fadca3-94c5-40eb-b7e5-1488ac829cc7, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77, server: 194.87.69.52, port: 17926, type: vmess, uuid: 6347e9b8-4b7f-417f-97f2-a1c6e234f66a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 17002, type: ss, cipher: aes-256-gcm, password: 8FW4QUIM9HH9WV1I}
+  - {name: "🇬🇧 13,14|英国|@ripaojiedian", server: 5.39.254.196, port: 23985, type: vmess, uuid: 398ce84e-4849-4e5f-9b1a-a56fbe233b81, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}}
+  - {name: 🇺🇸 _US_美国_3, server: 23.157.40.102, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国 #7", server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62, server: 195.58.49.86, port: 17926, type: vmess, uuid: 7df76b98-8283-47f6-be16-3a9be2dba24f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 14|狮城特殊|@ripaojiedian, server: 54.255.240.168, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: 🇨🇳 台湾 2, server: s.1fengxin.xyz, port: 12002, type: trojan, password: e5fadca3-94c5-40eb-b7e5-1488ac829cc7, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 1, server: e.1fengxin.xyz, port: 15001, type: trojan, password: e5fadca3-94c5-40eb-b7e5-1488ac829cc7, sni: data.steamdownload.top, skip-cert-verify: true}
+  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23, server: 212.192.12.70, port: 17926, type: vmess, uuid: de3695e9-b174-4788-ba90-16bc9e46f53c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105, server: 194.87.69.50, port: 17926, type: vmess, uuid: 736d1e23-c106-44a7-b0a5-867901dbef42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1", server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
-  - {name: 🇭🇰 香港3|@ripaojiedian, server: 3.link-hub.click, port: 40239, type: ssr, cipher: rc4-md5, password: ENZ52K, protocol: auth_aes128_md5, obfs: plain, protocol-param: 92902:pFWGOQ, obfs-param: cd2b692902.6602b8463464108506.microsoft.com}
-  - {name: 0|--23, server: p196.panda001.net, port: 27973, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: 🇦🇺 澳大利亚AU-T, server: au.mjt000.com, port: 443, type: trojan, password: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, sni: au.mjt000.com, skip-cert-verify: false}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16, server: 195.58.49.42, port: 17926, type: vmess, uuid: d5ff580f-282e-4d21-ad31-0da5313b3068, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇬🇧 英国-优化-GPT, server: yes.mojcn.com, port: 16645, type: vmess, uuid: 38aff4fc-6820-4149-aaaa-dc60fdb992c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ed4da11efdaa28b12d42640de111c4cd.mobgslb.tbcache.com}}}
-  - {name: "🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1", server: 96.126.102.150, port: 443, type: vmess, uuid: 051e3f0c-c139-4c7c-9559-41222b72ca20, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /datasheet}}
-  - {name: 🇰🇷 14|韩国特殊|@ripaojiedian, server: 18.142.225.149, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86, server: 195.58.49.86, port: 17926, type: vmess, uuid: d39ad1df-e8b5-4759-8c58-e27d2f3ff679, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 13|🇯🇵 日本2|@ripaojiedian, server: w72tapyb.slashdevslashnetslashtun.net, port: 18012, type: ss, cipher: aes-256-gcm, password: 2T2TOL67SAUD3SME}
+  - {name: "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4", server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52, server: 194.87.69.52, port: 17926, type: vmess, uuid: d5ff580f-282e-4d21-ad31-0da5313b3068, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 185.22.155.228, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com}
-  - {name: 🇭🇰 香港HY-优化, server: yes.mojcn.com, port: 16632, type: vmess, uuid: ee3f1a9f-c42a-471e-8d50-b5832910eaca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1f81e1c5bcd876c80bf3a8f070dcd4d5.mobgslb.tbcache.com}}}
-  - {name: 🇵🇱 _PL_波兰, server: 185.255.123.92, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇷🇺 俄罗斯-圣彼得堡-014, server: 195.58.49.50, port: 17926, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -324,321 +272,261 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾-优化3
-      - 🇭🇰 香港WAP-优化
-      - 🇭🇰 香港wap-T
-      - 🇨🇳 台湾-优化
-      - 🇭🇰 香港wap-T 2
-      - 🇭🇰 香港2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - 🇭🇰 香港3|@ripaojiedian
-      - 🇭🇰 香港HY-优化
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 🇨🇳 台湾 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -654,77 +542,64 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 「🇺🇸」EMO | 天元果 x3
-      - 🇩🇪 德国 - 法兰克福 - DigitalOcean, LLC - 2
-      - 🇨🇳 台湾-优化3
-      - SCP-NSC 01
-      - 🇸🇬 13|🇸🇬 新加坡2|@ripaojiedian
-      - 🇯🇵 日本-优化2
-      - 🇺🇦 乌克兰UA-T
-      - 15|AM_speednode_0002
-      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 15
-      - 🇵🇹 葡萄牙PT-T
-      - 🇻🇳 越南VN-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 19
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 57
-      - 🇩🇪 德国-优化
-      - 🇷🇺 俄罗斯RU-T
-      - 🇸🇬 新加坡-优化
-      - 0|--4
-      - 过滤掉3条线路
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 59
-      - 🇺🇸 6|🇺🇸_US_美国->🇳🇱_NL_荷兰
-      - 🇭🇰 香港WAP-优化
-      - 🇸🇬 新加坡-优化2
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 15
-      - 🇺🇸 美国LA-优化2-GPT
+      - 🇺🇸 美国 CloudFlare节点
+      - ----以下为线路----
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 12
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 37
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 53
-      - 🇭🇰 香港wap-T
-      - 🇺🇸 2|🇺🇸_US_美国
-      - 🇺🇸 美国LA-优化3-GPT
-      - 15|US_speednode_0077
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 80
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
-      - 🇨🇳 台湾-优化
-      - 🇯🇵 日本-优化
-      - 🇰🇵 朝鲜KP-T
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
-      - 🇭🇰 香港wap-T 2
-      - 🇮🇳 印度-优化
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 9
-      - 🇨🇦 加拿大 - 蒙特利尔 - OVH SAS - 1
-      - 0|--55
-      - 🇨🇦 加拿大-优化2
-      - 「🇦🇺」EMO | 红富士 x3
-      - 🇭🇰 香港2|@ripaojiedian
-      - 16|d*********g.com_3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 38
+      - 🇸🇬 果宝特攻-免费节点-新加坡-B2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 98
+      - 🇨🇳 果宝特攻-免费线路-台湾-长期
+      - 1|_SG_
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 5
+      - "🇺🇸 1,6|🇺🇸_US_美国 #18"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 36
+      - 🇺🇸 美国 - 洛杉矶 - HostPapa - 19
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 65
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 94
-      - 🇯🇵 15|🇯🇵 日本2|@ripaojiedian
-      - 🇭🇰 14|香港5|@ripaojiedian
-      - "🇺🇸 2|🇺🇸_US_美国 #3"
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 48
-      - 🇺🇸 美国LA-优化3-GPT 2
-      - 🇭🇰 中国 - 香港 - Hytron Network Services Limited - 7
-      - SCP-NSC 02
-      - 🇸🇬 14|新加坡|@ripaojiedian
-      - 🇳🇱 0,13|🇳🇱 荷兰|@ripaojiedian
-      - 🇩🇪 德国-优化 2
+      - 🇬🇧 英国|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 33
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 43
+      - Win/Mac/安卓 教程已推出
+      - 🇬🇧 _GB_英国_2
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 13
+      - 🇯🇵 15|🇯🇵 日本|@ripaojiedian
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
+      - 🇵🇱 波兰 - 华沙 - ECO-ATMAN - 2
+      - 🇺🇸 美国 CloudFlare节点 2
+      - "🇺🇸 12|github.com/freefq - 美国CloudFla... #2"
+      - 🇨🇭 _CH_瑞士->🇨🇳_CN_中国
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 67
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 81
+      - 🇯🇵 日本 2
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_1
+      - 🇺🇸 _NL_荷兰->🇺🇸_US_美国_2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 2|🇨🇳_CN_中国->🇺🇸_US_美国
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇸🇬 果宝特攻-免费节点-新加坡-A2
+      - 🇸🇬 新加坡 1
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 91
+      - "🇺🇸 1,6|🇺🇸_US_美国 #17"
+      - "🇺🇸 3,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11"
+      - 🇯🇵 日本 3
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 77
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇬🇧 13,14|英国|@ripaojiedian
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 _US_美国_3
+      - "🇺🇸 1,6|🇺🇸_US_美国 #7"
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 62
+      - 🇸🇬 14|狮城特殊|@ripaojiedian
+      - 🇨🇳 台湾 2
+      - 🇺🇸 美国 1
+      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 23
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 105
-      - "🇺🇸 2|🇺🇸_US_美国->🇮🇳_IN_印度 #1"
-      - 🇭🇰 香港3|@ripaojiedian
-      - 0|--23
-      - 🇦🇺 澳大利亚AU-T
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 16
-      - 🇬🇧 英国-优化-GPT
-      - 🇺🇸 美国 - 費利蒙 - Akamai Technologies, Inc. - 1
-      - 🇰🇷 14|韩国特殊|@ripaojiedian
+      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 86
+      - 🇯🇵 13|🇯🇵 日本2|@ripaojiedian
+      - "🇺🇸 1,6|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4"
       - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 52
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇭🇰 香港HY-优化
-      - 🇵🇱 _PL_波兰
+      - 🇷🇺 俄罗斯-圣彼得堡-014
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
