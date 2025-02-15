@@ -5,391 +5,283 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国_1, server: 151.101.0.155, port: 80, type: vmess, uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70, alterId: 0, cipher: auto, tls: false, servername: telegram-isvvpn.ir, network: ws, ws-opts: {path: /, headers: {Host: telegram-isvvpn.ir}}}
-  - {name: 🇺🇸 _US_美国_1, server: 185.237.185.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇨🇦 Trojan-加拿大2 | 低倍率, server: 6e490262041324a81b44b9f50f3b7f75.lh.gtm.node-is.green, port: 40387, type: trojan, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7, sni: tcca1.bilibili.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾2, server: tc.teacat2.xyz, port: 50018, type: ss, cipher: aes-128-gcm, password: b64ec383-e598-465a-9e59-70e9b0d87f66}
-  - {name: s11, server: 31.186.87.205, port: 2030, type: hysteria2, password: mg6M4FFo5OTc, obfs: salamander, obfs-password: Ttl1REugioLM, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡2, server: tc.teacat2.xyz, port: 50006, type: ss, cipher: aes-128-gcm, password: 593c3d63-04c7-4bbb-a03f-114eba08636c}
-  - {name: 🇰🇿 哈萨克斯坦 Kazakhstan, server: south.sf0jm.xyz, port: 49108, type: ss, cipher: aes-128-gcm, password: 92312863-d4f3-49cd-8b2a-bf5303fcd06c}
-  - {name: "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1", server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: pudvkjvvgdol.xn--fiqs8sjz2bull.com, port: 10564, type: vmess, uuid: ead8fb73-ff42-4fce-af33-5991e72006b7, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦", server: 45.147.200.170, port: 35972, type: vmess, uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本 - Osaka - Oracle Corporation - 3, server: hhhfksdcbr.fask511.cfd, port: 25775, type: vmess, uuid: 0663228f-646a-4c7c-b14a-bde613c0c237, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=1024", headers: {Host: www.douyin.com}}}
-  - {name: "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8", server: 104.19.47.122, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国_7, server: 13.50.25.213, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇯🇵 Trojan-日本1 | 低倍率, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 593c3d63-04c7-4bbb-a03f-114eba08636c, sni: tcjp1.bilibili.com, skip-cert-verify: true}
-  - {name: 🇸🇬 Singapore 05, server: south.sf0jm.xyz, port: 44405, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: s14-warp, server: 188.68.234.53, port: 9751, type: hysteria2, password: HlSLanszJieh, obfs: salamander, obfs-password: o9dI0T7VqpA1, skip-cert-verify: true}
-  - {name: 🇨🇭 瑞士 Switzerland, server: south.sf0jm.xyz, port: 49213, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3", server: 148.135.40.190, port: 8080, type: vmess, uuid: f6c4905b-0308-4164-b1ad-4157531a8378, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚, server: 54.188.92.179, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 Japan 03, server: east.sf0jm.xyz, port: 43403, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: 🇩🇪 德国-流媒体解锁, server: dg.sytcloud.top, port: 35801, type: hysteria2, password: d9dadeea-7a03-4997-8e1b-ff8f4d3dd86c, sni: dg.sytcloud.top, skip-cert-verify: true}
-  - {name: 🇯🇵 日本4, server: tc.teacat2.xyz, port: 50012, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
-  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X}
-  - {name: s11-warp, server: 31.186.87.205, port: 6925, type: hysteria2, password: mg6M4FFo5OTc, obfs: salamander, obfs-password: Ttl1REugioLM, skip-cert-verify: true}
-  - {name: 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14, server: bvdhgfhfs.fask511.cfd, port: 25780, type: vmess, uuid: 0663228f-646a-4c7c-b14a-bde613c0c237, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=1024", headers: {Host: www.douyin.com}}}
-  - {name: 🇨🇳 台湾WAP-T-GPT, server: hinet.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: hinet.mjt000.com, skip-cert-verify: false}
-  - {name: 🇬🇧 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3}
-  - {name: FREE_Serv12, server: serv12.trevely.us.kg, port: 59350, type: hysteria2, password: fb508d86-1679-4b22-8c09-0cd4cdbb887d, sni: www.bing.com, skip-cert-verify: true}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10", server: 104.19.21.230, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 _US_美国_10, server: 34.221.167.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: "🇺🇸 11,12|github.com/freefq - 美国CloudFla...", server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6, server: 195.58.49.42, port: 20315, type: vmess, uuid: c8972631-fca7-4f2e-ae9e-3547904f8170, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian, server: 35.77.91.116, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇻🇳 越南 Viet Nam, server: south.sf0jm.xyz, port: 49111, type: ss, cipher: aes-128-gcm, password: 92312863-d4f3-49cd-8b2a-bf5303fcd06c}
-  - {name: 🇱🇹 立陶宛 Lithuania, server: south.sf0jm.xyz, port: 49218, type: ss, cipher: aes-128-gcm, password: 92312863-d4f3-49cd-8b2a-bf5303fcd06c}
-  - {name: 🇹🇭 泰国2, server: tc.teacat2.xyz, port: 50032, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
-  - {name: 🇳🇬 尼日利亚NI-T, server: ni.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: ni.mjt000.com, skip-cert-verify: false}
-  - {name: 🇬🇧 英国1, server: tc.teacat2.xyz, port: 50023, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
   - {name: 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20, server: 155.138.208.122, port: 8881, type: vmess, uuid: db5afae4-ac23-41a6-8378-f307a9a47436, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [moi.ir]}}}
-  - {name: "🇺🇸 11,12|github.com/freefq - 美国Fastly全球...", server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}}
-  - {name: 🇯🇵 日本4 2, server: tc.teacat2.xyz, port: 50012, type: ss, cipher: aes-128-gcm, password: b64ec383-e598-465a-9e59-70e9b0d87f66}
-  - {name: 🇭🇰 Hong Kong 02, server: south.sf0jm.xyz, port: 41412, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: 🇸🇬 新加坡4, server: tc.teacat2.xyz, port: 50008, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
-  - {name: 🇸🇬 新加坡SG-T, server: sg.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: sg.mjt000.com, skip-cert-verify: true}
-  - {name: 🇯🇵 Trojan-日本1 | 低倍率 2, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7, sni: tcjp1.bilibili.com, skip-cert-verify: true}
-  - {name: 🇩🇰 丹麦 Denmark, server: south.sf0jm.xyz, port: 49215, type: ss, cipher: aes-128-gcm, password: 92312863-d4f3-49cd-8b2a-bf5303fcd06c}
-  - {name: "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2", server: us-sanfrancisco-02.t3csyun.buzz, port: 34053, type: vmess, uuid: 6d3404ef-27c6-48de-a83a-8ac6488760b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us-sanfrancisco-02.t3csyun.buzz}}}
-  - {name: 🇨🇿 捷克 Czech Republic, server: south.sf0jm.xyz, port: 49224, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: 🇺🇸 美国3, server: tc.teacat2.xyz, port: 50015, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: s5.db-link01.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 100-170-6-223.s5.db-link01.top}}}
-  - {name: 🇺🇸 Trojan-美国2 | 低倍率, server: da9140e98073400a09ab99ec8f7c33fe.lh.gtm.node-is.green, port: 47369, type: trojan, password: b64ec383-e598-465a-9e59-70e9b0d87f66, sni: tcus1.bilibili.com, skip-cert-verify: true}
-  - {name: 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA}
-  - {name: 🇭🇰 香港2, server: tc.teacat2.xyz, port: 50002, type: ss, cipher: aes-128-gcm, password: 593c3d63-04c7-4bbb-a03f-114eba08636c}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.16.155.10, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.24.181.189, headers: {Host: 100-47-154-9.s1.cn-db.top}}}
-  - {name: 🇸🇬 Singapore 01, server: south.sf0jm.xyz, port: 44401, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: 🇨🇳 台湾1, server: tc.teacat2.xyz, port: 50017, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: s2.db-link01.top, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.60.154, headers: {Host: 100-55-60-174.s2.db-link01.top}}}
-  - {name: 🇨🇳 Trojan-台湾1 | 低倍率, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7, sni: tctw1.bilibili.com, skip-cert-verify: true}
-  - {name: "🇭🇰 香港[A1]", server: czf1.hssl8088.icu, port: 13152, type: ss, cipher: chacha20-ietf-poly1305, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30}
-  - {name: 🇺🇸 美国USLA-T-GPT, server: usla.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: usla.mjt000.com, skip-cert-verify: false}
-  - {name: FREE_Serv15, server: serv15.trevely.us.kg, port: 59350, type: hysteria2, password: 339ecd0d-b713-40d4-acee-6532d9f3f1f2, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇭🇰 Trojan-香港1 | 低倍率, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 593c3d63-04c7-4bbb-a03f-114eba08636c, sni: tchk1.bilibili.com, skip-cert-verify: true}
-  - {name: "🇯🇵 日本[A3]", server: xcdx.hssl8088.icu, port: 13146, type: ss, cipher: chacha20-ietf-poly1305, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国_2, server: join.ISVvpn.fastly80-3.hosting-ip.com, port: 80, type: vmess, uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70, alterId: 0, cipher: auto, tls: false, servername: telegram-isvvpn.ir, network: ws, ws-opts: {path: /, headers: {Host: telegram-isvvpn.ir}}}
-  - {name: 🇸🇬 新加坡4 2, server: tc.teacat2.xyz, port: 50008, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
-  - {name: 🇨🇳 台湾2 2, server: tc.teacat2.xyz, port: 50018, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
-  - {name: "🇸🇬 新加坡[A2]", server: czf2.hssl8088.icu, port: 13160, type: ss, cipher: chacha20-ietf-poly1305, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30}
-  - {name: 🇺🇸 _US_美国_6, server: 35.91.180.231, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇱🇹 _LT_立陶宛, server: 147.78.1.27, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "🇭🇰 香港[A3]", server: xcdx.hssl8088.icu, port: 13152, type: ss, cipher: chacha20-ietf-poly1305, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30}
-  - {name: "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2", server: 104.19.47.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 中国 - 香港 - Akari Networks - 31, server: xg.dashuai.cyou, port: 19901, type: vmess, uuid: fdacd28f-18b9-46f4-a676-49d0bebc9674, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港3, server: tc.teacat2.xyz, port: 50003, type: ss, cipher: aes-128-gcm, password: 8d4fa037-3324-485e-a3fc-2862210ee4f7}
-  - {name: 🇭🇺 匈牙利 Hungary, server: south.sf0jm.xyz, port: 49229, type: ss, cipher: aes-128-gcm, password: 92312863-d4f3-49cd-8b2a-bf5303fcd06c}
-  - {name: 🇵🇱 PL-s2-hy2, server: 31.186.86.47, port: 2036, type: hysteria2, password: 301fad67-1288-47a9-b3ca-22b823e4e789, sni: www.bing.com, skip-cert-verify: true}
-  - {name: "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...", server: 104.19.47.79, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 11,16|美国2|@ripaojiedian", server: 120.232.153.123, port: 45402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾-优化, server: yes.mojcn.com, port: 16616, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9", server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17", server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 美国[B1]备用hy2", server: lsmg.hssl8088.icu, port: 50000, type: hysteria2, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30, sni: lsmg.hssl8088.icu, skip-cert-verify: true}
-  - {name: 🇯🇵 Trojan-日本2 | 低倍率, server: 754ac0774b86eabe98a2583c0f49f6e4.lh.gtm.node-is.green, port: 45900, type: trojan, password: 593c3d63-04c7-4bbb-a03f-114eba08636c, sni: tcjp1.bilibili.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2, server: 34.213.236.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇫🇷 法国 - 马赛 - Oracle Corporation - 6, server: tttxbmsm.fask511.cfd, port: 25779, type: vmess, uuid: 0663228f-646a-4c7c-b14a-bde613c0c237, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=1024", headers: {Host: tttxbmsm.fask511.cfd}}}
-  - {name: 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4, server: 195.58.49.42, port: 20315, type: vmess, uuid: 3c74a533-8d15-40b1-ab44-828cb14653e5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇦 加拿大-优化2, server: m.cnmjcn.com, port: 16641, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: FREE_Serv11, server: serv11.trevely.us.kg, port: 59350, type: hysteria2, password: fa8a0187-6011-4f1f-bdf4-bbf928259000, sni: www.bing.com, skip-cert-verify: true}
-  - {name: 🇵🇱 PL-s7-hy2, server: 128.204.223.119, port: 31233, type: hysteria2, password: 4e10c051-2495-427b-a8ed-a627d88b59ee, sni: www.bing.com, skip-cert-verify: true}
-  - {name: "🇦🇺 澳大利亚[A2]", server: czf2.hssl8088.icu, port: 13147, type: ss, cipher: chacha20-ietf-poly1305, password: cc256a78-3c73-4d34-b3ee-7fc72e895c30}
-  - {name: 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9, server: 192.74.242.243, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1737106641750}}
-  - {name: 🇨🇳 Taiwan 01, server: south.sf0jm.xyz, port: 42401, type: ss, cipher: aes-128-gcm, password: ae0c2c6a-442f-4dc7-aefe-27726a10f9ae}
-  - {name: 🇭🇰 Trojan-香港2 | 低倍率, server: bded3f64fc91af9e56fa5e67d5255d7e.lh.gtm.node-is.green, port: 41379, type: trojan, password: 593c3d63-04c7-4bbb-a03f-114eba08636c, sni: tchk1.bilibili.com, skip-cert-verify: true}
+  - {name: 🇭🇰 荷兰 01 深港, server: mdss-other.04z3susick.download, port: 12039, type: ss, cipher: aes-128-gcm, password: 0972e4d1-6dbd-47cb-8a27-a24f3b3dece9}
+  - {name: 🇭🇰 德国 01 深港, server: mdss-other.04z3susick.download, port: 12037, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 52.213.237.161, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: pudvkjvvgdol.xn--fiqs8sjz2bull.com, port: 10564, type: vmess, uuid: ead8fb73-ff42-4fce-af33-5991e72006b7, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 美国 04 深港, server: mdss-us.04z3susick.download, port: 12026, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: "🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...", server: 31.58.142.221, port: 8967, type: vmess, uuid: 7d29f1ca-647b-4b4e-b9c8-6beab7133535, alterId: 0, cipher: auto, tls: true, servername: neo.nicme.me, network: ws, ws-opts: {path: /BONRyKGhDE, headers: {Host: neo.nicme.me}}}
+  - {name: 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian, server: 35.77.91.116, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1, server: 185.121.134.12, port: 20315, type: vmess, uuid: 880a0fff-88fa-4c9d-949d-b877fbfedb5e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 新加坡 04 深港, server: mdss-sg.04z3susick.download, port: 12020, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1", server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}}
+  - {name: 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚, server: 34.213.236.232, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇷🇺 _RU_俄罗斯_3, server: 217.30.10.18, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX}
+  - {name: 🇭🇰 香港 03 深港, server: mdss-hk.04z3susick.download, port: 12003, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: 🇭🇰 澳大利亚 01 深港, server: mdss-other.04z3susick.download, port: 12047, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: 🇭🇰 加拿大 02 深港, server: mdss-other.04z3susick.download, port: 12046, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: "🇨🇳 11,12|github.com/freefq - 广东省移动 7", server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: 🇺🇸 _US_美国_3, server: 35.94.43.251, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 Singapore 05, server: south.sf0jm.xyz, port: 44405, type: ss, cipher: aes-128-gcm, password: 70835dee-7495-4b91-b254-722c8cc2895f}
+  - {name: 🇰🇷 韩国1, server: tc.teacat2.xyz, port: 50025, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
+  - {name: 🇺🇸 美国 - 水牛城 - HostPapa - 28, server: 107.174.34.6, port: 443, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dabai.in172.64.19.172, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}}
+  - {name: 🇷🇺 俄罗斯 Russian, server: south.sf0jm.xyz, port: 49204, type: ss, cipher: aes-128-gcm, password: 70835dee-7495-4b91-b254-722c8cc2895f}
+  - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2", server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
+  - {name: 🇭🇰 台湾 02 深港, server: mdss-tw.04z3susick.download, port: 12030, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: 🇷🇴 罗马尼亚 Romania, server: south.sf0jm.xyz, port: 49225, type: ss, cipher: aes-128-gcm, password: 70835dee-7495-4b91-b254-722c8cc2895f}
+  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3", server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国2, server: tc.teacat2.xyz, port: 50014, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
+  - {name: 🇹🇷 土耳其TR-T, server: tr.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: tr.mjt000.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡1, server: tc.teacat2.xyz, port: 50005, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
+  - {name: 🇨🇦 Trojan-加拿大1 | 低倍率, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 07e55e4a-ef94-4e81-addc-b62532cb503a, sni: tcca1.bilibili.com, skip-cert-verify: true}
+  - {name: 1|_FR_->_RU_, server: 163.172.64.22, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "🇭🇰 11,16|香港2|@ripaojiedian", server: AZHJ001.dmak.cyou, port: 20965, type: vmess, uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 Trojan-台湾1 | 低倍率, server: cc.rk1.node-is.green, port: 10116, type: trojan, password: 07e55e4a-ef94-4e81-addc-b62532cb503a, sni: tctw1.bilibili.com, skip-cert-verify: true}
+  - {name: 🇹🇭 泰国1, server: tc.teacat2.xyz, port: 50031, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
+  - {name: 🇪🇸 _ES_西班牙, server: 150.241.97.212, port: 1601, type: ss, cipher: chacha20-ietf-poly1305, password: yhDWDX3XM7yLFr1YWB7QOe}
+  - {name: "🇺🇸 11,12|美国Fastly全球...", server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}}
+  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn2.sanfencdn9.com}}}
+  - {name: "🇯🇵 JP, Tokyo", server: 13.125.199.67, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇭🇰 Trojan-香港2 | 低倍率, server: 8fd4d2c3dccd2e649f4bff2f862fb088.lh.gtm.node-is.green, port: 49446, type: trojan, password: 07e55e4a-ef94-4e81-addc-b62532cb503a, sni: tchk1.bilibili.com, skip-cert-verify: true}
+  - {name: 🇭🇰 台湾 04 深港, server: mdss-tw.04z3susick.download, port: 12032, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: "🇮🇳 11,12|github.com/freefq - 印度  3", server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: sahand.serveminecraft.net}}}
+  - {name: 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12, server: 185.121.134.12, port: 20315, type: vmess, uuid: 5739c5f9-bfc5-441b-87fe-b3a7cd80c8a8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 柬埔寨 02 | 深港, server: mdss-other.04z3susick.download, port: 12036, type: ss, cipher: aes-128-gcm, password: 885f2012-ff8b-4835-9ce1-22b2382f6715}
+  - {name: 🇰🇷 韩国|@ripaojiedian, server: useful-jennet.shiner427.skin, port: 443, type: trojan, password: !<str> 65086441068973800}
+  - {name: "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3", server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server32.beheshtbaneh.com}}}
+  - {name: 🇺🇸 _US_美国_2, server: 54.212.56.86, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 1|_US__11, server: 51.141.73.244, port: 29814, type: ss, cipher: chacha20-ietf-poly1305, password: nEyOTWmtPG5tdgZqMQEq4R}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 95.85.93.172, port: 443, type: trojan, password: !<str> 3747000103274291200, sni: content-shrimp.pigeon031.one}
+  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4", server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇮🇱 以色列 Israel, server: south.sf0jm.xyz, port: 49105, type: ss, cipher: aes-128-gcm, password: 70835dee-7495-4b91-b254-722c8cc2895f}
+  - {name: "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}}
+  - {name: 🇬🇧 英国-优化-GPT, server: yes.mojcn.com, port: 16645, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
+  - {name: 🇬🇧 _GB_英国_2, server: 18.133.167.84, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
+  - {name: "🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...", server: 31.58.142.221, port: 8967, type: vmess, uuid: 7d29f1ca-647b-4b4e-b9c8-6beab7133535, alterId: 0, cipher: auto, tls: true, servername: neo.nicme.me, network: ws, ws-opts: {path: /BONRyKGhDE, headers: {Host: neo.nicme.me}}}
+  - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7", server: 104.17.156.224, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}}
+  - {name: 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian, server: 103.106.229.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇫🇷 法国 - 马赛 - Oracle Corporation - 3, server: hhhfksdcbr.fask511.cfd, port: 25779, type: vmess, uuid: 0663228f-646a-4c7c-b14a-bde613c0c237, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=1024", headers: {Host: hhhfksdcbr.fask511.cfd}}}
+  - {name: 🇭🇰 加拿大 01 深港, server: mdss-other.04z3susick.download, port: 12045, type: ss, cipher: aes-128-gcm, password: 0972e4d1-6dbd-47cb-8a27-a24f3b3dece9}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: AZHJ001.dmak.cyou, port: 20965, type: vmess, uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇳 11,12|广东省移动 7", server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}}
+  - {name: 🇰🇷 韩国2, server: tc.teacat2.xyz, port: 50026, type: ss, cipher: aes-128-gcm, password: 07e55e4a-ef94-4e81-addc-b62532cb503a}
+  - {name: 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5, server: 213.136.83.240, port: 56656, type: vmess, uuid: bc97f674-c578-4940-9234-0a1da46041b0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/vmess-argo?ed=2048"}}
+  - {name: 🇺🇸 _US_美国_4, server: 54.187.27.197, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian, server: 43.207.2.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇵🇹 葡萄牙 Portugal, server: south.sf0jm.xyz, port: 49217, type: ss, cipher: aes-128-gcm, password: 70835dee-7495-4b91-b254-722c8cc2895f}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -408,408 +300,302 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇨🇳 台湾2
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇭🇰 香港2
-      - 🇨🇳 台湾1
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇭🇰 美国 04 深港
+      - 🇭🇰 新加坡 04 深港
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇭🇰 台湾 02 深港
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇨🇳 台湾2 2
-      - 🇭🇰 香港[A3]
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇨🇳 台湾-优化
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -825,98 +611,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_1
-      - 🇺🇸 _US_美国_1
-      - 🇨🇦 Trojan-加拿大2 | 低倍率
-      - 🇨🇳 台湾2
-      - s11
-      - 🇸🇬 新加坡2
-      - 🇰🇿 哈萨克斯坦 Kazakhstan
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #1"
-      - 🇸🇬 新加坡3|@ripaojiedian
-      - 🇷🇺 2,11|2,11|2,11|2,11|2|🇷🇺_RU_俄罗斯联邦
-      - 🇯🇵 日本 - Osaka - Oracle Corporation - 3
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #8"
-      - 🇺🇸 _US_美国_7
-      - 🇯🇵 Trojan-日本1 | 低倍率
-      - 🇸🇬 Singapore 05
-      - s14-warp
-      - 🇨🇭 瑞士 Switzerland
-      - "🇺🇸 2,11|2,11|2,11|2|🇺🇸_US_美国 #3"
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇯🇵 Japan 03
-      - 🇩🇪 德国-流媒体解锁
-      - 🇯🇵 日本4
-      - 🇵🇱 波兰 V2CROSS.COM
-      - s11-warp
-      - 🇨🇳 中国 - 乌恰 - Baxet Group Inc. - 14
-      - 🇨🇳 台湾WAP-T-GPT
-      - 🇬🇧 高性价比机场:https://kfyun.uk
-      - FREE_Serv12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #10"
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 6
-      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
-      - 🇻🇳 越南 Viet Nam
-      - 🇱🇹 立陶宛 Lithuania
-      - 🇹🇭 泰国2
-      - 🇳🇬 尼日利亚NI-T
-      - 🇬🇧 英国1
       - 🇺🇸 美国 - 亚特兰大 - The Constant Company - 20
-      - 🇺🇸 11,12|github.com/freefq - 美国Fastly全球...
-      - 🇯🇵 日本4 2
-      - 🇭🇰 Hong Kong 02
-      - 🇸🇬 新加坡4
-      - 🇸🇬 新加坡SG-T
-      - 🇯🇵 Trojan-日本1 | 低倍率 2
-      - 🇩🇰 丹麦 Denmark
-      - "🇺🇸 2,11|2,11|2,11|2,11|2|🇺🇸_US_美国 #2"
-      - 🇨🇿 捷克 Czech Republic
-      - 🇺🇸 美国3
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 Trojan-美国2 | 低倍率
-      - 🇸🇬 15|🇸🇬 新加坡|@ripaojiedian
-      - 🇭🇰 香港2
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇸🇬 Singapore 01
-      - 🇨🇳 台湾1
-      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇭🇰 荷兰 01 深港
+      - 🇭🇰 德国 01 深港
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇭🇰 美国 04 深港
+      - 🇸🇬 11|11|11|11,15,16|新加坡|@ripaojiedi...
+      - 🇯🇵 15|🇯🇵 日本特殊|@ripaojiedian
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 1
+      - 🇭🇰 新加坡 04 深港
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #1"
+      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
+      - 🇷🇺 _RU_俄罗斯_3
+      - 🇭🇰 香港 03 深港
+      - 🇭🇰 澳大利亚 01 深港
+      - 🇭🇰 加拿大 02 深港
+      - 🇨🇳 11,12|github.com/freefq - 广东省移动 7
+      - 🇺🇸 _US_美国_3
+      - 🇸🇬 Singapore 05
+      - 🇰🇷 韩国1
+      - 🇺🇸 美国 - 水牛城 - HostPapa - 28
+      - 🇷🇺 俄罗斯 Russian
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2|🇺🇸_... #2"
+      - 🇭🇰 台湾 02 深港
+      - 🇷🇴 罗马尼亚 Romania
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇺🇸 美国2
+      - 🇹🇷 土耳其TR-T
+      - 🇸🇬 新加坡1
+      - 🇨🇦 Trojan-加拿大1 | 低倍率
+      - 1|_FR_->_RU_
+      - 🇭🇰 11,16|香港2|@ripaojiedian
       - 🇨🇳 Trojan-台湾1 | 低倍率
-      - 🇭🇰 香港[A1]
-      - 🇺🇸 美国USLA-T-GPT
-      - FREE_Serv15
-      - 🇭🇰 Trojan-香港1 | 低倍率
-      - 🇯🇵 日本[A3]
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国_2
-      - 🇸🇬 新加坡4 2
-      - 🇨🇳 台湾2 2
-      - 🇸🇬 新加坡[A2]
-      - 🇺🇸 _US_美国_6
-      - 🇱🇹 _LT_立陶宛
-      - 🇭🇰 香港[A3]
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦... #2"
-      - 🇭🇰 中国 - 香港 - Akari Networks - 31
-      - 🇭🇰 香港3
-      - 🇭🇺 匈牙利 Hungary
-      - 🇵🇱 PL-s2-hy2
-      - 🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国->🇨🇦...
-      - 🇺🇸 11,16|美国2|@ripaojiedian
-      - 🇨🇳 台湾-优化
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US... #9"
-      - "🇺🇸 1,6,11|1,6,11|1,6,11|1,6|🇺🇸_US_美国 #17"
-      - 🇺🇸 美国[B1]备用hy2
-      - 🇯🇵 Trojan-日本2 | 低倍率
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚 2
-      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 6
-      - 🇷🇺 俄罗斯 - 圣彼得堡 - LLC Baxet - 4
-      - 🇨🇦 加拿大-优化2
-      - FREE_Serv11
-      - 🇵🇱 PL-s7-hy2
-      - 🇦🇺 澳大利亚[A2]
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 9
-      - 🇨🇳 Taiwan 01
+      - 🇹🇭 泰国1
+      - 🇪🇸 _ES_西班牙
+      - 🇺🇸 11,12|美国Fastly全球...
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
+      - 🇯🇵 JP, Tokyo
       - 🇭🇰 Trojan-香港2 | 低倍率
+      - 🇭🇰 台湾 04 深港
+      - 🇮🇳 11,12|github.com/freefq - 印度  3
+      - 🇦🇹 奥地利 - 維也納 - Baxet Group Inc. - 12
+      - 🇭🇰 柬埔寨 02 | 深港
+      - 🇰🇷 韩国|@ripaojiedian
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #3"
+      - 🇺🇸 _US_美国_2
+      - 1|_US__11
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #4"
+      - 🇮🇱 以色列 Israel
+      - "🇺🇸 11,12|github.com/freefq - 美国CloudFla... #2"
+      - 🇬🇧 英国-优化-GPT
+      - 🇬🇧 _GB_英国_2
+      - 🇸🇬 11|11|11|11|11,15,16|新加坡|@ripaoji...
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #7"
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇫🇷 法国 - 马赛 - Oracle Corporation - 3
+      - 🇭🇰 加拿大 01 深港
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇨🇳 11,12|广东省移动 7
+      - 🇰🇷 韩国2
+      - 🇫🇷 法国 - Lauterbourg - Contabo GmbH - 5
+      - 🇺🇸 _US_美国_4
+      - 🇰🇷 15|🇰🇷 韩国特殊|@ripaojiedian
+      - 🇵🇹 葡萄牙 Portugal
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
