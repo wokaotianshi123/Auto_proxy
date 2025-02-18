@@ -5,451 +5,355 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7", server: cfcdn2.sanfencdn9.com, port: 2052, type: vmess, uuid: ab1ee1ac-884c-44dc-ab65-d533d32e2b1a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cfcdn2.sanfencdn9.com}}}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.66.47.83, port: 443, type: trojan, password: "%3AZ%23%253cdIG%27c*%3B*O%7D", sni: JoinmAhDiSeRvER-csn.PaGeS.DEv, network: ws, ws-opts: {path: "/trVxXjc9031MC8sntF?ed=2560", headers: {Host: JoinmAhDiSeRvER-csn.PaGeS.DEv}}}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 137.175.42.252, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1736329715306, headers: {Host: www.94346384.xyz}}}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.41.103.104, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: 🇧🇪 比利时 Belgium, server: south.sf0jm.xyz, port: 49222, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 🇸🇬 新加坡4|@ripaojiedian, server: 154.196.244.14, port: 16004, type: ss, cipher: aes-256-gcm, password: VD2XBX35QK6G1WA1}
-  - {name: 🇦🇺 澳大利亚 Australia, server: south.sf0jm.xyz, port: 49103, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇳🇱 荷兰3, server: weilai-nl.sanguayun.com, port: 13953, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian, server: 154.196.244.19, port: 16009, type: ss, cipher: aes-256-gcm, password: EHL7V4WGZ7EV4K9V}
-  - {name: 🇮🇹 意大利 Italy, server: south.sf0jm.xyz, port: 49209, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3, server: 38.11.69.36, port: 30003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1739796397157, headers: {Host: www.54846389.xyz}}}
-  - {name: 🇦🇶 南极洲 -冷门, server: qwec.bat520.cc, port: 52414, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇯🇵 日本2, server: saibo-jp.sanguayun.com, port: 11409, type: hysteria2, password: 3f9b3419-29d5-4fbf-a96c-62c001705a04, skip-cert-verify: false}
-  - {name: 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4, server: 104.21.69.44, port: 8443, type: vmess, uuid: 35362031-3032-4035-b520-393720393920, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws}}
-  - {name: 🇺🇸 United States 03, server: east.sf0jm.xyz, port: 45403, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇭🇰 香港3, server: weilai-hk.sanguayun.com, port: 13229, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, skip-cert-verify: false}
-  - {name: 🇺🇸 United States 01, server: east.sf0jm.xyz, port: 45401, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇯🇵 日本1, server: saibo-jp.sanguayun.com, port: 11654, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
-  - {name: 斐济-冷门, server: qwec.bat520.cc, port: 56925, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇺🇸 United States 05, server: east.sf0jm.xyz, port: 45405, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇺🇸 美国3, server: weilai-us.sanguayun.com, port: 13604, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇭🇰 Hong Kong 03, server: south.sf0jm.xyz, port: 41413, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian, server: 103.106.229.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.17.213.241, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.67.93.174, headers: {Host: 100-206-104-218.s1.db-link01.top}}}
-  - {name: 🇺🇸 United States 04, server: east.sf0jm.xyz, port: 45404, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇺🇸 美国1, server: weilai-us.sanguayun.com, port: 13735, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇱🇹 立陶宛家宽-01, server: qweb.bat520.cc, port: 17874, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇨🇳 TW台湾, server: cfjtw.chuifengji.top, port: 15468, type: hysteria2, password: 0895476a-b3b3-4fe5-9124-b60503349f97, sni: cfjtw.chuifengji.top, skip-cert-verify: true}
-  - {name: 🇭🇰 香港4, server: weilai-hk.sanguayun.com, port: 13078, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇯🇵 日本4, server: weilai-jp.sanguayun.com, port: 13351, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3, server: 172.67.204.84, port: 8443, type: vmess, uuid: 35362031-3032-4035-b520-393720393920, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ws}}
-  - {name: 🇯🇵 16|日本|@ripaojiedian, server: 45.159.51.116, port: 20855, type: vmess, uuid: bb59ce12-afda-4a2e-bb62-6f5b60acbe77, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰2, server: weilai-nl.sanguayun.com, port: 13750, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, skip-cert-verify: false}
-  - {name: 🇸🇰 斯洛伐克 Slovakia, server: south.sf0jm.xyz, port: 49228, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3", server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 香港1, server: weilai-hk.sanguayun.com, port: 13029, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇭🇰 Hong Kong 02, server: south.sf0jm.xyz, port: 41412, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇭🇺 匈牙利 Hungary, server: south.sf0jm.xyz, port: 49229, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇦🇪 阿联酋 United Arab Emirates, server: south.sf0jm.xyz, port: 49106, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 🇰🇷 韩国3|@ripaojiedian, server: 218.38.103.150, port: 28902, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@}
-  - {name: 🇩🇪 德国 Germany, server: south.sf0jm.xyz, port: 49203, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇯🇵 日本4 2, server: saibo-jp.sanguayun.com, port: 11513, type: hysteria2, password: 83e9ec8a-d711-4756-9476-023053334497, skip-cert-verify: false}
+  - {name: 🏳️‍🌈 ！【您的流量用完了】！, server: qwea.bat520.cc, port: 16941, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇺🇸 美国1, server: saibo-us.sanguayun.com, port: 11903, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian, server: 154.196.244.21, port: 16011, type: ss, cipher: aes-256-gcm, password: LVTKTFKX69RV9GVO}
+  - {name: 🇺🇸 _US_美国_2, server: 35.163.107.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3", server: 120.232.240.56, port: 16928, type: vmess, uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇮🇳 11,12|印度  2", server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {Host: irsoft.sytes.net}}}
+  - {name: "🇺🇸 3,11,17|🇺🇸_US_美国 #22", server: russia.com, port: 8080, type: vmess, uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: russia.com}}}
+  - {name: 🇨🇳 台湾01-0.01×, server: 36.228.251.135, port: 20074, type: trojan, password: 061a01f1-704b-4712-8e12-6d3fc95a127d, sni: taobao.phantasy.life, skip-cert-verify: false}
+  - {name: 🇭🇰 Hong Kong 06, server: south.sf0jm.xyz, port: 41416, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷, server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj}
+  - {name: 🇺🇸 美国1 2, server: weilai-us.sanguayun.com, port: 13444, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
+  - {name: 🇨🇭 瑞士-冷门, server: qweb.bat520.cc, port: 39015, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
   - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2", server: 45.147.200.170, port: 35972, type: vmess, uuid: 6a2afda8-8798-434c-8964-1deb4e7655a5, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚家宽-01, server: qwea.bat520.cc, port: 55908, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇸🇬 新加坡6|@ripaojiedian, server: 154.196.244.19, port: 16009, type: ss, cipher: aes-256-gcm, password: EHL7V4WGZ7EV4K9V}
-  - {name: 🇯🇵 Japan 03, server: east.sf0jm.xyz, port: 43403, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇰🇷 韩国2|@ripaojiedian, server: 14.37.56.164, port: 50000, type: trojan, password: Aimer, sni: agepw.ambercc.filegear-sg.me, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: agepw.ambercc.filegear-sg.me}}}
-  - {name: 🇰🇭 柬埔寨KH-T, server: kh.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: kh.mjt000.com, skip-cert-verify: false}
-  - {name: 🇯🇵 Japan 04, server: east.sf0jm.xyz, port: 43404, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇰🇷 韩国 Korea, server: east.sf0jm.xyz, port: 49101, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇵🇱 波兰 Poland, server: south.sf0jm.xyz, port: 49223, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇭🇰 Hong Kong 01, server: south.sf0jm.xyz, port: 41411, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: TG群 chuifengjipd, server: cfjxg.chuifengji.top, port: 15462, type: hysteria2, password: 0895476a-b3b3-4fe5-9124-b60503349f97, sni: cfjxg.chuifengji.top, skip-cert-verify: true}
-  - {name: 🇩🇰 丹麦 Denmark, server: south.sf0jm.xyz, port: 49215, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
+  - {name: 🇫🇷 _FR_法国_1, server: 146.19.106.5, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: MzZjN}
+  - {name: 🇺🇸 美国4, server: saibo-us.sanguayun.com, port: 11313, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇺🇸 美国LA-优化-GPT, server: yes.mojcn.com, port: 16648, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
+  - {name: 🇳🇵 尼泊尔-冷门, server: qweb.bat520.cc, port: 17431, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇮🇱 以色列 Israel, server: south.sf0jm.xyz, port: 49105, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇻🇦 梵蒂冈-冷门, server: qwec.bat520.cc, port: 25553, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: SCP-NSC 05, server: tw.ssrxray.click, port: 36918, type: ss, cipher: aes-256-gcm, password: uoXctIQ4L89ykUZwn17Pn3CzNDNcZSRabCgN5hyNV7JQ}
+  - {name: 🇺🇸 _US_美国->🇨🇭_CH_瑞士, server: 34.220.100.94, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8", server: 172.67.164.78, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in3.wish.ml}}}
   - {name: 🇷🇴 罗马尼亚-冷门, server: qweb.bat520.cc, port: 35823, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇺🇸 United States 02, server: east.sf0jm.xyz, port: 45402, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 🇺🇸 United States 03 2, server: east.sf0jm.xyz, port: 45403, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 距离下次重置剩余：11 天, server: weilai-us.sanguayun.com, port: 13415, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇸🇬 Singapore 04, server: south.sf0jm.xyz, port: 44404, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇳🇴 挪威 Norway, server: south.sf0jm.xyz, port: 49211, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇸🇰 斯洛伐克 Slovakia 2, server: south.sf0jm.xyz, port: 49228, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇺🇸 美国3 2, server: saibo-us.sanguayun.com, port: 11397, type: hysteria2, password: 83e9ec8a-d711-4756-9476-023053334497, skip-cert-verify: false}
-  - {name: 🇭🇰 香港4 2, server: saibo-hk.sanguayun.com, port: 11339, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 东帝汶-冷门, server: qweb.bat520.cc, port: 13892, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇵🇹 葡萄牙-冷门, server: qweb.bat520.cc, port: 6795, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇳🇱 荷兰3, server: saibo-nl.sanguayun.com, port: 11071, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇸🇦 沙特阿拉伯 -冷门, server: qwea.bat520.cc, port: 61585, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 所罗门群岛-冷门, server: qwec.bat520.cc, port: 28347, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇭🇰 HK香港, server: cfjxg.chuifengji.top, port: 15462, type: hysteria2, password: 0895476a-b3b3-4fe5-9124-b60503349f97, sni: cfjxg.chuifengji.top, skip-cert-verify: true}
   - {name: 🇵🇱 波兰-冷门, server: qweb.bat520.cc, port: 33083, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇺🇸 美国1 2, server: weilai-us.sanguayun.com, port: 13834, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, skip-cert-verify: false}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15", server: 104.19.46.233, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 54.195.240.149, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: 🇭🇰 香港1 2, server: saibo-hk.sanguayun.com, port: 11450, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
-  - {name: 🇭🇰 香港1 3, server: weilai-hk.sanguayun.com, port: 13968, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
-  - {name: 🇨🇭 瑞士 Switzerland, server: south.sf0jm.xyz, port: 49213, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.48.1, port: 2087, type: trojan, password: naEX%5Dg*qw%40MT%26lFz, sni: jOinMAhdIsErvEr-53k.pAGeS.Dev, network: ws, ws-opts: {path: "/trb6oyXIzrlytDBNlm?ed=2560", headers: {Host: jOinMAhdIsErvEr-53k.pAGeS.Dev}}}
-  - {name: 🇳🇱 荷兰3 2, server: weilai-nl.sanguayun.com, port: 13706, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, skip-cert-verify: false}
-  - {name: 🇯🇵 日本4|@ripaojiedian, server: 156.231.104.17, port: 18007, type: ss, cipher: aes-256-gcm, password: 7VZKUX118GJ16V1R}
-  - {name: 🇬🇧 英国UK-T, server: uk.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: uk.mjt000.com, skip-cert-verify: false}
-  - {name: 🇩🇪 _DE_德国_1, server: 134.255.210.49, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇫🇷 法国家宽-01, server: qwea.bat520.cc, port: 40685, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇭🇰 Hong Kong 04, server: south.sf0jm.xyz, port: 41414, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 3.36.73.26, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇧🇪 比利时 Belgium 2, server: south.sf0jm.xyz, port: 49222, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: 🇰🇭 柬埔寨专线-01, server: qwea.bat520.cc, port: 34083, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇺🇸 _US_美国_5, server: 34.221.167.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 Singapore 04 2, server: south.sf0jm.xyz, port: 44404, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
-  - {name: 🇺🇸 United States 02 2, server: east.sf0jm.xyz, port: 45402, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇯🇵 日本家宽-01, server: qwea.bat520.cc, port: 58720, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
-  - {name: 🇨🇦 加拿大-优化3, server: t.cnmjcn.cyou, port: 16641, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: 🇳🇬 尼日利亚NI-T, server: ni.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: ni.mjt000.com, skip-cert-verify: false}
-  - {name: 🇦🇪 阿联酋 United Arab Emirates 2, server: south.sf0jm.xyz, port: 49106, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
-  - {name: 🇨🇭 瑞士 Switzerland 2, server: south.sf0jm.xyz, port: 49213, type: ss, cipher: aes-128-gcm, password: 59c4992c-9ebf-4799-ab26-4e8a8440a5b4}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8", server: 104.20.25.146, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇳 Taiwan 02, server: south.sf0jm.xyz, port: 42402, type: ss, cipher: aes-128-gcm, password: bb3265aa-0f9a-4709-b1b7-21717330d664}
-  - {name: 🇺🇸 _US_美国_12, server: 185.47.252.251, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18", server: 104.19.45.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇨🇱 智利 Chile, server: east.sf0jm.xyz, port: 49304, type: ss, cipher: aes-128-gcm, password: fccca397-9b53-42f3-bfd4-264a6ab56773}
+  - {name: 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2, server: 185.174.138.199, port: 2052, type: vmess, uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be, alterId: 0, cipher: auto, tls: false, servername: yellow-paper-029c.yvonna.workers.dev, network: ws, ws-opts: {path: /, headers: {Host: yellow-paper-029c.yvonna.workers.dev}}}
+  - {name: 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian, server: 14.37.56.164, port: 50000, type: trojan, password: Aimer, sni: agepw.ambercc.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: agepw.ambercc.filegear-sg.me}}}
+  - {name: 🇳🇱 荷兰1, server: saibo-nl.sanguayun.com, port: 11259, type: hysteria2, password: 83e9ec8a-d711-4756-9476-023053334497, skip-cert-verify: false}
   - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1", server: 104.16.38.71, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇭🇰 香港3 2, server: saibo-hk.sanguayun.com, port: 11906, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_13, server: 185.237.185.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: 🇺🇦 乌克兰 V2CROSS.COM, server: 193.108.119.63, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇭🇰 15|🇭🇰 香港|@ripaojiedian, server: 156.245.190.20, port: 15011, type: ss, cipher: aes-256-gcm, password: DSSFTF2MJGHSTOOF}
-  - {name: 🇯🇵 日本4 3, server: saibo-jp.sanguayun.com, port: 11238, type: hysteria2, password: 83e9ec8a-d711-4756-9476-023053334497, skip-cert-verify: false}
-  - {name: "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5", server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6_0.wish.ml}}}
-  - {name: 🇭🇰 香港2, server: saibo-hk.sanguayun.com, port: 11972, type: hysteria2, password: 3f9b3419-29d5-4fbf-a96c-62c001705a04, skip-cert-verify: false}
-  - {name: 🇳🇱 荷兰4, server: weilai-nl.sanguayun.com, port: 13035, type: hysteria2, password: 0e57e0a8-939e-478d-8513-63b70e961e21, skip-cert-verify: false}
-  - {name: 🇩🇪 _DE_德国->🇨🇳_CN_中国, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
-  - {name: 🇳🇱 _NL_荷兰->🇨🇳_CN_中国, server: 45.158.171.146, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj}
-  - {name: 🇳🇱 荷兰1, server: saibo-nl.sanguayun.com, port: 11293, type: hysteria2, password: 3f9b3419-29d5-4fbf-a96c-62c001705a04, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡-优化2, server: m.cnmjin.net, port: 16618, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
-  - {name: 🇳🇴 挪威 Norway 2, server: south.sf0jm.xyz, port: 49211, type: ss, cipher: aes-128-gcm, password: 57348e41-a7e5-41ce-9c20-2ecd03421635}
+  - {name: 🇯🇵 日本1, server: saibo-jp.sanguayun.com, port: 11932, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇫🇮 芬兰01-0.01×, server: 36.228.251.135, port: 20075, type: trojan, password: 061a01f1-704b-4712-8e12-6d3fc95a127d, sni: taobao.phantasy.life, skip-cert-verify: false}
+  - {name: 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 21001, type: ss, cipher: aes-256-gcm, password: Q7NOGCGW8M19PIX8}
+  - {name: 距离下次重置剩余：11 天, server: cfjxg.chuifengji.top, port: 15462, type: hysteria2, password: a04fcfbd-eec0-4b15-8860-62e74c8d8e35, sni: cfjxg.chuifengji.top, skip-cert-verify: true}
+  - {name: 🇬🇧 高性价比机场:https://kfyun.uk, server: 127.0.0.1, port: 443, type: ss, cipher: aes-128-gcm, password: 6601fb90e9b3}
+  - {name: "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10", server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇺🇸 11,12|美国CloudFla...", server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
+  - {name: 🇮🇩 印度尼西亚-冷门, server: qwec.bat520.cc, port: 42185, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇪🇸 西班牙家宽-01, server: qwea.bat520.cc, port: 41552, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇩🇪 _DE_德国_3, server: 45.87.175.192, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg}
+  - {name: 🇿🇦 南非 South Africa, server: south.sf0jm.xyz, port: 49401, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇹🇷 土耳其-冷门, server: qweb.bat520.cc, port: 58785, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: "🇺🇸 11,12|github.com/freefq - 美国CloudFla...", server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}}
+  - {name: 🇱🇻 拉脱维亚-冷门, server: qweb.bat520.cc, port: 34463, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: "11|11|11|11|11|11|11|11|11|11|11|... #4", server: AZHJ001.dmak.cyou, port: 20776, type: vmess, uuid: cd21873e-332d-3b13-98a7-f26996cfdfd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇲🇳 蒙古-冷门, server: qwea.bat520.cc, port: 26305, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇺🇸 US美国, server: cfjmg.chuifengji.top, port: 15463, type: hysteria2, password: a04fcfbd-eec0-4b15-8860-62e74c8d8e35, sni: cfjmg.chuifengji.top, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾2|@ripaojiedian, server: ti3hyra4.slashdevslashnetslashtun.net, port: 21001, type: ss, cipher: aes-256-gcm, password: Q7NOGCGW8M19PIX8}
+  - {name: 🇸🇬 新加坡SG-T, server: sg.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: sg.mjt000.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港4, server: weilai-hk.sanguayun.com, port: 13003, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
+  - {name: 🇬🇧 英国-优化-GPT, server: yes.mojcn.com, port: 16645, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
+  - {name: 🇸🇬 Singapore 05, server: south.sf0jm.xyz, port: 44405, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 圣玛丽络-冷门, server: qwec.bat520.cc, port: 12771, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11", server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇳🇱 荷兰3 2, server: saibo-nl.sanguayun.com, port: 11766, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇩🇪 德国专线-01, server: qwea.bat520.cc, port: 15638, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇭🇰 香港4 2, server: saibo-hk.sanguayun.com, port: 11984, type: hysteria2, password: 079659e3-e364-4122-95b8-b6e880b095db, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾-优化, server: yes.mojcn.com, port: 16616, type: vmess, uuid: da91214e-b022-4f61-a724-01c538170e62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ae9c0de474c64c03db9edbf3fc4d8c68.mobgslb.tbcache.com}}}
+  - {name: 🇯🇵 日本1 2, server: weilai-jp.sanguayun.com, port: 13042, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_7, server: 34.221.167.203, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: "🇨🇳 3,11,17|🇨🇳_CN_中国 #1", server: 183.240.235.162, port: 54882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港家宽-01, server: qwec.bat520.cc, port: 14052, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇸🇬 新加坡3|@ripaojiedian, server: 103.106.229.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: 154.196.244.20, port: 16010, type: ss, cipher: aes-256-gcm, password: IQD7SI9GERQCOSPZ}
+  - {name: 🇺🇦 乌克兰 Ukraine, server: south.sf0jm.xyz, port: 49205, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2, server: 154.196.244.14, port: 16004, type: ss, cipher: aes-256-gcm, password: VD2XBX35QK6G1WA1}
+  - {name: 1|_US_->_ES_, server: fuck5.mmmmmmmmmm.cfd, port: 59019, type: ss, cipher: chacha20-ietf-poly1305, password: 2062a5ca-a34e-47bf-9810-db91185f07fc}
+  - {name: 🇺🇸 United States 01, server: east.sf0jm.xyz, port: 45401, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 续费【bat00.cc】, server: qwea.bat520.cc, port: 16941, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa}
+  - {name: 🇺🇸 美国USLA-T-GPT, server: usla.mjt000.com, port: 443, type: trojan, password: da91214e-b022-4f61-a724-01c538170e62, sni: usla.mjt000.com, skip-cert-verify: false}
+  - {name: 🇻🇳 越南 Viet Nam, server: south.sf0jm.xyz, port: 49111, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇳🇴 挪威-冷门, server: qweb.bat520.cc, port: 20526, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: 🇰🇷 韩国|@ripaojiedian, server: star-anchovy.shiner427.skin, port: 443, type: trojan, password: !<str> 68711066374000300}
+  - {name: 🇸🇰 斯洛伐克 Slovakia, server: south.sf0jm.xyz, port: 49228, type: ss, cipher: aes-128-gcm, password: e72ab174-a4c2-4977-b85c-c43c26e98295}
+  - {name: 🇭🇰 15|🇭🇰 香港2|@ripaojiedian, server: 156.245.190.22, port: 15013, type: ss, cipher: aes-256-gcm, password: 0HLKWXU2MV5KGEX4}
+  - {name: 🇦🇪 阿联酋迪拜-冷门, server: qwea.bat520.cc, port: 8148, type: ss, cipher: chacha20-ietf-poly1305, password: 3ab13813-90f4-48f2-a2bc-3f76faa779bb}
+  - {name: "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3", server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇳🇱 荷兰3 3, server: weilai-nl.sanguayun.com, port: 13403, type: hysteria2, password: 4c3dbf8d-1429-4077-ac4c-5e42d13bdbb4, skip-cert-verify: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -468,465 +372,368 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 香港3
-      - 🇨🇳 TW台湾
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 HK香港
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 🇨🇳 台湾2|@ripaojiedian
       - 🇭🇰 香港4
-      - 🇭🇰 香港1
       - 🇭🇰 香港4 2
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇭🇰 香港3 2
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇭🇰 香港2
+      - 🇨🇳 台湾-优化
+      - 🇭🇰 香港家宽-01
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -942,113 +749,89 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #7"
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇧🇪 比利时 Belgium
-      - 🇸🇬 新加坡4|@ripaojiedian
-      - 🇦🇺 澳大利亚 Australia
-      - 🇳🇱 荷兰3
-      - 🇸🇬 15|🇸🇬 新加坡6|@ripaojiedian
-      - 🇮🇹 意大利 Italy
-      - 🇺🇸 美国 - 聖荷西 - PEG TECH INC - 3
-      - 🇦🇶 南极洲 -冷门
-      - 🇯🇵 日本2
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 4
-      - 🇺🇸 United States 03
-      - 🇭🇰 香港3
-      - 🇺🇸 United States 01
-      - 🇯🇵 日本1
-      - 斐济-冷门
-      - 🇺🇸 United States 05
-      - 🇺🇸 美国3
-      - 🇭🇰 Hong Kong 03
-      - 🇸🇬 15|🇸🇬 新加坡3|@ripaojiedian
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 United States 04
+      - 🏳️‍🌈 ！【您的流量用完了】！
       - 🇺🇸 美国1
-      - 🇱🇹 立陶宛家宽-01
-      - 🇨🇳 TW台湾
-      - 🇭🇰 香港4
-      - 🇯🇵 日本4
-      - 🇩🇪 德国 - 法兰克福 - International Hosting Company Limited - 3
-      - 🇯🇵 16|日本|@ripaojiedian
-      - 🇳🇱 荷兰2
-      - 🇸🇰 斯洛伐克 Slovakia
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
-      - 🇭🇰 香港1
-      - 🇭🇰 Hong Kong 02
-      - 🇭🇺 匈牙利 Hungary
-      - 🇦🇪 阿联酋 United Arab Emirates
-      - 🇰🇷 韩国3|@ripaojiedian
-      - 🇩🇪 德国 Germany
-      - 🇯🇵 日本4 2
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
-      - 🇦🇺 澳大利亚家宽-01
-      - 🇸🇬 新加坡6|@ripaojiedian
-      - 🇯🇵 Japan 03
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇰🇭 柬埔寨KH-T
-      - 🇯🇵 Japan 04
-      - 🇰🇷 韩国 Korea
-      - 🇵🇱 波兰 Poland
-      - 🇭🇰 Hong Kong 01
-      - TG群 chuifengjipd
-      - 🇩🇰 丹麦 Denmark
-      - 🇷🇴 罗马尼亚-冷门
-      - 🇺🇸 United States 02
-      - 🇺🇸 United States 03 2
-      - 距离下次重置剩余：11 天
-      - 🇸🇬 Singapore 04
-      - 🇳🇴 挪威 Norway
-      - 🇸🇰 斯洛伐克 Slovakia 2
-      - 🇺🇸 美国3 2
-      - 🇭🇰 香港4 2
-      - 🇵🇱 波兰-冷门
+      - 🇸🇬 15|🇸🇬 新加坡2|@ripaojiedian
+      - 🇺🇸 _US_美国_2
+      - "🇺🇸 3,11,17|🇨🇳_CN_中国->🇺🇸_US_美国 #3"
+      - 🇮🇳 11,12|印度  2
+      - "🇺🇸 3,11,17|🇺🇸_US_美国 #22"
+      - 🇨🇳 台湾01-0.01×
+      - 🇭🇰 Hong Kong 06
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷
       - 🇺🇸 美国1 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #15"
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇭🇰 香港1 2
-      - 🇭🇰 香港1 3
-      - 🇨🇭 瑞士 Switzerland
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇳🇱 荷兰3 2
-      - 🇯🇵 日本4|@ripaojiedian
-      - 🇬🇧 英国UK-T
-      - 🇩🇪 _DE_德国_1
-      - 🇫🇷 法国家宽-01
-      - 🇭🇰 Hong Kong 04
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇧🇪 比利时 Belgium 2
-      - 🇰🇭 柬埔寨专线-01
-      - 🇺🇸 _US_美国_5
-      - 🇸🇬 Singapore 04 2
-      - 🇺🇸 United States 02 2
-      - 🇯🇵 日本家宽-01
-      - 🇨🇦 加拿大-优化3
-      - 🇳🇬 尼日利亚NI-T
-      - 🇦🇪 阿联酋 United Arab Emirates 2
-      - 🇨🇭 瑞士 Switzerland 2
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #8"
-      - 🇨🇳 Taiwan 02
-      - 🇺🇸 _US_美国_12
-      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #18"
-      - 🇨🇱 智利 Chile
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
-      - 🇭🇰 香港3 2
-      - 🇺🇸 _US_美国_13
-      - 🇺🇦 乌克兰 V2CROSS.COM
-      - 🇭🇰 15|🇭🇰 香港|@ripaojiedian
-      - 🇯🇵 日本4 3
-      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #5"
-      - 🇭🇰 香港2
-      - 🇳🇱 荷兰4
-      - 🇩🇪 _DE_德国->🇨🇳_CN_中国
-      - 🇳🇱 _NL_荷兰->🇨🇳_CN_中国
+      - 🇨🇭 瑞士-冷门
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #2"
+      - 🇫🇷 _FR_法国_1
+      - 🇺🇸 美国4
+      - 🇺🇸 美国LA-优化-GPT
+      - 🇳🇵 尼泊尔-冷门
+      - 🇮🇱 以色列 Israel
+      - 🇻🇦 梵蒂冈-冷门
+      - SCP-NSC 05
+      - 🇺🇸 _US_美国->🇨🇭_CH_瑞士
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #8"
+      - 🇷🇴 罗马尼亚-冷门
+      - 东帝汶-冷门
+      - 🇵🇹 葡萄牙-冷门
+      - 🇳🇱 荷兰3
+      - 🇸🇦 沙特阿拉伯 -冷门
+      - 所罗门群岛-冷门
+      - 🇭🇰 HK香港
+      - 🇵🇱 波兰-冷门
+      - 🇺🇸 _RU_俄罗斯->🇺🇸_US_美国_2
+      - 15|üá∞üá∑ Èü©ÂõΩ2|@ripaojiedian
       - 🇳🇱 荷兰1
-      - 🇸🇬 新加坡-优化2
-      - 🇳🇴 挪威 Norway 2
+      - "2,11|2,11|2,11|2,11|2,11|2,11|2,11|... #1"
+      - 🇯🇵 日本1
+      - 🇫🇮 芬兰01-0.01×
+      - 🇨🇳 15|🇹🇼 台湾2|@ripaojiedian
+      - 距离下次重置剩余：11 天
+      - 🇬🇧 高性价比机场:https://kfyun.uk
+      - "🇺🇸 1,3,6,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10"
+      - 🇺🇸 11,12|美国CloudFla...
+      - 🇮🇩 印度尼西亚-冷门
+      - 🇪🇸 西班牙家宽-01
+      - 🇩🇪 _DE_德国_3
+      - 🇿🇦 南非 South Africa
+      - 🇹🇷 土耳其-冷门
+      - 🇺🇸 11,12|github.com/freefq - 美国CloudFla...
+      - 🇱🇻 拉脱维亚-冷门
+      - "11|11|11|11|11|11|11|11|11|11|11|... #4"
+      - 🇲🇳 蒙古-冷门
+      - 🇺🇸 US美国
+      - 🇨🇳 台湾2|@ripaojiedian
+      - 🇸🇬 新加坡SG-T
+      - 🇭🇰 香港4
+      - 🇬🇧 英国-优化-GPT
+      - 🇸🇬 Singapore 05
+      - 圣玛丽络-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #11"
+      - 🇳🇱 荷兰3 2
+      - 🇩🇪 德国专线-01
+      - 🇭🇰 香港4 2
+      - 🇨🇳 台湾-优化
+      - 🇯🇵 日本1 2
+      - 🇺🇸 _US_美国_7
+      - "🇨🇳 3,11,17|🇨🇳_CN_中国 #1"
+      - 🇭🇰 香港家宽-01
+      - 🇸🇬 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇺🇦 乌克兰 Ukraine
+      - 🇸🇬 15|🇸🇬 新加坡4|@ripaojiedian 2
+      - 1|_US_->_ES_
+      - 🇺🇸 United States 01
+      - 续费【bat00.cc】
+      - 🇦🇷 _DE_德国->🇦🇷_AR_阿根廷 2
+      - 🇺🇸 美国USLA-T-GPT
+      - 🇻🇳 越南 Viet Nam
+      - 🇳🇴 挪威-冷门
+      - 🇰🇷 韩国|@ripaojiedian
+      - 🇸🇰 斯洛伐克 Slovakia
+      - 🇭🇰 15|🇭🇰 香港2|@ripaojiedian
+      - 🇦🇪 阿联酋迪拜-冷门
+      - "1,6,11|1,6,11|1,6,11|1,6,11|1,6,11|1,... #3"
+      - 🇳🇱 荷兰3 3
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
