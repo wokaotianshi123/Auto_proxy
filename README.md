@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 782`
+`Total number of merge nodes: 780`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 96`
+`Total number of merge nodes: 94`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `13`
-Updata：`2025-02-25 10:50:56`
+Updata：`2025-02-25 22:14:58`
 
 
 <details>
@@ -19649,44 +19649,15 @@ Updata：`2025-02-25 10:50:56`
 
 
 
->Trial subscription：
-`https://xn--2vxn29amga.com/api/v1/client/subscribe?token=a3d3388b505ff0c65ad20efc2fe34bb9`
 
 
 
 
->Trial subscription：
-`https://www.kuaidog006.top/api/v1/client/subscribe?token=a07767c02c6c5e7dd6f846ba0fbce205`
 
 
 
 
->Trial subscription：
-`https://v2rayshare.githubrowcontent.com/2025/02/20250222.txt`
 
-
-
-
->Trial subscription：
-`https://vt.louwangzhiyu.xyz/api/v1/client/subscribe?token=37368b91049ff72f5a430fb141f4516d`
-
-
-
-
->Trial subscription：
-`https://www.kuaidog010.top/api/v1/client/subscribe?token=2ce7be47fb234d6c668e12956aa2ef8a`
-
-
-
-
->Trial subscription：
-`https://dl.vfkum.website/api/v1/client/subscribe?token=f72e85be031c31b645debcde1e5ac42a`
-
-
-
-
->Trial subscription：
-`https://xueyejiasu.com/api/v1/client/subscribe?token=15ba952f20f502e414b473d5a196803c`
 
 
 
@@ -19698,31 +19669,73 @@ Updata：`2025-02-25 10:50:56`
 
 
 >Trial subscription：
+`https://www.kuaidog009.top/api/v1/client/subscribe?token=a35299968dd999043ed0991ef3eaa1a9`
+
+
+
+
+>Trial subscription：
+`https://www.kuaidog010.top/api/v1/client/subscribe?token=19834c90cb70f9e7242acee558664e32`
+
+
+
+
+>Trial subscription：
+`https://dl.vfkum.website/api/v1/client/subscribe?token=46d9597e3abd579f80f4e633449d22ee`
+
+
+
+
+>Trial subscription：
+`https://www.kuaidog006.top/api/v1/client/subscribe?token=48caf6c5c05b4399c18ccab0e090da27`
+
+
+
+
+>Trial subscription：
+`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=f07d8172170b04d56803c9538bdbd1fc`
+
+
+
+
+>Trial subscription：
 `https://nodefree.githubrowcontent.com/2025/02/20250224.txt`
 
 
 
 
 >Trial subscription：
-`https://www.kuaidog009.top/api/v1/client/subscribe?token=c1d087dcffd26b38577053efb5d5a4f7`
+`https://dashuai.us/api/v1/client/subscribe?token=2216faf4f31d9740ac28169aef5132d3`
 
 
 
 
 >Trial subscription：
-`https://dashuai.us/api/v1/client/subscribe?token=614d660cf2e1e2c6933c8aa8350ed394`
+`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=b1909df2319a8c121b7e9cab9b66e4f7`
 
 
 
 
 >Trial subscription：
-`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=f8939fa13e94845154260f5409f4a569`
+`https://vt.louwangzhiyu.xyz/api/v1/client/subscribe?token=f36d78a29496b46f28646d3935d2ff64`
 
 
 
 
 >Trial subscription：
-`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=2d28d772951364325f3edf0d76155d2d`
+`https://v2rayshare.githubrowcontent.com/2025/02/20250222.txt`
+
+
+
+
+>Trial subscription：
+`https://xueyejiasu.com/api/v1/client/subscribe?token=2409695d8b6c251cb694f6feccaea4a3`
+
+
+
+
+>Trial subscription：
+`https://xn--2vxn29amga.com/api/v1/client/subscribe?token=aa76440677b290b547cdb348bfacb515`
 
 
 
