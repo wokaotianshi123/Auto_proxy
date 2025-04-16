@@ -11,6 +11,8 @@ import datetime
 from time import sleep
 import chardet
 from bs4 import BeautifulSoup
+from concurrent.futures import ThreadPoolExecutor
+
 
 #试用机场链接
 url_try = "https://raw.githubusercontent.com/PangTouY00/aggregator/refs/heads/main/data/valid-domains.txt"
