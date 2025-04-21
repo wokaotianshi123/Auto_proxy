@@ -467,34 +467,36 @@ def get_nodefree():
         
     
 if __name__ == '__main__':
-    # 初始化线程池（建议4-8个worker）
-    MAX_WORKERS = min(8, len(urls) + 4)  # 动态设置线程数[1][5]
-    
-    print("========== 开始获取机场订阅链接 ==========")
-    get_sub_url()
-    
-    print("========== 开始获取网站订阅链接 ==========")
-    # 使用线程池执行IO密集型任务[2][5]
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        executor.submit(get_cfmem)
-        executor.submit(get_v2rayshare)
-        executor.submit(get_nodefree)
-    
-    print("========== 开始获取频道订阅链接 ==========")
-    threads = []
-    for url in urls:
-        print(url, "开始获取......")
-        # 添加超时参数（建议3-10秒）[3]
-        t = threading.Thread(
-            target=get_content,
-            args=(url,),
-            daemon=True  # 设置为守护线程[7]
-        )
-        t.start()
-        threads.append(t)
-    
-    # 优化线程等待机制[1][6]
-    alive_threads = threads.copy()
+     print("========== 开始获取机场订阅链接 ==========")
+     get_sub_url()
+     print("========== 开始获取网站订阅链接 ==========")
+     get_cfmem()
+     get_v2rayshare()
+     get_nodefree()
+     print("========== 开始获取频道订阅链接 ==========")
+     for url in urls:
+         print(url, "开始获取......")
+         thread = threading.Thread(target=get_content,args = (url,))
+         thread.start()
+         threads.append(thread)
+         #resp = get_content(get_channel_http(url))
+         #print(url, "获取完毕！！")
+     #等待线程结束
+     """
+     for t in tqdm(threads):
+         t.join()
+     """
+     # 等待线程结束或超时
+     start_time = time.time()
+     for t in tqdm(threads):
+         try:
+             t.join(timeout=TIMEOUT)
+         except TimeoutError:
+             print(f"线程执行超时({TIMEOUT}秒),已强制终止")
+     print("========== 准备写入订阅 ==========")
+     res = write_document()
+     clash_sub = get_yaml()
+     print("========== 写入完成任务结束 ==========")
     start_time = time.time()
     with tqdm(total=len(threads)) as pbar:
         while alive_threads and (time.time() - start_time < TIMEOUT):
