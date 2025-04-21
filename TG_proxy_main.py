@@ -69,7 +69,7 @@ end_try = []
 #线程池
 threads = []
 # 设置超时时间(秒)
-TIMEOUT = 500
+TIMEOUT = 60000
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
