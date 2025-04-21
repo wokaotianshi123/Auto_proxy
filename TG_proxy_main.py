@@ -11,7 +11,6 @@ import datetime
 from time import sleep
 import chardet
 from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor
 
 
 #试用机场链接
