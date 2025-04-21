@@ -466,49 +466,32 @@ def get_nodefree():
         
     
 if __name__ == '__main__':
-     print("========== 开始获取机场订阅链接 ==========")
-     get_sub_url()
-     print("========== 开始获取网站订阅链接 ==========")
-     get_cfmem()
-     get_v2rayshare()
-     get_nodefree()
-     print("========== 开始获取频道订阅链接 ==========")
-     for url in urls:
-         print(url, "开始获取......")
-         thread = threading.Thread(target=get_content,args = (url,))
-         thread.start()
-         threads.append(thread)
-         #resp = get_content(get_channel_http(url))
-         #print(url, "获取完毕！！")
-     #等待线程结束
-     """
-     for t in tqdm(threads):
-         t.join()
-     """
-     # 等待线程结束或超时
-     start_time = time.time()
-     for t in tqdm(threads):
-         try:
-             t.join(timeout=TIMEOUT)
-         except TimeoutError:
-             print(f"线程执行超时({TIMEOUT}秒),已强制终止")
-     print("========== 准备写入订阅 ==========")
-     res = write_document()
-     clash_sub = get_yaml()
-     print("========== 写入完成任务结束 ==========")
+    print("========== 开始获取机场订阅链接 ==========")
+    get_sub_url()
+    print("========== 开始获取网站订阅链接 ==========")
+    get_cfmem()
+    get_v2rayshare()
+    get_nodefree()
+    print("========== 开始获取频道订阅链接 ==========")
+    for url in urls:
+        print(url, "开始获取......")
+        thread = threading.Thread(target=get_content,args = (url,))
+        thread.start()
+        threads.append(thread)
+        #resp = get_content(get_channel_http(url))
+        #print(url, "获取完毕！！")
+    #等待线程结束
+    """
+    for t in tqdm(threads):
+        t.join()
+    """
+    # 等待线程结束或超时
     start_time = time.time()
-    with tqdm(total=len(threads)) as pbar:
-        while alive_threads and (time.time() - start_time < TIMEOUT):
-            for t in alive_threads[:]:
-                if not t.is_alive():
-                    alive_threads.remove(t)
-                    pbar.update(1)
-            time.sleep(0.1)  # 降低CPU占用
-    
-    # 处理超时线程[3]
-    for t in alive_threads:
-        print(f"线程超时终止: {t.name}")
-    
+    for t in tqdm(threads):
+        try:
+            t.join(timeout=TIMEOUT)
+        except TimeoutError:
+            print(f"线程执行超时({TIMEOUT}秒),已强制终止")
     print("========== 准备写入订阅 ==========")
     res = write_document()
     clash_sub = get_yaml()
