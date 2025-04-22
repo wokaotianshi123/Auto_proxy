@@ -475,13 +475,14 @@ if __name__ == '__main__':
     print("========== 开始获取频道订阅链接 ==========")
 
     for url in urls:
-    print(url, "开始获取......")
-    try:
-        # 直接调用获取内容的函数，不使用线程
-        get_content(url)
-        print(url, "获取完毕！！")
-    except Exception as e:
-        print(f"获取 {url} 时出错: {str(e)}")
+        print(url, "开始获取......")
+    
+        try:
+            # 直接调用获取内容的函数，不使用线程
+            get_content(url)
+            print(url, "获取完毕！！")
+        except Exception as e:
+            print(f"获取 {url} 时出错: {str(e)}")
 
     """
     for url in urls:
