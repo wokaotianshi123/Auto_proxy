@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `7`
-Updata：`2025-05-12 11:09:35`
+### Try the number of high-speed subscriptions: `8`
+Updata：`2025-05-12 22:13:44`
 
 
 <details>
@@ -20382,8 +20382,36 @@ Updata：`2025-05-12 11:09:35`
 
 
 
+
+
+
+
 >Trial subscription：
-`https://vvs.e54.site/api/v1/client/subscribe?token=66ea987bfbeeb9b2b197bb3496fe87b2`
+`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=9ba1c6c5c8c15fce49c8603c5a9d3a6f`
+
+
+
+
+>Trial subscription：
+`https://ch.cukug.website/api/v1/client/subscribe?token=3b6e4e2e522defc6225660824ea9cc3d`
+
+
+
+
+>Trial subscription：
+`https://vvs.e54.site/api/v1/client/subscribe?token=49acfe0e550fef231c53aaebd7f476d1`
+
+
+
+
+>Trial subscription：
+`https://needss.link/api/v1/client/subscribe?token=bf052562886422e90a74e0b0237e13ff`
+
+
+
+
+>Trial subscription：
+`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=a47d83b40a5a37472715f1e6d1420bb3`
 
 
 
@@ -20395,31 +20423,13 @@ Updata：`2025-05-12 11:09:35`
 
 
 >Trial subscription：
-`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=9a5870159cc1e88585d269ad9195c4a5`
+`https://dl.vfkum.website/api/v1/client/subscribe?token=55172bbc47e2beafab2447c82cd08f05`
 
 
 
 
 >Trial subscription：
-`https://ch.cukug.website/api/v1/client/subscribe?token=bd5c451e216ca00b80f8d6ac0f72fcfc`
-
-
-
-
->Trial subscription：
-`https://dashuai.us/api/v1/client/subscribe?token=e9ca331acd30b54d7c3a05017a51339f`
-
-
-
-
->Trial subscription：
-`https://dl.vfkum.website/api/v1/client/subscribe?token=b88f7498da13b9231c876a31bc9587c1`
-
-
-
-
->Trial subscription：
-`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=9ce5d1f820b62cac7e4aa2e63a7ff31e`
+`https://dashuai.us/api/v1/client/subscribe?token=81f9b373fa09b63adaf046a5c3b6bf2c`
 
 
 
