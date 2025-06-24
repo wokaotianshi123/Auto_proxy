@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `8`
-Updata：`2025-06-23 22:17:11`
+### Try the number of high-speed subscriptions: `9`
+Updata：`2025-06-24 11:16:34`
 
 
 <details>
@@ -21138,50 +21138,61 @@ Updata：`2025-06-23 22:17:11`
 
 
 
->Trial subscription：
-`https://fs.v2rayse.com/share/20250623/1mara9foob.txt`
 
-
-
-
->Trial subscription：
-`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=9961c9a7dded7f3afd3041a5178b72bb`
 
 
 
 
 >Trial subscription：
-`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=f209865827b32f52509cc6129c0c58e6`
+`https://ch.cukug.website/api/v1/client/subscribe?token=21266302ad53784a0851850eaf75235c`
 
 
 
 
 >Trial subscription：
-`https://www.ztcloud.xyz/api/v1/client/subscribe?token=a7a91613882291593df980515cfa504a`
+`https://dashuai.us/api/v1/client/subscribe?token=437371a395c215a6274a9ed6475660a5`
 
 
 
 
 >Trial subscription：
-`https://ch.cukug.website/api/v1/client/subscribe?token=56c5da6bb3f9d86c8f5263ee776a42d2`
+`https://vt.louwangzhiyu.xyz/api/v1/client/subscribe?token=ac4a8cdcbd38691c7d7f7e172e4cf6be`
 
 
 
 
 >Trial subscription：
-`https://dl.vfkum.website/api/v1/client/subscribe?token=cc1193cc562df0b726b056a1931ec81b`
+`https://di5ji.lat/api/v1/client/subscribe?token=69f9ea21e156b0c0fcb3e90006ba2026`
 
 
 
 
 >Trial subscription：
-`https://dashuai.us/api/v1/client/subscribe?token=205fe57030016ac47a27442bffb6fb4c`
+`https://ch.louwangzhiyu.xyz/api/v1/client/subscribe?token=3cb1b626d2cb8a2d6d59931701d195a3`
 
 
 
 
 >Trial subscription：
-`https://di5ji.lat/api/v1/client/subscribe?token=e4aef68c735b9a32c5d912531f11090f`
+`https://www.ztcloud.xyz/api/v1/client/subscribe?token=c6bdea8c22f98a68599143ac46130d41`
+
+
+
+
+>Trial subscription：
+`https://dl.vfkum.website/api/v1/client/subscribe?token=bf70e9d2cff5ade03ed769ce03cdfa83`
+
+
+
+
+>Trial subscription：
+`https://fs.v2rayse.com/share/20250624/av3b4hktfg.txt`
+
+
+
+
+>Trial subscription：
+`https://qingyun.zybs.eu.org/api/v1/client/subscribe?token=1b1e5e0f6c0ce1d72596b9359ae235f1`
 
 
 
