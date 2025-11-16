@@ -5,386 +5,319 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇰🇷 KR-IDC-节点1, server: 146.56.132.194, port: 30000, type: ss, cipher: aes-256-gcm, password: 409de309-cf91-4896-abce-a0f8b6bc39e7}
-  - {name: 🇰🇷 KR-IDC-节点2, server: 146.56.132.194, port: 30001, type: ss, cipher: aes-256-gcm, password: 409de309-cf91-4896-abce-a0f8b6bc39e7}
-  - {name: 🇯🇵 JP-IDC-NODE1, server: 146.56.132.194, port: 30003, type: vmess, uuid: 409de309-cf91-4896-abce-a0f8b6bc39e7, alterId: 0, cipher: auto, tls: true, servername: net.iftballs.com, network: ws, ws-opts: {path: /ips30003}}
-  - {name: 过滤掉3条线路, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港 (广港)1 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港 (广港)2 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港 (广港)3 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港 (广新)1 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港  (广新)2 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 香港 (广新)3 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 新加坡解锁(广港)1 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 新加坡解锁(广港)2 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 新加坡解锁(广港)3 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 新加坡解锁(广新)1 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 新加坡解锁(广新)2 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 新加坡解锁(广新)3 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 日本1(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 日本2(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 日本3(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 台湾解锁 (广港)1 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 台湾解锁 (广港)2 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 台湾解锁 (广港)3 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇨🇳 台湾解锁 (广新)1 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇨🇳 台湾解锁 (广新)2 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇨🇳 台湾解锁 (广新)3 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇺🇸 中转美国1(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇺🇸 中转美国2(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇺🇸 中转美国3(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 韩国 (广港)1 x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 韩国 (广港)2 x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 韩国 (广港)3x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 土耳其 (广港)1 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 土耳其 (广港)2 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 土耳其 (广港)3 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 冰岛 (广港)1 x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 冰岛 (广港)2 x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 冰岛 (广港)3x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 印度 (广港)1 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 印度 (广港)2 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 印度 (广港)3 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 巴西 (广港)1 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 巴西 (广港)2 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 巴西 (广港)3 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 以色列 (广港)1x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 以色列 (广港)2 x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 以色列 (广港)3 x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 墨西哥 (广港)1 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 墨西哥 (广港)2 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 墨西哥 (广港)3 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 泰国 (广新)1  x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 泰国 (广新) 2  x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇸🇬 泰国 (广新)3 x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: f0bf926c-3aa3-4ebe-bd7e-8abb840b9629}
-  - {name: 🇭🇰 HK 12小时试用线路 满意在订购, server: qqb12.599789.xyz, port: 31136, type: ss, cipher: aes-128-gcm, password: d4736eb9-1da3-4c6f-badf-0956c90f61ec}
-  - {name: 试用线路不支持解锁, server: qqb12.599789.xyz, port: 37781, type: ss, cipher: aes-128-gcm, password: d4736eb9-1da3-4c6f-badf-0956c90f61ec}
-  - {name: 订阅后显示所有节点, server: qqb12.599789.xyz, port: 2596, type: ss, cipher: aes-128-gcm, password: d4736eb9-1da3-4c6f-badf-0956c90f61ec}
-  - {name: 🇺🇸 美国-v6|01, server: dmitv61.616626.xyz, port: 22305, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本-v6|02, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本-v6|04, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本-v6|05, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本-v6|06, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本-v6|07, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰-v6|01*0.5x, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰-v6|02*0.5x, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰-v6|03*0.5x, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇳🇱 荷兰-v6|04*0.5x, server: naran4.616626.xyz, port: 22310, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国-v6|01*0.5x, server: netcp1.616626.xyz, port: 22305, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国-v6|02*0.5x, server: netcp2.616626.xyz, port: 22306, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇩🇪 德国-v6|03*0.5x, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-v6|05*0.5x, server: nathk.91ai.de, port: 18002, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-v6|06, server: greenhk0.616626.xyz, port: 10505, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-v6|07, server: greenhk1.616626.xyz, port: 10506, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-v6|08, server: greenhk2.616626.xyz, port: 10507, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港-v4|02, server: hkvm4.656888.xyz, port: 30026, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: hkvm4.656888.xyz, skip-cert-verify: true}
-  - {name: 🇭🇰 香港03, server: hytro.91ai.de, port: 10022, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: hytro.91ai.de, skip-cert-verify: true}
-  - {name: 🇯🇵 日本01, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: greenjp2.yueyun.de, skip-cert-verify: true}
-  - {name: 🇯🇵 日本02, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: vpsjp.yueyun.de, skip-cert-verify: true}
-  - {name: 🇯🇵 日本03, server: cloud.yueyun.de, port: 10389, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: cloud.yueyun.de, skip-cert-verify: true}
-  - {name: 🇳🇱 【荷兰05】*0.5x, server: nara.189.ovh, port: 10027, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: nara.189.ovh, skip-cert-verify: true}
-  - {name: 🇩🇪 【德国06】*0.5x, server: netcp4.616626.xyz, port: 10027, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: netcp4.616626.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 美国01, server: vir732.189.ovh, port: 10026, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: vir732.189.ovh, skip-cert-verify: true}
-  - {name: 🇺🇸 美国02, server: vir11.189.ovh, port: 10022, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: vir11.189.ovh, skip-cert-verify: true}
-  - {name: 🇺🇸 美国-v6|01 2, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国04, server: layercloud.189.ovh, port: 10021, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: layercloud.189.ovh, skip-cert-verify: true}
-  - {name: 🇺🇸 美国05, server: advin.189.ovh, port: 10027, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: advin.189.ovh, skip-cert-verify: true}
-  - {name: 🇺🇸 美国07, server: vir694.189.ovh, port: 10021, type: trojan, password: 82cef313-0eaf-4d75-a8e5-a838a64da9b2, sni: vir694.189.ovh, skip-cert-verify: true}
-  - {name: 国内直连网站都是临时的，挂梯子可直接进, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x）, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x）, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.1（GPT奈飞等）, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.2（GPT奈飞等）, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.1（GPT）, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.2（GPT）, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (IEPL)英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (隧道)英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO1", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO2", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: b73221f6-6f04-4afa-a068-9f6de595fcc9, alterId: 0, cipher: auto, tls: false}
-  - {name: 国内直连网站都是临时的，挂梯子可直接进 2, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 2, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 2, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.1（GPT） 2, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.2（GPT） 2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (IEPL)英国1 2, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (隧道)英国2 2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.1 2, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.2 2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.1 2, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.2 2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO1 2", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO2 2", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生1 2, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生2 2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大1 2, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大2 2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度1 2, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度2 2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国1 2, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国2 2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 2970e9df-f6a4-44b0-b049-46a6aa3c333c, alterId: 0, cipher: auto, tls: false}
-  - {name: 国内直连网站都是临时的，挂梯子可直接进 3, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 3, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 3, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 3, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 3, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.1（GPT） 3, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.2（GPT） 3, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (IEPL)英国1 3, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (隧道)英国2 3, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.1 3, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.2 3, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.1 3, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.2 3, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO1 3", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO2 3", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生1 3, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生2 3, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大1 3, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大2 3, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度1 3, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度2 3, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国1 3, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国2 3, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: f48119da-5508-46a8-ba22-5aef97125313, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 北美iplc专线, server: 1002.952326.xyz, port: 10000, type: hysteria2, ports: 10000, password: 39db4560-c457-494e-bb8c-90f9bdda1e3c, obfs: salamander, obfs-password: VAYpRqMdlHDFG7EA, sni: 1002.kingfisher.us.kg, skip-cert-verify: false}
-  - {name: 过滤掉2条线路, server: 91.149.236.68, port: 23188, type: vmess, uuid: 2f91c80b-d2d7-47ae-9c94-12944e344d0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-拉斯维加斯-001, server: 91.149.236.68, port: 23188, type: vmess, uuid: 2f91c80b-d2d7-47ae-9c94-12944e344d0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-纽约-001, server: 91.149.236.68, port: 22130, type: vmess, uuid: 2f91c80b-d2d7-47ae-9c94-12944e344d0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: ❤️故障报修邮箱❤️, server: 91.149.236.68, port: 26125, type: vmess, uuid: 2f91c80b-d2d7-47ae-9c94-12944e344d0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 邮箱:louwangzhiyu.org@gmail.com, server: 91.149.236.68, port: 27126, type: vmess, uuid: 2f91c80b-d2d7-47ae-9c94-12944e344d0f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 注册试用1小时限1MB, server: zf-cm.bgblwow.org, port: 57304, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇸🇬 [电信专线] 新加坡 x A区", server: zf-ct.bgblwow.org, port: 50412, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇸🇬 [联通专线] 新加坡 x A区", server: zf-cu.bgblwow.org, port: 55375, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇸🇬 [移动专线] 新加坡 x A区", server: zf-cm.bgblwow.org, port: 59384, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇭🇰 [电信专线] 香港 x A区", server: zf-ct.bgblwow.org, port: 58911, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇭🇰 [联通专线] 香港 x A区", server: zf-cu.bgblwow.org, port: 53754, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇭🇰 [移动专线] 香港 x A区", server: zf-cm.bgblwow.org, port: 59543, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇮🇳 [电信专线] 印度 x A区", server: zf-ct.bgblwow.org, port: 59069, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇮🇳 [联通专线] 印度 x A区", server: zf-cu.bgblwow.org, port: 50369, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇮🇳 [移动专线] 印度 x A区", server: zf-cm.bgblwow.org, port: 54274, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇨🇳 [电信专线] 台湾 x A区", server: zf-ct.bgblwow.org, port: 59345, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇨🇳 [联通专线] 台湾 x A区", server: zf-cu.bgblwow.org, port: 56963, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇨🇳 [移动专线] 台湾 x A区", server: zf-cm.bgblwow.org, port: 57989, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇧🇷 [电信专线] 巴西 x A区", server: zf-ct.bgblwow.org, port: 59469, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇧🇷 [联通专线] 巴西 x A区", server: zf-cu.bgblwow.org, port: 57609, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇧🇷 [移动专线] 巴西 x A区", server: zf-cm.bgblwow.org, port: 53131, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇻🇳 [电信专线] 越南 x A区", server: zf-ct.bgblwow.org, port: 52384, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇻🇳 [联通专线] 越南 x A区", server: zf-cu.bgblwow.org, port: 55774, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇻🇳 [移动专线] 越南 x A区", server: zf-cm.bgblwow.org, port: 58537, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇯🇵 [电信专线] 日本 x A区", server: zf-ct.bgblwow.org, port: 52707, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇯🇵 [联通专线] 日本 x A区", server: zf-cu.bgblwow.org, port: 59719, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇯🇵 [移动专线] 日本 x A区", server: zf-cm.bgblwow.org, port: 55439, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇩🇪 [电信专线] 德国 xA区", server: zf-ct.bgblwow.org, port: 54881, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇩🇪 [联通专线] 德国 x A区", server: zf-cu.bgblwow.org, port: 51577, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇩🇪 [移动专线] 德国 x A区", server: zf-cm.bgblwow.org, port: 58056, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇰🇷 [电信专线] 韩国 x A区", server: zf-ct.bgblwow.org, port: 57459, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇰🇷 [联通专线] 韩国 x A区", server: zf-cu.bgblwow.org, port: 55064, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇰🇷 [移动专线] 韩国 x A区", server: zf-cm.bgblwow.org, port: 55782, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇫🇷 [电信专线] 法国 x A区", server: zf-ct.bgblwow.org, port: 59720, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇫🇷 [联通专线] 法国 x A区", server: zf-cu.bgblwow.org, port: 50748, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇫🇷 [移动专线] 法国 x A区", server: zf-cm.bgblwow.org, port: 59741, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇺🇸 [电信专线] 美国 x A区", server: zf-ct.bgblwow.org, port: 58850, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇺🇸 [联通专线] 美国 x A区", server: zf-cu.bgblwow.org, port: 57572, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "🇺🇸 [移动专线] 美国 x A区", server: zf-cm.bgblwow.org, port: 50984, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: ----------------------, server: zf-cm.bgblwow.org, port: 57304, type: ss, cipher: chacha20-ietf-poly1305, password: 486ba4ba-3783-40d2-b761-bbbd784513d0}
-  - {name: "[Hy2]距离下次重置剩余：16 天", server: banmabanmabanmabanmabanmabanma3.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma3.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇺🇸 [Hy2]斑马VIP-美国", server: banmabanmabanmabanmabanmabanma3.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma3.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇨🇳 [Hy2]斑马VIP-台湾", server: banmabanmabanmabanmabanmabanma4.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma4.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇯🇵 [Hy2]斑马VIP-日本", server: banmabanmabanmabanmabanmabanma5.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma5.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇸🇬 [Hy2]斑马VIP-新加坡", server: banmabanmabanmabanmabanmabanma6.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma6.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇰🇷 [Hy2]斑马VIP-韩国", server: banmabanmabanmabanmabanmabanma7.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma7.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇷🇺 [Hy2]斑马VIP-俄罗斯", server: banmabanmabanmabanmabanmabanma8.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma8.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇭🇰 [Hy2]斑马VIP-香港", server: banmabanmabanmabanmabanmabanma9.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma9.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇭🇰 [Hy2]斑马VIP-香港2", server: banmabanmabanmabanmabanmabanma10.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma10.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇺🇸 [Hy2]斑马白嫖-美国", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇺🇸 [Hy2]斑马白嫖-美国2", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇺🇸 [Hy2]斑马白嫖-美国3", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇩🇪 [Hy2]斑马白嫖-德国", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇩🇪 [Hy2]斑马白嫖-德国2", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
-  - {name: "🇩🇪 [Hy2]斑马白嫖-德国3", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 66399028-1f32-4a72-af1e-d512f518f408, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
-  - {name: 国内直连网站都是临时的，挂梯子可直接进 4, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 4, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 4, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 4, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 4, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.1（GPT） 4, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国NO.2（GPT） 4, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (IEPL)英国1 4, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 (隧道)英国2 4, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.1 4, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡NO.2 4, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.1 4, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 日本NO.2 4, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO1 4", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇰🇷 [3x]韩国 专线NO2 4", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生1 4, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 澳大利亚原生2 4, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大1 4, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇦 加拿大2 4, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度1 4, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇮🇳 印度2 4, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国1 4, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 法国2 4, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: d1d1ea45-0a84-47e2-88a8-8e49529c6142, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: d70e139a-9460-4541-b09f-7fad93d5a225, sni: node1.yuntongclouds.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: d70e139a-9460-4541-b09f-7fad93d5a225, sni: node2.yuntongclouds.com, skip-cert-verify: true}
-  - {name: 🇨🇳 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: d70e139a-9460-4541-b09f-7fad93d5a225, sni: node3.yuntongclouds.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: d70e139a-9460-4541-b09f-7fad93d5a225, sni: node4.yuntongclouds.com, skip-cert-verify: true}
-  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: d70e139a-9460-4541-b09f-7fad93d5a225, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true}
-  - {name: 过滤掉3条线路 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港 (广港)1 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港 (广港)2 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港 (广港)3 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港 (广新)1 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港  (广新)2 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 香港 (广新)3 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 新加坡解锁(广港)1 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 新加坡解锁(广港)2 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 新加坡解锁(广港)3 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 新加坡解锁(广新)1 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 新加坡解锁(广新)2 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 新加坡解锁(广新)3 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 日本1(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 日本2(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 日本3(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 台湾解锁 (广港)1 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 台湾解锁 (广港)2 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 台湾解锁 (广港)3 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇨🇳 台湾解锁 (广新)1 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇨🇳 台湾解锁 (广新)2 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇨🇳 台湾解锁 (广新)3 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇺🇸 中转美国1(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇺🇸 中转美国2(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇺🇸 中转美国3(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 韩国 (广港)1 x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 韩国 (广港)2 x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 韩国 (广港)3x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 土耳其 (广港)1 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 土耳其 (广港)2 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 土耳其 (广港)3 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 冰岛 (广港)1 x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 冰岛 (广港)2 x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 冰岛 (广港)3x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 印度 (广港)1 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 印度 (广港)2 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 印度 (广港)3 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 巴西 (广港)1 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 巴西 (广港)2 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 巴西 (广港)3 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 以色列 (广港)1x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 以色列 (广港)2 x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 以色列 (广港)3 x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 墨西哥 (广港)1 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 墨西哥 (广港)2 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇭🇰 墨西哥 (广港)3 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 泰国 (广新)1  x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 泰国 (广新) 2  x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: 🇸🇬 泰国 (广新)3 x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 6d8b8e2c-dc33-42d8-bb91-2a56efa0339c}
-  - {name: ⛔اشتراک را تمدید کنید⛔, server: empty.node, port: 443, type: trojan, password: 195c45a1-64b7-46c9-aaf4-61ae6b94241d, sni: empty.node, skip-cert-verify: false}
-  - {name: ⛔اشتراک منقضی شده است⛔, server: empty.node, port: 443, type: trojan, password: 195c45a1-64b7-46c9-aaf4-61ae6b94241d, sni: empty.node, skip-cert-verify: false}
+  - {name: 国内直连网站都是临时的，挂梯子可直接进, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x）, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x）, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等）, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等）, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT）, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT）, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (IEPL)英国1, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (隧道)英国2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO1", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO2", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 374b4e8b-0ae9-40a7-9e72-04fd6335515d, alterId: 0, cipher: auto, tls: false}
+  - {name: 国内直连网站都是临时的，挂梯子可直接进 2, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 2, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 2, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 2, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 2, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT） 2, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT） 2, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (IEPL)英国1 2, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (隧道)英国2 2, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1 2, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2 2, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1 2, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2 2, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO1 2", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO2 2", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1 2, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2 2, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1 2, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2 2, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1 2, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2 2, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1 2, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2 2, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: f163c0bf-19ef-4520-bead-a08bf6693192, alterId: 0, cipher: auto, tls: false}
+  - {name: 国内直连网站都是临时的，挂梯子可直接进 3, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 3, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 3, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 3, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 3, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT） 3, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT） 3, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (IEPL)英国1 3, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (隧道)英国2 3, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1 3, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2 3, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1 3, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2 3, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO1 3", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO2 3", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1 3, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2 3, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1 3, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2 3, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1 3, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2 3, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1 3, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2 3, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: c5b67071-601f-4ea5-9355-1661ae3626ce, alterId: 0, cipher: auto, tls: false}
+  - {name: 注册试用1小时限1MB, server: zf-cm.bgblwow.org, port: 57304, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇸🇬 [电信专线] 新加坡 x A区", server: zf-ct.bgblwow.org, port: 50412, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇸🇬 [联通专线] 新加坡 x A区", server: zf-cu.bgblwow.org, port: 55375, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇸🇬 [移动专线] 新加坡 x A区", server: zf-cm.bgblwow.org, port: 59384, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇭🇰 [电信专线] 香港 x A区", server: zf-ct.bgblwow.org, port: 58911, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇭🇰 [联通专线] 香港 x A区", server: zf-cu.bgblwow.org, port: 53754, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇭🇰 [移动专线] 香港 x A区", server: zf-cm.bgblwow.org, port: 59543, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇮🇳 [电信专线] 印度 x A区", server: zf-ct.bgblwow.org, port: 59069, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇮🇳 [联通专线] 印度 x A区", server: zf-cu.bgblwow.org, port: 50369, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇮🇳 [移动专线] 印度 x A区", server: zf-cm.bgblwow.org, port: 54274, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇨🇳 [电信专线] 台湾 x A区", server: zf-ct.bgblwow.org, port: 59345, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇨🇳 [联通专线] 台湾 x A区", server: zf-cu.bgblwow.org, port: 56963, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇨🇳 [移动专线] 台湾 x A区", server: zf-cm.bgblwow.org, port: 57989, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇧🇷 [电信专线] 巴西 x A区", server: zf-ct.bgblwow.org, port: 59469, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇧🇷 [联通专线] 巴西 x A区", server: zf-cu.bgblwow.org, port: 57609, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇧🇷 [移动专线] 巴西 x A区", server: zf-cm.bgblwow.org, port: 53131, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇻🇳 [电信专线] 越南 x A区", server: zf-ct.bgblwow.org, port: 52384, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇻🇳 [联通专线] 越南 x A区", server: zf-cu.bgblwow.org, port: 55774, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇻🇳 [移动专线] 越南 x A区", server: zf-cm.bgblwow.org, port: 58537, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇯🇵 [电信专线] 日本 x A区", server: zf-ct.bgblwow.org, port: 52707, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇯🇵 [联通专线] 日本 x A区", server: zf-cu.bgblwow.org, port: 59719, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇯🇵 [移动专线] 日本 x A区", server: zf-cm.bgblwow.org, port: 55439, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇩🇪 [电信专线] 德国 xA区", server: zf-ct.bgblwow.org, port: 54881, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇩🇪 [联通专线] 德国 x A区", server: zf-cu.bgblwow.org, port: 51577, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇩🇪 [移动专线] 德国 x A区", server: zf-cm.bgblwow.org, port: 58056, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇰🇷 [电信专线] 韩国 x A区", server: zf-ct.bgblwow.org, port: 57459, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇰🇷 [联通专线] 韩国 x A区", server: zf-cu.bgblwow.org, port: 55064, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇰🇷 [移动专线] 韩国 x A区", server: zf-cm.bgblwow.org, port: 55782, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇫🇷 [电信专线] 法国 x A区", server: zf-ct.bgblwow.org, port: 59720, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇫🇷 [联通专线] 法国 x A区", server: zf-cu.bgblwow.org, port: 50748, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇫🇷 [移动专线] 法国 x A区", server: zf-cm.bgblwow.org, port: 59741, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇺🇸 [电信专线] 美国 x A区", server: zf-ct.bgblwow.org, port: 58850, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇺🇸 [联通专线] 美国 x A区", server: zf-cu.bgblwow.org, port: 57572, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: "🇺🇸 [移动专线] 美国 x A区", server: zf-cm.bgblwow.org, port: 50984, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: ----------------------, server: zf-cm.bgblwow.org, port: 57304, type: ss, cipher: chacha20-ietf-poly1305, password: 6672b258-9a15-4494-8ca0-ba338c849875}
+  - {name: 国内直连网站都是临时的，挂梯子可直接进 4, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 4, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 4, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 4, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 4, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT） 4, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT） 4, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (IEPL)英国1 4, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (隧道)英国2 4, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1 4, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2 4, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1 4, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2 4, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO1 4", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO2 4", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1 4, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2 4, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1 4, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2 4, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1 4, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2 4, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1 4, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2 4, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 5c5d06d7-6416-4123-ad19-e5052660d1f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 过滤掉3条线路, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港 (广港)1 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港 (广港)2 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港 (广港)3 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港 (广新)1 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港  (广新)2 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 香港 (广新)3 x1, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 新加坡解锁(广港)1 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 新加坡解锁(广港)2 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 新加坡解锁(广港)3 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 新加坡解锁(广新)1 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 新加坡解锁(广新)2 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 新加坡解锁(广新)3 x1, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 日本1(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 日本2(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 日本3(广新) x1, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 台湾解锁 (广港)1 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 台湾解锁 (广港)2 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 台湾解锁 (广港)3 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇨🇳 台湾解锁 (广新)1 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇨🇳 台湾解锁 (广新)2 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇨🇳 台湾解锁 (广新)3 x1, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇺🇸 中转美国1(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇺🇸 中转美国2(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇺🇸 中转美国3(动态) x1, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 韩国 (广港)1 x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 韩国 (广港)2 x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 韩国 (广港)3x1, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 土耳其 (广港)1 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 土耳其 (广港)2 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 土耳其 (广港)3 x1, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 冰岛 (广港)1 x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 冰岛 (广港)2 x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 冰岛 (广港)3x1, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 印度 (广港)1 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 印度 (广港)2 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 印度 (广港)3 x1, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 巴西 (广港)1 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 巴西 (广港)2 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 巴西 (广港)3 x1, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 以色列 (广港)1x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 以色列 (广港)2 x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 以色列 (广港)3 x1, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 墨西哥 (广港)1 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 墨西哥 (广港)2 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇭🇰 墨西哥 (广港)3 x1, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 泰国 (广新)1  x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 泰国 (广新) 2  x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇸🇬 泰国 (广新)3 x1, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 3b6059de-939e-4a45-8b60-056f86854e17}
+  - {name: 🇰🇷 KR-IDC-节点1, server: 146.56.132.194, port: 30000, type: ss, cipher: aes-256-gcm, password: 7f0be864-e549-49aa-b316-d6a4f15169ae}
+  - {name: 🇰🇷 KR-IDC-节点2, server: 146.56.132.194, port: 30001, type: ss, cipher: aes-256-gcm, password: 7f0be864-e549-49aa-b316-d6a4f15169ae}
+  - {name: 🇯🇵 JP-IDC-NODE1, server: 146.56.132.194, port: 30003, type: vmess, uuid: 7f0be864-e549-49aa-b316-d6a4f15169ae, alterId: 0, cipher: auto, tls: true, servername: net.iftballs.com, network: ws, ws-opts: {path: /ips30003}}
+  - {name: 过滤掉3条线路 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港 (广港)1 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港 (广港)2 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港 (广港)3 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港 (广新)1 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港  (广新)2 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 香港 (广新)3 x1 2, server: slur.izenny.com, port: 55407, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 新加坡解锁(广港)1 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 新加坡解锁(广港)2 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 新加坡解锁(广港)3 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 新加坡解锁(广新)1 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 新加坡解锁(广新)2 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 新加坡解锁(广新)3 x1 2, server: slur.izenny.com, port: 36199, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 日本1(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 日本2(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 日本3(广新) x1 2, server: slur.izenny.com, port: 53387, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 台湾解锁 (广港)1 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 台湾解锁 (广港)2 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 台湾解锁 (广港)3 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇨🇳 台湾解锁 (广新)1 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇨🇳 台湾解锁 (广新)2 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇨🇳 台湾解锁 (广新)3 x1 2, server: slur.izenny.com, port: 14187, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇺🇸 中转美国1(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇺🇸 中转美国2(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇺🇸 中转美国3(动态) x1 2, server: slur.izenny.com, port: 40063, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 韩国 (广港)1 x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 韩国 (广港)2 x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 韩国 (广港)3x1 2, server: slur.izenny.com, port: 43295, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 土耳其 (广港)1 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 土耳其 (广港)2 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 土耳其 (广港)3 x1 2, server: slur.izenny.com, port: 54693, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 冰岛 (广港)1 x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 冰岛 (广港)2 x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 冰岛 (广港)3x1 2, server: slur.izenny.com, port: 32009, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 印度 (广港)1 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 印度 (广港)2 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 印度 (广港)3 x1 2, server: slur.izenny.com, port: 17254, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 巴西 (广港)1 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 巴西 (广港)2 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 巴西 (广港)3 x1 2, server: slur.izenny.com, port: 57577, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 以色列 (广港)1x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 以色列 (广港)2 x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 以色列 (广港)3 x1 2, server: slur.izenny.com, port: 30348, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 墨西哥 (广港)1 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 墨西哥 (广港)2 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇭🇰 墨西哥 (广港)3 x1 2, server: slur.izenny.com, port: 48907, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 泰国 (广新)1  x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 泰国 (广新) 2  x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 🇸🇬 泰国 (广新)3 x1 2, server: slur.izenny.com, port: 28675, type: ss, cipher: chacha20-ietf-poly1305, password: 96453418-d4a6-477a-b042-d55c2222415a}
+  - {name: 国内直连网站都是临时的，挂梯子可直接进 5, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾1(GPT等流媒体1.5x） 5, server: haa.dashuai.cyou, port: 45078, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 台湾2(GPT等流媒体1.5x） 5, server: xdd.dashuai.cyou, port: 45077, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.1（GPT奈飞等） 5, server: haa.dashuai.cyou, port: 45050, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港NO.2（GPT奈飞等） 5, server: xdd.dashuai.cyou, port: 45051, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.1（GPT） 5, server: haa.dashuai.cyou, port: 45052, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国NO.2（GPT） 5, server: xdd.dashuai.cyou, port: 45053, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (IEPL)英国1 5, server: haa.dashuai.cyou, port: 45066, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇬🇧 (隧道)英国2 5, server: xdd.dashuai.cyou, port: 45067, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.1 5, server: haa.dashuai.cyou, port: 45054, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡NO.2 5, server: xdd.dashuai.cyou, port: 45055, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.1 5, server: haa.dashuai.cyou, port: 45056, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本NO.2 5, server: xdd.dashuai.cyou, port: 45057, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO1 5", server: haa.dashuai.cyou, port: 45076, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇰🇷 [3x]韩国 专线NO2 5", server: xdd.dashuai.cyou, port: 45075, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生1 5, server: haa.dashuai.cyou, port: 45062, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚原生2 5, server: xdd.dashuai.cyou, port: 45063, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大1 5, server: haa.dashuai.cyou, port: 45064, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇦 加拿大2 5, server: xdd.dashuai.cyou, port: 45065, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度1 5, server: haa.dashuai.cyou, port: 45074, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇮🇳 印度2 5, server: xdd.dashuai.cyou, port: 45073, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国1 5, server: haa.dashuai.cyou, port: 45072, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇫🇷 法国2 5, server: xdd.dashuai.cyou, port: 45071, type: vmess, uuid: 39c36a83-b58d-43f9-94d5-bbd5dce5a3ed, alterId: 0, cipher: auto, tls: false}
+  - {name: ⛔اشتراک را تمدید کنید⛔, server: empty.node, port: 443, type: trojan, password: 2c181f5b-a19f-4914-84b7-b0220dc5862e, sni: empty.node, skip-cert-verify: false}
+  - {name: ⛔اشتراک منقضی شده است⛔, server: empty.node, port: 443, type: trojan, password: 2c181f5b-a19f-4914-84b7-b0220dc5862e, sni: empty.node, skip-cert-verify: false}
+  - {name: 🇺🇸 北美iplc专线, server: 1002.952326.xyz, port: 10000, type: hysteria2, ports: 10000, password: 58af6edd-0397-4f29-a868-2ca11bb7dfd7, obfs: salamander, obfs-password: VAYpRqMdlHDFG7EA, sni: 1002.kingfisher.us.kg, skip-cert-verify: false}
+  - {name: 🇭🇰 HK 12小时试用线路 满意在订购, server: qqb12.599789.xyz, port: 31136, type: ss, cipher: aes-128-gcm, password: 6a21c3dd-93f7-4b1e-ab6a-83961300396c}
+  - {name: 试用线路不支持解锁, server: qqb12.599789.xyz, port: 37781, type: ss, cipher: aes-128-gcm, password: 6a21c3dd-93f7-4b1e-ab6a-83961300396c}
+  - {name: 订阅后显示所有节点, server: qqb12.599789.xyz, port: 2596, type: ss, cipher: aes-128-gcm, password: 6a21c3dd-93f7-4b1e-ab6a-83961300396c}
+  - {name: 🇨🇳 台湾高速节点, server: 103.137.63.77, port: 443, type: trojan, password: ab004e21-fcde-4e8c-a375-cfc68648fb98, sni: node1.yuntongclouds.com, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾高速节点2, server: 118.232.199.29, port: 443, type: trojan, password: ab004e21-fcde-4e8c-a375-cfc68648fb98, sni: node2.yuntongclouds.com, skip-cert-verify: true}
+  - {name: 🇨🇳 台湾高速节点3, server: 118.232.199.14, port: 443, type: trojan, password: ab004e21-fcde-4e8c-a375-cfc68648fb98, sni: node3.yuntongclouds.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国高速节点1, server: 144.34.178.66, port: 1443, type: trojan, password: ab004e21-fcde-4e8c-a375-cfc68648fb98, sni: node4.yuntongclouds.com, skip-cert-verify: true}
+  - {name: 🇨🇳 中国联通节点1, server: 115.231.220.33, port: 5443, type: trojan, password: ab004e21-fcde-4e8c-a375-cfc68648fb98, sni: nodecn1.jiayinetwork.es, skip-cert-verify: true}
+  - {name: "[Hy2]距离下次重置剩余：15 天", server: banmabanmabanmabanmabanmabanma3.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma3.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇺🇸 [Hy2]斑马VIP-美国", server: banmabanmabanmabanmabanmabanma3.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma3.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇨🇳 [Hy2]斑马VIP-台湾", server: banmabanmabanmabanmabanmabanma4.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma4.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇯🇵 [Hy2]斑马VIP-日本", server: banmabanmabanmabanmabanmabanma5.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma5.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇸🇬 [Hy2]斑马VIP-新加坡", server: banmabanmabanmabanmabanmabanma6.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma6.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇰🇷 [Hy2]斑马VIP-韩国", server: banmabanmabanmabanmabanmabanma7.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma7.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇷🇺 [Hy2]斑马VIP-俄罗斯", server: banmabanmabanmabanmabanmabanma8.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma8.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇭🇰 [Hy2]斑马VIP-香港", server: banmabanmabanmabanmabanmabanma9.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma9.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇭🇰 [Hy2]斑马VIP-香港2", server: banmabanmabanmabanmabanmabanma10.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma10.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇺🇸 [Hy2]斑马白嫖-美国", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇺🇸 [Hy2]斑马白嫖-美国2", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇺🇸 [Hy2]斑马白嫖-美国3", server: banmabanmabanmabanmabanmabanma1.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma1.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇩🇪 [Hy2]斑马白嫖-德国", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇩🇪 [Hy2]斑马白嫖-德国2", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
+  - {name: "🇩🇪 [Hy2]斑马白嫖-德国3", server: banmabanmabanmabanmabanmabanma2.wanlidag.top, port: 54265, type: hysteria2, ports: 54265, password: 1ce3a7ef-799c-48f8-9b07-4363680d11fa, sni: banmabanmabanmabanmabanmabanma2.wanlidag.top, skip-cert-verify: true}
+  - {name: 🇺🇸 美国-v6|01, server: dmitv61.616626.xyz, port: 22305, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-v6|02, server: greenchais2.668918.xyz, port: 22307, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-v6|04, server: greenip1.668918.xyz, port: 22306, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-v6|05, server: greenip2.668918.xyz, port: 22307, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-v6|06, server: greenip3.668918.xyz, port: 22308, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-v6|07, server: vpsjp1.668918.xyz, port: 22306, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰-v6|01*0.5x, server: naran1.616626.xyz, port: 22305, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰-v6|02*0.5x, server: naran2.616626.xyz, port: 22306, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰-v6|03*0.5x, server: naran3.616626.xyz, port: 22308, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇳🇱 荷兰-v6|04*0.5x, server: naran4.616626.xyz, port: 22310, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 德国-v6|01*0.5x, server: netcp1.616626.xyz, port: 22305, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 德国-v6|02*0.5x, server: netcp2.616626.xyz, port: 22306, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇩🇪 德国-v6|03*0.5x, server: netcp3.616626.xyz, port: 22307, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-v6|05*0.5x, server: nathk.91ai.de, port: 18002, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-v6|06, server: greenhk0.616626.xyz, port: 10505, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-v6|07, server: greenhk1.616626.xyz, port: 10506, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-v6|08, server: greenhk2.616626.xyz, port: 10507, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港-v4|02, server: hkvm4.656888.xyz, port: 30026, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: hkvm4.656888.xyz, skip-cert-verify: true}
+  - {name: 🇭🇰 香港03, server: hytro.91ai.de, port: 10022, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: hytro.91ai.de, skip-cert-verify: true}
+  - {name: 🇯🇵 日本01, server: greenjp2.yueyun.de, port: 11030, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: greenjp2.yueyun.de, skip-cert-verify: true}
+  - {name: 🇯🇵 日本02, server: vpsjp.yueyun.de, port: 13036, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: vpsjp.yueyun.de, skip-cert-verify: true}
+  - {name: 🇯🇵 日本03, server: cloud.yueyun.de, port: 10389, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: cloud.yueyun.de, skip-cert-verify: true}
+  - {name: 🇳🇱 【荷兰05】*0.5x, server: nara.189.ovh, port: 10027, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: nara.189.ovh, skip-cert-verify: true}
+  - {name: 🇩🇪 【德国06】*0.5x, server: netcp4.616626.xyz, port: 10027, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: netcp4.616626.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国01, server: vir732.189.ovh, port: 10026, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: vir732.189.ovh, skip-cert-verify: true}
+  - {name: 🇺🇸 美国02, server: vir11.189.ovh, port: 10022, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: vir11.189.ovh, skip-cert-verify: true}
+  - {name: 🇺🇸 美国-v6|01 2, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国04, server: layercloud.189.ovh, port: 10021, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: layercloud.189.ovh, skip-cert-verify: true}
+  - {name: 🇺🇸 美国05, server: advin.189.ovh, port: 10027, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: advin.189.ovh, skip-cert-verify: true}
+  - {name: 🇺🇸 美国07, server: vir694.189.ovh, port: 10021, type: trojan, password: de7dd8e5-99ec-4cbf-bd83-6d34069b02a9, sni: vir694.189.ovh, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -454,12 +387,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -495,21 +422,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -533,11 +445,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -587,98 +546,90 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -748,12 +699,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -789,21 +734,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -827,11 +757,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -881,99 +858,91 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1043,12 +1012,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -1084,21 +1047,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -1122,11 +1070,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -1176,8 +1171,85 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1196,91 +1268,6 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1350,12 +1337,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -1391,21 +1372,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -1429,11 +1395,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -1483,12 +1496,111 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇨🇳 台湾1(GPT等流媒体1.5x）
+      - 🇨🇳 台湾2(GPT等流媒体1.5x）
+      - 🇭🇰 香港NO.1（GPT奈飞等）
+      - 🇭🇰 香港NO.2（GPT奈飞等）
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 2
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 2
+      - 🇭🇰 香港NO.1（GPT奈飞等） 2
+      - 🇭🇰 香港NO.2（GPT奈飞等） 2
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 3
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 3
+      - 🇭🇰 香港NO.1（GPT奈飞等） 3
+      - 🇭🇰 香港NO.2（GPT奈飞等） 3
+      - 🇭🇰 [电信专线] 香港 x A区
+      - 🇭🇰 [联通专线] 香港 x A区
+      - 🇭🇰 [移动专线] 香港 x A区
+      - 🇨🇳 [电信专线] 台湾 x A区
+      - 🇨🇳 [联通专线] 台湾 x A区
+      - 🇨🇳 [移动专线] 台湾 x A区
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
+      - 🇭🇰 香港NO.1（GPT奈飞等） 4
+      - 🇭🇰 香港NO.2（GPT奈飞等） 4
       - 🇭🇰 香港 (广港)1 x1
       - 🇭🇰 香港 (广港)2 x1
       - 🇭🇰 香港 (广港)3 x1
@@ -1525,40 +1637,6 @@ proxy-groups:
       - 🇭🇰 墨西哥 (广港)1 x1
       - 🇭🇰 墨西哥 (广港)2 x1
       - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇨🇳 台湾1(GPT等流媒体1.5x）
-      - 🇨🇳 台湾2(GPT等流媒体1.5x）
-      - 🇭🇰 香港NO.1（GPT奈飞等）
-      - 🇭🇰 香港NO.2（GPT奈飞等）
-      - 🇨🇳 台湾1(GPT等流媒体1.5x） 2
-      - 🇨🇳 台湾2(GPT等流媒体1.5x） 2
-      - 🇭🇰 香港NO.1（GPT奈飞等） 2
-      - 🇭🇰 香港NO.2（GPT奈飞等） 2
-      - 🇨🇳 台湾1(GPT等流媒体1.5x） 3
-      - 🇨🇳 台湾2(GPT等流媒体1.5x） 3
-      - 🇭🇰 香港NO.1（GPT奈飞等） 3
-      - 🇭🇰 香港NO.2（GPT奈飞等） 3
-      - 🇭🇰 [电信专线] 香港 x A区
-      - 🇭🇰 [联通专线] 香港 x A区
-      - 🇭🇰 [移动专线] 香港 x A区
-      - 🇨🇳 [电信专线] 台湾 x A区
-      - 🇨🇳 [联通专线] 台湾 x A区
-      - 🇨🇳 [移动专线] 台湾 x A区
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
-      - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
-      - 🇭🇰 香港NO.1（GPT奈飞等） 4
-      - 🇭🇰 香港NO.2（GPT奈飞等） 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
       - 🇭🇰 香港 (广港)3 x1 2
@@ -1595,97 +1673,28 @@ proxy-groups:
       - 🇭🇰 墨西哥 (广港)1 x1 2
       - 🇭🇰 墨西哥 (广港)2 x1 2
       - 🇭🇰 墨西哥 (广港)3 x1 2
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -1755,12 +1764,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -1796,21 +1799,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -1834,11 +1822,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -1888,98 +1923,90 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -2049,12 +2076,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -2090,21 +2111,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -2128,11 +2134,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -2182,99 +2235,91 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -2344,12 +2389,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -2385,21 +2424,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -2423,11 +2447,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -2477,8 +2548,85 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2494,91 +2642,6 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 KR-IDC-节点1
-      - 🇰🇷 KR-IDC-节点2
-      - 🇯🇵 JP-IDC-NODE1
-      - 过滤掉3条线路
-      - 🇭🇰 香港 (广港)1 x1
-      - 🇭🇰 香港 (广港)2 x1
-      - 🇭🇰 香港 (广港)3 x1
-      - 🇭🇰 香港 (广新)1 x1
-      - 🇭🇰 香港  (广新)2 x1
-      - 🇭🇰 香港 (广新)3 x1
-      - 🇭🇰 新加坡解锁(广港)1 x1
-      - 🇭🇰 新加坡解锁(广港)2 x1
-      - 🇭🇰 新加坡解锁(广港)3 x1
-      - 🇸🇬 新加坡解锁(广新)1 x1
-      - 🇸🇬 新加坡解锁(广新)2 x1
-      - 🇸🇬 新加坡解锁(广新)3 x1
-      - 🇸🇬 日本1(广新) x1
-      - 🇸🇬 日本2(广新) x1
-      - 🇸🇬 日本3(广新) x1
-      - 🇭🇰 台湾解锁 (广港)1 x1
-      - 🇭🇰 台湾解锁 (广港)2 x1
-      - 🇭🇰 台湾解锁 (广港)3 x1
-      - 🇨🇳 台湾解锁 (广新)1 x1
-      - 🇨🇳 台湾解锁 (广新)2 x1
-      - 🇨🇳 台湾解锁 (广新)3 x1
-      - 🇺🇸 中转美国1(动态) x1
-      - 🇺🇸 中转美国2(动态) x1
-      - 🇺🇸 中转美国3(动态) x1
-      - 🇭🇰 韩国 (广港)1 x1
-      - 🇭🇰 韩国 (广港)2 x1
-      - 🇭🇰 韩国 (广港)3x1
-      - 🇭🇰 土耳其 (广港)1 x1
-      - 🇭🇰 土耳其 (广港)2 x1
-      - 🇭🇰 土耳其 (广港)3 x1
-      - 🇭🇰 冰岛 (广港)1 x1
-      - 🇭🇰 冰岛 (广港)2 x1
-      - 🇭🇰 冰岛 (广港)3x1
-      - 🇭🇰 印度 (广港)1 x1
-      - 🇭🇰 印度 (广港)2 x1
-      - 🇭🇰 印度 (广港)3 x1
-      - 🇭🇰 巴西 (广港)1 x1
-      - 🇭🇰 巴西 (广港)2 x1
-      - 🇭🇰 巴西 (广港)3 x1
-      - 🇭🇰 以色列 (广港)1x1
-      - 🇭🇰 以色列 (广港)2 x1
-      - 🇭🇰 以色列 (广港)3 x1
-      - 🇭🇰 墨西哥 (广港)1 x1
-      - 🇭🇰 墨西哥 (广港)2 x1
-      - 🇭🇰 墨西哥 (广港)3 x1
-      - 🇸🇬 泰国 (广新)1  x1
-      - 🇸🇬 泰国 (广新) 2  x1
-      - 🇸🇬 泰国 (广新)3 x1
-      - 🇭🇰 HK 12小时试用线路 满意在订购
-      - 试用线路不支持解锁
-      - 订阅后显示所有节点
-      - 🇺🇸 美国-v6|01
-      - 🇯🇵 日本-v6|02
-      - 🇯🇵 日本-v6|04
-      - 🇯🇵 日本-v6|05
-      - 🇯🇵 日本-v6|06
-      - 🇯🇵 日本-v6|07
-      - 🇳🇱 荷兰-v6|01*0.5x
-      - 🇳🇱 荷兰-v6|02*0.5x
-      - 🇳🇱 荷兰-v6|03*0.5x
-      - 🇳🇱 荷兰-v6|04*0.5x
-      - 🇩🇪 德国-v6|01*0.5x
-      - 🇩🇪 德国-v6|02*0.5x
-      - 🇩🇪 德国-v6|03*0.5x
-      - 🇭🇰 香港-v6|05*0.5x
-      - 🇭🇰 香港-v6|06
-      - 🇭🇰 香港-v6|07
-      - 🇭🇰 香港-v6|08
-      - 🇭🇰 香港-v4|02
-      - 🇭🇰 香港03
-      - 🇯🇵 日本01
-      - 🇯🇵 日本02
-      - 🇯🇵 日本03
-      - 🇳🇱 【荷兰05】*0.5x
-      - 🇩🇪 【德国06】*0.5x
-      - 🇺🇸 美国01
-      - 🇺🇸 美国02
-      - 🇺🇸 美国-v6|01 2
-      - 🇺🇸 美国04
-      - 🇺🇸 美国05
-      - 🇺🇸 美国07
       - 国内直连网站都是临时的，挂梯子可直接进
       - 🇨🇳 台湾1(GPT等流媒体1.5x）
       - 🇨🇳 台湾2(GPT等流媒体1.5x）
@@ -2648,12 +2711,6 @@ proxy-groups:
       - 🇮🇳 印度2 3
       - 🇫🇷 法国1 3
       - 🇫🇷 法国2 3
-      - 🇺🇸 北美iplc专线
-      - 过滤掉2条线路
-      - 🇺🇸 美国-拉斯维加斯-001
-      - 🇺🇸 美国-纽约-001
-      - ❤️故障报修邮箱❤️
-      - 邮箱:louwangzhiyu.org@gmail.com
       - 注册试用1小时限1MB
       - 🇸🇬 [电信专线] 新加坡 x A区
       - 🇸🇬 [联通专线] 新加坡 x A区
@@ -2689,21 +2746,6 @@ proxy-groups:
       - 🇺🇸 [联通专线] 美国 x A区
       - 🇺🇸 [移动专线] 美国 x A区
       - ----------------------
-      - "[Hy2]距离下次重置剩余：16 天"
-      - 🇺🇸 [Hy2]斑马VIP-美国
-      - 🇨🇳 [Hy2]斑马VIP-台湾
-      - 🇯🇵 [Hy2]斑马VIP-日本
-      - 🇸🇬 [Hy2]斑马VIP-新加坡
-      - 🇰🇷 [Hy2]斑马VIP-韩国
-      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
-      - 🇭🇰 [Hy2]斑马VIP-香港
-      - 🇭🇰 [Hy2]斑马VIP-香港2
-      - 🇺🇸 [Hy2]斑马白嫖-美国
-      - 🇺🇸 [Hy2]斑马白嫖-美国2
-      - 🇺🇸 [Hy2]斑马白嫖-美国3
-      - 🇩🇪 [Hy2]斑马白嫖-德国
-      - 🇩🇪 [Hy2]斑马白嫖-德国2
-      - 🇩🇪 [Hy2]斑马白嫖-德国3
       - 国内直连网站都是临时的，挂梯子可直接进 4
       - 🇨🇳 台湾1(GPT等流媒体1.5x） 4
       - 🇨🇳 台湾2(GPT等流媒体1.5x） 4
@@ -2727,11 +2769,58 @@ proxy-groups:
       - 🇮🇳 印度2 4
       - 🇫🇷 法国1 4
       - 🇫🇷 法国2 4
-      - 🇨🇳 台湾高速节点
-      - 🇨🇳 台湾高速节点2
-      - 🇨🇳 台湾高速节点3
-      - 🇺🇸 美国高速节点1
-      - 🇨🇳 中国联通节点1
+      - 过滤掉3条线路
+      - 🇭🇰 香港 (广港)1 x1
+      - 🇭🇰 香港 (广港)2 x1
+      - 🇭🇰 香港 (广港)3 x1
+      - 🇭🇰 香港 (广新)1 x1
+      - 🇭🇰 香港  (广新)2 x1
+      - 🇭🇰 香港 (广新)3 x1
+      - 🇭🇰 新加坡解锁(广港)1 x1
+      - 🇭🇰 新加坡解锁(广港)2 x1
+      - 🇭🇰 新加坡解锁(广港)3 x1
+      - 🇸🇬 新加坡解锁(广新)1 x1
+      - 🇸🇬 新加坡解锁(广新)2 x1
+      - 🇸🇬 新加坡解锁(广新)3 x1
+      - 🇸🇬 日本1(广新) x1
+      - 🇸🇬 日本2(广新) x1
+      - 🇸🇬 日本3(广新) x1
+      - 🇭🇰 台湾解锁 (广港)1 x1
+      - 🇭🇰 台湾解锁 (广港)2 x1
+      - 🇭🇰 台湾解锁 (广港)3 x1
+      - 🇨🇳 台湾解锁 (广新)1 x1
+      - 🇨🇳 台湾解锁 (广新)2 x1
+      - 🇨🇳 台湾解锁 (广新)3 x1
+      - 🇺🇸 中转美国1(动态) x1
+      - 🇺🇸 中转美国2(动态) x1
+      - 🇺🇸 中转美国3(动态) x1
+      - 🇭🇰 韩国 (广港)1 x1
+      - 🇭🇰 韩国 (广港)2 x1
+      - 🇭🇰 韩国 (广港)3x1
+      - 🇭🇰 土耳其 (广港)1 x1
+      - 🇭🇰 土耳其 (广港)2 x1
+      - 🇭🇰 土耳其 (广港)3 x1
+      - 🇭🇰 冰岛 (广港)1 x1
+      - 🇭🇰 冰岛 (广港)2 x1
+      - 🇭🇰 冰岛 (广港)3x1
+      - 🇭🇰 印度 (广港)1 x1
+      - 🇭🇰 印度 (广港)2 x1
+      - 🇭🇰 印度 (广港)3 x1
+      - 🇭🇰 巴西 (广港)1 x1
+      - 🇭🇰 巴西 (广港)2 x1
+      - 🇭🇰 巴西 (广港)3 x1
+      - 🇭🇰 以色列 (广港)1x1
+      - 🇭🇰 以色列 (广港)2 x1
+      - 🇭🇰 以色列 (广港)3 x1
+      - 🇭🇰 墨西哥 (广港)1 x1
+      - 🇭🇰 墨西哥 (广港)2 x1
+      - 🇭🇰 墨西哥 (广港)3 x1
+      - 🇸🇬 泰国 (广新)1  x1
+      - 🇸🇬 泰国 (广新) 2  x1
+      - 🇸🇬 泰国 (广新)3 x1
+      - 🇰🇷 KR-IDC-节点1
+      - 🇰🇷 KR-IDC-节点2
+      - 🇯🇵 JP-IDC-NODE1
       - 过滤掉3条线路 2
       - 🇭🇰 香港 (广港)1 x1 2
       - 🇭🇰 香港 (广港)2 x1 2
@@ -2781,8 +2870,85 @@ proxy-groups:
       - 🇸🇬 泰国 (广新)1  x1 2
       - 🇸🇬 泰国 (广新) 2  x1 2
       - 🇸🇬 泰国 (广新)3 x1 2
+      - 国内直连网站都是临时的，挂梯子可直接进 5
+      - 🇨🇳 台湾1(GPT等流媒体1.5x） 5
+      - 🇨🇳 台湾2(GPT等流媒体1.5x） 5
+      - 🇭🇰 香港NO.1（GPT奈飞等） 5
+      - 🇭🇰 香港NO.2（GPT奈飞等） 5
+      - 🇺🇸 美国NO.1（GPT） 5
+      - 🇺🇸 美国NO.2（GPT） 5
+      - 🇬🇧 (IEPL)英国1 5
+      - 🇬🇧 (隧道)英国2 5
+      - 🇸🇬 新加坡NO.1 5
+      - 🇸🇬 新加坡NO.2 5
+      - 🇯🇵 日本NO.1 5
+      - 🇯🇵 日本NO.2 5
+      - 🇰🇷 [3x]韩国 专线NO1 5
+      - 🇰🇷 [3x]韩国 专线NO2 5
+      - 🇦🇺 澳大利亚原生1 5
+      - 🇦🇺 澳大利亚原生2 5
+      - 🇨🇦 加拿大1 5
+      - 🇨🇦 加拿大2 5
+      - 🇮🇳 印度1 5
+      - 🇮🇳 印度2 5
+      - 🇫🇷 法国1 5
+      - 🇫🇷 法国2 5
       - ⛔اشتراک را تمدید کنید⛔
       - ⛔اشتراک منقضی شده است⛔
+      - 🇺🇸 北美iplc专线
+      - 🇭🇰 HK 12小时试用线路 满意在订购
+      - 试用线路不支持解锁
+      - 订阅后显示所有节点
+      - 🇨🇳 台湾高速节点
+      - 🇨🇳 台湾高速节点2
+      - 🇨🇳 台湾高速节点3
+      - 🇺🇸 美国高速节点1
+      - 🇨🇳 中国联通节点1
+      - "[Hy2]距离下次重置剩余：15 天"
+      - 🇺🇸 [Hy2]斑马VIP-美国
+      - 🇨🇳 [Hy2]斑马VIP-台湾
+      - 🇯🇵 [Hy2]斑马VIP-日本
+      - 🇸🇬 [Hy2]斑马VIP-新加坡
+      - 🇰🇷 [Hy2]斑马VIP-韩国
+      - 🇷🇺 [Hy2]斑马VIP-俄罗斯
+      - 🇭🇰 [Hy2]斑马VIP-香港
+      - 🇭🇰 [Hy2]斑马VIP-香港2
+      - 🇺🇸 [Hy2]斑马白嫖-美国
+      - 🇺🇸 [Hy2]斑马白嫖-美国2
+      - 🇺🇸 [Hy2]斑马白嫖-美国3
+      - 🇩🇪 [Hy2]斑马白嫖-德国
+      - 🇩🇪 [Hy2]斑马白嫖-德国2
+      - 🇩🇪 [Hy2]斑马白嫖-德国3
+      - 🇺🇸 美国-v6|01
+      - 🇯🇵 日本-v6|02
+      - 🇯🇵 日本-v6|04
+      - 🇯🇵 日本-v6|05
+      - 🇯🇵 日本-v6|06
+      - 🇯🇵 日本-v6|07
+      - 🇳🇱 荷兰-v6|01*0.5x
+      - 🇳🇱 荷兰-v6|02*0.5x
+      - 🇳🇱 荷兰-v6|03*0.5x
+      - 🇳🇱 荷兰-v6|04*0.5x
+      - 🇩🇪 德国-v6|01*0.5x
+      - 🇩🇪 德国-v6|02*0.5x
+      - 🇩🇪 德国-v6|03*0.5x
+      - 🇭🇰 香港-v6|05*0.5x
+      - 🇭🇰 香港-v6|06
+      - 🇭🇰 香港-v6|07
+      - 🇭🇰 香港-v6|08
+      - 🇭🇰 香港-v4|02
+      - 🇭🇰 香港03
+      - 🇯🇵 日本01
+      - 🇯🇵 日本02
+      - 🇯🇵 日本03
+      - 🇳🇱 【荷兰05】*0.5x
+      - 🇩🇪 【德国06】*0.5x
+      - 🇺🇸 美国01
+      - 🇺🇸 美国02
+      - 🇺🇸 美国-v6|01 2
+      - 🇺🇸 美国04
+      - 🇺🇸 美国05
+      - 🇺🇸 美国07
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
