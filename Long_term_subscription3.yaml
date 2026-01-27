@@ -5,39 +5,51 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "🇯🇵 12,13|日本3|@ripaojiedian", server: 153.121.51.29, port: 4006, type: trojan, password: 869e9086806483ca4744a4cb0f3d6e16, sni: www.nintendogames.net, skip-cert-verify: false}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 140.82.35.244, port: 20994, type: trojan, password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s, sni: ads.x5.ru}
-  - {name: 🇺🇸 9|美国2, server: mg2.mangshe.xyz, port: 2056, type: hysteria2, ports: 2056, password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b, sni: mg2.mangshe.xyz, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 - 东京 - Akile LTD - 2, server: tunnel1.qqa678.com, port: 47083, type: vmess, uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港3|@ripaojiedian, server: 58.152.110.210, port: 443, type: trojan, password: 869e9086806483ca4744a4cb0f3d6e16, sni: www.nintendogames.net}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 160.16.87.174, port: 3901, type: trojan, password: 869e9086806483ca4744a4cb0f3d6e16, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: 🇭🇰 香港5|@ripaojiedian, server: 18.179.118.202, port: 1867, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: sy4.620720.xyz, port: 443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sy4.620720.xyz}}}
+  - {name: 14|US_speednode_0057, server: 173.249.201.109, port: 54443, type: trojan, password: 42bbf526-5530-470a-aeec-3b919b21c58d, sni: 0000.hkvip.ip-ddns.com, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 0000.hkvip.ip-ddns.com}}}
+  - {name: "13|tg频道:@ripaojiedian #1", server: 63.180.254.10, port: 443, type: ss, cipher: ss, password: //YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU}
+  - {name: "🇯🇵 12,13|日本2|@ripaojiedian", server: 18.179.118.202, port: 1933, type: trojan, password: 869e9086806483ca4744a4cb0f3d6e16, sni: www.nintendogames.net, skip-cert-verify: false}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,43 +68,57 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +134,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 12,13|日本3|@ripaojiedian
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 9|美国2
-      - 🇯🇵 日本 - 东京 - Akile LTD - 2
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇭🇰 香港5|@ripaojiedian
+      - 🇺🇸 美国 CloudFlare节点
+      - 14|US_speednode_0057
+      - "13|tg频道:@ripaojiedian #1"
+      - 🇯🇵 12,13|日本2|@ripaojiedian
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
