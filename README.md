@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 113`
+`Total number of merge nodes: 112`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 8`
+`Total number of merge nodes: 7`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `11`
-Updata：`2026-03-04 22:37:29`
+### Try the number of high-speed subscriptions: `12`
+Updata：`2026-03-05 12:09:51`
 
 
 <details>
@@ -31070,68 +31070,82 @@ Updata：`2026-03-04 22:37:29`
 
 
 
->Trial subscription：
-`https://tizi.bulehu.com/api/v1/client/subscribe?token=bb559dfc55e95fa059607467d4c48061`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=cd6b7ec798649a2133575b99ca61ba45`
+`https://xn--ehqa22b.site/api/v1/client/subscribe?token=047bc6ddfd4996707db1d2cf2d7c7067`
 
 
 
 
 >Trial subscription：
-`https://p1.shahramv1.site/api/v1/client/subscribe?token=bba1586a7dd6e52107c4f24a70ab4a27`
+`https://panel.shahramv1.site/api/v1/client/subscribe?token=3dc7e43335fa74d7f6d009b8d65fdf1b`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=e65bddb810ce491b37f17bce6f0c184e`
+`https://tizi.bulehu.com/api/v1/client/subscribe?token=1683f9d86add3c36698c994595458878`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=d3e32ff362fc630d069ce32a9b20bbef`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=5502ab4718efff67f109fba506006ce7`
 
 
 
 
 >Trial subscription：
-`https://panel.shahramv1.site/api/v1/client/subscribe?token=dc41be9c3290bfb50fdc6243744413ad`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=be33e245140d1bccf6a2aa336bfcc7fb`
 
 
 
 
 >Trial subscription：
-`https://best.nxxbbf.com/api/v1/client/subscribe?token=17ded97183df62d958c42dbc87ea5c4b`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=52fb94db7c0e65a2860d7696ee01df8b`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=a86a78bd4bb64d0ab3f3afeba08dadd9`
+`https://best.nxxbbf.com/api/v1/client/subscribe?token=b0e8b8d36beba5251b1462076a7b7e1a`
 
 
 
 
 >Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=1ea79a71d0d7e87b5e055fc4ae4f92f4`
+`https://yywhale.com/api/v1/client/subscribe?token=a7d0bd2959c3adb5692aaf52c01f72a5`
 
 
 
 
 >Trial subscription：
-`https://xn--9kqt60cjmy.shop/api/v1/client/subscribe?token=209665b8da50ed630f3f3bdd256baf0e`
+`https://xn--9kqt60cjmy.shop/api/v1/client/subscribe?token=489a763f2a65cf7f8e99eed6a7be91d6`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=eca0d0ccefc95d5af57316adcf255c2b`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=8a9894d2c9b6d77fa5d7136fa642423d`
+
+
+
+
+>Trial subscription：
+`https://p1.shahramv1.site/api/v1/client/subscribe?token=25af0c8be502ec10968457759e9b529d`
+
+
+
+
+>Trial subscription：
+`https://slianvpn.com/api/v1/client/subscribe?token=29d046978e5d6ba9e89d55548d21b875`
 
 
 
