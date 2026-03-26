@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 156`
+`Total number of merge nodes: 157`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 16`
+`Total number of merge nodes: 17`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `11`
-Updata：`2026-03-25 22:55:43`
+### Try the number of high-speed subscriptions: `12`
+Updata：`2026-03-26 12:31:05`
 
 
 <details>
@@ -31550,68 +31550,82 @@ Updata：`2026-03-25 22:55:43`
 
 
 
->Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=a1dd4af85d78b965ed2d8f29ff5d9831`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=d303f947b3ecf4c96bd75b315418156f`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=47b7be313bc488aeeac239c9ebb29f22`
 
 
 
 
 >Trial subscription：
-`https://best.nxxbbf.com/api/v1/client/subscribe?token=4478945f59d6124799070cba32e73e11`
+`https://p1.shahramv1.site/api/v1/client/subscribe?token=333a9994fb0838b394ed8d639203de95`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=fa364c01ac68bfa8b41d10c0b91695c7`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=ab204a30c7bec6676fc98ca66693bf5e`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=383b9b5b3f556f3eb1e3fc72046521f0`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=6df6924e11eb00b9253b50f16d8f74c9`
 
 
 
 
 >Trial subscription：
-`https://panel.shahramv1.site/api/v1/client/subscribe?token=2a86d57d120f114195366d2c50083850`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=f669404a88f1af463d1aba82acb85f07`
 
 
 
 
 >Trial subscription：
-`https://tizi.bulehu.com/api/v1/client/subscribe?token=19868f1ea875d8e99cb4a026b269bb00`
+`https://panel.shahramv1.site/api/v1/client/subscribe?token=9c13994244c5ccc3fecc269371c32620`
 
 
 
 
 >Trial subscription：
-`https://p1.shahramv1.site/api/v1/client/subscribe?token=cf6399ea28f9a00ba3ae70555847f92a`
+`https://tizi.bulehu.com/api/v1/client/subscribe?token=9aa5f53277852f8808dabce5c527d406`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=de10e5aac684e11f7258b22a8fb2acc5`
+`https://yywhale.com/api/v1/client/subscribe?token=ee5dd9f060491fd66192b64976a7e283`
 
 
 
 
 >Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=fa36e5b2e57033c368621e0f667fed99`
+`https://best.nxxbbf.com/api/v1/client/subscribe?token=4016888bc11620a30571f0d34eb46165`
 
 
 
 
 >Trial subscription：
-`https://cloudaddy.top/api/v1/client/subscribe?token=75a51f1b705591f18c94b01156a1e934`
+`https://cloudaddy.top/api/v1/client/subscribe?token=8270f1d98ed2c592bdc5693df5fd29d9`
+
+
+
+
+>Trial subscription：
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=09e54910ac51bfc2b47157aa72118dab`
+
+
+
+
+>Trial subscription：
+`https://slianvpn.com/api/v1/client/subscribe?token=ee9b7ef7a0f4a87d745f27268af930c5`
 
 
 
