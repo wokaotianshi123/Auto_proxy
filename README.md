@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `8`
-Updata：`2026-04-11 22:33:38`
+### Try the number of high-speed subscriptions: `7`
+Updata：`2026-04-12 12:44:17`
 
 
 <details>
@@ -31910,50 +31910,55 @@ Updata：`2026-04-11 22:33:38`
 
 
 
->Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=d30a8eef87186186470faed7022ac0a4`
 
 
 
 
->Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=88efee50ef746facac35ac50d26b9b33`
 
 
 
-
->Trial subscription：
-`https://p1.shahramv1.site/api/v1/client/subscribe?token=1e77d64ec860ac5c6e48d41ecf643c69`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=f12e967d0c367075de2be71dc864a863`
+`https://p1.shahramv1.site/api/v1/client/subscribe?token=5c1231a766a353c9402cc33ba23261b0`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=762f3662d8d252185830426ad475c047`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=18634d60a81422318d37be3f62934eff`
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=4cc7d00fe50f7c757e803ad6ec3da512`
+`https://yywhale.com/api/v1/client/subscribe?token=83480c309cb7cc7ae5da02b69f58a165`
 
 
 
 
 >Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=33a0550ff8157d343b3ddba6764ddbe6`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=2fcf8c78ed2ef4b18e2c8e18f382fc3f`
 
 
 
 
 >Trial subscription：
-`https://panel.shahramv1.site/api/v1/client/subscribe?token=010071500f95d1234ec3d111726512c7`
+`https://panel.shahramv1.site/api/v1/client/subscribe?token=139bb0cd35103d93798fd3efe0ce6119`
+
+
+
+
+>Trial subscription：
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=041326d7c8756a6ed263ac59cfe0be9d`
+
+
+
+
+>Trial subscription：
+`https://slianvpn.com/api/v1/client/subscribe?token=dcc5835f120411ffa4cf10b2ac32d60e`
 
 
 
