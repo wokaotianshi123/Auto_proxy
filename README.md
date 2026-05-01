@@ -20,7 +20,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 151`
+`Total number of merge nodes: 147`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
@@ -52,7 +52,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 18`
+`Total number of merge nodes: 14`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `11`
-Updata：`2026-04-30 23:46:09`
+### Try the number of high-speed subscriptions: `12`
+Updata：`2026-05-01 13:39:04`
 
 
 <details>
@@ -32321,68 +32321,82 @@ Updata：`2026-04-30 23:46:09`
 
 
 
->Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=b5b54bfcc991ba60c08317ede6dd7074`
+
+
+
+
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=ae79a7c26a78605161ab7e8e8511226f`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=719304e10f685aff735f93a7a3b36a5a`
 
 
 
 
 >Trial subscription：
-`https://panel.shahramv1.site/api/v1/client/subscribe?token=fbf7508c6d95a654e7876d855ba39dba`
+`https://best.nxxbbf.com/api/v1/client/subscribe?token=e8583a6e9479066fc22fc122103b7330`
 
 
 
 
 >Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=50fc22045c8780423f156e29b0b4807e`
+`https://panel.shahramv1.site/api/v1/client/subscribe?token=7efcfa6bda1673f7c616d00aa4fee95a`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=f7b90bb020c6ff6dbc201e75c13b8824`
+`https://yywhale.com/api/v1/client/subscribe?token=fe06dd657be936e970d27ae6d3cccd06`
 
 
 
 
 >Trial subscription：
-`https://p1.shahramv1.site/api/v1/client/subscribe?token=8bedc6247a2b93b1610cba5e5d8ab1ab`
+`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=868cbfa1cbc0e04d40f0e322f88c2041`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=36b83103c9019328dabd803bf9deaa4c`
+`https://slianvpn.com/api/v1/client/subscribe?token=3e77b97feca086a5f24621dde72ee058`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=8374db7f8d2bd4f1b3f1ae0d36d591dd`
+`https://cloudaddy.top/api/v1/client/subscribe?token=75b66e1f03f7ab91db4dd5488f2ed1ba`
 
 
 
 
 >Trial subscription：
-`https://cloudaddy.top/api/v1/client/subscribe?token=d25a2c0bcd785c30fb66d2bd7c062195`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=7f1bc82758d76550b552aa2f888578bb`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=5316919ed8edfe804053142156b6c445`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=0e73639297091b1d823865f0c8e42291`
 
 
 
 
 >Trial subscription：
-`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=e059f6e13217fdc3d8f9b9a0a219e610`
+`https://p1.shahramv1.site/api/v1/client/subscribe?token=7f6f0b108721ee11c19bf634b30d695c`
+
+
+
+
+>Trial subscription：
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=73ad29f9b197476a03d218e9e734136c`
+
+
+
+
+>Trial subscription：
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=27cd15b1c59fea6e4da292026e395931`
 
 
 
