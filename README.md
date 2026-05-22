@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `8`
-Updata：`2026-05-22 14:02:43`
+### Try the number of high-speed subscriptions: `7`
+Updata：`2026-05-23 00:21:50`
 
 
 <details>
@@ -32783,50 +32783,55 @@ Updata：`2026-05-22 14:02:43`
 
 
 
->Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=5ad7f1076feecadf9f64da4acd4cbb06`
 
 
 
 
->Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=8422ea2fc34a945b540ac0f52493b247`
 
 
 
-
->Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=e72394f16d3f8fe77d5dfab70f46ff2a`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=68d170ca2ab0f8d8ff6cf9674946a454`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=f9a364a20e39f8dcc8b007cfba805bb8`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=3730fb1a380cd2228744ba3021a0dcd1`
+`https://slianvpn.com/api/v1/client/subscribe?token=a7f6e46c288aea688969ceda60e47c56`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=51548098e750c0909e6afd855e6ce05a`
+`https://yywhale.com/api/v1/client/subscribe?token=ff77a5fa43f7edbc3a6ccf9ea296c87b`
 
 
 
 
 >Trial subscription：
-`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=8e7d361ed4fae659ee9103272fa42ac3`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=535b0c57808b901a8cef52b43dc4735b`
 
 
 
 
 >Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=0dabd4c822710039e803576c02bfd9c7`
+`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=9cd747572ffc51baa96ff2e41715a860`
+
+
+
+
+>Trial subscription：
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=e0cb2dc627f78d0ddd4177ba78bcf536`
+
+
+
+
+>Trial subscription：
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=4ca32a10cc0e7c63fefe0863e4169ef4`
 
 
 
