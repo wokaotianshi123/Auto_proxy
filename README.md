@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `8`
-Updata：`2026-05-28 00:58:56`
+### Try the number of high-speed subscriptions: `9`
+Updata：`2026-05-28 14:08:13`
 
 
 <details>
@@ -32876,50 +32876,61 @@ Updata：`2026-05-28 00:58:56`
 
 
 
->Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=606d2a0e6314ef5c90e59b95bd56a06a`
 
-
-
-
->Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=a464dc0e31c884a7dd2b2299828b73cc`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=d55a782279a58d60b0622ccf91489e11`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=5c4a82831d813d28c2ef87b5ff5168ca`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=c96c5ae3fa61e249fca54b19595a274b`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=16dd8436e3d96d832a518cf2019c3167`
 
 
 
 
 >Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=848de676525c9083105dac861a53b121`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=3554bb180142197ce3f518c72f84110f`
 
 
 
 
 >Trial subscription：
-`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=7e577c0249c531e663bd228b924ab437`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=72efbb928c935e22f39bfe78437db778`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=fdaacb0239384a1571c462afd1972244`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=6b65972c281feb6457e242cfef67e99b`
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=38f5ce4a65ef406c58914b24879a43d6`
+`https://new.mfjc.cc/api/v1/client/subscribe?token=1d19b0fb33666633e97f87ea18569e47`
+
+
+
+
+>Trial subscription：
+`https://yywhale.com/api/v1/client/subscribe?token=7dbfe463c0ebaaa1579bc23fac0d40c0`
+
+
+
+
+>Trial subscription：
+`https://xboard.mmbreed.sbs/api/v1/client/subscribe?token=2f14314516870ef92fb831bba8bf3192`
+
+
+
+
+>Trial subscription：
+`https://slianvpn.com/api/v1/client/subscribe?token=cdada9a3241cc25e1fb3b3554fc20607`
 
 
 
