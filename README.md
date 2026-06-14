@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `8`
-Updata：`2026-06-13 23:43:07`
+### Try the number of high-speed subscriptions: `9`
+Updata：`2026-06-14 14:36:21`
 
 
 <details>
@@ -33194,50 +33194,61 @@ Updata：`2026-06-13 23:43:07`
 
 
 
->Trial subscription：
-`https://vps.bluexray.net/api/v1/client/subscribe?token=d51d2c9818571a88659516fe3a24474a`
 
-
-
-
->Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=fe7d3d99358f7d25ebd0b7503c01e018`
 
 
 
 
 >Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=c63958f8f7fb421aad790890063e2c6b`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=a70b556ee654aa4e5c4d27a9d37009ad`
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=ac6ecf5c9cdda9300b19c78657b3df4b`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=a13da5ac272118bcd18580c2d4002031`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=896c2f53fed1ca799fb072ff2f59b2cf`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=166946397e8134b595e6ef0dbf0f70b9`
 
 
 
 
 >Trial subscription：
-`https://slianvpn.com/api/v1/client/subscribe?token=470a3cfc67ed76302761a4b762862203`
+`https://adminxboardvpn.hrzy.me/api/v1/client/subscribe?token=b2e1d1b5f6a2d0d82bba951ee5ff3c9e`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=2a791bada15d5720a9ad79256f5d6763`
+`https://yywhale.com/api/v1/client/subscribe?token=b45c2a80720d233d5a2da32897bd78b2`
 
 
 
 
 >Trial subscription：
-`https://adminxboardvpn.hrzy.me/api/v1/client/subscribe?token=387d2cc0dc4a4cc916990338e8999fe9`
+`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=85b9aeae77f9594a5101b8c679db2641`
+
+
+
+
+>Trial subscription：
+`https://slianvpn.com/api/v1/client/subscribe?token=8a03615900debb5e36b82257fbeec870`
+
+
+
+
+>Trial subscription：
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=273f84e08b8df50c54f89afb355b5f81`
+
+
+
+
+>Trial subscription：
+`https://vps.bluexray.net/api/v1/client/subscribe?token=3de3f4713e9cf9276a481960439228c8`
 
 
 
