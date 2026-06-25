@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `9`
-Updata：`2026-06-25 00:15:19`
+### Try the number of high-speed subscriptions: `7`
+Updata：`2026-06-25 14:03:11`
 
 
 <details>
@@ -33403,56 +33403,59 @@ Updata：`2026-06-25 00:15:19`
 
 
 
->Trial subscription：
-`https://vps.bluexray.net/api/v1/client/subscribe?token=09a88dfae3933578f05f64705e1c0831`
 
 
 
 
->Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=beb0ed5aac6f78bc35a551a474780eb8`
 
 
 
 
->Trial subscription：
-`https://adminxboardvpn.hrzy.me/api/v1/client/subscribe?token=5aff260bbd7ad615edfb78da4d75da77`
 
 
 
-
->Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=d4b38808a1a7e8aa63e4835146c70ad3`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=c5fbbd16866bb8625e4a638aa172c0ff`
+`https://b.adami.icu/api/v1/client/subscribe?token=a80e908655d0c4101ff4533f9b7e67e6`
 
 
 
 
 >Trial subscription：
-`https://b.adami.icu/api/v1/client/subscribe?token=f5fb2510abfce81d35fd50595d35cdb9`
+`https://vps.bluexray.net/api/v1/client/subscribe?token=5b06e4c3a93afdfb0e9203fabb7435ca`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=73cc646d31ba60398578b569d375c848`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=65115aa2c8d23cc70464471bea702334`
 
 
 
 
 >Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=e7b1e92a9e4a8979b47c4cbc9ac4cb74`
+`https://adminxboardvpn.hrzy.me/api/v1/client/subscribe?token=1524de87b2145f48cda93279e5359c51`
 
 
 
 
 >Trial subscription：
-`https://vaamx.louwangzhiyu.online/api/v1/client/subscribe?token=ffc3e24d39608ed200adc4d5738555be`
+`https://yywhale.com/api/v1/client/subscribe?token=e2a2c5203ac6ad1c7261a70ec7fbf39d`
+
+
+
+
+>Trial subscription：
+`https://cloudaddy.top/api/v1/client/subscribe?token=4f389075ddcf6f562fd74cf23c5b3725`
+
+
+
+
+>Trial subscription：
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=cb0b439ea29e0b04d5a0b5fed8382a55`
 
 
 
