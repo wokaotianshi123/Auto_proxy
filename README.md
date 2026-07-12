@@ -67,8 +67,8 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 </details>
 
-### Try the number of high-speed subscriptions: `17`
-Updata：`2026-07-12 13:23:51`
+### Try the number of high-speed subscriptions: `18`
+Updata：`2026-07-12 22:52:33`
 
 
 <details>
@@ -33750,104 +33750,124 @@ Updata：`2026-07-12 13:23:51`
 
 
 
->Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=5a2ed5e086006f89ab9ab4782ddf3848`
 
 
 
 
->Trial subscription：
-`https://pinchela.org/api/v1/client/subscribe?token=1b2151e329a581778de051907f885236`
 
 
 
 
->Trial subscription：
-`https://www.pinchela.org/api/v1/client/subscribe?token=c2586145390a12119a11d16b5d77de97`
+
+
 
 
 
 
 >Trial subscription：
-`https://panel.wulove.net/api/v1/client/subscribe?token=215162087ef54ebef98176b755132649`
+`https://pinche.la/api/v1/client/subscribe?token=776f95e239dd0fa52bba7bab3a2b182b`
 
 
 
 
 >Trial subscription：
-`https://www.pinche.la/api/v1/client/subscribe?token=32936d4d242f0b910741d292a4e5b4e4`
+`https://tk131.com/api/v1/client/subscribe?token=10ca9eaa1c246e2d127769ee77a9b5eb`
 
 
 
 
 >Trial subscription：
-`https://pinchela.xyz/api/v1/client/subscribe?token=5e05da67b3533c4f52f6160ddf13c1f8`
+`https://www.cloudaddy.top/api/v1/client/subscribe?token=1adee14fd5abe698d630abc1dd785cd6`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=2b3ff7ea694a347d52a13dd28939b75b`
+`https://panel.wulove.net/api/v1/client/subscribe?token=039d7c3505db552140550d1fe7694350`
 
 
 
 
 >Trial subscription：
-`https://tk131.com/api/v1/client/subscribe?token=2981345a44a919c619e08e1482c578a4`
+`https://yywhale.com/api/v1/client/subscribe?token=1b9eb74f3774dd292be4468b835a8034`
 
 
 
 
 >Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=f93e53aa0dd9c777e11b01b592081d8f`
+`https://pinchela.xyz/api/v1/client/subscribe?token=fe298048135c47fd26990011319c73a1`
 
 
 
 
 >Trial subscription：
-`https://submall.ttc9999.com/api/v1/client/subscribe?token=ddc03fa802ae0dc3cbdc821ff7177c32`
+`https://www.pinchela.xyz/api/v1/client/subscribe?token=4ed46202e35192ac388d4451a8efb490`
 
 
 
 
 >Trial subscription：
-`https://api-xb.node2.top/api/v1/client/subscribe?token=6747c5d74fc3c05b9ab61cd323035cc1`
+`https://www.pinche.la/api/v1/client/subscribe?token=98ab190b5c07fe4e94f0b19771649903`
 
 
 
 
 >Trial subscription：
-`https://api.jjz.best/api/v1/client/subscribe?token=776fb9f1370fcb8d024aeed38bde815d`
+`https://api.jjz.best/api/v1/client/subscribe?token=014088a0eea6274a35e30930db0d2e1e`
 
 
 
 
 >Trial subscription：
-`https://www.cloudaddy.top/api/v1/client/subscribe?token=b2e3eb3b3ff04d940682ee9834c615ab`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=cd8336431d9a87d3a151db78cfa342de`
 
 
 
 
 >Trial subscription：
-`https://pinche.la/api/v1/client/subscribe?token=ec9cbd75a5dbc28ef4e90c7a089b6c3f`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=fe510e009e9d67195c7fbb522ac29293`
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=aea83cbfaa3e6ebe92b09711f1c47f4c`
+`https://13141069.xyz/api/v1/client/subscribe?token=61d02a60344a5654181883d0960216b6`
 
 
 
 
 >Trial subscription：
-`https://www.pinchela.xyz/api/v1/client/subscribe?token=fb822e72776725ad4ec11808e927953c`
+`https://api-xb.node2.top/api/v1/client/subscribe?token=02c0e472f516b201f205e23aa877c114`
 
 
 
 
 >Trial subscription：
-`https://simkey.cloud/api/v1/client/subscribe?token=47fd9f36acef322fa9720b5ccf899b38`
+`https://submall.ttc9999.com/api/v1/client/subscribe?token=c8024bb7ab9aab9ac913cd3e5fb9e190`
+
+
+
+
+>Trial subscription：
+`https://www.pinchela.org/api/v1/client/subscribe?token=8e0d061aa5579616f8b46ef1d84f7ea7`
+
+
+
+
+>Trial subscription：
+`https://pinchela.org/api/v1/client/subscribe?token=bc3a88aac28d300c24d1af7217090fc3`
+
+
+
+
+>Trial subscription：
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=97d1cfbfa5ad161ef2458dd6bf32f69a`
+
+
+
+
+>Trial subscription：
+`https://simkey.cloud/api/v1/client/subscribe?token=abeaa08e7d4ff8dae76f9e0254b9c60d`
 
 
 
