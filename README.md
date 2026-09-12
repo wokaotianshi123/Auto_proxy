@@ -20,39 +20,39 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 414`
+`Total number of merge nodes: 360`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.comPangTouY00/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription5`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7`
-`Total number of merge nodes: 52`
+`Total number of merge nodes: 46`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 50`
+`Total number of merge nodes: 38`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `14`
-Updata：`2026-09-12 14:49:08`
+Updata：`2026-09-13 00:42:56`
 
 
 <details>
@@ -34737,86 +34737,100 @@ Updata：`2026-09-12 14:49:08`
 
 
 
->Trial subscription：
-`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=21e138f989f8e3b040dd7299dff89d51`
 
 
 
 
->Trial subscription：
-`https://dy.ddgou.xyz/api/v1/client/subscribe?token=ec8510d3b0685c5382a4d0cd2a1076fa`
 
 
 
 
->Trial subscription：
-`https://board.eyelink.ai/api/v1/client/subscribe?token=a212138f659ca3cc5fc9d05d7c9a9ebc`
+
+
 
 
 
 
 >Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=68c9e188ecc820c7e2f6c21187f93a74`
+`https://airport.heatwarm.top/api/v1/client/subscribe?token=29ed2ca5ad1eb89f198227b65a40f791`
 
 
 
 
 >Trial subscription：
-`https://api.ddgou.xyz/api/v1/client/subscribe?token=ff4b539d6eed9e94c0f255cc1235e8d9`
+`https://m.caihongmao.org/api/v1/client/subscribe?token=4e03fc9734e183c020224a426d322975`
 
 
 
 
 >Trial subscription：
-`https://airport.heatwarm.top/api/v1/client/subscribe?token=a1c86c608939b34c35443d790f9e0259`
+`https://board.eyelink.ai/api/v1/client/subscribe?token=ebf8afcbe4440189901f2ebfd6c4ef79`
 
 
 
 
 >Trial subscription：
-`https://p1.lianjieni.com/api/v1/client/subscribe?token=cf2bbd6cb5e28767f1037a37f2febe16`
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=512b404449cbde118cede5ab01945692`
 
 
 
 
 >Trial subscription：
-`https://tz.louwangzhiyu.org/api/v1/client/subscribe?token=30f8f8b1ee43410247f0268b015599fa`
+`https://dy.ddgou.xyz/api/v1/client/subscribe?token=9113380afbf8eeeed75570a6dde0cf81`
 
 
 
 
 >Trial subscription：
-`https://api.jjz.best/api/v1/client/subscribe?token=52ccf457b57b01f07778d2d89cbf43ce`
+`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=42fbd372702931d54f92eaf03985a188`
 
 
 
 
 >Trial subscription：
-`https://usyun.cc/api/v1/client/subscribe?token=18ee05060876b6eafcc2da20010810ac`
+`https://p1.lianjieni.com/api/v1/client/subscribe?token=4719782eeb736aed2f5535a80a6eee30`
 
 
 
 
 >Trial subscription：
-`https://bb.369258.icu/api/v1/client/subscribe?token=b396e763c8733eaeb825239fcb9afc55`
+`https://bb.369258.icu/api/v1/client/subscribe?token=d41a00e2548de905689394b46645d865`
 
 
 
 
 >Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=97e3fc427ec24c593ba1121627f6c6bc`
+`https://api.ddgou.xyz/api/v1/client/subscribe?token=70e3adc29ce96992b8c916e828f952cf`
 
 
 
 
 >Trial subscription：
-`https://m.caihongmao.org/api/v1/client/subscribe?token=b8876ce090361b0548eba7d875a56121`
+`https://usyun.cc/api/v1/client/subscribe?token=dbb9444499b82b1309fb17b555d41825`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=a8fb0a81f390ec329b39055eafdaa67a`
+`https://multiserver.multiserveradelshoop.com/api/v1/client/subscribe?token=c5d96723f548391429bb4b9bc7ba0a7f`
+
+
+
+
+>Trial subscription：
+`https://tz.louwangzhiyu.org/api/v1/client/subscribe?token=d97c1dd13121ff45da58f4a2d367afdf`
+
+
+
+
+>Trial subscription：
+`https://yywhale.com/api/v1/client/subscribe?token=5ae960ac93264a03c59063cea0288823`
+
+
+
+
+>Trial subscription：
+`https://api.jjz.best/api/v1/client/subscribe?token=2acc340e7eb4f0f45e521c37a262c825`
 
 
 
