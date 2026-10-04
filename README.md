@@ -20,39 +20,39 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
   
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`
-`Total number of merge nodes: 648`
+`Total number of merge nodes: 667`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.comPangTouY00/Auto_proxy/main/Long_term_subscription5)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription5`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7`
-`Total number of merge nodes: 82`
+`Total number of merge nodes: 84`
 
 - [Multiprotocol Base64 encoding](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`
-`Total number of merge nodes: 74`
+`Total number of merge nodes: 79`
 
 - [Clash subscription](https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2.yaml)
 `https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1.yaml`
@@ -68,7 +68,7 @@ ps: Increase to 8 subscription links, each about 150 (uncertain) to avoid too ma
 </details>
 
 ### Try the number of high-speed subscriptions: `15`
-Updata：`2026-10-04 01:44:18`
+Updata：`2026-10-04 15:42:59`
 
 
 <details>
@@ -35301,14 +35301,17 @@ Updata：`2026-10-04 01:44:18`
 
 
 
->Trial subscription：
-`https://dctcc.louwangzhiyu.shop/api/v1/client/subscribe?token=5a9aec81c4472b207dcef4f21bb5f45f`
 
 
 
 
->Trial subscription：
-`https://api.ddgou.xyz/api/v1/client/subscribe?token=b225fb125c30eb09292db8624cf1caac`
+
+
+
+
+
+
+
 
 
 
@@ -35320,43 +35323,19 @@ Updata：`2026-10-04 01:44:18`
 
 
 >Trial subscription：
-`https://lazeno.vip/api/v1/client/subscribe?token=ae65535a2c857c9020146fd383c69707`
+`https://api.ddgou.xyz/api/v1/client/subscribe?token=dbeb941978c842f70e5b4269853dc663`
 
 
 
 
 >Trial subscription：
-`https://sub1.nextsky.site/api/v1/client/subscribe?token=c03eb3c2c2f0a39d12813ba0b23821fc`
+`https://www.luoye.ee/api/v1/client/subscribe?token=31e6843460b12a2267173f6c0d07cdac`
 
 
 
 
 >Trial subscription：
-`https://dy.ddgou.xyz/api/v1/client/subscribe?token=87df892d97b213c91b9683aa6e461942`
-
-
-
-
->Trial subscription：
-`https://10086900.xyz/api/v1/client/subscribe?token=4ec00399dc02f0822a0d0323ba45ab66`
-
-
-
-
->Trial subscription：
-`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=54afc71dec51b9597281c7cb677c3f93`
-
-
-
-
->Trial subscription：
-`https://tz.louwangzhiyu.org/api/v1/client/subscribe?token=73feb04a78ebd234d7d7890858f466d0`
-
-
-
-
->Trial subscription：
-`https://m.caihongmao.org/api/v1/client/subscribe?token=f886679c43125a5c537434cf41355f59`
+`https://p1.lianjieni.com/api/v1/client/subscribe?token=30418a8325eb638e81e4ce3ea876a05a`
 
 
 
@@ -35368,25 +35347,61 @@ Updata：`2026-10-04 01:44:18`
 
 
 >Trial subscription：
-`https://shopdcom.pro/api/v1/client/subscribe?token=712bd9bf2e6e8f80c6eac206410a8af7`
+`https://v2u.3ai.best/api/v1/client/subscribe?token=7cc52bdfd89be27132f4d882e8e58cea`
 
 
 
 
 >Trial subscription：
-`https://p1.lianjieni.com/api/v1/client/subscribe?token=67ef735c186c152ecae753463231a39b`
+`https://10086900.xyz/api/v1/client/subscribe?token=cf7a80bfe0c58691373a2696a88e5602`
 
 
 
 
 >Trial subscription：
-`https://v2u.3ai.best/api/v1/client/subscribe?token=d17e141d931566b86b4074ab2e38807c`
+`https://m.caihongmao.org/api/v1/client/subscribe?token=4751208971fc5ffce0a6b76f66429998`
 
 
 
 
 >Trial subscription：
-`https://yywhale.com/api/v1/client/subscribe?token=a62d222b2214950c3274c1b2cd348e31`
+`https://shopdcom.pro/api/v1/client/subscribe?token=379c6ec7868c9b1dc47b16aecb6dd264`
+
+
+
+
+>Trial subscription：
+`https://tz.louwangzhiyu.org/api/v1/client/subscribe?token=f9f94923bb82b5114eed17c3019047fc`
+
+
+
+
+>Trial subscription：
+`https://dy.ddgou.xyz/api/v1/client/subscribe?token=7b32405331f4e4230effabc41a559f95`
+
+
+
+
+>Trial subscription：
+`https://sub1.nextsky.site/api/v1/client/subscribe?token=dd29e77336341b4942b57cce0ed060a7`
+
+
+
+
+>Trial subscription：
+`https://www.louwangzhiyu.org/api/v1/client/subscribe?token=19e804648a5be084f62919499eff756b`
+
+
+
+
+>Trial subscription：
+`https://lazeno.vip/api/v1/client/subscribe?token=2b06632b325e9fa50ec20c40ab120ed6`
+
+
+
+
+>Trial subscription：
+`https://yywhale.com/api/v1/client/subscribe?token=129bdb39bd520c623de50d5bd6466580`
 
 
 
